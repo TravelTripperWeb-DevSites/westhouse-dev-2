@@ -1182,6 +1182,7 @@ and (max-width: 860px) {
 	h3.picnic {
     text-align: center;
 	}
+	
 
 	h2.picnic {
     text-align: center;
@@ -1196,6 +1197,7 @@ and (max-width: 860px) {
     line-height: 50px;
     margin: 0;
 	}
+	
 
 	/* Footer Social Media  */
 	#footer .socialmedia ul
@@ -3208,3 +3210,28 @@ and (max-device-width : 1175px) {
 	}
 
 }
+
+.picnic-additional-info{
+      width: 88%;
+    margin: 0 auto;
+    padding: 1%;
+    background: #f5f5f5;
+	}
+	.picnic-additional-info p{
+	  margin: 0px;
+	  padding: 0px;
+	}
+	h3.picnic span{
+		color: #000 !important;
+	    opacity: 1 !important;
+	    font-size: 18px;
+	    font-weight: bold;
+	    letter-spacing: normal;
+	}
+	.ypp-tagline{
+		margin-top: 30px !important;
+    	text-align: center !important;
+	}
+	.culinary-guide-main.no-space{
+		margin-bottom: 0 !important;
+	}
