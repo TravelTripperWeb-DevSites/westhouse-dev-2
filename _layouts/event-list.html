@@ -45,11 +45,11 @@
                     {% assign LatestEventsList = site.data._models.Event | sort: 'datemeta' | reverse %}
 {% for LatestEvents in LatestEventsList %}
 					<li>
-						<a href="{{ LatestEvents.id | permalink: model_dir: 'event-in-nyc' }}" class="dropanchor"></a>
+						<a href="{{ LatestEvents.id | permalink: model_dir: 'events-in-nyc' }}" class="dropanchor"></a>
 						<img src="{{ LatestEvents.image.url }}" alt="{{ LatestEvents.title }}">
 						<h2>{{ LatestEvents.title }}<span>{{ LatestEvents.date }}</span></h2>
 						<p>{{ LatestEvents.preview  | truncate: 210 }}</p>
-						<a href="{{ LatestEvents.id | permalink: model_dir: 'event-in-nyc' }}" class="button">Continue</a>
+						<a href="{{ LatestEvents.id | permalink: model_dir: 'events-in-nyc' }}" class="button">Continue</a>
 					</li>
 					{% endfor %}
 				</ul>

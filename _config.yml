@@ -14,7 +14,7 @@ page_gen:
     dir: 'blog'
   - data: 'Event'
     template: 'event-single'
-    dir: 'event-in-nyc'
+    dir: 'events-in-nyc'
   - data: 'Amenities'
     template: 'amenities-single'
     dir: 'westhouse-hotel-amenities-nyc'

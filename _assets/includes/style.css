@@ -7984,6 +7984,21 @@ div.picnic-post
 
 /*  save the child css */
 
+.back-to-events{
+      width: 100%;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.back-to-events a{
+      font-family: GothamLight;
+    color: #161616;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+}
+.back-to-events a:hover{
+  color: #000;
+  }
+
 
 
 
