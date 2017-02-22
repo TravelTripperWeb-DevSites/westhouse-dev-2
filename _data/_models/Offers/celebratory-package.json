@@ -1,1 +1,19 @@
-{"definition_id":"55998c3cc06bc82990000002","title":"Valentine's Day Package","url_friendly_name":"valentines-day-package","Outbound link or Offer ID":"https://westhousehotelnewyork.reztrip.com/special_offer?rate_code=CLBTE&vr=3","image":{"url":"/assets/images/4042/original/westhouse-hotel-new-york-celebratory.jpg"},"outbound":"https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=205575&vr=3&accessCode=VALENTINE","image_id":"4042","_delete_image":"0","offer_code":"VDAY","seo_title":"Valentine's Day Package - Luxury Hotel Offers in NYC - WestHouse Hotel","seo_description":"Whether you are traveling to New York for Valentine’s Day or just treating a special someone to a nice staycation, toast the occasion in one of our luxurious WestHouse Hotel New York guest rooms by indulging in a bottle of champagne and chocolate-covered treats upon arrival. A complimentary late check out of 2:00 PM is also included.","partner_name":"Valentine's Day Package","contents":"<p><span style=\"color: #161616; letter-spacing: 0.133333px;\">Whether you&rsquo;re traveling to New York for Valentine&rsquo;s Day or just treating a special someone to a nice staycation, toast the occasion in one of our luxurious WestHouse Hotel New York guest rooms by indulging in a bottle of champagne and chocolate-covered treats upon arrival. A complimentary late check out of 2:00 PM is also included.</span></p>\n<p><span style=\"color: #161616;\"><span style=\"letter-spacing: 0.133333px;\">Must be booked 3-days in advance.</span></span></p>\n<p>&nbsp;</p>","definition":"","menu_order":1}
+{
+	"definition_id": "55998c3cc06bc82990000002",
+	"title": "Celebratory Package",
+	"url_friendly_name": "celebratory-package",
+	"Outbound link or Offer ID": "https://westhousehotelnewyork.reztrip.com/special_offer?rate_code=CLBTE&vr=3",
+	"image": {
+		"url": "/assets/images/4042/original/westhouse-hotel-new-york-celebratory.jpg"
+	},
+	"outbound": "https://westhousehotelnewyork.reztrip.com/special_offer?rate_code=CLBTE&vr=3",
+	"image_id": "4042",
+	"_delete_image": "0",
+	"offer_code": "",
+	"seo_title": "Celebratory Package - Luxury Hotel Offers in NYC - WestHouse Hotel",
+	"seo_description": "Whether you are treating a special someone to a romantic getaway or enjoying a birthday fête, toast the occasion in one of our luxurious WestHouse Hotel New York guest rooms by indulging in a bottle of champagne and chocolate-covered treats upon arrival. A complimentary late check out of 2:00 PM is also included.",
+	"partner_name": "Celebratory Package",
+	"contents": "<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\"><span style=\"color: #161616; letter-spacing: 0.1pt; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;\">Whether you&rsquo;re treating a special someone to a romantic getaway or enjoying a birthday f&ecirc;te, toast the occasion in one of our luxurious WestHouse Hotel New York guest rooms by indulging in a bottle of champagne and chocolate-covered treats upon arrival. A complimentary late check out of 2:00 PM is also included.</span></p>\n<p><span style=\"color: #161616;\"><span style=\"letter-spacing: 0.133333px;\">Must be booked 3-days in advance.</span></span></p>",
+	"definition": "",
+	"menu_order": 7
+}

@@ -1,1 +1,14 @@
-{"title":"Shop in 'Suite' Style","seo_title":"Shop in 'Suite' Style","seo_description":"WestHouse makes your shopping experience extra special.","url_friendly_name":"Shop-in-Suite-Style","partner_name":"Henri Bendel","image":{"url":"//cdn.traveltripper.io/site-assets/92_368_1031/media/gift-card-box.JPG"},"contents":"<p>WestHouse makes your shopping experience extra special. Book a suite for your upcoming stay with us and enjoy a $100 gift card from <strong><a href=\"http://www.henribendel.com/\" target=\"_blank\">Henri Bendel</a></strong> as well as a personal shopping appointment from one of their stylists.</p>\n<p>Must be booked 7-days in advance.</p>","menu_order":10,"outbound":"https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=194943&vr=3&accessCode=SHOP","offer_code":"HENRI1"}
+{
+	"title": "Shop in 'Suite' Style",
+	"seo_title": "Shop in 'Suite' Style",
+	"seo_description": "WestHouse makes your shopping experience extra special.",
+	"url_friendly_name": "Shop-in-Suite-Style",
+	"partner_name": "Henri Bendel",
+	"image": {
+		"url": "//cdn.traveltripper.io/site-assets/92_368_1031/media/gift-card-box.JPG"
+	},
+	"contents": "<p>WestHouse makes your shopping experience extra special. Book a suite for your upcoming stay with us and enjoy a $100 gift card from <strong><a href=\"http://www.henribendel.com/\" target=\"_blank\">Henri Bendel</a></strong> as well as a personal shopping appointment from one of their stylists.</p>\n<p>Must be booked 7-days in advance.</p>",
+	"menu_order": 1,
+	"outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=194943&vr=3&accessCode=SHOP",
+	"offer_code": "HENRI1"
+}
