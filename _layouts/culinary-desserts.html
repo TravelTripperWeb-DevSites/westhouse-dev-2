@@ -51,7 +51,7 @@
 {% assign categoryIds = LocationsInCategory-Culinary-Desserts.category | map: 'id' %}
 {% if categoryIds contains '56b0c35777e2f50003f8af68' %}
     			<div id="infocontainerB{{ LocationsInCategory-Culinary-Desserts.url_friendly_name }}" class="infocontainer">
-    		        <a href="{{ LocationsInCategory-Culinary-Desserts.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-Culinary-Desserts.image.url }}" alt="{{ LocationsInCategory-Culinary-Desserts.title }}" /></a>
+    		        <!--<a href="{{ LocationsInCategory-Culinary-Desserts.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-Culinary-Desserts.image.url }}" alt="{{ LocationsInCategory-Culinary-Desserts.title }}" /><!--</a>-->
     			    <h2>{{ LocationsInCategory-Culinary-Desserts.title }}</h2>
     			  	<a href="#" class="closer"><i class="fa fa-times"></i></a>
     			  	<div class="clear"></div>

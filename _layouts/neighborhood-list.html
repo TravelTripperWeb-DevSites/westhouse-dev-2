@@ -131,7 +131,7 @@
 			 
 			       {% for Neighborhood-Locations in site.data._models.Neighborhood-Locations %}
 			      <div id="infocontainerB{{ Neighborhood-Locations.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ Neighborhood-Locations.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ Neighborhood-Locations.image.url }}" alt="{{ Neighborhood-Locations.title }}" /></a>
+				  	<!--<a href="{{ Neighborhood-Locations.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ Neighborhood-Locations.image.url }}" alt="{{ Neighborhood-Locations.title }}" /><!--</a>-->
 				  	<h2>{{ Neighborhood-Locations.title }}</h2>
 				  
 				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>

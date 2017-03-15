@@ -118,7 +118,7 @@
 {% assign categoryIds = LocationsInCategory-Must-See-NYC.category | map: 'id' %}
 {% if categoryIds contains '55a7af34226e50787b00001e' %}
 			      <div id="infocontainerB{{ LocationsInCategory-Must-See-NYC.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ LocationsInCategory-Must-See-NYC.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-Must-See-NYC.image.url }}" alt="{{ LocationsInCategory-Must-See-NYC.title }}" /></a>
+				  	<!--<a href="{{ LocationsInCategory-Must-See-NYC.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-Must-See-NYC.image.url }}" alt="{{ LocationsInCategory-Must-See-NYC.title }}" /><!--</a>-->
 				  	<h2>{{ LocationsInCategory-Must-See-NYC.title }}</h2>
 				  
 				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>

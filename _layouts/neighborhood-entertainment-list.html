@@ -119,7 +119,7 @@
 {% assign categoryIds = LocationsInCategory-NYC-Entertainment-Guide.category | map: 'id' %}
 {% if categoryIds contains '55a7af28226e50448e00001c' %}
 			      <div id="infocontainerB{{ LocationsInCategory-NYC-Entertainment-Guide.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ LocationsInCategory-NYC-Entertainment-Guide.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-NYC-Entertainment-Guide.image.url }}" alt="{{ LocationsInCategory-NYC-Entertainment-Guide.title }}" /></a>
+				  	<!--<a href="{{ LocationsInCategory-NYC-Entertainment-Guide.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-NYC-Entertainment-Guide.image.url }}" alt="{{ LocationsInCategory-NYC-Entertainment-Guide.title }}" /><!--</a>-->
 				  	<h2>{{ LocationsInCategory-NYC-Entertainment-Guide.title }}</h2>
 				  
 				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>

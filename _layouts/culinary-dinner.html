@@ -51,7 +51,7 @@
 {% assign categoryIds = LocationsInCategory-Culinary-Dinner.category | map: 'id' %}
 {% if categoryIds contains '56b0c34c77e2f50003f8af66' %}
     			<div id="infocontainerB{{ LocationsInCategory-Culinary-Dinner.url_friendly_name }}" class="infocontainer">
-    		        <a href="{{ LocationsInCategory-Culinary-Dinner.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-Culinary-Dinner.image.url }}" alt="{{ LocationsInCategory-Culinary-Dinner.title }}" /></a>
+    		       <!-- <a href="{{ LocationsInCategory-Culinary-Dinner.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-Culinary-Dinner.image.url }}" alt="{{ LocationsInCategory-Culinary-Dinner.title }}" /><!--</a>-->
     			    <h2>{{ LocationsInCategory-Culinary-Dinner.title }}</h2>
     			  	<a href="#" class="closer"><i class="fa fa-times"></i></a>
     			  	<div class="clear"></div>

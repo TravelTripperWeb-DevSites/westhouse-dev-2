@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Broadway-Week-NYC-WestHouse-Hotel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1000/media/Broadway-Week-NYC-WestHouse-Hotel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1000_media_Broadway-Week-NYC-WestHouse-Hotel.json"
+  },
+  {
+    "name": "NYC-Restaurant-Week-WestHouse-Hotel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1000/media/NYC-Restaurant-Week-WestHouse-Hotel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1000_media_NYC-Restaurant-Week-WestHouse-Hotel.json"
+  },
+  {
+    "name": "The-Present-Broadway-westhouse-hotel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1000/media/The-Present-Broadway-westhouse-hotel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1000_media_The-Present-Broadway-westhouse-hotel.json"
+  },
+  {
+    "name": "WestHouse-Carnegie-Hall-New-York.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1000/media/WestHouse-Carnegie-Hall-New-York.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1000_media_WestHouse-Carnegie-Hall-New-York.json"
+  },
+  {
+    "name": "gift-card-box.JPG",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1031/media/gift-card-box.JPG",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1031_media_gift-card-box.json"
+  },
+  {
+    "name": "henri-bendel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1031/media/henri-bendel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1031_media_henri-bendel.json"
+  },
+  {
+    "name": "WestHouse-Hotel-NOMI -Beauty-Tips.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1031/media/WestHouse-Hotel-NOMI -Beauty-Tips.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1031_media_WestHouse-Hotel-NOMI -Beauty-Tips.json"
+  },
+  {
+    "name": "WestHouse-Hotel-NOMI-Beauty-Tips.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_1031/media/WestHouse-Hotel-NOMI-Beauty-Tips.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1031_media_WestHouse-Hotel-NOMI-Beauty-Tips.json"
+  },
+  {
+    "name": "bryant-park-grill",
+    "file_name": "bryant-park-grill.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1063/media/2016-12-12-083306/bryant-park-grill.jpg",
+    "date_added": "2016-12-12-083306",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1063_media_2016-12-12-083306_bryant-park-grill.jpg.json"
+  },
+  {
+    "name": "CityWiinery",
+    "file_name": "CityWiinery.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2016-12-16-053338/CityWiinery.jpg",
+    "date_added": "2016-12-16-053338",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2016-12-16-053338_CityWiinery.jpg.json"
+  },
+  {
+    "name": "wba2017-logo",
+    "file_name": "wba2017-logo.png",
+    "file_type": "image/png",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2016-12-24-051122/wba2017-logo.png",
+    "date_added": "2016-12-24-051123",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2016-12-24-051122_wba2017-logo.png.json"
+  },
+  {
+    "name": "1.MADMuseum - travelandleisure",
+    "file_name": "1.MADMuseum - travelandleisure.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-065849/1.MADMuseum - travelandleisure.jpg",
+    "date_added": "2017-02-01-065849",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-065849_1.MADMuseum - travelandleisure.jpg.json"
+  },
+  {
+    "name": "2.barneys - timeout",
+    "file_name": "2.barneys - timeout.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-065850/2.barneys - timeout.jpg",
+    "date_added": "2017-02-01-065850",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-065850_2.barneys - timeout.jpg.json"
+  },
+  {
+    "name": "3.lincoln center-nbc-new-york",
+    "file_name": "3.lincoln center-nbc-new-york.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-065851/3.lincoln center-nbc-new-york.jpg",
+    "date_added": "2017-02-01-065851",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-065851_3.lincoln center-nbc-new-york.jpg.json"
+  },
+  {
+    "name": "4.le-pif-lepifwinebars",
+    "file_name": "4.le-pif-lepifwinebars.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-065852/4.le-pif-lepifwinebars.jpg",
+    "date_added": "2017-02-01-065852",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-065852_4.le-pif-lepifwinebars.jpg.json"
+  },
+  {
+    "name": "5.BEACON-THEATER- huffington post",
+    "file_name": "5.BEACON-THEATER- huffington post.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-070007/5.BEACON-THEATER- huffington post.jpg",
+    "date_added": "2017-02-01-070007",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-070007_5.BEACON-THEATER- huffington post.jpg.json"
+  },
+  {
+    "name": "6. Mille-Feule",
+    "file_name": "6. Mille-Feule.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-070008/6. Mille-Feule.jpg",
+    "date_added": "2017-02-01-070008",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-070008_6. Mille-Feule.jpg.json"
+  },
+  {
+    "name": "7.Lisa-Jacobs--www.lisajacobsfineart",
+    "file_name": "7.Lisa-Jacobs--www.lisajacobsfineart.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-070009/7.Lisa-Jacobs--www.lisajacobsfineart.jpg",
+    "date_added": "2017-02-01-070010",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-070009_7.Lisa-Jacobs--www.lisajacobsfineart.jpg.json"
+  },
+  {
+    "name": "blog-Hero-Image",
+    "file_name": "blog-Hero-Image.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-070059/blog-Hero-Image.jpg",
+    "date_added": "2017-02-01-070059",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-070059_blog-Hero-Image.jpg.json"
+  },
+  {
+    "name": "blog-photo-hero",
+    "file_name": "blog-photo-hero.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-072519/blog-photo-hero.jpg",
+    "date_added": "2017-02-01-072519",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-072519_blog-photo-hero.jpg.json"
+  },
+  {
+    "name": "1.subway-final-stop-Brooklyn-Bridge_CityHall-curbedny",
+    "file_name": "1.subway-final-stop-Brooklyn-Bridge_CityHall-curbedny.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-074457/1.subway-final-stop-Brooklyn-Bridge_CityHall-curbedny.jpg",
+    "date_added": "2017-02-01-074457",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-074457_1.subway-final-stop-Brooklyn-Bridge_CityHall-curbedny.jpg.json"
+  },
+  {
+    "name": "3.chelsea galleries-timeout.com",
+    "file_name": "3.chelsea galleries-timeout.com.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-074458/3.chelsea galleries-timeout.com.jpg",
+    "date_added": "2017-02-01-074458",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-074458_3.chelsea galleries-timeout.com.jpg.json"
+  },
+  {
+    "name": "2.Soho-Shopping",
+    "file_name": "2.Soho-Shopping.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-074713/2.Soho-Shopping.jpg",
+    "date_added": "2017-02-01-074713",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-074713_2.Soho-Shopping.jpg.json"
+  },
+  {
+    "name": "5.Moma-lunch-themoernnnyc.com",
+    "file_name": "5.Moma-lunch-themoernnnyc.com.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-074714/5.Moma-lunch-themoernnnyc.com.jpg",
+    "date_added": "2017-02-01-074714",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-074714_5.Moma-lunch-themoernnnyc.com.jpg.json"
+  },
+  {
+    "name": "4.mcnally-jackson-bookstore",
+    "file_name": "4.mcnally-jackson-bookstore.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1128/media/2017-02-01-074738/4.mcnally-jackson-bookstore.jpg",
+    "date_added": "2017-02-01-074738",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1128_media_2017-02-01-074738_4.mcnally-jackson-bookstore.jpg.json"
+  },
+  {
+    "name": "GettyImages-174623176",
+    "file_name": "GettyImages-174623176.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1215/media/2017-01-02-063515/GettyImages-174623176.jpg",
+    "date_added": "2017-01-02-063515",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1215_media_2017-01-02-063515_GettyImages-174623176.jpg.json"
+  },
+  {
+    "name": "nyfw",
+    "file_name": "nyfw.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1215/media/2017-01-02-064945/nyfw.jpg",
+    "date_added": "2017-01-02-064945",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1215_media_2017-01-02-064945_nyfw.jpg.json"
+  },
+  {
+    "name": "Best-in-Show-e1478461923422",
+    "file_name": "Best-in-Show-e1478461923422.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1215/media/2017-01-02-070440/Best-in-Show-e1478461923422.jpg",
+    "date_added": "2017-01-02-070440",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1215_media_2017-01-02-070440_Best-in-Show-e1478461923422.jpg.json"
+  },
+  {
+    "name": "ny-wild-film-fest",
+    "file_name": "ny-wild-film-fest.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1215/media/2017-01-02-092334/ny-wild-film-fest.jpg",
+    "date_added": "2017-01-02-092334",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1215_media_2017-01-02-092334_ny-wild-film-fest.jpg.json"
+  },
+  {
+    "name": "unspecified-1",
+    "file_name": "unspecified-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1297/media/2017-01-18-072323/unspecified-1.jpg",
+    "date_added": "2017-01-18-072323",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1297_media_2017-01-18-072323_unspecified-1.jpg.json"
+  },
+  {
+    "name": "1-empire-state",
+    "file_name": "1-empire-state.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-09-091405/1-empire-state.jpg",
+    "date_added": "2017-02-09-091406",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-09-091405_1-empire-state.jpg.json"
+  },
+  {
+    "name": "2-paris-theatre",
+    "file_name": "2-paris-theatre.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-09-091443/2-paris-theatre.jpg",
+    "date_added": "2017-02-09-091443",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-09-091443_2-paris-theatre.jpg.json"
+  },
+  {
+    "name": "3-grand-central",
+    "file_name": "3-grand-central.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-09-091444/3-grand-central.jpg",
+    "date_added": "2017-02-09-091444",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-09-091444_3-grand-central.jpg.json"
+  },
+  {
+    "name": "4-planetarium",
+    "file_name": "4-planetarium.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-09-091445/4-planetarium.jpg",
+    "date_added": "2017-02-09-091446",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-09-091445_4-planetarium.jpg.json"
+  },
+  {
+    "name": "hero-image-post22",
+    "file_name": "hero-image-post22.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-09-091447/hero-image-post22.jpg",
+    "date_added": "2017-02-09-091447",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-09-091447_hero-image-post22.jpg.json"
+  },
+  {
+    "name": "nyyy",
+    "file_name": "nyyy.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-13-011901/nyyy.jpg",
+    "date_added": "2017-02-13-011902",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-13-011901_nyyy.jpg.json"
+  },
+  {
+    "name": "brookfield-place",
+    "file_name": "brookfield-place.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-21-015637/brookfield-place.jpg",
+    "date_added": "2017-02-21-015637",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-21-015637_brookfield-place.jpg.json"
+  },
+  {
+    "name": "joyce-theater",
+    "file_name": "joyce-theater.png",
+    "file_type": "image/png",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-21-015638/joyce-theater.png",
+    "date_added": "2017-02-21-015638",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-21-015638_joyce-theater.png.json"
+  },
+  {
+    "name": "original-chinatown-cce-cream-factory",
+    "file_name": "original-chinatown-cce-cream-factory.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-21-015639/original-chinatown-cce-cream-factory.jpg",
+    "date_added": "2017-02-21-015639",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-21-015639_original-chinatown-cce-cream-factory.jpg.json"
+  },
+  {
+    "name": "roaster-hero-image",
+    "file_name": "roaster-hero-image.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-21-015640/roaster-hero-image.jpg",
+    "date_added": "2017-02-21-015640",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-21-015640_roaster-hero-image.jpg.json"
+  },
+  {
+    "name": "times-square",
+    "file_name": "times-square.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-21-015641/times-square.jpg",
+    "date_added": "2017-02-21-015641",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-21-015641_times-square.jpg.json"
+  },
+  {
+    "name": "alices-garden",
+    "file_name": "alices-garden.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025706/alices-garden.jpg",
+    "date_added": "2017-02-28-025706",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025706_alices-garden.jpg.json"
+  },
+  {
+    "name": "greenacre-park",
+    "file_name": "greenacre-park.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025707/greenacre-park.jpg",
+    "date_added": "2017-02-28-025707",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025707_greenacre-park.jpg.json"
+  },
+  {
+    "name": "hero-image",
+    "file_name": "hero-image.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025708/hero-image.jpg",
+    "date_added": "2017-02-28-025708",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025708_hero-image.jpg.json"
+  },
+  {
+    "name": "paley-park",
+    "file_name": "paley-park.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025709/paley-park.jpg",
+    "date_added": "2017-02-28-025709",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025709_paley-park.jpg.json"
+  },
+  {
+    "name": "sutton-park",
+    "file_name": "sutton-park.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025710/sutton-park.jpg",
+    "date_added": "2017-02-28-025711",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025710_sutton-park.jpg.json"
+  },
+  {
+    "name": "tudor-city-greens",
+    "file_name": "tudor-city-greens.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-02-28-025711/tudor-city-greens.jpg",
+    "date_added": "2017-02-28-025711",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025711_tudor-city-greens.jpg.json"
+  },
+  {
+    "name": "daylight-saving-1",
+    "file_name": "daylight-saving-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2159/media/2017-03-08-115006/daylight-saving-1.jpg",
+    "date_added": "2017-03-08-115006",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2159_media_2017-03-08-115006_daylight-saving-1.jpg.json"
+  },
+  {
+    "name": "daylight-saving-2",
+    "file_name": "daylight-saving-2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2159/media/2017-03-08-115007/daylight-saving-2.jpg",
+    "date_added": "2017-03-08-115008",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2159_media_2017-03-08-115007_daylight-saving-2.jpg.json"
+  },
+  {
+    "name": "daylight-saving-3",
+    "file_name": "daylight-saving-3.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2159/media/2017-03-08-115008/daylight-saving-3.jpg",
+    "date_added": "2017-03-08-115009",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2159_media_2017-03-08-115008_daylight-saving-3.jpg.json"
+  },
+  {
+    "name": "Cafe-Boulud-Upper-East-Side-NYC .jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Cafe-Boulud-Upper-East-Side-NYC .jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Cafe-Boulud-Upper-East-Side-NYC .json"
+  },
+  {
+    "name": "Central-Park-Reservoir-NYC-Upper-East-Side-WestHouse-Hotel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Central-Park-Reservoir-NYC-Upper-East-Side-WestHouse-Hotel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Central-Park-Reservoir-NYC-Upper-East-Side-WestHouse-Hotel.json"
+  },
+  {
+    "name": "Fivestory-NY-on-the-Upper-East-Side.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Fivestory-NY-on-the-Upper-East-Side.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Fivestory-NY-on-the-Upper-East-Side.json"
+  },
+  {
+    "name": "guggenheim-upper-east-side.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/guggenheim-upper-east-side.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_guggenheim-upper-east-side.json"
+  },
+  {
+    "name": "Met-Breuer-Upper-East-Side-NYC-WestHouse-Hotel.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Met-Breuer-Upper-East-Side-NYC-WestHouse-Hotel.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Met-Breuer-Upper-East-Side-NYC-WestHouse-Hotel.json"
+  },
+  {
+    "name": "Sarabeths-Upper-East-Side-NYC-totallychibi.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Sarabeths-Upper-East-Side-NYC-totallychibi.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Sarabeths-Upper-East-Side-NYC-totallychibi.json"
+  },
+  {
+    "name": "The-Gilroy-Upper-East-Side-from-carinaaalee.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/The-Gilroy-Upper-East-Side-from-carinaaalee.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_The-Gilroy-Upper-East-Side-from-carinaaalee.json"
+  },
+  {
+    "name": "Upper-East-Side-NYC-WestHouse-Hotel-New-York.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_647/media/Upper-East-Side-NYC-WestHouse-Hotel-New-York.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_647_media_Upper-East-Side-NYC-WestHouse-Hotel-New-York.json"
+  },
+  {
+    "name": "Alexander-and-Bonin-New-York-Art-Exhibitions.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/Alexander-and-Bonin-New-York-Art-Exhibitions.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_Alexander-and-Bonin-New-York-Art-Exhibitions.json"
+  },
+  {
+    "name": "Auste-at-Greenspon-Gallery-New-York-Art-Exhibitions.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/Auste-at-Greenspon-Gallery-New-York-Art-Exhibitions.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_Auste-at-Greenspon-Gallery-New-York-Art-Exhibitions.json"
+  },
+  {
+    "name": "Guggenheim-Museum-NYC-Exhibitions-to-See-Right-Now.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/Guggenheim-Museum-NYC-Exhibitions-to-See-Right-Now.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_Guggenheim-Museum-NYC-Exhibitions-to-See-Right-Now.json"
+  },
+  {
+    "name": "Max-Beckmann-Met-New-York-Art-Exhibitions.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/Max-Beckmann-Met-New-York-Art-Exhibitions.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_Max-Beckmann-Met-New-York-Art-Exhibitions.json"
+  },
+  {
+    "name": "Metropolitan-Museum-of-Art-New-York-Art-Exhibitions.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/Metropolitan-Museum-of-Art-New-York-Art-Exhibitions.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_Metropolitan-Museum-of-Art-New-York-Art-Exhibitions.json"
+  },
+  {
+    "name": "MoMA-New-York-Art-Exhibitions.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/MoMA-New-York-Art-Exhibitions.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_MoMA-New-York-Art-Exhibitions.json"
+  },
+  {
+    "name": "the-whitney-final1-_800.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_797/media/the-whitney-final1-_800.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_797_media_the-whitney-final1-_800.json"
+  },
+  {
+    "name": "six-nyc-holiday.jpg",
+    "url": "//cdn.traveltripper.io/site-assets/92_368_843/media/six-nyc-holiday.jpg",
+    "git_file_name": "_assets/image_data/site-assets_92_368_843_media_six-nyc-holiday.json"
+  }
+]

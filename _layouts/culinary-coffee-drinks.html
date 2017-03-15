@@ -51,7 +51,7 @@
 {% assign categoryIds = LocationsInCategory-Culinary-Coffee.category | map: 'id' %}
 {% if categoryIds contains '56b0c33b77e2f50003f8af62' %}
     			<div id="infocontainerB{{ LocationsInCategory-Culinary-Coffee.url_friendly_name }}" class="infocontainer">
-    		        <a href="{{ LocationsInCategory-Culinary-Coffee.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-Culinary-Coffee.image.url }}" alt="{{ LocationsInCategory-Culinary-Coffee.title }}" /></a>
+    		        <!-- <a href="{{ LocationsInCategory-Culinary-Coffee.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-Culinary-Coffee.image.url }}" alt="{{ LocationsInCategory-Culinary-Coffee.title }}" /><!--</a>-->
     			    <h2>{{ LocationsInCategory-Culinary-Coffee.title }}</h2>
     			  	<a href="#" class="closer"><i class="fa fa-times"></i></a>
     			  	<div class="clear"></div>

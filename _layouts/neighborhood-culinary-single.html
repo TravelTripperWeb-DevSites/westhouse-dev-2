@@ -53,7 +53,7 @@
 {% assign categoryIds = LocationsInCategory-Culinary-Guide.category | map: 'id' %}
 {% if categoryIds contains '56b0c32277e2f50003f8af60' %}
     			<div id="infocontainerB{{ LocationsInCategory-Culinary-Guide.url_friendly_name }}" class="infocontainer">
-    		        <a href="{{ LocationsInCategory-Culinary-Guide.id | permalink: model_dir: 'culinary-single' }}"><img src="{{ LocationsInCategory-Culinary-Guide.image.url }}" alt="{{ LocationsInCategory-Culinary-Guide.title }}" /></a>
+    		        <!--<a href="{{ LocationsInCategory-Culinary-Guide.id | permalink: model_dir: 'culinary-single' }}">--><img src="{{ LocationsInCategory-Culinary-Guide.image.url }}" alt="{{ LocationsInCategory-Culinary-Guide.title }}" /><!--</a>-->
     			    <h2>{{ LocationsInCategory-Culinary-Guide.title }}</h2>
     			  	<a href="#" class="closer"><i class="fa fa-times"></i></a>
     			  	<div class="clear"></div>
@@ -152,7 +152,7 @@
 		
 			<div class="container culinary-guide-main">
 		
-				<h1>{{Culinary-Guide.title}}</h1>
+				<h2 class="main-heading">{{Culinary-Guide.title}}</h2>
 		
 			   {{Culinary-Guide.contents}} 
 			   

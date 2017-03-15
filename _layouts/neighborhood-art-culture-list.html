@@ -118,7 +118,7 @@
 {% assign categoryIds = LocationsInCategory-Arts-and-Culture.category | map: 'id' %}
 {% if categoryIds contains '55a7aeff226e50b963000018' %}
 			      <div id="infocontainerB{{ LocationsInCategory-Arts-and-Culture.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ LocationsInCategory-Arts-and-Culture.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationsInCategory-Arts-and-Culture.image.url }}" alt="{{ LocationsInCategory-Arts-and-Culture.title }}" /></a>
+				  	<!--<a href="{{ LocationsInCategory-Arts-and-Culture.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationsInCategory-Arts-and-Culture.image.url }}" alt="{{ LocationsInCategory-Arts-and-Culture.title }}" /><!--</a>-->
 				  	<h2>{{ LocationsInCategory-Arts-and-Culture.title }}</h2>
 				  
 				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>

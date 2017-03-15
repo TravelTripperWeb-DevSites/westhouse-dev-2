@@ -118,7 +118,7 @@
 {% assign categoryIds = LocationInCategory-Shopping-in-NYC.category | map: 'id' %}
 {% if categoryIds contains '55a7af15226e50e91600001a' %}
 			      <div id="infocontainerB{{ LocationInCategory-Shopping-in-NYC.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ LocationInCategory-Shopping-in-NYC.id | permalink: model_dir: 'neighborhood-single' }}"><img src="{{ LocationInCategory-Shopping-in-NYC.image.url }}" alt="{{ LocationInCategory-Shopping-in-NYC.title }}" /></a>
+				  	<!--<a href="{{ LocationInCategory-Shopping-in-NYC.id | permalink: model_dir: 'neighborhood-single' }}">--><img src="{{ LocationInCategory-Shopping-in-NYC.image.url }}" alt="{{ LocationInCategory-Shopping-in-NYC.title }}" /><!--</a>-->
 				  	<h2>{{ LocationInCategory-Shopping-in-NYC.title }}</h2>
 				  
 				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>

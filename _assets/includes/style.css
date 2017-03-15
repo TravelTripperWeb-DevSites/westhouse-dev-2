@@ -799,12 +799,14 @@ h6 {font-size: 55px;}
     letter-spacing: 2px;
 }
 
-.aw-con .awc-one {
+.aw-con .awc-one, .awc-one h1 {
     font-family: 'GothamBold';
     font-weight: 500;
     margin-bottom: 21px;
 }
-
+.awc-one h1 {
+    font-size: 14px;
+}
 .aw-con .awc-two {
     font-family: 'GothamLight';
 }
@@ -1846,7 +1848,7 @@ a.hasher {
   width: 80%;
 }
 
-#roomdetails h1 {
+#roomdetails h1, #roomdetails h2.main-heading {
   font-family: GothamThin;
   font-size: 73px;
   color: #474747;
@@ -3067,7 +3069,7 @@ aside a.button1 {
 
 
 /* //////////////////////////////////////////////////////////////////// Neighborhood Single */
-#maincontent h1 {
+#maincontent h1, #maincontent h2.main-heading {
   font-family: GothamThin;
   font-size: 55px;
   color: #333333;
@@ -7279,7 +7281,7 @@ strong, b {
     margin-right: 5%;
 }
 
-.merch-copy h1 {
+.merch-copy h1, .merch-copy h2 {
     font-family: 'GothamLight';
     color: #fff;
     font-size: 30px;
@@ -7287,7 +7289,7 @@ strong, b {
     margin: 0 0 5px 0;
 }
 
-.merch-copy h1 span {
+.merch-copy h1 span, .merch-copy h2 span {
     font-family: 'GothamBold';
     font-size: 14px;
     display: block;
