@@ -430,6 +430,36 @@
     "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-02-28-025711_tudor-city-greens.jpg.json"
   },
   {
+    "name": "mid-night",
+    "file_name": "mid-night.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-03-15-164052/mid-night.jpg",
+    "date_added": "2017-03-15-164052",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-03-15-164052_mid-night.jpg.json"
+  },
+  {
+    "name": "bamcinemafest",
+    "file_name": "bamcinemafest.gif",
+    "file_type": "image/gif",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-03-21-035459/bamcinemafest.gif",
+    "date_added": "2017-03-21-035459",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-03-21-035459_bamcinemafest.gif.json"
+  },
+  {
+    "name": "header-image-blog2",
+    "file_name": "header-image-blog2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_1750/media/2017-03-21-084954/header-image-blog2.jpg",
+    "date_added": "2017-03-21-084954",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_1750_media_2017-03-21-084954_header-image-blog2.jpg.json"
+  },
+  {
     "name": "daylight-saving-1",
     "file_name": "daylight-saving-1.jpg",
     "file_type": "image/jpeg",
@@ -458,6 +488,146 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_92_368_2159_media_2017-03-08-115008_daylight-saving-3.jpg.json"
+  },
+  {
+    "name": "spring-blooms-1",
+    "file_name": "spring-blooms-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-100725/spring-blooms-1.jpg",
+    "date_added": "2017-04-04-100726",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-100725_spring-blooms-1.jpg.json"
+  },
+  {
+    "name": "spring-blooms-2",
+    "file_name": "spring-blooms-2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-100727/spring-blooms-2.jpg",
+    "date_added": "2017-04-04-100727",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-100727_spring-blooms-2.jpg.json"
+  },
+  {
+    "name": "spring-blooms-header",
+    "file_name": "spring-blooms-header.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-100728/spring-blooms-header.jpg",
+    "date_added": "2017-04-04-100728",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-100728_spring-blooms-header.jpg.json"
+  },
+  {
+    "name": "central-park-header",
+    "file_name": "central-park-header.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-164132/central-park-header.jpg",
+    "date_added": "2017-04-04-164132",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-164132_central-park-header.jpg.json"
+  },
+  {
+    "name": "central-park-1",
+    "file_name": "central-park-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-164736/central-park-1.jpg",
+    "date_added": "2017-04-04-164736",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-164736_central-park-1.jpg.json"
+  },
+  {
+    "name": "central-park-2",
+    "file_name": "central-park-2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2163/media/2017-04-04-164737/central-park-2.jpg",
+    "date_added": "2017-04-04-164737",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2163_media_2017-04-04-164737_central-park-2.jpg.json"
+  },
+  {
+    "name": "Blowout",
+    "file_name": "Blowout.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2555/media/2017-04-11-202453/Blowout.jpg",
+    "date_added": "2017-04-11-202454",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2555_media_2017-04-11-202453_Blowout.jpg.json"
+  },
+  {
+    "name": "film-society",
+    "file_name": "film-society.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-20-081656/film-society.jpg",
+    "date_added": "2017-04-20-081656",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-20-081656_film-society.jpg.json"
+  },
+  {
+    "name": "header",
+    "file_name": "header.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-20-081657/header.jpg",
+    "date_added": "2017-04-20-081657",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-20-081657_header.jpg.json"
+  },
+  {
+    "name": "jazz",
+    "file_name": "jazz.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-20-081657/jazz.jpg",
+    "date_added": "2017-04-20-081658",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-20-081657_jazz.jpg.json"
+  },
+  {
+    "name": "julliard",
+    "file_name": "julliard.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-20-081805/julliard.jpg",
+    "date_added": "2017-04-20-081805",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-20-081805_julliard.jpg.json"
+  },
+  {
+    "name": "library",
+    "file_name": "library.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-20-081806/library.jpg",
+    "date_added": "2017-04-20-081806",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-20-081806_library.jpg.json"
+  },
+  {
+    "name": "IMG_2638",
+    "file_name": "IMG_2638.JPG",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-27-023836/IMG_2638.JPG",
+    "date_added": "2017-04-27-023836",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-27-023836_IMG_2638.JPG.json"
+  },
+  {
+    "name": "header",
+    "file_name": "header.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/92_368_2778/media/2017-04-27-033001/header.jpg",
+    "date_added": "2017-04-27-033001",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_92_368_2778_media_2017-04-27-033001_header.jpg.json"
   },
   {
     "name": "Cafe-Boulud-Upper-East-Side-NYC .jpg",

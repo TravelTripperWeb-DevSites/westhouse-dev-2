@@ -314,8 +314,44 @@
     ],
     [
       {
+        "title": "My New York Necessities: Ashley Clarkson",
+        "file": "Blog38.json"
+      }
+    ],
+    [
+      {
+        "title": "Film Festival Season",
+        "file": "Blog39.json"
+      }
+    ],
+    [
+      {
         "title": "Parks where you can dine outside",
         "file": "Blog4.json"
+      }
+    ],
+    [
+      {
+        "title": "Where To See Spring Blooms In NYC",
+        "file": "Blog40.json"
+      }
+    ],
+    [
+      {
+        "title": "A Spring-Inspired Self-Guided Walking Tour Of Central Park",
+        "file": "Blog41.json"
+      }
+    ],
+    [
+      {
+        "title": "Art and Culture in and around Lincoln Center",
+        "file": "Blog42.json"
+      }
+    ],
+    [
+      {
+        "title": "Day trips for art lovers in NYC",
+        "file": "Blog43.json"
       }
     ],
     [
@@ -1360,7 +1396,7 @@
     ],
     [
       {
-        "title": "TIMES SQUARE",
+        "title": "Luxury Hotel near TImes Square | The WestHouse Hotel",
         "file": "times-square.json"
       }
     ],
@@ -1400,6 +1436,24 @@
       {
         "title": "HB Shopping Spree",
         "file": "Offer2.json"
+      }
+    ],
+    [
+      {
+        "title": "A day at the fair",
+        "file": "Offer3.json"
+      }
+    ],
+    [
+      {
+        "title": "Girls Getaway",
+        "file": "Offer4.json"
+      }
+    ],
+    [
+      {
+        "title": "Mother-Daughter Special",
+        "file": "Offer5.json"
       }
     ],
     [
