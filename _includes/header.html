@@ -15,7 +15,7 @@
 {% if page.meta_keywords %}<meta name='keywords' content='{{page.meta_keywords}}'>{% endif %}
 <!--<link rel='canonical' href='{{page.permalink}}' />-->
 {% endif %}
-<link rel="canonical" href="http://www.westhousehotelnewyork.com{{ page.url }}" />
+<link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url | replace: "/index.html", "/" }}">
 
 <link rel="shortcut icon" type="image/x-icon" href="/assets/images/652/original/favicon.png" />
 <meta name="google-site-verification" content="o8VlBtaiTZfPQEA8F8PzAxElXdLT3phJbY1io6O0cLM" />
@@ -34,7 +34,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/includes/media.css" />
 
 <!-- Spinner -->
-<link rel="stylesheet" href="http://css-spinners.com/css/spinner/throbber.css" type="text/css">
+<link rel="stylesheet" href="https://css-spinners.com/css/spinner/throbber.css" type="text/css">
 
 <!-- Scripts -->
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
