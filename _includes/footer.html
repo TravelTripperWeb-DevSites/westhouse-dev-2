@@ -57,6 +57,14 @@
 				</div>
 			</div>
 		</div>
+
+{% capture page_url %}
+  {{ page.url }}
+{% endcapture %}
+{% if page_url contains "save-the-children" %}
+
+{% else %}
+
 		<!-- save the girl child setion start-->
 		<section class="save-the-child-section">
 		            <div class="save-the-child-container">
@@ -70,12 +78,13 @@
 		            </div>
 		            </div>
 		            <div class="button-container" >
-		            <a href="https://goo.gl/OJexpZ" target="_blank" class="button-common">DONATE NOW</a>
+		            <a href="/save-the-children" target="_blank" class="button-common">MORE INFO</a>
 		            </div>
 		            <div class="clear-both"></div>
 		            </div>
-		</section
+		</section>
 		<!-- save the girl child setion end-->
+{% endif %}
 		<div id="footer">
 			<div class="col2">
 

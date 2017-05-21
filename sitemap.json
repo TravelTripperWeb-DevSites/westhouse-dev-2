@@ -476,6 +476,19 @@
         }
       ]
     },
+    "save-the-children": {
+      "__PAGES__": [
+        {
+          "label": "save-the-children",
+          "published": true,
+          "locales": {
+            "en": "/save-the-children/"
+          },
+          "data_source": null,
+          "source_path": "save-the-children/index.html"
+        }
+      ]
+    },
     "sitemap": {
       "__PAGES__": [
         {
@@ -887,6 +900,11 @@
     "privacy-policy/index.html/nav_amenities_content.json",
     "privacy-policy/index.html/nav_dining_content.json",
     "privacy-policy/index.html/nav_neighborhood_content.json",
+    "save-the-children/index.html/nav_rooms_content.json",
+    "save-the-children/index.html/nav_offers_content.json",
+    "save-the-children/index.html/nav_amenities_content.json",
+    "save-the-children/index.html/nav_dining_content.json",
+    "save-the-children/index.html/nav_neighborhood_content.json",
     "sitemap/index.html/content_image.json",
     "sitemap/index.html/the_content.json",
     "sitemap/index.html/nav_rooms_content.json",
@@ -2194,5 +2212,5 @@
   "__SETTINGS__": [
     "_model_filters"
   ],
-  "__SHA__": "b88176d1c40e5ef14a4da07692687a3cf60b1cc2"
+  "__SHA__": "ec3c6fef9a79987e78c53cca46327796f20a1ff2"
 }
