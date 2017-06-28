@@ -255,8 +255,24 @@
       "file": "Blog47.json"
     },
     {
+      "title": "Family-Friendly Museums Worth Visiting",
+      "file": "Blog48.json"
+    },
+    {
+      "title": "Dig In to the Most Popular Sweet Treats in NYC",
+      "file": "Blog49.json"
+    },
+    {
       "title": "5 NYC Parks Where You Can Dine Outside",
       "file": "Blog5.json"
+    },
+    {
+      "title": "10 Things to Pack in Your Carry-on Bag",
+      "file": "Blog50.json"
+    },
+    {
+      "title": "The 10 most Instagram-worthy spots in Midtown",
+      "file": "Blog51.json"
     },
     {
       "title": "WestHouse’s Guide to Biking the Hudson River Greenway",
@@ -985,10 +1001,6 @@
     {
       "title": "Girls Getaway",
       "file": "Offer4.json"
-    },
-    {
-      "title": "Special Resident Package",
-      "file": "special-resident-package.json"
     },
     {
       "title": "$25 Valet Parking",
