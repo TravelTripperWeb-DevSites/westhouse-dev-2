@@ -5,154 +5,91 @@
 {% assign seo_description = Offers.seo_description %}
 
 {% include header.html %}
-
-	
-		<div id="featuredcontent" style="background-image: url({{Offers.image.url}});">
-
-			<h1 class="contenttitle">Offers</h1>
-
-			<div class="reserve"><a class="button1" href="#">Reserve</a></div>
-
-		</div>
-
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
-
-           <!-- include booking form -->
-
-            {% include booking_form_interior.html %}
-
-            <!-- // include booking form -->
-		</div>
-
-		<div class="subnav">
-			<ul>
-			  {% for Offers in site.data._models.Offers %}
-
-        		<li><a href="{{ Offers.id | permalink: model_dir: 'offers' }}">{{ Offers.title }}</a></li>
-            
-            {% endfor %}
-            
-			</ul>
-		</div>
-		
-        <div class="subnavmobile">
-          <ul>
-            {% for Offers in site.data._models.Offers %}
-            <li><a href="{{ Offers.id | permalink: model_dir: 'offers' }}"><span>{{ Offers.title }}</span></a></li>
-            {% endfor %}
-            <div class="clear"></div>
-          </ul>
-          
-          <div class="subclose"><i class="fa fa-bars"></i><span>View More Offers</span></div>
-        </div>
-
-		<div id="roomdetails">
-		
-		    <div class="share">
-
-				<h3>Share</h3>
-				
-				<script>
+<div class="share-offer">
+  <div id="featuredcontent" class="featuredcontent" style="background-image: url({{Offers.image.url}});">
+    <h1 class="contenttitle">Offers</h1>
+    <div class="reserve"><a class="button1" href="#">Reserve</a></div>
+  </div>
+  <div id="contentwidget">
+    <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
+    
+    <!-- include booking form --> 
+    
+    {% include booking_form_interior.html %} 
+    
+    <!-- // include booking form --> 
+  </div>
+  <div class="subnav">
+    <ul>
+      {% for Offers in site.data._models.Offers %}
+      <li><a href="{{ Offers.id | permalink: model_dir: 'offers' }}" class="offer-title">{{ Offers.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="subnavmobile">
+    <ul>
+      {% for Offers in site.data._models.Offers %}
+      <li><a href="{{ Offers.id | permalink: model_dir: 'offers' }}" class="offer-title"><span>{{ Offers.title }}</span></a></li>
+      {% endfor %}
+      <div class="clear"></div>
+    </ul>
+    <div class="subclose"><i class="fa fa-bars"></i><span>View More Offers</span></div>
+  </div>
+  <div id="roomdetails">
+    <div class="share">
+      <h3>Share</h3>
+      <script>
 				    var offer_content = stripHTML('{{ Offers.contents }}');
 				</script>
-
-				<div class="socialmedia">
-					<ul>
-						<li><a href="#" target="_blank" onclick="window.open('https://www.facebook.com/dialog/feed?app_id=489136131246132&display=popup&caption='+ offer_content +'&link='+ window.location.href +'&redirect_uri='+ window.location.href,'popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text={{ Offers.title }}&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="mailto:?subject={{ Offers.title }}&body='+ offer_content +'" target="_blank"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-				</div>
-
-			</div>
-			
-			<div class="container">
-
-				<h2 class="main-heading">{{ Offers.title }}</h2>
-
-				<!--<div class="roomdate">-->
-				<!--	<div id="datepicker" class="roomdatepicker"></div>-->
-				<!--	<p>select your dates to see rates and availability</p>-->
-				<!--</div>-->
-				
-				<div class="roomdate">
-
-					<div class="datepickerman"></div>
-
-					<div class="reservationform ahiddenform">
-
-
-					<form autocomplete="off"  method="get" enctype="multipart/form-data" name="omni_reservation_form_" action="https://westhousehotelnewyork.reztrip.com/search?" target="_self">
-					    <input type="hidden" name="rate_code" value="{{ Offers.offer_code }}" />
-                        
-
-                         	
-                        
-                        
-						<span class="calsec" style="margin-left: 10px;">
-							<input type="text"  id="arrival_dates" name="arrival_date" placeholder="Arrival" class="calendarsection" />
-							<input type="hidden"  id="arv">
-							<i class="fa fa-calendar"></i>
-						</span>
-
-						<span class="calsec">
-							<input type="text" id="departure_dates" name="departure_date" placeholder="Departure" class="calendarsection" />
-							<input type="hidden" id="dep">
-							<i class="fa fa-calendar"></i>
-						</span>
-
-						<span class="dropsec" style="margin-right: 6px">
-							<select name="adults[]" id="adults" class="halfsies">
-								<option value="1">1 Adult</option>
-								<option value="2" selected="selected">2 Adults</option>
-								<option value="3">3 Adults</option>
-								<option value="4">4 Adults</option>
-							</select>
-						</span>
-
-						<span class="dropsec">
-							<select name="children[]" id="children" class="halfsies">
-								<option value="0">0 Kids</option>
-								<option value="1">1 Kid</option>
-								<option value="2">2 Kids</option>
-								<option value="3">3 Kids</option>
-							</select>
-						</span>
-
-						<button type="submit" class="button1 search-now-button">Search Now</button>
-
-
-					</form>
-
-					</div>
-
-					<p>Click to change arrival/departure dates</p>
-				</div>
-
-				<div class="roominfo">
-		            
-		            {{ Offers.contents }}
-		            <br> 
-					<p><strong><a class="offbtn" href="#" onClick="$('.search-now-button').click();">BOOK NOW</a></strong></p>
-
-					<!--<div class="bookrate" style="border: none">-->
-
-					<!--	<div class="directrate">-->
-					<!--		<div>Rate</div>-->
-					<!--		<div class="directprice">236.00</div>-->
-					<!--	</div>-->
-
-
-
-					<!--</div>-->
-
-				</div>
-
-			</div>
-		</div>
-
-		<!--<div id="roomrelated">
+      <div class="socialmedia">
+        <ul>
+          <li> <a href="JavaScript:Void(0);" class="share_button"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="JavaScript:Void(0);" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text={{ Offers.title }}&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="mailto:?subject={{ Offers.title }}&body=Hey! Check this exciting offer. {{ site.url }}{{ Offers.id | permalink: model_dir: 'offers' }}"  title="Share by e-mail"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="main-heading">{{ Offers.title }}</h2>
+      
+      <div class="roomdate">
+        <div class="datepickerman"></div>
+        <div class="reservationform ahiddenform">
+          <form autocomplete="off"  method="get" enctype="multipart/form-data" name="omni_reservation_form_" action="https://westhousehotelnewyork.reztrip.com/search?" target="_self">
+            <input type="hidden" name="rate_code" value="{{ Offers.offer_code }}" />
+            <span class="calsec" style="margin-left: 10px;">
+            <input type="text"  id="arrival_dates" name="arrival_date" placeholder="Arrival" class="calendarsection" />
+            <input type="hidden"  id="arv">
+            <i class="fa fa-calendar"></i> </span> <span class="calsec">
+            <input type="text" id="departure_dates" name="departure_date" placeholder="Departure" class="calendarsection" />
+            <input type="hidden" id="dep">
+            <i class="fa fa-calendar"></i> </span> <span class="dropsec" style="margin-right: 6px">
+            <select name="adults[]" id="adults" class="halfsies">
+              <option value="1">1 Adult</option>
+              <option value="2" selected="selected">2 Adults</option>
+              <option value="3">3 Adults</option>
+              <option value="4">4 Adults</option>
+            </select>
+            </span> <span class="dropsec">
+            <select name="children[]" id="children" class="halfsies">
+              <option value="0">0 Kids</option>
+              <option value="1">1 Kid</option>
+              <option value="2">2 Kids</option>
+              <option value="3">3 Kids</option>
+            </select>
+            </span>
+            <button type="submit" class="button1 search-now-button">Search Now</button>
+          </form>
+        </div>
+        <p>Click to change arrival/departure dates</p>
+      </div>
+      <div class="roominfo"> {{ Offers.contents }} <br>
+        <p><strong><a class="offbtn" href="#" onClick="$('.search-now-button').click();">BOOK NOW</a></strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div id="roomrelated">
 
 			<div class="container">
 
@@ -169,4 +106,37 @@
 
 			</div>
 		</div>-->
-{% include footer.html %}
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function() {
+	FB.init({appId: '1883009305284419', status: true, cookie: true,
+	xfbml: true});
+	};
+	(function() {
+	var e = document.createElement('script'); e.async = true;
+	e.src = document.location.protocol +
+	'//connect.facebook.net/en_US/all.js';
+	document.getElementById('fb-root').appendChild(e);
+	}());
+	
+	$(document).ready(function() {
+		$('.share_button').click(function(e){            
+		   e.preventDefault();
+			FB.ui({
+				method: 'share_open_graph',
+				action_type: 'og.shares',
+				action_properties: JSON.stringify({
+					object : {
+					   'og:url': window.location.href,
+					   'og:title': $(this).closest(".share-offer").find("h2").text(),
+					   'og:description': $(".roominfo p").text(),
+					   'og:image:width': '1200',
+					   'og:image:height': '650',
+					   'og:image': $(this).closest(".share-offer").find('.featuredcontent').css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+					}
+				})
+			});
+		});
+	});
+</script> 
+{% include footer.html %} 

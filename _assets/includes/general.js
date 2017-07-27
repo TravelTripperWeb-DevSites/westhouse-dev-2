@@ -5,6 +5,7 @@ function stripHTML(dirtyString) {
 }
 
 $(document).ready(function() {
+	
 
 $('.closethiswindow').click(function(){
     $('.merch-sec').removeClass('slideup');

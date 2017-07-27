@@ -725,17 +725,12 @@ and (max-width: 1023px) {
 
 	#signup .signuptext { width: 400px;}
 	#signup .signupform { width: auto;}
-<<<<<<< HEAD
 	
 	#signup .signupform .da_block {
 		float: none;
 		margin: 0 auto;
 		width: 400px;
 	}
-	
-=======
-
->>>>>>> master
 	#signup .signupform input {
 		display: block;
 		width: 100%;
@@ -765,9 +760,13 @@ and (max-width: 1023px) {
 
 	/* PAGE - OFFER LIST */
 
+	.halfoffer{
+		width: 43%
+	}
+
 	.halfoffer.steerleft,
 	.halfoffer.steerright	{
-		text-align: left;
+		text-align: center;
 	}
 
 	.halfoffer.steerleft .hoffer-one, .halfoffer.steerright .hoffer-two,
@@ -1864,6 +1863,10 @@ and (max-width: 799px) {
 
 	.halfoffer {
 		margin: 0 0 20px;
+		width: 96%;
+	}
+	.offermedia{
+		float: none;
 	}
 
 	.halfoffer.steerleft .hoffer-one,
