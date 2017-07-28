@@ -8020,11 +8020,30 @@ div.picnic-post
 .back-to-events a:hover{
   color: #000;
   }
-
-
-
-
-
+/*Page Not Found Start*/
+.errorpage{
+  padding: 30px 30px 0px 30px;
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.errorpage h1{
+  margin-bottom: 0px !important;
+}
+.sorry{
+    font-family: GothamThin;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 15px auto;
+}
+.sorry a{
+  font-weight: 600;
+}
+.sorry a:hover{
+    text-decoration: underline;
+  }
+/*Page Not Found End*/
 .dropdown-social {
   position: relative;
   float: right;
@@ -8110,3 +8129,4 @@ div.picnic-post
   font-size: 1px;
   padding: 0;
 }
+
