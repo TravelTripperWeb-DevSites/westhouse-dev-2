@@ -1578,7 +1578,7 @@ a.hasher {
 
 #contentwidget .logo img {
   max-width: 100%;
-  margin-left: 40px;
+  margin-left: 13px;
 }
 
 #contentwidget .reservationform {
@@ -5323,7 +5323,7 @@ body .ui-tooltip {
   font-size: 18px;
   color: #fff;
   border-right: 1px solid #fff;
-  width: 5%;
+  width: 12%;
   float: left;
 }
 
@@ -5363,7 +5363,7 @@ body .ui-tooltip {
   font-size: 18px;
   color: #fff;
   border-right: 1px solid #fff;
-  width: 5%;
+  width: 12%;
   float: left;
 }
 
@@ -6752,7 +6752,7 @@ ul#map-side-bar li:nth-child(2) {
     margin: auto;
     left:auto;
     right: 0;
-    max-width: 140px;
+    max-width: 165px;
     bottom:0;
     text-align: center;
 }
@@ -8130,3 +8130,184 @@ div.picnic-post
   padding: 0;
 }
 
+
+/*Nav Bar*/
+
+.navbar-nav {
+    float: none !important;
+}
+.navbar-nav>li {
+    float: none !important;
+    display: inline-block;
+}
+.nav>li>a {
+    padding: 10px 7px;
+}
+.navbar {
+    z-index: 99999999 !important;
+}
+.navbar-brand{
+    height: auto!important;
+}
+.navbar-brand>img {
+    display: block;
+    width: 250px !important;
+    height: auto !important;
+}
+.navbar-nav>li {
+    margin-top: 35px !important;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.035em;
+}
+@media only screen and (max-width: 1119px) and (min-width: 990px) {
+    .navbar-nav>li {
+        letter-spacing: 0.015em !important;
+        font-size: 8.9px !important;
+    }
+}
+@media only screen and (max-width: 1280px) and (min-width: 1120px) {
+    .navbar-nav>li {
+        font-size: 11px !important;
+    }
+}
+
+.navbar {
+    background-color: white;
+    min-height: 75px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        font-weight: 700;
+        color: black;
+    }
+}
+.navbar-toggle {
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: black;
+}
+
+.buttonres {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-align: center;
+    text-transform: uppercase;
+    top: 30px;
+    position: absolute;
+    right: 10px;
+    display: block;
+    background: #333;
+    color: white !important;
+    padding: 13px 28px;
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .buttonres {
+        letter-spacing: .06em;
+        font-size: 12px;
+        /*margin: 17px 0 0 0;*/
+        padding: 9px 10px;
+    }
+}
+.buttonres:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 700;
+        color: black;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 5px 3px;
+    }
+}
+ @media (max-width: 435px) {
+    .navbar-brand {
+        padding: 22px 0px !important;
+    }
+}
+ @media (max-width: 435px) {
+    .navbar-header a img {
+        width: 160px!important;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none !important;
+       
+    }
+    .navbar-nav>li {
+        float: none;
+        display: block;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+}
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-width: 995px;
+    padding-right: 200px;
+    margin: 0 auto;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+.navbar-toggle {
+    position: absolute;
+    right: 143px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+@media only screen and (max-width: 768px) {
+
+      .navbar-toggle{
+          right: 90px;
+      }
+      .navbar-fixed-top .navbar-collapse {
+        padding-right: 0px;
+      }
+
+  
+  }

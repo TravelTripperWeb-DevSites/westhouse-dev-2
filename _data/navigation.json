@@ -1,0 +1,59 @@
+{
+	 'mainnav':[ 
+		
+		{
+			'title':'Room & Suites',
+			'name': 'rooms',
+			'url': '/luxury-rooms-suites-nyc/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Offers',
+			'name': 'offers',
+			'url': '/westhouse-offers/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Amenities',
+			'name': 'amenities',
+			'url': '/luxury-hotel-amenities-nyc/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Dining',
+			'name': 'dining',
+			'url': '/dining/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Gallery',
+			'name': 'photo-album',
+			'url': '/photo-album/',
+			'submenu': 'false'
+		}, 
+		{
+			'title':'Area',
+			'name': 'area',
+			'url': '/things-to-do-in-nyc/' ,
+			'submenu': 'false'
+		},
+		{
+			'title':'Partners',
+			'name': 'partners',
+			'url': '/partners/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/westhouse-blog/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Connect With Us',
+			'name': 'connect with us',
+			'url': '/social-media/',
+			'submenu': 'false'
+		}	 
+	]
+}

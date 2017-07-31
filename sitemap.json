@@ -73,7 +73,31 @@
     ]
   },
   "__ROOT__": {
+    "__PAGES__": [
+      {
+        "label": "westhouse_blog_rss.xml",
+        "published": true,
+        "locales": {
+          "en": "/westhouse_blog_rss.xml"
+        },
+        "data_source": null,
+        "source_path": "westhouse_blog_rss.xml",
+        "order": 51
+      }
+    ],
     "about": {
+      "__PAGES__": [
+        {
+          "label": "WestHouse Your House",
+          "published": true,
+          "locales": {
+            "en": "/about/"
+          },
+          "data_source": null,
+          "source_path": "about/index.html",
+          "order": 2
+        }
+      ],
       "our-house-single": {
         "__PAGES__": [
           {
@@ -83,21 +107,11 @@
               "en": "/about/our-house-single/"
             },
             "data_source": null,
-            "source_path": "about/our-house-single/index.html"
+            "source_path": "about/our-house-single/index.html",
+            "order": 1
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "WestHouse Your House",
-          "published": true,
-          "locales": {
-            "en": "/about/"
-          },
-          "data_source": null,
-          "source_path": "about/index.html"
-        }
-      ]
+      }
     },
     "about-2": {
       "__PAGES__": [
@@ -108,7 +122,8 @@
             "en": "/about-2/"
           },
           "data_source": null,
-          "source_path": "about-2/index.html"
+          "source_path": "about-2/index.html",
+          "order": 3
         }
       ]
     },
@@ -121,7 +136,8 @@
             "en": "/careers/"
           },
           "data_source": null,
-          "source_path": "careers/index.html"
+          "source_path": "careers/index.html",
+          "order": 4
         }
       ]
     },
@@ -134,11 +150,24 @@
             "en": "/contact-us/"
           },
           "data_source": null,
-          "source_path": "contact-us/index.html"
+          "source_path": "contact-us/index.html",
+          "order": 5
         }
       ]
     },
     "dining": {
+      "__PAGES__": [
+        {
+          "label": "Dining",
+          "published": true,
+          "locales": {
+            "en": "/dining/"
+          },
+          "data_source": null,
+          "source_path": "dining/index.html",
+          "order": 9
+        }
+      ],
       "speakeasy-lounge-nyc": {
         "__PAGES__": [
           {
@@ -148,7 +177,8 @@
               "en": "/dining/speakeasy-lounge-nyc/"
             },
             "data_source": null,
-            "source_path": "dining/speakeasy-lounge-nyc/index.html"
+            "source_path": "dining/speakeasy-lounge-nyc/index.html",
+            "order": 6
           }
         ]
       },
@@ -161,7 +191,8 @@
               "en": "/dining/the-terrace-nyc-rooftop-bar/"
             },
             "data_source": null,
-            "source_path": "dining/the-terrace-nyc-rooftop-bar/index.html"
+            "source_path": "dining/the-terrace-nyc-rooftop-bar/index.html",
+            "order": 7
           }
         ]
       },
@@ -174,23 +205,25 @@
               "en": "/dining/westroom-nyc-event-venue/"
             },
             "data_source": null,
-            "source_path": "dining/westroom-nyc-event-venue/index.html"
+            "source_path": "dining/westroom-nyc-event-venue/index.html",
+            "order": 8
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Dining",
-          "published": true,
-          "locales": {
-            "en": "/dining/"
-          },
-          "data_source": null,
-          "source_path": "dining/index.html"
-        }
-      ]
+      }
     },
     "events-in-nyc": {
+      "__PAGES__": [
+        {
+          "label": "Events in NYC",
+          "published": true,
+          "locales": {
+            "en": "/events-in-nyc/"
+          },
+          "data_source": null,
+          "source_path": "events-in-nyc/index.html",
+          "order": 11
+        }
+      ],
       "event-json.json": {
         "__PAGES__": [
           {
@@ -200,21 +233,11 @@
               "en": "/events-in-nyc/event-json.json/"
             },
             "data_source": null,
-            "source_path": "events-in-nyc/event-json.json/index.html"
+            "source_path": "events-in-nyc/event-json.json/index.html",
+            "order": 10
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Events in NYC",
-          "published": true,
-          "locales": {
-            "en": "/events-in-nyc/"
-          },
-          "data_source": null,
-          "source_path": "events-in-nyc/index.html"
-        }
-      ]
+      }
     },
     "luxury-hotel-amenities-nyc": {
       "__PAGES__": [
@@ -225,11 +248,24 @@
             "en": "/luxury-hotel-amenities-nyc/"
           },
           "data_source": null,
-          "source_path": "luxury-hotel-amenities-nyc/index.html"
+          "source_path": "luxury-hotel-amenities-nyc/index.html",
+          "order": 12
         }
       ]
     },
     "luxury-rooms-suites-nyc": {
+      "__PAGES__": [
+        {
+          "label": "Accomodations",
+          "published": true,
+          "locales": {
+            "en": "/luxury-rooms-suites-nyc/"
+          },
+          "data_source": null,
+          "source_path": "luxury-rooms-suites-nyc/index.html",
+          "order": 14
+        }
+      ],
       "room": {
         "__PAGES__": [
           {
@@ -239,21 +275,11 @@
               "en": "/luxury-rooms-suites-nyc/room/"
             },
             "data_source": null,
-            "source_path": "luxury-rooms-suites-nyc/room/index.html"
+            "source_path": "luxury-rooms-suites-nyc/room/index.html",
+            "order": 13
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Accomodations",
-          "published": true,
-          "locales": {
-            "en": "/luxury-rooms-suites-nyc/"
-          },
-          "data_source": null,
-          "source_path": "luxury-rooms-suites-nyc/index.html"
-        }
-      ]
+      }
     },
     "page": {
       "__PAGES__": [
@@ -264,24 +290,38 @@
             "en": "/page/"
           },
           "data_source": null,
-          "source_path": "page/index.html"
+          "source_path": "page/index.html",
+          "order": 15
         }
       ]
     },
     "page-not-found": {
       "__PAGES__": [
         {
-          "label": "Page Not Found",
+          "label": "Page Not Found | WestHouse Hotel New York",
           "published": true,
           "locales": {
             "en": "/page-not-found/"
           },
           "data_source": null,
-          "source_path": "page-not-found/index.html"
+          "source_path": "page-not-found/index.html",
+          "order": 16
         }
       ]
     },
     "partners": {
+      "__PAGES__": [
+        {
+          "label": "Partners",
+          "published": true,
+          "locales": {
+            "en": "/partners/"
+          },
+          "data_source": null,
+          "source_path": "partners/index.html",
+          "order": 21
+        }
+      ],
       "affiliate-charities": {
         "__PAGES__": [
           {
@@ -291,7 +331,8 @@
               "en": "/partners/affiliate-charities/"
             },
             "data_source": null,
-            "source_path": "partners/affiliate-charities/index.html"
+            "source_path": "partners/affiliate-charities/index.html",
+            "order": 17
           }
         ]
       },
@@ -304,7 +345,8 @@
               "en": "/partners/dayna-decker-luxury-candles/"
             },
             "data_source": null,
-            "source_path": "partners/dayna-decker-luxury-candles/index.html"
+            "source_path": "partners/dayna-decker-luxury-candles/index.html",
+            "order": 18
           }
         ]
       },
@@ -317,7 +359,8 @@
               "en": "/partners/jeffrey-beers/"
             },
             "data_source": null,
-            "source_path": "partners/jeffrey-beers/index.html"
+            "source_path": "partners/jeffrey-beers/index.html",
+            "order": 19
           }
         ]
       },
@@ -330,21 +373,11 @@
               "en": "/partners/nyc-luxury-hotel-bedding-sleep-studio/"
             },
             "data_source": null,
-            "source_path": "partners/nyc-luxury-hotel-bedding-sleep-studio/index.html"
+            "source_path": "partners/nyc-luxury-hotel-bedding-sleep-studio/index.html",
+            "order": 20
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Partners",
-          "published": true,
-          "locales": {
-            "en": "/partners/"
-          },
-          "data_source": null,
-          "source_path": "partners/index.html"
-        }
-      ]
+      }
     },
     "perfect-picnic-westhouse": {
       "__PAGES__": [
@@ -355,11 +388,24 @@
             "en": "/perfect-picnic-westhouse/"
           },
           "data_source": null,
-          "source_path": "perfect-picnic-westhouse/index.html"
+          "source_path": "perfect-picnic-westhouse/index.html",
+          "order": 22
         }
       ]
     },
     "photo-album": {
+      "__PAGES__": [
+        {
+          "label": "Galleries",
+          "published": true,
+          "locales": {
+            "en": "/photo-album/"
+          },
+          "data_source": null,
+          "source_path": "photo-album/index.html",
+          "order": 27
+        }
+      ],
       "accommodations": {
         "__PAGES__": [
           {
@@ -369,7 +415,8 @@
               "en": "/photo-album/accommodations/"
             },
             "data_source": null,
-            "source_path": "photo-album/accommodations/index.html"
+            "source_path": "photo-album/accommodations/index.html",
+            "order": 23
           }
         ]
       },
@@ -382,7 +429,8 @@
               "en": "/photo-album/dining-2/"
             },
             "data_source": null,
-            "source_path": "photo-album/dining-2/index.html"
+            "source_path": "photo-album/dining-2/index.html",
+            "order": 24
           }
         ]
       },
@@ -395,7 +443,8 @@
               "en": "/photo-album/nyc-hotel-amenities/"
             },
             "data_source": null,
-            "source_path": "photo-album/nyc-hotel-amenities/index.html"
+            "source_path": "photo-album/nyc-hotel-amenities/index.html",
+            "order": 25
           }
         ]
       },
@@ -408,21 +457,11 @@
               "en": "/photo-album/virtual-tours/"
             },
             "data_source": null,
-            "source_path": "photo-album/virtual-tours/index.html"
+            "source_path": "photo-album/virtual-tours/index.html",
+            "order": 26
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Galleries",
-          "published": true,
-          "locales": {
-            "en": "/photo-album/"
-          },
-          "data_source": null,
-          "source_path": "photo-album/index.html"
-        }
-      ]
+      }
     },
     "ppc": {
       "__PAGES__": [
@@ -433,11 +472,24 @@
             "en": "/ppc/"
           },
           "data_source": null,
-          "source_path": "ppc/index.html"
+          "source_path": "ppc/index.html",
+          "order": 28
         }
       ]
     },
     "press": {
+      "__PAGES__": [
+        {
+          "label": "Press",
+          "published": true,
+          "locales": {
+            "en": "/press/"
+          },
+          "data_source": null,
+          "source_path": "press/index.html",
+          "order": 30
+        }
+      ],
       "-press-releases": {
         "__PAGES__": [
           {
@@ -447,21 +499,11 @@
               "en": "/press/-press-releases/"
             },
             "data_source": null,
-            "source_path": "press/-press-releases/index.html"
+            "source_path": "press/-press-releases/index.html",
+            "order": 29
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Press",
-          "published": true,
-          "locales": {
-            "en": "/press/"
-          },
-          "data_source": null,
-          "source_path": "press/index.html"
-        }
-      ]
+      }
     },
     "privacy-policy": {
       "__PAGES__": [
@@ -472,7 +514,8 @@
             "en": "/privacy-policy/"
           },
           "data_source": null,
-          "source_path": "privacy-policy/index.html"
+          "source_path": "privacy-policy/index.html",
+          "order": 31
         }
       ]
     },
@@ -485,7 +528,8 @@
             "en": "/sample-offers-list/"
           },
           "data_source": null,
-          "source_path": "sample-offers-list/index.html"
+          "source_path": "sample-offers-list/index.html",
+          "order": 32
         }
       ]
     },
@@ -498,7 +542,8 @@
             "en": "/save-the-children/"
           },
           "data_source": null,
-          "source_path": "save-the-children/index.html"
+          "source_path": "save-the-children/index.html",
+          "order": 33
         }
       ]
     },
@@ -511,7 +556,8 @@
             "en": "/sitemap/"
           },
           "data_source": null,
-          "source_path": "sitemap/index.html"
+          "source_path": "sitemap/index.html",
+          "order": 34
         }
       ]
     },
@@ -524,7 +570,8 @@
             "en": "/social-media/"
           },
           "data_source": null,
-          "source_path": "social-media/index.html"
+          "source_path": "social-media/index.html",
+          "order": 35
         }
       ]
     },
@@ -537,7 +584,8 @@
             "en": "/ta-exclusive/"
           },
           "data_source": null,
-          "source_path": "ta-exclusive/index.html"
+          "source_path": "ta-exclusive/index.html",
+          "order": 36
         }
       ]
     },
@@ -550,11 +598,24 @@
             "en": "/terms-of-use/"
           },
           "data_source": null,
-          "source_path": "terms-of-use/index.html"
+          "source_path": "terms-of-use/index.html",
+          "order": 37
         }
       ]
     },
     "things-to-do-in-nyc": {
+      "__PAGES__": [
+        {
+          "label": "Area",
+          "published": true,
+          "locales": {
+            "en": "/things-to-do-in-nyc/"
+          },
+          "data_source": null,
+          "source_path": "things-to-do-in-nyc/index.html",
+          "order": 47
+        }
+      ],
       "art-culture": {
         "__PAGES__": [
           {
@@ -564,11 +625,24 @@
               "en": "/things-to-do-in-nyc/art-culture/"
             },
             "data_source": null,
-            "source_path": "things-to-do-in-nyc/art-culture/index.html"
+            "source_path": "things-to-do-in-nyc/art-culture/index.html",
+            "order": 38
           }
         ]
       },
       "culinary-guide": {
+        "__PAGES__": [
+          {
+            "label": "Culinary Guide",
+            "published": true,
+            "locales": {
+              "en": "/things-to-do-in-nyc/culinary-guide/"
+            },
+            "data_source": null,
+            "source_path": "things-to-do-in-nyc/culinary-guide/index.html",
+            "order": 43
+          }
+        ],
         "coffee-and-drinks": {
           "__PAGES__": [
             {
@@ -578,7 +652,8 @@
                 "en": "/things-to-do-in-nyc/culinary-guide/coffee-and-drinks/"
               },
               "data_source": null,
-              "source_path": "things-to-do-in-nyc/culinary-guide/coffee-and-drinks/index.html"
+              "source_path": "things-to-do-in-nyc/culinary-guide/coffee-and-drinks/index.html",
+              "order": 39
             }
           ]
         },
@@ -591,7 +666,8 @@
                 "en": "/things-to-do-in-nyc/culinary-guide/desserts-and-snacks/"
               },
               "data_source": null,
-              "source_path": "things-to-do-in-nyc/culinary-guide/desserts-and-snacks/index.html"
+              "source_path": "things-to-do-in-nyc/culinary-guide/desserts-and-snacks/index.html",
+              "order": 40
             }
           ]
         },
@@ -604,7 +680,8 @@
                 "en": "/things-to-do-in-nyc/culinary-guide/dinner/"
               },
               "data_source": null,
-              "source_path": "things-to-do-in-nyc/culinary-guide/dinner/index.html"
+              "source_path": "things-to-do-in-nyc/culinary-guide/dinner/index.html",
+              "order": 41
             }
           ]
         },
@@ -617,21 +694,11 @@
                 "en": "/things-to-do-in-nyc/culinary-guide/lunch/"
               },
               "data_source": null,
-              "source_path": "things-to-do-in-nyc/culinary-guide/lunch/index.html"
+              "source_path": "things-to-do-in-nyc/culinary-guide/lunch/index.html",
+              "order": 42
             }
           ]
-        },
-        "__PAGES__": [
-          {
-            "label": "Culinary Guide",
-            "published": true,
-            "locales": {
-              "en": "/things-to-do-in-nyc/culinary-guide/"
-            },
-            "data_source": null,
-            "source_path": "things-to-do-in-nyc/culinary-guide/index.html"
-          }
-        ]
+        }
       },
       "entertainment": {
         "__PAGES__": [
@@ -642,7 +709,8 @@
               "en": "/things-to-do-in-nyc/entertainment/"
             },
             "data_source": null,
-            "source_path": "things-to-do-in-nyc/entertainment/index.html"
+            "source_path": "things-to-do-in-nyc/entertainment/index.html",
+            "order": 44
           }
         ]
       },
@@ -655,7 +723,8 @@
               "en": "/things-to-do-in-nyc/must-see-nyc/"
             },
             "data_source": null,
-            "source_path": "things-to-do-in-nyc/must-see-nyc/index.html"
+            "source_path": "things-to-do-in-nyc/must-see-nyc/index.html",
+            "order": 45
           }
         ]
       },
@@ -668,21 +737,11 @@
               "en": "/things-to-do-in-nyc/shopping/"
             },
             "data_source": null,
-            "source_path": "things-to-do-in-nyc/shopping/index.html"
+            "source_path": "things-to-do-in-nyc/shopping/index.html",
+            "order": 46
           }
         ]
-      },
-      "__PAGES__": [
-        {
-          "label": "Area",
-          "published": true,
-          "locales": {
-            "en": "/things-to-do-in-nyc/"
-          },
-          "data_source": null,
-          "source_path": "things-to-do-in-nyc/index.html"
-        }
-      ]
+      }
     },
     "westhouse-blog": {
       "__PAGES__": [
@@ -693,7 +752,8 @@
             "en": "/westhouse-blog/"
           },
           "data_source": null,
-          "source_path": "westhouse-blog/index.html"
+          "source_path": "westhouse-blog/index.html",
+          "order": 48
         }
       ]
     },
@@ -706,30 +766,11 @@
             "en": "/westhouse-offers/"
           },
           "data_source": null,
-          "source_path": "westhouse-offers/index.html"
+          "source_path": "westhouse-offers/index.html",
+          "order": 49
         }
       ]
-    },
-    "__PAGES__": [
-      {
-        "label": "Home page",
-        "published": true,
-        "locales": {
-          "en": "/"
-        },
-        "data_source": null,
-        "source_path": "index.html"
-      },
-      {
-        "label": "westhouse_blog_rss.xml",
-        "published": true,
-        "locales": {
-          "en": "/westhouse_blog_rss.xml"
-        },
-        "data_source": null,
-        "source_path": "westhouse_blog_rss.xml"
-      }
-    ]
+    }
   },
   "__REGIONS__": [
     "about/our-house-single/index.html/content_image.json",
@@ -1317,6 +1358,11 @@
     "blog/a-day-in-the-life-of-an-nyc-foodie.html/nav_amenities_content.json",
     "blog/a-day-in-the-life-of-an-nyc-foodie.html/nav_dining_content.json",
     "blog/a-day-in-the-life-of-an-nyc-foodie.html/nav_neighborhood_content.json",
+    "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_rooms_content.json",
+    "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_offers_content.json",
+    "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_amenities_content.json",
+    "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_dining_content.json",
+    "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_neighborhood_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_rooms_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_offers_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_amenities_content.json",
@@ -2264,7 +2310,8 @@
     "ppctest3.html/nav_neighborhood_content.json"
   ],
   "__SETTINGS__": [
+    "navigation",
     "_model_filters"
   ],
-  "__SHA__": "4d7577a136257fc1534ce38eaf12a9a2f4b4e696"
+  "__SHA__": "f53f4b6636b6e1302792d1c7f3081fda01c6cfec"
 }
