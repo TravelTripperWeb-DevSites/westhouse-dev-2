@@ -2,213 +2,147 @@
 
 {% include header.html %}
 
-<!-- test 2 -->
-		    <div id="featured">
+<div id="featured">
+  <div class="elite" style="background-image: url(/assets/images/9480/original/WestHouse-Model-Exterior-6711-1.jpg);"></div>
+  <div class="nyc-finalist"><img src="/assets/images/nyc-finalist.png" alt="NYC FINALIST" /></div>
+</div>
 
-			<div class="elite" style="background-image: url(/assets/images/9480/original/WestHouse-Model-Exterior-6711-1.jpg);"></div>
+<div id="award" class="{{ template }} vote">
+  <div class="container">
 
-			<!-- <div class="logo"><img src="/assets/images/9496/original/logo.png" alt="logo" /></div> -->
+    <div class="aw-con">
+      <div class="awc-one">
+        <h1>WELCOME TO WESTHOUSE HOTEL NEW YORK</h1></div>
+      <div class="awc-two">Your home away from home when you visit New York City.</div>
+    </div>
+    <br>
+    <br>
 
-			<!-- <div class="reserve"><a class="button1" href="#">Reserve</a></div> -->
-			<div class="nyc-finalist"><img src="/assets/images/nyc-finalist.png" alt="NYC FINALIST"/></div>
+  </div>
+</div>
 
-			<!-- include booking form -->
+<div class="frieze">
+  <div class="container">
 
-			<!-- {% include booking_form.html %} -->
+    <div class="col2 resident" style="background-image: url(/assets/images/res3.jpg);">
+      <a href="{{ 'westhouse-hotel-amenities-nyc/resident-privileges' | permalink }}" class="dropanchor"></a>
+      <div class="restext">Resident Privileges</div>
+    </div>
 
-			<!-- // include booking form -->
+    <div class="col2">
+      <div class="awc-three">WELCOME TO LIVING #INRESIDENCE. </div>
+      <div class="awc-four">We invite you to make WestHouse your house. WestHouse offers a vast array of bespoke privileges; from breakfast and evening light fare with wine and beer, served daily in our lounge areas, to high-speed WiFi, all covered by our nightly Resident Fee.</div>
+    </div>
 
-			<!-- <div class="leftwall"></div>
+  </div>
+</div>
 
-			<div class="rightwall"></div> -->
+<div id="hotel">
+  <div class="container">
 
-		</div>
+    <div class="flexslider hotelslider">
+      <ul class="slides">
+        <li style="background-image: url(/assets/images/4912/original/westhouse-hotel-new-york-entrance.jpg);"></li>
+        <li style="background-image: url(/assets/images/9482/original/westhouse-hotel-new-york-terrace.jpg);"></li>
+        <li style="background-image: url(/assets/images/9481/original/westhouse-hotel-new-york-the-den3.jpg);"></li>
+      </ul>
+    </div>
 
- 
- 
-    <div id="award" class="{{ template }} vote">
-		<div class="container">
-			
-			{% comment %}{% region home_award_content %}{% endcomment%}
-			
-			<div class="aw-con">
-				<div class="awc-one"><h1>WELCOME TO WESTHOUSE HOTEL NEW YORK</h1></div>
-				<div class="awc-two">Your home away from home when you visit New York City.</div>
-			</div>
-		    <br>
-		    
-		    
-			<!--<div id="tl-container">
-			<a href="http://tlworldsbest.wylei.com/" target="_blank">
-			<img src="/assets/images/9510/original/tl-logo.png" style="width:99%; margin-top: -160px;">
-			</a>
-			
-			</div>
-            -->
-			
-            <br>
-		    
-			<!--<div class="vote_tolo" style="float:left; width: 30%; overflow:hidden;"><a href="https://tlworldsbest.wylei.com/?utm_source=Website&utm_campaign=TandLVoteNow&utm_medium=CTAbanner&utm_term=TravelandLeisure" target="_blank"><img id="tl_logo" src="/assets/images/9527/original/tl_logo.png" alt="TRAVEL & LEISURE" /></a></div> 
+    <div class="hotelcontent">
 
-		    <div class="vote_tolo_content" style="width:70%; float:right; ">
-			        <p style="font-family: BiloxiScript; color:#f57f1b !important; font-size:75px !important;"><a href="https://tlworldsbest.wylei.com/?utm_source=Website&utm_campaign=TandLVoteNow&utm_medium=CTAbanner&utm_term=TravelandLeisure" target="_blank" style="color:#f57f1b !important; padding:15px 0">Vote Now</a></p>
-			        <p style="color: #8e8e8e; text-transform: uppercase; font-family: GothamLight; font-size: 30px; important; padding: 0"> for a chance to win a $10,000 <br> dream trip from travel + leisure</p>
-			         <p style="padding:15px 0"><img src="/assets/images/9528/original/plane-tl.png" style="width: 90%;"></p>
-			    	<p style="color:#000 !important; font-family: GothamBold; font-size: 22px !important; margin-top: -40px;">We are proud to be nominated for the Travel + Leisure World's Best Award</p>
-        
-			    
-			</div>
-			-->
-			
-			
-		</div>
-	</div>
-	
-	<div class="frieze">
-	    <div class="container">
-			<div class="col2 resident" style="background-image: url(/assets/images/res3.jpg);">
-			    <a href="{{ 'westhouse-hotel-amenities-nyc/resident-privileges' | permalink }}" class="dropanchor"></a>
-				<div class="restext">Resident Privileges</div>
-			</div>
+      <div class="col3 htitle">
+        <h3>Hotel</h3>
+      </div>
 
-			<div class="col2">
-				<div class="awc-three">WELCOME TO LIVING #INRESIDENCE. </div>
-				<div class="awc-four">We invite you to make WestHouse your house. WestHouse offers a vast array of bespoke privileges; from breakfast and evening light fare with wine and beer, served daily in our lounge areas, to high-speed WiFi, all covered by our nightly Resident Fee.</div>
-			</div>
+      <div class="col3">
+        {% region home_hotel_content %}
+      </div>
 
-<!--
+      <div class="col3">
+        {% region home_hotel_content_two %}
+      </div>
 
-			<div class="fr-50 left">
-				<div class="conde">
-					<img src="/assets/images/9493/original/Conde-Nast-Award.png" />
-				</div>
-			</div>
-			<div class="fr-50 right maxcont">
-				<div class="desc">
-					<div class="cnt-calltext">Conde Nast Traveler</div>
-					<p class="one">
-						<span class="fr-desk">NOMINATED FOR THE 2016 READER'S CHOICE AWARDS</span>
-						<span class="fr-mob">NOMINATED FOR THE 2016 READER'S CHOICE AWARDS</span>
-					</p>
-					
-					<p class="two cnt-text">Vote now for your favorite New York hotel for a</p>
-					<p class="two cnt-text">chance to win a grand European tour for two,</p>
-					<p class="two cnt-text">courtesy of @CNTraveler</p>
-					<a target="_blank" href="http://www.cntraveler.com/vote">Vote Now</a>
-					-->
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="hotel">
-		<div class="container">
-			<div class="flexslider hotelslider">
-				<ul class="slides">
-					
-					<li style="background-image: url(/assets/images/4912/original/westhouse-hotel-new-york-entrance.jpg);">
-					</li>
-					<li style="background-image: url(/assets/images/9482/original/westhouse-hotel-new-york-terrace.jpg);">
-					</li>
-					<li style="background-image: url(/assets/images/9481/original/westhouse-hotel-new-york-the-den3.jpg);">
-					</li>
-					
-				</ul>
-			</div>
-			
-			<div class="hotelcontent">
-			    <div class="col3 htitle">
-					<h3>Hotel</h3>
-				</div>
-				<div class="col3">
-				    
-				    {% region home_hotel_content %}
-					
-				</div>
-				<div class="col3">
-					    
-					{% region home_hotel_content_two %}
-					   
-				</div>
-			</div>
-			
-			<a href="{{ 'luxury-hotel-amenities-nyc' | permalink }}" class="continuebutton">more</a>
-		</div>
-	</div>
-	
-	<div id="offerspartners">
-		<div class="container">
-			<div class="col2 offers" style="background-image: url(/assets/images/9534/original/westhouse-hotel-new-york-mercedes-thumb.jpg);">
-			    <a href="{{ 'westhouse-offers' | permalink }}" class="dropanchor"></a>
-				<div class="optitle">Offers</div>
-			</div>
-			<div class="col2 partners" style="background-image: url(/assets/images/9533/original/westhouse-hotel-new-york-good-hair-day-thumb.jpg);">
-		    	<a href="{{ 'partners' | permalink }}" class="dropanchor"></a>
-				<div class="optitle">Partners</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="rooms">
-		<div class="container">
-			<div class="flexslider roomsslider">
-				<ul class="slides">
+    </div>
 
-					<li style="background-image: url(/assets/images/4952/original/westhouse-hotel-new-york-rooms1.jpg);">
-					</li>
-					<li style="background-image: url(/assets/images/9484/original/WestHouse-HomePage-Rooms2.jpg);">
-					</li>
-					<li style="background-image: url(/assets/images/9485/original/WestHouse-HomePage-Rooms1.jpg);">
-					</li>
-				<!--	<li style="background-image: url(/assets/images/4942/original/westhouse-hotel-new-york-rooms2.jpg);">
-					</li>
-					<li style="background-image: url(/assets/images/5652/original/westhouse-hotel-new-york-livingroom.jpg);">
-					</li> -->
+    <a href="{{ 'luxury-hotel-amenities-nyc' | permalink }}" class="continuebutton">more</a>
 
-				</ul>
-			</div>
-			
-			<div class="roomscontent">
+  </div>
+</div>
 
-			    <div class="col3 htitle">
-					<h3 style="text-align: center;">Rooms & Suites</h3>
-				</div>
-				<div class="col3">
-					{% region home_rooms_content %}
-				</div>
-				<div class="col3">
-					{% region home_rooms_content_two %}
-				</div>
-			</div>
-			
-			<a href="{{ 'luxury-rooms-suites-nyc' | permalink }}" class="continuebutton">more</a>
-			
-		</div>
-	</div>
-	
-	<div id="tripadvisory">
-		<div class="container">
-		
-			<div class="flexslider tripslider">
-				<ul class="slides">
-                    
-                {% for Tripadvisor in site.data._models.Tripadvisor %}
-                
-					<li>
-						<div class="col3 triplogo"><img src="/assets/images/9487/original/tripadvisory.png" alt="triplogo" /></div>
-						<div class="col3 testimonials"><p>"{{ Tripadvisor.contents }}"</p></div>
-						<div class="col3 author"><p>{{ Tripadvisor.Credit }}</p></div>
-					</li>
-        				
-                {% endfor %}
-                
-				</ul>
-			</div>
-			
-		</div>
-	</div>
+<div id="offerspartners">
+  <div class="container">
 
-	<br />
+    <div class="col2 offers" style="background-image: url(/assets/images/9534/original/westhouse-hotel-new-york-mercedes-thumb.jpg);">
+      <a href="{{ 'westhouse-offers' | permalink }}" class="dropanchor"></a>
+      <div class="optitle">Offers</div>
+    </div>
+
+    <div class="col2 partners" style="background-image: url(/assets/images/9533/original/westhouse-hotel-new-york-good-hair-day-thumb.jpg);">
+      <a href="{{ 'partners' | permalink }}" class="dropanchor"></a>
+      <div class="optitle">Partners</div>
+    </div>
+
+  </div>
+</div>
+
+<div id="rooms">
+  <div class="container">
+
+    <div class="flexslider roomsslider">
+      <ul class="slides">
+        <li style="background-image: url(/assets/images/4952/original/westhouse-hotel-new-york-rooms1.jpg);"></li>
+        <li style="background-image: url(/assets/images/9484/original/WestHouse-HomePage-Rooms2.jpg);"></li>
+        <li style="background-image: url(/assets/images/9485/original/WestHouse-HomePage-Rooms1.jpg);"></li>
+        <!--	<li style="background-image: url(/assets/images/4942/original/westhouse-hotel-new-york-rooms2.jpg);"></li>
+					<li style="background-image: url(/assets/images/5652/original/westhouse-hotel-new-york-livingroom.jpg);"></li> -->
+      </ul>
+    </div>
+
+    <div class="roomscontent">
+
+      <div class="col3 htitle">
+        <h3 style="text-align: center;">Rooms & Suites</h3>
+      </div>
+
+      <div class="col3">
+        {% region home_rooms_content %}
+      </div>
+
+      <div class="col3">
+        {% region home_rooms_content_two %}
+      </div>
+
+    </div>
+
+    <a href="{{ 'luxury-rooms-suites-nyc' | permalink }}" class="continuebutton">more</a>
+
+  </div>
+</div>
+
+<div id="tripadvisory">
+  <div class="container">
+
+    <div class="flexslider tripslider">
+      <ul class="slides">
+
+        {% for Tripadvisor in site.data._models.Tripadvisor %}
+          <li>
+            <div class="col3 triplogo"><img src="/assets/images/9487/original/tripadvisory.png" alt="triplogo" /></div>
+            <div class="col3 testimonials">
+              <p>"{{ Tripadvisor.contents }}"</p>
+            </div>
+            <div class="col3 author">
+              <p>{{ Tripadvisor.Credit }}</p>
+            </div>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<br>
 
 {% include footer.html %}

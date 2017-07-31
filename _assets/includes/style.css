@@ -550,7 +550,7 @@ h6 {font-size: 55px;}
   background-position: center;
   background-size: cover;
   margin-bottom: 30px;
-    margin-top: 75px;
+  margin-top: 118px;
   position: relative;
   overflow: hidden;
 }
@@ -8149,11 +8149,11 @@ div.picnic-post
 .navbar-brand{
     height: auto!important;
 }
-.navbar-brand>img {
-    display: block;
-    width: 250px !important;
-    height: auto !important;
+
+.navbar-brand > img {
+  max-width: 250px;
 }
+
 .navbar-nav>li {
     margin-top: 35px !important;
     text-transform: uppercase;
@@ -8267,7 +8267,7 @@ div.picnic-post
     }
     .navbar-nav {
         float: none !important;
-       
+
     }
     .navbar-nav>li {
         float: none;
@@ -8309,5 +8309,5 @@ div.picnic-post
         padding-right: 0px;
       }
 
-  
+
   }
