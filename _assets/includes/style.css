@@ -8154,6 +8154,7 @@ div.picnic-post
 
 .navbar-brand > img {
   max-width: 250px;
+  width: 100%;
 }
 
 .navbar-nav>li {

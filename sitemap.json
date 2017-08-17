@@ -1363,6 +1363,16 @@
     "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_amenities_content.json",
     "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_dining_content.json",
     "blog/joses-favorite-cocktail-bars-in-midtown.html/nav_neighborhood_content.json",
+    "blog/jasons-favorite-date-spots-in-midtown.html/nav_rooms_content.json",
+    "blog/jasons-favorite-date-spots-in-midtown.html/nav_offers_content.json",
+    "blog/jasons-favorite-date-spots-in-midtown.html/nav_amenities_content.json",
+    "blog/jasons-favorite-date-spots-in-midtown.html/nav_dining_content.json",
+    "blog/jasons-favorite-date-spots-in-midtown.html/nav_neighborhood_content.json",
+    "blog/have-downtime-in-new-york-take-one-of-these-classes.html/nav_rooms_content.json",
+    "blog/have-downtime-in-new-york-take-one-of-these-classes.html/nav_offers_content.json",
+    "blog/have-downtime-in-new-york-take-one-of-these-classes.html/nav_amenities_content.json",
+    "blog/have-downtime-in-new-york-take-one-of-these-classes.html/nav_dining_content.json",
+    "blog/have-downtime-in-new-york-take-one-of-these-classes.html/nav_neighborhood_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_rooms_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_offers_content.json",
     "blog/westgouses-guide-to-biking-the-hudson-river-greenway.html/nav_amenities_content.json",
@@ -2313,5 +2323,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "f53f4b6636b6e1302792d1c7f3081fda01c6cfec"
+  "__SHA__": "8d0e5bb0fb6bfc154335c0623519322471710a7c"
 }
