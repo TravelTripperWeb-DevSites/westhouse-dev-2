@@ -14,6 +14,8 @@
 	{"hint":"Paste here the code for this offer"},
 "image":
 	{"type":"image"},
+"short_description":
+	{"type":"richtext","required":true},
 "contents":
 	{"type":"richtext","required":true,"hint":"Write the content of your offer."},
 "menu_order": {

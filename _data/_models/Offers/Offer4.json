@@ -1,14 +1,16 @@
 {
-	"contents": "<p>Planning a girls&rsquo; trip to NYC? Let WestHouse and NOMI Beauty, our in-room beauty partner, make your stay memorable. Stay in a suite, enjoy a 3-hour makeup lesson for 2 and savor delicious cupcakes from Magnolia! Every girl&rsquo;s perfect pampering session.</p>\n<p>Must be booked 7-days in advance</p>",
-	"seo_description": "Planning a girls trip to NYC? Enjoy a pampering session at the WestHouse Hotel - includes a Luxury suite, 3 hour make-up lesson for 2 plus delicious cupcakes!",
-	"seo_title": "Girls Pamper Package in NYC | Offers at WestHouse Hotel NY",
-	"url_friendly_name": "girls-pamper-package-nyc",
-	"partner_name": "NOMI Beauty",
-	"image": {
-		"url": "/assets/images/nomi-beauty.jpg"
-	},
-	"title": "Girls Getaway",
-	"outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=223975&vr=3",
-	"offer_code": "GETAWA",
-	"menu_order": -1
+  "contents": "<p>Planning a girls&rsquo; trip to NYC? Let WestHouse and NOMI Beauty, our in-room beauty partner, make your stay memorable. Stay in a suite, enjoy a 3-hour makeup lesson for 2 and savor delicious cupcakes from Magnolia! Every girl&rsquo;s perfect pampering session.</p>\n<p>Must be booked 7-days in advance</p>",
+  "seo_description": "Planning a girls trip to NYC? Enjoy a pampering session at the WestHouse Hotel - includes a Luxury suite, 3 hour make-up lesson for 2 plus delicious cupcakes!",
+  "seo_title": "Girls Pamper Package in NYC | Offers at WestHouse Hotel NY",
+  "url_friendly_name": "girls-pamper-package-nyc",
+  "partner_name": "NOMI Beauty",
+  "image": {
+    "url": "/assets/images/nomi-beauty.jpg",
+    "alt": "GETAWA"
+  },
+  "short_description": "<p class=\"MsoNormal\">Planning a girls&rsquo; trip to NYC? Let WestHouse and NOMI Beauty, our in-room beauty partner, make your stay memorable.</p>",
+  "title": "Girls Getaway",
+  "outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=223975&vr=3",
+  "offer_code": "GETAWA",
+  "menu_order": 1
 }
