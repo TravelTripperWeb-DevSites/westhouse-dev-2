@@ -1,10 +1,9 @@
-url: "https://www.westhousehotelnewyork.com"
+url: https://www.westhousehotelnewyork.com
 
-# Build settings
+# Language settings
 default_lang: 'en'
 languages: ['en']
 
-exclude: ['sitemap.json']
 keep_files: ['assets']
 rsync_copy: ['_assets']
 
@@ -48,3 +47,7 @@ page_gen:
   - data: 'PPC-Landing-Page'
     template: 'ppc-landing-single'
     dir: ''
+
+# File Handling
+# include: [_pages]
+exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json, media.json, models.json, sitemap.json]

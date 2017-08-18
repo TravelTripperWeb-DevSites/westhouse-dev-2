@@ -1,24 +1,39 @@
-{"title":
-	{"required":true},
-"seo_title":
-	{"required":true},
-"seo_description":
-	{"type":"text","required":true},
-"url_friendly_name":
-	{"type":"url_slug"},
-"partner_name":
-	{"required":true},
-"outbound":
-	{"hint":"Paste your booking link or offer ID here"},
-"offer_code":
-	{"hint":"Paste here the code for this offer"},
-"image":
-	{"type":"image"},
-"short_description":
-	{"type":"richtext","required":true},
-"contents":
-	{"type":"richtext","required":true,"hint":"Write the content of your offer."},
-"menu_order": {
-  "type": "integer"
-}
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "required": true
+  },
+  "seo_description": {
+    "type": "text",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug"
+  },
+  "partner_name": {
+    "required": true
+  },
+  "outbound": {
+    "hint": "Paste your booking link or offer ID here"
+  },
+  "offer_code": {
+    "hint": "Paste here the code for this offer"
+  },
+  "image": {
+    "type": "image"
+  },
+  "short_description": {
+    "type": "richtext",
+    "required": true
+  },
+  "contents": {
+    "type": "richtext",
+    "required": true,
+    "hint": "Write the content of your offer."
+  },
+  "menu_order": {
+    "type": "integer"
+  }
 }
