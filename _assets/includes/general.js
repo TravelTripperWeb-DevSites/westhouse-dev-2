@@ -499,14 +499,14 @@ $(document).ready(function() {
     $("body").addClass("opennav");
   });
 
-  $(".reserve a").click(function(e) {
-     if ($(window).width() > 767){
-        e.preventDefault();
-        $("body").addClass("openbooking");
-    }else{
-        $(this).attr('href' , 'https://westhousehotelnewyork.reztrip.com/mobile/');
-    }
-  });
+  // $(".reserve a").click(function(e) {
+  //   if ($(window).width() > 767){
+  //      e.preventDefault();
+  //      $("body").addClass("openbooking");
+  //  }else{
+  //      $(this).attr('href' , 'https://westhousehotelnewyork.reztrip.com/mobile/');
+  //  }
+  // });
 
 
   $(".cover").click(function(e) {
