@@ -1089,8 +1089,26 @@ WestHouse Tracking Pixel
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://static.vrglobal.com/embedv2.js"></script>
-        
-        <script>(function(){ var v = document.createElement('script'); var s = document.getElementsByTagName('script')[0]; v.src = '//io.voyat.com/v.js'; v.async = true; s.parentNode.insertBefore(v, s); })();</script>
+
+<!--New booking widget-->
+
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script>
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
+<script>
+   TTWeb.Config.configure({
+      hotelId: 'NYCWST', //'orwhatever your values are',
+      portalId: 'westhousehotelnewyork',
+      defaultTimezone: 'America/New_York', // timezone of site
+      ipAddress: sessionStorage.ip_add,
+      defaultCurrency: 'USD',
+    });
+    $("[show-booking-widget]").bookingWidget({
+         showRateCalendar: true,
+         showOfferCode: true
+    });
+</script>
+					
+<script>(function(){ var v = document.createElement('script'); var s = document.getElementsByTagName('script')[0]; v.src = '//io.voyat.com/v.js'; v.async = true; s.parentNode.insertBefore(v, s); })();</script>
 
 
 </body>
