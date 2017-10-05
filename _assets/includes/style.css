@@ -1076,24 +1076,27 @@ font-family: GothamLight;
   margin-bottom: 0px;
   position: relative;
     background: #f4f4f4;
-  padding: 40px 0 0;
+  padding: 60px 0 0;
   overflow: hidden;
 }
 
 #tripadvisory .flexslider {
   background: transparent;
+  text-align: center;
 }
 
 #tripadvisory .col3.triplogo {
-  width: 25%;
+  width: 100%; 
 }
-
+#tripadvisory .col3.triplogo img{ 
+ margin: 20px auto;
+}
 #tripadvisory .col3.testimonials {
-  width: 50%;
+  width: 100%;
 }
 
 #tripadvisory .col3.author {
-  width: 25%;
+  width: 100%;
   text-align: center;
 }
 
@@ -1106,8 +1109,7 @@ font-family: GothamLight;
 }
 
 #tripadvisory .flexslider .slides .triplogo img {
-  width: auto;
-  margin: 0 auto;
+  width: auto; 
   max-width: 100%;
 }
 
@@ -3127,20 +3129,8 @@ clear: both;
 }
 
 /* //////////////////////////////////////////////////////////////////// Connect */
-.connectinstagram {
-  float: left;
-  width: 40%;
-}
-
-.connectsocial {
-  float: left;
-  width: 20%;
-}
-
-.connecttestimonials {
-  float: right;
-  width: 40%;
-}
+ 
+ 
 
 
 .instagramicon {
@@ -3193,6 +3183,7 @@ clear: both;
   width: 68px;
   margin: 0 auto;
   margin-top: 50px;
+  max-height: 300px;
 }
 
 .connectsocial ul li {
@@ -3221,55 +3212,71 @@ clear: both;
   background: #fff;
 }
 
-.connecttestimonials .tripslider {
+#connect .tripslider {
   padding: 40px 0;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
+  text-align: center;
+  max-height: 400px;
 }
-
-.connecttestimonials .flex-control-nav {
+@media only screen and (min-width: 767px) {
+  #connect .tripslider {
+     max-height: 300px;
+  }
+}
+#connect  .flex-control-nav {
   bottom: -40px;
   width: 100%;
   right: inherit;
   top: inherit;
 }
 
-.connecttestimonials .flexslider .slides .triplogo {
+#connect .flexslider .slides .triplogo {
   display: block;
   float: none;
   text-align: center;
   width: 100%;
-  margin: 0 auto 140px;
+  margin: 0 auto 40px;
 }
 
-.connecttestimonials .flexslider .slides .triplogo img {
+
+#connect  .flexslider .slides .triplogo img {
   width: auto;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.connecttestimonials .testimonials {
-  margin-bottom: 40px;
+#connect .testimonials {
+  margin: 10px 0px;
 }
-
-.connecttestimonials .author {
+@media only screen and (min-width: 767px) {
+  #connect .testimonials {
+    margin: 20px 54px;
+  }
+}
+@media only screen and (min-width: 1178px) {
+  #connect .testimonials {
+    margin: 20px 74px;
+  }
+}
+#connect .author {
   text-align: center;
 }
 
-.connecttestimonials .flex-direction-nav a {
+#connect .flex-direction-nav a {
   top: 36%;
 }
 
-.connecttestimonials .flex-direction-nav .flex-prev {
+#connect .flex-direction-nav .flex-prev {
   left: 0;
 }
-.connecttestimonials .flexslider:hover .flex-direction-nav .flex-prev {
+#connect .flexslider:hover .flex-direction-nav .flex-prev {
   left: 30px;
 }
 
 .connecttestimonials .flex-direction-nav .flex-next {
   right: 0;
 }
-.connecttestimonials .flexslider:hover .flex-direction-nav .flex-next {
+#connect  .flexslider:hover .flex-direction-nav .flex-next {
   right: 30px;
 }
 
@@ -3277,7 +3284,7 @@ clear: both;
 #partnerslist {
   overflow: hidden;
   margin-bottom: 40px;
-    width: calc(100% - 100px);
+  width: calc(100% - 100px);
   position: relative;
   left: 50px;
 }
@@ -7233,11 +7240,7 @@ strong, b {
     font-family: 'GothamBold';
 }
 
-#instafeed img {
-    width: 47%;
-    margin: 3px 5px;
-}
-
+ 
 #maincontent .share .socialmedia ul {
     right: auto;
     padding-left: 0;
@@ -8314,3 +8317,70 @@ div.picnic-post
 
 
   }
+
+.insta-pic a{
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.insta-pic a img{
+   min-width: 100%;
+   min-height: 180px;
+   overflow: hidden;
+}
+@media only screen and (min-width: 767px) {
+   .insta-pic a{
+      height: 230px; 
+    }
+    .insta-pic a img{ 
+       min-height: 230px; 
+    }
+  }
+@media only screen and (min-width: 1200px) {
+   .insta-pic a{
+      height: 280px; 
+    }
+    .insta-pic a img{ 
+       min-height: 280px; 
+    }
+  }
+@media only screen and (min-width: 1600px) {
+   .insta-pic a{
+      height: 400px; 
+    }
+    .insta-pic a img{ 
+       min-height: 400px; 
+    }
+  }
+.socialmedia-connect ul{
+  margin: 50px 0;
+  padding: 0;
+  width: 100%;
+  text-align: left; 
+}
+.socialmedia-connect ul li{
+   display: inline-block;
+
+}
+.socialmedia-connect ul li a {
+    font-size: 44px;
+    background: #696b65;
+    color: #fff;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    line-height: 64px;
+    border: 4px solid #696b65;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+}
+.socialmedia-connect ul li a:hover {
+    color: #696b65;
+    background: #fff;
+}

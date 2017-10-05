@@ -11,38 +11,25 @@
 			
 		</div>
 		
-		<div id="contentwidget">
-			<div class="logo"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></div>
-    
-               <!-- include booking form -->
-    
-                {% include booking_form_interior.html %}
-    
-                <!-- // include booking form -->
-    		</div>
-
-		</div>
-		
-		<div class="subnav">
-			<ul>
-				<li><a href="#"></a></li>
-			</ul>
-		</div>
+		 
 		
 		<div id="connect">
 			<div class="container">
-			
-				<div class="connectinstagram">
+			  <div class="row">
+			  	<div class="col-md-12">
+				   <div class="connectinstagram">
 					<div class="instagramicon"><i class="fa fa-instagram"></i></div>
-					<div class="instagramlink"><a target="_blank" href="https://instagram.com/westhouseny/">@westhouseny</a></div>
-					
-					<div class="instagrampics">
-						<div id="instafeed"></div>
+					<div class="instagramlink"><a target="_blank" href="https://instagram.com/westhouseny/">@westhouseny</a>
 					</div>
-				</div>
-				
-				<div class="connectsocial">
-					<div class="socialmedia">
+				 </div>
+				 <div class="col-md-12" id="instapics">
+				 </div>
+              </div>
+            </div>
+			<div class="container">
+			  <div class="row">	
+				<div class="col-sm-6 connectsocial">
+					<div class="socialmedia-connect">
 						<ul>
 							{% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Facebook" %}<li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-facebook"></i></a></li>{% endif %}{% endfor %}
 							{% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Twitter" %}<li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-twitter"></i></a></li>{% endif %}{% endfor %}
@@ -54,8 +41,7 @@
 					</div>
 				
 				</div>
-				
-				<div class="connecttestimonials">
+			    <div class="col-md-6 no-padding">
 				
 					<div class="flexslider tripslider">
 						<ul class="slides">
@@ -72,9 +58,28 @@
 					</div>
 				
 				</div>
-			
+			 </div>
 			</div>
 		</div>
 		
 		
 {% include footer.html %}
+<script>
+   $(document).ready(function(){ 
+     var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.c2a42d293f6f494e86dc0bb5466681b4&callback=?';
+     $.ajax({
+        url: instaurl,
+        dataType: "jsonp",
+        success: function (response) {  
+        setTimeout(function(){
+          $.each(response.data, function(i, item) { 
+          	 if(i < 4){
+          	 	 $('#instapics').append('<div class="col-md-3 col-sm-6  insta-pic"><a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/> </a></div>');
+          	 }
+              
+          });
+        },1000);
+        }
+      });
+     });
+</script>
