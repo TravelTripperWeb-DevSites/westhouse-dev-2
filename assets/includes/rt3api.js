@@ -1,0 +1,233 @@
+    function Rt3Api(params) {
+        this.config = params;
+        this.roomCache = null;
+    }
+
+    Rt3Api.prototype.getHotelInfo = function() {
+        var path = '/hotels/details.json';
+        var params = {
+            hotel_id: this.config.hotelId,
+            portal_id: this.config.portalId,
+            locale: this.config.defaultLocale
+        };
+
+        return query(path, params);
+    };
+
+    Rt3Api.prototype.getPortalInfo = function() {
+        var path = '/portals/'+ this.config.portalId +'.json';
+        var params = {
+            locale: this.config.defaultLocale,
+            currency: this.config.defaultCurrency
+        };
+
+        return query(path, params);
+    };
+
+    Rt3Api.prototype.getAllRooms = function() {
+        var self = this;
+        var path = '/hotels/rooms.json';
+        var params = {
+            rooms: 1,
+            hotel_id: this.config.hotelId,
+            portal_id: this.config.portalId,
+            locale: this.config.defaultLocale
+        };
+        var defer = $.Deferred();
+        if (this.roomCache) {
+            defer.resolve(this.roomCache)
+        } else
+        {
+            query(path, params).then(function(result) {
+                self.roomCache = result
+                defer.resolve(result)
+            })
+        }
+        return defer;
+    };
+
+    Rt3Api.prototype.availableRooms = function(params) {
+        var path = '/hotels/roomRateList.json';
+
+        return query(path, params);
+    };
+
+    Rt3Api.prototype.getAllSpecialRates = function() {
+        var path = '/hotels/special_rates.json';
+        var params = {
+            hotel_id: this.config.hotelId,
+            portal_id: this.config.portalId,
+            locale: this.config.defaultLocale,
+            currency: this.config.defaultCurrency
+        };
+
+        return query(path, params)
+    };
+
+    Rt3Api.prototype.getRoomInfo = function(searchParams) {
+        var path = '/hotels/roomDetails.json';
+        var defaultParams = {
+            hotel_id: this.config.hotelId,
+            portal_id: this.config.portalId,
+            locale: this.config.defaultLocale,
+            currency: this.config.defaultCurrency,
+            ip_address : sessionStorage.ip_add
+        };
+
+        var params = $.extend(defaultParams, searchParams);
+
+        roomInfoRequest = query(path, params);
+        addToRoomDetailsRequests(roomInfoRequest);
+        return roomInfoRequest;
+    }
+
+    Rt3Api.prototype.getRateShopping = function(searchParams) {
+        var path = '/hotels/rateshopping.json';
+        var defaultParams = {
+           hotel_id: this.config.hotelId,
+           portal_id: this.config.portalId,
+           locale: this.config.defaultLocale,
+           currency: this.config.defaultCurrency,
+           popular_only: false,
+           num_rates_display: 5,
+           client_ip: '64.78.249.12',
+           lowest_rate: null,
+           search_lowest: true,
+           ip_address : sessionStorage.ip_add
+        };
+
+        var params = $.extend(defaultParams, reformatParams(searchParams));
+
+        function reformatParams(searchParams) {
+           var params = searchParams;
+
+           params['adults[]'] = searchParams.adults || 1;
+           params['children[]'] = searchParams.children || 0;
+           params.rooms = searchParams.rooms || 1;
+
+           return params;
+        }
+
+        return query(path, params);
+    };
+
+    Rt3Api.prototype.getBrgInfo = function(searchParams) {
+        var self = this;
+
+        var defaultParams = {
+            hotel_id: this.config.hotelId,
+            portal_id: this.config.portalId,
+            locale: this.config.defaultLocale,
+            currency: this.config.defaultCurrency
+        }
+
+        var params = $.extend(defaultParams, searchParams);
+
+        var defered = $.Deferred();
+
+        roomInfoRequest = this.getRoomInfo(params);
+        abortOldRoomDetailsRequest();
+        var roomInfo = roomInfoRequest.then(function(response) {
+            var ratePlans = response.rate_plans;
+
+            self.getAllRooms().then(function(rooms_response){
+
+                if(ratePlans) {
+                    var is_base_room_type = false;
+                    $.each(rooms_response.rooms, function(key, value) {
+                        if (value.code == params.room_id && value.is_base_room_type) {
+                            is_base_room_type = true;
+                        }
+                    });
+
+                    if (is_base_room_type) {
+
+                        self.getRateShopping({
+                            arrival_date: searchParams.arrival_date,
+                            departure_date: searchParams.departure_date,
+                            adults: searchParams.adults,
+                            children: searchParams.children
+                        }).then(function(rsResponse) {
+                            if(rsResponse.error_info.error_details.length){
+                                if (console && console.error) {
+                                    console.error(rsResponse.error_info)
+                                }
+                            }
+                            if(rsResponse.show_brg) {
+                                var response = {
+                                    discounted_rate: rsResponse.discounted_rate || rsResponse.original_rate,
+                                    code: 'BRG',
+                                    rates: rsResponse.rates,
+                                    avg_brg_discounted_price: rsResponse.discounted_rate,
+                                    avg_brg_original_price: rsResponse.original_rate,
+                                    show_brg: true,
+                                    discount_threshold_exceeded: rsResponse.discount_threshold_exceeded,
+                                    dpr_name: rsResponse.dpr_name
+                                };
+                                defered.resolve(response);
+                            } else {
+                                var response = {
+                                    discounted_rate: ratePlans[0].average_discounted_nightly_price || ratePlans[0].average_nightly_price,
+                                    code: ratePlans[0].code,
+                                    rates: []
+                                };
+                                defered.resolve(response);
+                            }
+                        });
+
+
+                    } else {
+
+                        var response = {
+                            discounted_rate: ratePlans[0].average_discounted_nightly_price || ratePlans[0].average_nightly_price,
+                            code: ratePlans[0].code,
+                            rates: []
+                        };
+                        defered.resolve(response);
+                    }
+
+                } else {
+                    var response = {
+                        discounted_rate: null,
+                        code: null,
+                        rates: []
+                    };
+                    defered.resolve(response);
+                }
+            })
+        });
+
+        return defered;
+    }
+
+    Rt3Api.prototype.recentBookings = function(timeCutOffMinutes) {
+        var path = '/ext/recentBookings';
+        var params = {
+            propertyCode: this.config.hotelId,
+            timeCutOffMinutes: timeCutOffMinutes
+        }
+
+        return query(path, params);
+    }
+
+    // Private
+    function query(path, params) {
+        var rootPath = 'https://rt3api-prd.ttaws.com';
+
+        return $.ajax({
+            url: rootPath + path,
+            method: 'GET',
+            data: params
+        });
+    }
+
+    var roomDetailsRequests = [];
+    function addToRoomDetailsRequests(request) {
+        roomDetailsRequests.push(request);
+    }
+
+    function abortOldRoomDetailsRequest() {
+        if (roomDetailsRequests.length > 1) {
+            roomDetailsRequests.shift().abort();
+        }
+    }
