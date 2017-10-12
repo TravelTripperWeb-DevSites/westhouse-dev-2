@@ -410,6 +410,11 @@
       "file": "Blog64.json"
     },
     {
+      "name": "5 Favorite Late-night Jazz Venues",
+      "title": "5 Favorite Late-night Jazz Venues",
+      "file": "Blog65.json"
+    },
+    {
       "name": "Finding the Hamptons in NYC",
       "title": "Finding the Hamptons in NYC",
       "file": "Blog7.json"
@@ -1409,11 +1414,6 @@
       "name": "One Bedroom Suite",
       "title": "One Bedroom Suite",
       "file": "one-bedroom-suite.json"
-    },
-    {
-      "name": "Presidential Suite",
-      "title": "Presidential Suite",
-      "file": "presidential-suite.json"
     },
     {
       "name": "Terrace Suite",
