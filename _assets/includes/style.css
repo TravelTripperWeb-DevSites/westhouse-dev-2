@@ -8384,3 +8384,13 @@ div.picnic-post
     color: #696b65;
     background: #fff;
 }
+  #signup .g-recaptcha{
+    float: left;
+    margin: 0 6px;
+  }
+  .error-form{
+    text-align: left;
+    margin: 5px 0 7px 6px;
+    float: left;
+    color: #616161;
+  }
