@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<p style=\"text-transform: none;\">Elevating the air of pampered exclusivity enjoyed as a resident guest of WestHouse Hotel New York, we have partnered with the very best luxury lifestyle brands to ensure your stay with us is one of sophisticated carefree indulgence.</p>"}]
+[
+  {
+    "_template": "html",
+    "content": "<p style=\"text-transform: none;\">Elevating the air of pampered exclusivity enjoyed as a resident guest of <a title=\"Boutique NYC hotel\" href=\"https://www.westhousehotelnewyork.com/\">WestHouse Hotel New York</a>, we have partnered with the very best luxury lifestyle brands to ensure your stay with us is one of sophisticated carefree indulgence.</p>"
+  }
+]

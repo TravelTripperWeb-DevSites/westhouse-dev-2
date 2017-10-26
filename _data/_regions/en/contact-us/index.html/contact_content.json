@@ -1,1 +1,6 @@
-[{"_template":"html","content":"\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t<p style=\"text-align: center;\">Please feel free to contact us at WestHouse Hotel New York with any questions you may have about our luxury boutique hotel. Simply complete the contact form below and a member of our staff will respond promptly.<br></p>\n\t\t\t\t\t\n\t\t\t\t\t"}]
+[
+  {
+    "_template": "html",
+    "content": "<p style=\"text-align: center;\">Please feel free to contact us at WestHouse Hotel New York with any questions you may have about our <a title=\"WestHouse Hotel\" href=\"https://www.westhousehotelnewyork.com/\">luxury boutique hotel</a>. Simply complete the contact form below and a member of our staff will respond promptly.</p>"
+  }
+]
