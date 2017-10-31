@@ -81,7 +81,7 @@
             </div>
         </div>
         <div class="button-container" >
-            <a href="/save-the-children/" target="_blank" class="button-common">MORE INFO</a>
+            <a href="/save-the-children/" target="_blank" class="button-common" rel="nofollow">MORE INFO</a>
         </div>
         <div class="clear-both"></div>
     </div>
@@ -93,31 +93,31 @@
         <div class="socialmedia">
             <ul>
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Facebook" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
                 {% endif %}{% endfor %}
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Twitter" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
                 {% endif %}{% endfor %}
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Instagram" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>
                 {% endif %}{% endfor %}
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "GooglePlus" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
                 {% endif %}{% endfor %}
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "Youtube" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-youtube-play"></i></a></li>
                 {% endif %}{% endfor %}
                 {% for SocialLinks in site.data._models.SocialLinks %}{% if SocialLinks.name == "TripAdvisor" %}
-                <li><a href="{{ SocialLinks.url }}" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+                <li><a href="{{ SocialLinks.url }}" target="_blank" rel="nofollow"><i class="fa fa-tripadvisor"></i></a></li>
                 {% endif %}{% endfor %}
             </ul>
             <a target="_blank" class="hasher" href="https://twitter.com/search?q=inresidence&src=typd">#InResidence</a>
         </div>
-        <div class="footerlogo"><img src="/assets/images/4812/original/footer-logo.png" alt="logo2" /></div>
+        <div class="footerlogo"><a href="https://www.westhousehotelnewyork.com/"><img src="/assets/images/4812/original/footer-logo.png" alt="logo2" /></div>
         <div class="clear"></div>
         <div class="cslhcon">
             <div class="slh">
-                &nbsp;&nbsp;<a href="https://www.slh.com/hotels/westhouse-hotel-new-york/" target="_blank"><img style="width: 100px" src="/assets/images/9489/original/small-luxury-hotel.png" alt="Small Luxury Hotel" /></a><a href="https://www.cntraveler.com/galleries/2014-11-19/top-25-hotels-in-new-york-city-readers-choice-awards-2014/33" target="_blank"><img style="width: 92px" src="/assets/images/nyc-finalist.png" alt="" /></a><a href="https://www.travelandleisure.com/worlds-best/hotels-in-new-york#west-house" target="_blank"><img style="width: 107px" src="/assets/images/worldsbest.png" alt="" /></a>
+                &nbsp;&nbsp;<a href="https://www.slh.com/hotels/westhouse-hotel-new-york/" target="_blank" rel="nofollow"><img style="width: 100px" src="/assets/images/9489/original/small-luxury-hotel.png" alt="Small Luxury Hotel" /></a><a href="https://www.cntraveler.com/galleries/2014-11-19/top-25-hotels-in-new-york-city-readers-choice-awards-2014/33" target="_blank" rel="nofollow"><img style="width: 92px" src="/assets/images/nyc-finalist.png" alt="" /></a><a href="https://www.travelandleisure.com/worlds-best/hotels-in-new-york#west-house" target="_blank" rel="nofollow"><img style="width: 107px" src="/assets/images/worldsbest.png" alt="" /></a>
                 <div class="conde_holder">
                     <div class="conde_desc">
                         <p class="first_linec">Our Hotel has been selected to be in<br>Conde Nast Readers Choice Awards.</p>
@@ -127,7 +127,7 @@
             </div>
             <div class="copyright">
                 <p>
-                    &copy; 2015 WESTHOUSE HOTEL<br> <a href="https://www.google.com/maps/place/WestHouse+New+York/@40.7646719,-73.9814936,17z/data=!4m6!1m3!3m2!1s0x89c258f8245a4eab:0x86165540b81f3d02!2sWestHouse+New+York!3m1!1s0x89c258f8245a4eab:0x86165540b81f3d02" target="_blank">201 WEST 55TH STREET</a><br/>
+                     &copy; 2017 <a href="https://www.westhousehotelnewyork.com/">WESTHOUSE HOTEL</a><br> <a href="https://www.google.com/maps/place/WestHouse+New+York/@40.7646719,-73.9814936,17z/data=!4m6!1m3!3m2!1s0x89c258f8245a4eab:0x86165540b81f3d02!2sWestHouse+New+York!3m1!1s0x89c258f8245a4eab:0x86165540b81f3d02" target="_blank">201 WEST 55TH STREET</a><br/>
                     NEW YORK, NY 10019<br/>
                     <a href="tel:18003559378">1 800 355 WEST (9378)</a><br>
                     <a href="mailto:welcome@westhousehotelnewyork.com">welcome@westhousehotelnewyork.com</a>
@@ -173,15 +173,15 @@
 <div id="footernav">
     <ul class="footernavigation">
         <!--<li><a href="{{ 'about' | permalink }}">Our House</a></li>-->
-        <li><a href="{{ 'terms-of-use' | permalink }}">Terms of Use</a></li>
-        <li><a href="{{ 'privacy-policy' | permalink }}">Privacy Policy</a></li>
-        <li><a href="{{ 'partners/affiliate-charities' | permalink }}">Affiliate Charities</a></li>
+        <li><a href="{{ 'terms-of-use' | permalink }}" rel="nofollow">Terms of Use</a></li>
+        <li><a href="{{ 'privacy-policy' | permalink }}" rel="nofollow">Privacy Policy</a></li>
+        <li><a href="{{ 'partners/affiliate-charities' | permalink }}" rel="nofollow">Affiliate Charities</a></li>
         <li><a href="{{ 'sitemap' | permalink }}">Sitemap</a></li>
         <li><a href="{{ 'careers' | permalink }}">Careers</a></li>
         <li><a href="{{ 'press' | permalink }}">Press</a></li>
         <!--	<li><a href="{{ 'luxury-hotel-amenities-nyc' | permalink }}">Sitemap</a></li> -->
         <li><a href="{{ 'contact-us' | permalink }}">Contact</a></li>
-        <li><a href="{{ 'social-media' | permalink }}">Connect</a></li>
+        <li><a href="{{ 'social-media' | permalink }}" rel="nofollow">Connect</a></li>
         <li class="highgate"><a href="http://highgate.com" target="_blank"><img style="height:50px;" src="/assets/images/highgate-logo-white.png" alt="Highgate" /></a></li>
     </ul>
 </div>
