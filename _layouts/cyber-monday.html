@@ -1,0 +1,166 @@
+{% include header.html %}
+    
+    <div id="featuredcontent" class="featuredcontent" style="background-image: url(/assets/images/3982/original/westhouse-hotel-new-york-your-house.jpg);">
+        <h1 class="contenttitle">
+        {% regionblock black-friday_heading1, type:header %}
+        Cyber Monday
+        {% endregionblock %}
+    </h1>
+    </div>
+    <div id="roomdetails">
+        <div class="share">
+            <h3>Share</h3>
+            <script>
+                var offer_content = stripHTML('{{ Offers.contents }}');
+            </script>
+            <div class="socialmedia">
+                <ul>
+                    <li> <a href="JavaScript:Void(0);" class="share_button"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="JavaScript:Void(0);" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text={{ Offers.title }}&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="mailto:?subject={{ Offers.title }}&body=Hey! Check this exciting offer. {{ site.url }}{{ Offers.id | permalink: model_dir: 'offers' }}"  title="Share by e-mail"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            {% regionblock black-friday_heading2, type:header %}
+            <h2 class="main-heading">YOUR HOUSE</h2>
+            {% endregionblock %}
+            <!-- <div class="roomdate">
+                <div class="datepickerman"></div>
+                <div class="reservationform ahiddenform">
+                    <form autocomplete="off"  method="get" enctype="multipart/form-data" name="omni_reservation_form_" action="https://westhousehotelnewyork.reztrip.com/search?" target="_self">
+                        <input type="hidden" name="rate_code" value="{{ Offers.offer_code }}" />
+                        <span class="calsec" style="margin-left: 10px;">
+                        <input type="text"  id="arrival_dates" name="arrival_date" placeholder="Arrival" class="calendarsection" />
+                        <input type="hidden"  id="arv">
+                        <i class="fa fa-calendar"></i> </span> <span class="calsec">
+                        <input type="text" id="departure_dates" name="departure_date" placeholder="Departure" class="calendarsection" />
+                        <input type="hidden" id="dep">
+                        <i class="fa fa-calendar"></i> </span> 
+                        <span class="dropsec" style="margin-right: 6px">
+                            <select name="adults[]" id="adults" class="halfsies">
+                                <option value="1">1 Adult</option>
+                                <option value="2" selected="selected">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                        </span>
+                        <span class="dropsec">
+                            <select name="children[]" id="children" class="halfsies">
+                                <option value="0">0 Kids</option>
+                                <option value="1">1 Kid</option>
+                                <option value="2">2 Kids</option>
+                                <option value="3">3 Kids</option>
+                            </select>
+                        </span>
+                        <button type="submit" class="button1 search-now-button">Search Now</button>
+                    </form>
+                </div>
+                <p>Click to change arrival/departure dates</p>
+            </div> -->
+                                <!--  -->
+            <!-- Remove w-ocalendar" after insert the calendar -->
+                                <!--  -->
+            <div class="roominfo w-ocalendar">
+                {% regionblock black-friday_content1, type:text %}
+                <p>Make WestHouse Hotel New York, Your House. Reserve five nights or more and enjoy a 25% savings off Best Available Rates.</p>
+                {% endregionblock %}
+                {% regionblock black-friday_content2, type:text %}
+                <p>Must be booked 7-days in advance.</p>
+                {% endregionblock %}
+                <br>
+                <p><strong>
+                    {% regionblock black-friday_content3, type:text %}
+                    <a class="offbtn" href="https://westhousehotelnewyork.reztrip.com/classic/en/special_offer?action=show&controller=landings&locale=en&rate_code=CYBM17&rate_code=CYBM17&starting_page=special_offer&vr=3" target="_blank" alt="Cyber Monday">BOOK NOW</a>
+                    {% endregionblock %}
+                </strong></p>
+            </div>
+        </div>
+        <div class="container">
+          <h2>To learn more about...</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="//cdn.traveltripper.io/site-assets/192_368_9297/media/2017-11-20-060914/slider1.jpg" alt="Living-Room" style="width:100%; max-height: 550px;">
+      </div>
+
+      <div class="item">
+        <img src="//cdn.traveltripper.io/site-assets/192_368_9297/media/2017-11-20-060917/slider2.jpg" alt="Amenities5" style="width:100%; max-height: 550px;">
+      </div>
+
+      <div class="item active">
+        <img src="//cdn.traveltripper.io/site-assets/192_368_9297/media/2017-11-20-060919/slider3.jpg" alt="Terrace" style="width:100%; max-height: 550px;">
+      </div>
+
+      <div class="item">
+        <img src="//cdn.traveltripper.io/site-assets/192_368_9297/media/2017-11-20-060921/slider4.jpg" alt="Amenities2" style="width:100%; max-height: 550px;">
+      </div>
+    
+      <div class="item">
+        <img src="//cdn.traveltripper.io/site-assets/192_368_9297/media/2017-11-20-060923/slider5.jpg" alt="Amenities7" style="width:100%; max-height: 550px;">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </div>
+
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+    FB.init({appId: '1883009305284419', status: true, cookie: true,
+    xfbml: true});
+    };
+    (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+    '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+    }());
+    
+    $(document).ready(function() {
+      $('.share_button').click(function(e){            
+         e.preventDefault();
+        FB.ui({
+          method: 'share_open_graph',
+          action_type: 'og.shares',
+          action_properties: JSON.stringify({
+            object : {
+               'og:url': window.location.href,
+               'og:title': $(this).closest(".share-offer").find("h2").text(),
+               'og:description': $(".roominfo p").text(),
+               'og:image:width': '1200',
+               'og:image:height': '650',
+               'og:image': $(this).closest(".share-offer").find('.featuredcontent').css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+            }
+          })
+        });
+      });
+    });
+</script> 
+{% include footer.html %}

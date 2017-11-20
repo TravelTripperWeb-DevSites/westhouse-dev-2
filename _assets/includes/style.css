@@ -1871,6 +1871,11 @@ a.hasher {
   float: left;
   width: 60%;
 }
+.roominfo.w-ocalendar {
+  margin: 0 auto;
+  width: 80%;
+  float: none;
+}
 
 .roominfo p, .roominfo ul li {
   font-family: GothamLight;

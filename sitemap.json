@@ -82,7 +82,7 @@
         },
         "data_source": null,
         "source_path": "westhouse_blog_rss.xml",
-        "order": 51
+        "order": 52
       }
     ],
     "about": {
@@ -155,6 +155,20 @@
         }
       ]
     },
+    "cyber-monday": {
+      "__PAGES__": [
+        {
+          "label": "Special Offers",
+          "published": true,
+          "locales": {
+            "en": "/cyber-monday/"
+          },
+          "data_source": null,
+          "source_path": "cyber-monday/index.html",
+          "order": 6
+        }
+      ]
+    },
     "dining": {
       "__PAGES__": [
         {
@@ -165,7 +179,7 @@
           },
           "data_source": null,
           "source_path": "dining/index.html",
-          "order": 9
+          "order": 10
         }
       ],
       "speakeasy-lounge-nyc": {
@@ -178,7 +192,7 @@
             },
             "data_source": null,
             "source_path": "dining/speakeasy-lounge-nyc/index.html",
-            "order": 6
+            "order": 7
           }
         ]
       },
@@ -192,7 +206,7 @@
             },
             "data_source": null,
             "source_path": "dining/the-terrace-nyc-rooftop-bar/index.html",
-            "order": 7
+            "order": 8
           }
         ]
       },
@@ -206,7 +220,7 @@
             },
             "data_source": null,
             "source_path": "dining/westroom-nyc-event-venue/index.html",
-            "order": 8
+            "order": 9
           }
         ]
       }
@@ -221,7 +235,7 @@
           },
           "data_source": null,
           "source_path": "events-in-nyc/index.html",
-          "order": 11
+          "order": 12
         }
       ],
       "event-json.json": {
@@ -234,7 +248,7 @@
             },
             "data_source": null,
             "source_path": "events-in-nyc/event-json.json/index.html",
-            "order": 10
+            "order": 11
           }
         ]
       }
@@ -249,7 +263,7 @@
           },
           "data_source": null,
           "source_path": "luxury-hotel-amenities-nyc/index.html",
-          "order": 12
+          "order": 13
         }
       ]
     },
@@ -263,7 +277,7 @@
           },
           "data_source": null,
           "source_path": "luxury-rooms-suites-nyc/index.html",
-          "order": 14
+          "order": 15
         }
       ],
       "room": {
@@ -276,7 +290,7 @@
             },
             "data_source": null,
             "source_path": "luxury-rooms-suites-nyc/room/index.html",
-            "order": 13
+            "order": 14
           }
         ]
       }
@@ -291,7 +305,7 @@
           },
           "data_source": null,
           "source_path": "page/index.html",
-          "order": 15
+          "order": 16
         }
       ]
     },
@@ -305,7 +319,7 @@
           },
           "data_source": null,
           "source_path": "page-not-found/index.html",
-          "order": 16
+          "order": 17
         }
       ]
     },
@@ -319,7 +333,7 @@
           },
           "data_source": null,
           "source_path": "partners/index.html",
-          "order": 21
+          "order": 22
         }
       ],
       "affiliate-charities": {
@@ -332,7 +346,7 @@
             },
             "data_source": null,
             "source_path": "partners/affiliate-charities/index.html",
-            "order": 17
+            "order": 18
           }
         ]
       },
@@ -346,7 +360,7 @@
             },
             "data_source": null,
             "source_path": "partners/dayna-decker-luxury-candles/index.html",
-            "order": 18
+            "order": 19
           }
         ]
       },
@@ -360,7 +374,7 @@
             },
             "data_source": null,
             "source_path": "partners/jeffrey-beers/index.html",
-            "order": 19
+            "order": 20
           }
         ]
       },
@@ -374,7 +388,7 @@
             },
             "data_source": null,
             "source_path": "partners/nyc-luxury-hotel-bedding-sleep-studio/index.html",
-            "order": 20
+            "order": 21
           }
         ]
       }
@@ -389,7 +403,7 @@
           },
           "data_source": null,
           "source_path": "perfect-picnic-westhouse/index.html",
-          "order": 22
+          "order": 23
         }
       ]
     },
@@ -403,7 +417,7 @@
           },
           "data_source": null,
           "source_path": "photo-album/index.html",
-          "order": 27
+          "order": 28
         }
       ],
       "accommodations": {
@@ -416,7 +430,7 @@
             },
             "data_source": null,
             "source_path": "photo-album/accommodations/index.html",
-            "order": 23
+            "order": 24
           }
         ]
       },
@@ -430,7 +444,7 @@
             },
             "data_source": null,
             "source_path": "photo-album/dining-2/index.html",
-            "order": 24
+            "order": 25
           }
         ]
       },
@@ -444,7 +458,7 @@
             },
             "data_source": null,
             "source_path": "photo-album/nyc-hotel-amenities/index.html",
-            "order": 25
+            "order": 26
           }
         ]
       },
@@ -458,7 +472,7 @@
             },
             "data_source": null,
             "source_path": "photo-album/virtual-tours/index.html",
-            "order": 26
+            "order": 27
           }
         ]
       }
@@ -473,7 +487,7 @@
           },
           "data_source": null,
           "source_path": "ppc/index.html",
-          "order": 28
+          "order": 29
         }
       ]
     },
@@ -487,7 +501,7 @@
           },
           "data_source": null,
           "source_path": "press/index.html",
-          "order": 30
+          "order": 31
         }
       ],
       "-press-releases": {
@@ -500,7 +514,7 @@
             },
             "data_source": null,
             "source_path": "press/-press-releases/index.html",
-            "order": 29
+            "order": 30
           }
         ]
       }
@@ -515,7 +529,7 @@
           },
           "data_source": null,
           "source_path": "privacy-policy/index.html",
-          "order": 31
+          "order": 32
         }
       ]
     },
@@ -529,7 +543,7 @@
           },
           "data_source": null,
           "source_path": "sample-offers-list/index.html",
-          "order": 32
+          "order": 33
         }
       ]
     },
@@ -543,7 +557,7 @@
           },
           "data_source": null,
           "source_path": "save-the-children/index.html",
-          "order": 33
+          "order": 34
         }
       ]
     },
@@ -557,7 +571,7 @@
           },
           "data_source": null,
           "source_path": "sitemap/index.html",
-          "order": 34
+          "order": 35
         }
       ]
     },
@@ -571,7 +585,7 @@
           },
           "data_source": null,
           "source_path": "social-media/index.html",
-          "order": 35
+          "order": 36
         }
       ]
     },
@@ -585,7 +599,7 @@
           },
           "data_source": null,
           "source_path": "ta-exclusive/index.html",
-          "order": 36
+          "order": 37
         }
       ]
     },
@@ -599,7 +613,7 @@
           },
           "data_source": null,
           "source_path": "terms-of-use/index.html",
-          "order": 37
+          "order": 38
         }
       ]
     },
@@ -613,7 +627,7 @@
           },
           "data_source": null,
           "source_path": "things-to-do-in-nyc/index.html",
-          "order": 47
+          "order": 48
         }
       ],
       "art-culture": {
@@ -626,7 +640,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/art-culture/index.html",
-            "order": 38
+            "order": 39
           }
         ]
       },
@@ -640,7 +654,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/culinary-guide/index.html",
-            "order": 43
+            "order": 44
           }
         ],
         "coffee-and-drinks": {
@@ -653,7 +667,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/coffee-and-drinks/index.html",
-              "order": 39
+              "order": 40
             }
           ]
         },
@@ -667,7 +681,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/desserts-and-snacks/index.html",
-              "order": 40
+              "order": 41
             }
           ]
         },
@@ -681,7 +695,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/dinner/index.html",
-              "order": 41
+              "order": 42
             }
           ]
         },
@@ -695,7 +709,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/lunch/index.html",
-              "order": 42
+              "order": 43
             }
           ]
         }
@@ -710,7 +724,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/entertainment/index.html",
-            "order": 44
+            "order": 45
           }
         ]
       },
@@ -724,7 +738,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/must-see-nyc/index.html",
-            "order": 45
+            "order": 46
           }
         ]
       },
@@ -738,7 +752,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/shopping/index.html",
-            "order": 46
+            "order": 47
           }
         ]
       }
@@ -753,7 +767,7 @@
           },
           "data_source": null,
           "source_path": "westhouse-blog/index.html",
-          "order": 48
+          "order": 49
         }
       ]
     },
@@ -767,7 +781,7 @@
           },
           "data_source": null,
           "source_path": "westhouse-offers/index.html",
-          "order": 49
+          "order": 50
         }
       ]
     }
@@ -810,6 +824,16 @@
     "contact-us/index.html/nav_amenities_content.json",
     "contact-us/index.html/nav_dining_content.json",
     "contact-us/index.html/nav_neighborhood_content.json",
+    "cyber-monday/index.html/black-friday_heading1.json",
+    "cyber-monday/index.html/black-friday_heading2.json",
+    "cyber-monday/index.html/black-friday_content1.json",
+    "cyber-monday/index.html/black-friday_content2.json",
+    "cyber-monday/index.html/black-friday_content3.json",
+    "cyber-monday/index.html/nav_rooms_content.json",
+    "cyber-monday/index.html/nav_offers_content.json",
+    "cyber-monday/index.html/nav_amenities_content.json",
+    "cyber-monday/index.html/nav_dining_content.json",
+    "cyber-monday/index.html/nav_neighborhood_content.json",
     "dining/speakeasy-lounge-nyc/index.html/nav_rooms_content.json",
     "dining/speakeasy-lounge-nyc/index.html/nav_offers_content.json",
     "dining/speakeasy-lounge-nyc/index.html/nav_amenities_content.json",
@@ -1423,6 +1447,16 @@
     "blog/nycs-most-popular-workout-classes.html/nav_amenities_content.json",
     "blog/nycs-most-popular-workout-classes.html/nav_dining_content.json",
     "blog/nycs-most-popular-workout-classes.html/nav_neighborhood_content.json",
+    "blog/the-best-way-to-see-new-york-on-two-wheels.html/nav_rooms_content.json",
+    "blog/the-best-way-to-see-new-york-on-two-wheels.html/nav_offers_content.json",
+    "blog/the-best-way-to-see-new-york-on-two-wheels.html/nav_amenities_content.json",
+    "blog/the-best-way-to-see-new-york-on-two-wheels.html/nav_dining_content.json",
+    "blog/the-best-way-to-see-new-york-on-two-wheels.html/nav_neighborhood_content.json",
+    "blog/the-art-of-people-watching.html/nav_rooms_content.json",
+    "blog/the-art-of-people-watching.html/nav_offers_content.json",
+    "blog/the-art-of-people-watching.html/nav_amenities_content.json",
+    "blog/the-art-of-people-watching.html/nav_dining_content.json",
+    "blog/the-art-of-people-watching.html/nav_neighborhood_content.json",
     "blog/finding-the-hamptons-in-nyc.html/nav_rooms_content.json",
     "blog/finding-the-hamptons-in-nyc.html/nav_offers_content.json",
     "blog/finding-the-hamptons-in-nyc.html/nav_amenities_content.json",
@@ -2373,5 +2407,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "25a14ba8a41020f0eb412263e22c89382e644ba5"
+  "__SHA__": "fe9e35781d8cdeec8fab09d54ce37102186cc14d"
 }
