@@ -8399,3 +8399,115 @@ div.picnic-post
     float: left;
     color: #616161;
   }
+
+
+/* offer popup css */
+
+.offer-popup {
+    background-color: rgba(0,0,0,.9);
+    opacity: 1;
+    z-index: 99999999;
+}
+.offer-popup.fade .modal-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+    .offer-popup.fade .modal-dialog {
+        width: 90% !important;
+    }
+}
+.offer-popup .modal-wrapper {
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    .offer-popup .modal-wrapper {
+        width: 90%;
+    }
+}
+.offer-popup .modal-wrapper .close {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    z-index: 9;
+    width: 22px;
+    background-color: #fff !important;
+    border-radius: 50%;
+    opacity: 1;
+}
+.offer-popup .modal-content {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 0;
+}
+.offer-popup .modal-content .modal-content-inner {
+    margin: 18px;
+    padding: 30px 50px 25px;
+    border: 1px solid #000;
+}
+@media screen and (max-width: 1024px) {
+    .offer-popup .modal-content .modal-content-inner {
+        padding: 30px 20px 25px;
+    }
+}
+.offer-popup .modal-content .modal-content-inner p {
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #777676;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.offer-popup .modal-content .modal-content-inner p b{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.offer-popup .modal-content .modal-content-inner input{
+    height: 56px;
+    font-family: AvenirMedium;
+    color: #777676;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid #999;
+    padding: 0 20px;
+    width: 300px;
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 500px) {
+    .offer-popup .modal-content .modal-content-inner input {
+        width: 96%;
+    }
+}
+.offer-popup .modal-content .modal-content-inner p:after {
+    display: block;
+    width: 61px;
+    height: 1px;
+    margin: 18px auto 0;
+    content: '';
+    background: #000;
+}
+.offer-popup .button-common {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: .3em;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    background: #333;
+    color: white !important;
+    padding: 13px 28px;
+    font-size: 13px;
+    margin: 0 auto;
+}
+.offer-popup .button-common:hover {
+    opacity: .9;
+    text-decoration: none;
+}

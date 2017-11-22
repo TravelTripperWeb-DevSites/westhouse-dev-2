@@ -82,7 +82,7 @@
         },
         "data_source": null,
         "source_path": "westhouse_blog_rss.xml",
-        "order": 52
+        "order": 53
       }
     ],
     "about": {
@@ -617,6 +617,20 @@
         }
       ]
     },
+    "thankyou": {
+      "__PAGES__": [
+        {
+          "label": "Thank you | WestHouse Hotel New York",
+          "published": true,
+          "locales": {
+            "en": "/thankyou/"
+          },
+          "data_source": null,
+          "source_path": "thankyou/index.html",
+          "order": 39
+        }
+      ]
+    },
     "things-to-do-in-nyc": {
       "__PAGES__": [
         {
@@ -627,7 +641,7 @@
           },
           "data_source": null,
           "source_path": "things-to-do-in-nyc/index.html",
-          "order": 48
+          "order": 49
         }
       ],
       "art-culture": {
@@ -640,7 +654,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/art-culture/index.html",
-            "order": 39
+            "order": 40
           }
         ]
       },
@@ -654,7 +668,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/culinary-guide/index.html",
-            "order": 44
+            "order": 45
           }
         ],
         "coffee-and-drinks": {
@@ -667,7 +681,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/coffee-and-drinks/index.html",
-              "order": 40
+              "order": 41
             }
           ]
         },
@@ -681,7 +695,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/desserts-and-snacks/index.html",
-              "order": 41
+              "order": 42
             }
           ]
         },
@@ -695,7 +709,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/dinner/index.html",
-              "order": 42
+              "order": 43
             }
           ]
         },
@@ -709,7 +723,7 @@
               },
               "data_source": null,
               "source_path": "things-to-do-in-nyc/culinary-guide/lunch/index.html",
-              "order": 43
+              "order": 44
             }
           ]
         }
@@ -724,7 +738,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/entertainment/index.html",
-            "order": 45
+            "order": 46
           }
         ]
       },
@@ -738,7 +752,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/must-see-nyc/index.html",
-            "order": 46
+            "order": 47
           }
         ]
       },
@@ -752,7 +766,7 @@
             },
             "data_source": null,
             "source_path": "things-to-do-in-nyc/shopping/index.html",
-            "order": 47
+            "order": 48
           }
         ]
       }
@@ -767,7 +781,7 @@
           },
           "data_source": null,
           "source_path": "westhouse-blog/index.html",
-          "order": 49
+          "order": 50
         }
       ]
     },
@@ -781,7 +795,7 @@
           },
           "data_source": null,
           "source_path": "westhouse-offers/index.html",
-          "order": 50
+          "order": 51
         }
       ]
     }
@@ -1018,6 +1032,11 @@
     "terms-of-use/index.html/nav_amenities_content.json",
     "terms-of-use/index.html/nav_dining_content.json",
     "terms-of-use/index.html/nav_neighborhood_content.json",
+    "thankyou/index.html/nav_rooms_content.json",
+    "thankyou/index.html/nav_offers_content.json",
+    "thankyou/index.html/nav_amenities_content.json",
+    "thankyou/index.html/nav_dining_content.json",
+    "thankyou/index.html/nav_neighborhood_content.json",
     "things-to-do-in-nyc/art-culture/index.html/entertainment_neighborhood_text.json",
     "things-to-do-in-nyc/art-culture/index.html/nav_rooms_content.json",
     "things-to-do-in-nyc/art-culture/index.html/nav_offers_content.json",
@@ -2407,5 +2426,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "fe9e35781d8cdeec8fab09d54ce37102186cc14d"
+  "__SHA__": "1a42a387517983978a699c2eb5d636298c2f8087"
 }
