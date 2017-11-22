@@ -65,8 +65,8 @@
 		
 {% include footer.html %}
 <script>
-   $(document).ready(function(){ 
-     var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.c2a42d293f6f494e86dc0bb5466681b4&callback=?';
+   $(window).on("load",function(e){
+     var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.3f7b9460f3ab49818cc991cf3fefcaca&callback=?';
      $.ajax({
         url: instaurl,
         dataType: "jsonp",
