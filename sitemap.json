@@ -82,7 +82,7 @@
         },
         "data_source": null,
         "source_path": "westhouse_blog_rss.xml",
-        "order": 54
+        "order": 53
       }
     ],
     "about": {
@@ -1486,6 +1486,31 @@
     "blog/that-one-time-at-the-parade.html/nav_amenities_content.json",
     "blog/that-one-time-at-the-parade.html/nav_dining_content.json",
     "blog/that-one-time-at-the-parade.html/nav_neighborhood_content.json",
+    "blog/why-henri-bendel-was-the-pioneer-of-self-branding.html/nav_rooms_content.json",
+    "blog/why-henri-bendel-was-the-pioneer-of-self-branding.html/nav_offers_content.json",
+    "blog/why-henri-bendel-was-the-pioneer-of-self-branding.html/nav_amenities_content.json",
+    "blog/why-henri-bendel-was-the-pioneer-of-self-branding.html/nav_dining_content.json",
+    "blog/why-henri-bendel-was-the-pioneer-of-self-branding.html/nav_neighborhood_content.json",
+    "blog/how-jessica-experiences-silence-in-the-city.html/nav_rooms_content.json",
+    "blog/how-jessica-experiences-silence-in-the-city.html/nav_offers_content.json",
+    "blog/how-jessica-experiences-silence-in-the-city.html/nav_amenities_content.json",
+    "blog/how-jessica-experiences-silence-in-the-city.html/nav_dining_content.json",
+    "blog/how-jessica-experiences-silence-in-the-city.html/nav_neighborhood_content.json",
+    "blog/a-poets-holiday-in-new-york-city.html/nav_rooms_content.json",
+    "blog/a-poets-holiday-in-new-york-city.html/nav_offers_content.json",
+    "blog/a-poets-holiday-in-new-york-city.html/nav_amenities_content.json",
+    "blog/a-poets-holiday-in-new-york-city.html/nav_dining_content.json",
+    "blog/a-poets-holiday-in-new-york-city.html/nav_neighborhood_content.json",
+    "blog/a-foodies-guide-to-queens.html/nav_rooms_content.json",
+    "blog/a-foodies-guide-to-queens.html/nav_offers_content.json",
+    "blog/a-foodies-guide-to-queens.html/nav_amenities_content.json",
+    "blog/a-foodies-guide-to-queens.html/nav_dining_content.json",
+    "blog/a-foodies-guide-to-queens.html/nav_neighborhood_content.json",
+    "blog/an-aspiring-theater-lovers-guide-to-off-broadway.html/nav_rooms_content.json",
+    "blog/an-aspiring-theater-lovers-guide-to-off-broadway.html/nav_offers_content.json",
+    "blog/an-aspiring-theater-lovers-guide-to-off-broadway.html/nav_amenities_content.json",
+    "blog/an-aspiring-theater-lovers-guide-to-off-broadway.html/nav_dining_content.json",
+    "blog/an-aspiring-theater-lovers-guide-to-off-broadway.html/nav_neighborhood_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_rooms_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_offers_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_amenities_content.json",
@@ -2176,6 +2201,11 @@
     "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_amenities_content.json",
     "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_dining_content.json",
     "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_neighborhood_content.json",
+    "offers/downton-abbey-package.html/nav_rooms_content.json",
+    "offers/downton-abbey-package.html/nav_offers_content.json",
+    "offers/downton-abbey-package.html/nav_amenities_content.json",
+    "offers/downton-abbey-package.html/nav_dining_content.json",
+    "offers/downton-abbey-package.html/nav_neighborhood_content.json",
     "offers/valet-parking.html/nav_rooms_content.json",
     "offers/valet-parking.html/nav_offers_content.json",
     "offers/valet-parking.html/nav_amenities_content.json",
@@ -2431,5 +2461,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "a6d5cd799553c62f11db7feb9bb071efbf883753"
+  "__SHA__": "2d2e5554ac7347897f87d13b3def90dc600808b3"
 }
