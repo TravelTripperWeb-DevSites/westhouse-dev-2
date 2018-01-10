@@ -1516,6 +1516,16 @@
     "blog/nueva-york-ich-liebe-dich.html/nav_amenities_content.json",
     "blog/nueva-york-ich-liebe-dich.html/nav_dining_content.json",
     "blog/nueva-york-ich-liebe-dich.html/nav_neighborhood_content.json",
+    "blog/what-people-said-about-us.html/nav_rooms_content.json",
+    "blog/what-people-said-about-us.html/nav_offers_content.json",
+    "blog/what-people-said-about-us.html/nav_amenities_content.json",
+    "blog/what-people-said-about-us.html/nav_dining_content.json",
+    "blog/what-people-said-about-us.html/nav_neighborhood_content.json",
+    "blog/dr-martin-luther-king-jrs-new-york.html/nav_rooms_content.json",
+    "blog/dr-martin-luther-king-jrs-new-york.html/nav_offers_content.json",
+    "blog/dr-martin-luther-king-jrs-new-york.html/nav_amenities_content.json",
+    "blog/dr-martin-luther-king-jrs-new-york.html/nav_dining_content.json",
+    "blog/dr-martin-luther-king-jrs-new-york.html/nav_neighborhood_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_rooms_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_offers_content.json",
     "blog/westhouse-guide-to-the-hamptons.html/nav_amenities_content.json",
@@ -2466,5 +2476,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "e35cfa625d43d717a0f7d57340b085c8c8ee69c7"
+  "__SHA__": "1d2c40621d8cdeb4c5a0c3141ba497fced4f40c9"
 }
