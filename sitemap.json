@@ -2211,11 +2211,6 @@
     "offers/girls-pamper-package-nyc.html/nav_amenities_content.json",
     "offers/girls-pamper-package-nyc.html/nav_dining_content.json",
     "offers/girls-pamper-package-nyc.html/nav_neighborhood_content.json",
-    "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_rooms_content.json",
-    "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_offers_content.json",
-    "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_amenities_content.json",
-    "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_dining_content.json",
-    "offers/celebrate-new-years-eve-in-the-heart-of-new-york-city.html/nav_neighborhood_content.json",
     "offers/downton-abbey-package.html/nav_rooms_content.json",
     "offers/downton-abbey-package.html/nav_offers_content.json",
     "offers/downton-abbey-package.html/nav_amenities_content.json",
@@ -2476,5 +2471,5 @@
     "navigation",
     "_model_filters"
   ],
-  "__SHA__": "1d2c40621d8cdeb4c5a0c3141ba497fced4f40c9"
+  "__SHA__": "939c075daa24968b6a7d1614957da572dc38702a"
 }
