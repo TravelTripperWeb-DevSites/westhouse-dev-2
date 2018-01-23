@@ -1,11 +1,13 @@
 {
   "definition_id": "55998c3cc06bc82990000002",
-  "title": "Mercedes Car Transfer",
-  "url_friendly_name": "mercedes-car-transfer",
+  "title": "Luxury Car Transfer  ",
+  "url_friendly_name": "Luxury-car-transfer",
   "Outbound link or Offer ID": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=35754&vr=3",
   "image": {
     "url": "/assets/images/4032/original/westhouse-hotel-new-york-mercedes.jpg",
-    "alt": "LUXCAR"
+    "alt": "LUXCAR",
+    "caption": "",
+    "description": ""
   },
   "outbound": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=35754&vr=3",
   "image_id": "4032",
@@ -14,7 +16,7 @@
   "short_description": "<p class=\"MsoNormal\">Arrive at WestHouse Hotel New York in style with this luxury car transfer package.</p>",
   "seo_title": "Hotel with Transfers from New York Airpots | WestHouse Hotel",
   "seo_description": "Arrive at WestHouse Hotel in style with this luxury car transfer package. Package includes round trip transportation for up to two adults and two children between WestHouse New York and John F. Kennedy and LaGuardia airports. Terms and conditions apply.",
-  "partner_name": "Mercedes Car Transfer",
+  "partner_name": "Luxury Car Transfer  ",
   "contents": "<p id=\"mf81\">Arrive at WestHouse Hotel New York in style with this luxury car transfer package. Package includes round trip transportation for up to two adults and two children between WestHouse New York and John F. Kennedy and LaGuardia airports. Terms and conditions apply.</p>\n<p>Must be booked 7-days in advance.</p>",
   "definition": "",
   "menu_order": 4
