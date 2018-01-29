@@ -5,9 +5,11 @@
   "Outbound link or Offer ID": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=34905&vr=3",
   "image": {
     "url": "/assets/images/4062/original/westhouse-hotel-new-york-valet-parking-special.jpg",
-    "alt": "VPARK"
+    "alt": "VPARK",
+    "caption": "",
+    "description": ""
   },
-  "outbound": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=34905&vr=3",
+  "outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=298784&vr=3&accessCode=PARKING",
   "image_id": "4062",
   "_delete_image": "0",
   "offer_code": "VPARK",
