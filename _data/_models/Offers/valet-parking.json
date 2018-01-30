@@ -5,14 +5,14 @@
   "Outbound link or Offer ID": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=34905&vr=3",
   "image": {
     "url": "/assets/images/4062/original/westhouse-hotel-new-york-valet-parking-special.jpg",
-    "alt": "VPARK",
+    "alt": "PARKING",
     "caption": "",
     "description": ""
   },
   "outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=298784&vr=3&accessCode=PARKING",
   "image_id": "4062",
   "_delete_image": "0",
-  "offer_code": "VPARK",
+  "offer_code": "PARKING",
   "short_description": "<p class=\"MsoNormal\">This special $25 parking package includes overnight parking.</p>",
   "seo_title": "Valet Parking - Luxury Hotel Offers in NYC - WestHouse Hotel",
   "seo_description": "This special $25 parking package includes overnight parking for the duration of your stay at the hotel; no in/out privileges.",
