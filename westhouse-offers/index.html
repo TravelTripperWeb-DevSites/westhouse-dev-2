@@ -99,40 +99,44 @@ meta_keywords: "Luxury Hotel Offers in NYC, Midtown Hotels"
 
 <div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-	FB.init({appId: '594081230923384', status: true, cookie: true,
-	xfbml: true});
-	};
-	(function() {
-	var e = document.createElement('script'); e.async = true;
-	e.src = document.location.protocol +
-	'//connect.facebook.net/en_US/all.js';
-	document.getElementById('fb-root').appendChild(e);
-	}());
+window.fbAsyncInit = function () {
+    FB.init({
+        appId: '594081230923384',
+        status: true,
+        xfbml: true
+    });
+};
+(function () {
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = document.location.protocol +
+        '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+}());
 
-	$(document).ready(function() {
-		$('.dropdown-social').click(function(){
-			 $('.dropdown-social').not(this).find('.share-widgets').hide('slow');
-			$(this).find('.share-widgets').toggle();
-		});
-		$('.share_button').click(function(e){
-		   e.preventDefault();
-			FB.ui({
-				method: 'share_open_graph',
-				action_type: 'og.shares',
-				action_properties: JSON.stringify({
-					object : {
-					   'og:url': window.location.href,
-					   'og:title': $(this).closest(".halfoffer").find("h3").text(),
-					   'og:description': $(".hoffer-two p").text(),
-					   'og:image:width': '1200',
-					   'og:image:height': '650',
-					   'og:image': $(this).closest(".halfoffer").find('.hoffer-one').css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
-					}
-				})
-			});
-		});
-	});
+$(document).ready(function () {
+    $('.dropdown-social').click(function () {
+        $('.dropdown-social').not(this).find('.share-widgets').hide('slow');
+        $(this).find('.share-widgets').toggle();
+    });
+    $('.share_button').click(function (e) {
+        e.preventDefault();
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.shares',
+            action_properties: JSON.stringify({
+                object: {
+                    'og:url': window.location.href,
+                    'og:title': $(this).closest(".halfoffer").find("h3").text(),
+                    'og:description': $(this).closest(".halfoffer").find(".hoffer-two p").text(),
+                    'og:image:width': '1200',
+                    'og:image:height': '650',
+                    'og:image': $(this).closest(".halfoffer").find('.hoffer-one').css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+                }
+            })
+        });
+    });
+});
 </script>
 
 {% include footer.html %}
