@@ -9,7 +9,7 @@
     "caption": "",
     "description": ""
   },
-  "outbound": "https://westhousehotelnewyork.reztrip.com/rt/ext/promoRate?property=354&mode=b&pm=true&sr=35754&vr=3",
+  "outbound": "https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=314381&vr=3&accessCode=LUXCAR",
   "image_id": "4032",
   "_delete_image": "0",
   "offer_code": "LUXCAR",
