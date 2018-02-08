@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<div class="neighborhoodmap">
+
+  {% for location in site.data._models.culinary-locations %}
+    {% if location.category == page.category %}
+      <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
+        <img src="{{ location.image.url }}" alt="{{ location.title }}">
+        <h2>{{ location.title }}</h2>
+        <a href="#" class="closer"><i class="fa fa-times"></i></a>
+        <div class="clear"></div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <div id="map"></div>
+
+  <ul id="map-side-bar">
+    <span class="usvisits">
+
+      <li class="map-location" data-icon="/assets/images/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/mapicon.jpg'}">
+        <a href="#" class="map-link us">US</a>
+        <div class="info-box">
+          <h3>Westhouse Hotel New York</h3>
+        </div>
+      </li>
+
+      <div class="allothers">
+        <ul>
+          {% for location in site.data._models.culinary-locations %}
+            {% if location.category == page.category %}
+              <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
+                <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+                <div class="info-box">
+                  <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
+                  <h3>{{ location.title }}</h3>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+    </span>
+    <div class="clear"></div>
+  </ul>
+
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  {% for guide in site.data._models.culinary-guide %}
+    <a href="/things-to-do-in-nyc/culinary-guide/{{ guide.url_friendly_name }}/">{{ guide.title }}</a>
+  {% endfor %}
+</div>
+
+<div id="maincontent">
+
+  <div class="container culinary-guide">
+    <h1>{{ page.title }}</h1>
+  </div>
+
+  <div class="container">
+
+    {% for location in site.data._models.culinary-locations %}
+      {% if location.category == page.category %}
+        <div class="culinary-location">
+          <div class="col-md-3">
+            <img class="img-fluid" src="{{ location.image.url }}">
+          </div>
+          <div class="col-md-9">
+            <h3><a href="{{ location.Outbound_Link }}" target="_blank">{{ location.title }}</a></h3>
+            {{ location.content }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    <div class="clear"></div>
+
+    <div class="culinary-guide-content">
+      <p style="margin-bottom: 20px;">* = number of Michelin Stars</p>
+      <p>This Dine Around Guide was created by Trends on Trends (<a href="https://www.instagram.com/trendsontrends_/" target="_blank">@trendsontrends_</a>) with WestHouse (<a href="https://www.instagram.com/westhouseny/" target="_blank">@westhouseny</a>).</p>
+      <p>Lovely illustrations by: Jade Sheldon (<a href="https://www.instagram.com/jade_melissa/" target="_blank">@jade_melissa</a>) and printing by: Presshaus LA (<a href="https://www.instagram.com/presshausla/" target="_blank">@presshausla</a>).</p>
+    </div>
+
+  </div>
+
+</div>

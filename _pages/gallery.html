@@ -1,0 +1,46 @@
+---
+layout: default
+title: NYC Luxury Hotel Photos - WestHouse Hotel New York
+meta_description: View our collection of NYC luxury hotel photos to see accommodations and amenities at WestHouse Hotel New York.
+permalink: /gallery/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/gallery/WestHouse_Front_Entrance_v2s.jpg');">
+  <h1>Gallery</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  {% assign gallery-categories = site.data._models.gallery-category | sort: 'sort_order' %}
+  {% for gallery-category in gallery-categories %}
+    <a href="/gallery/{{ gallery-category.url_friendly_name }}/">{{ gallery-category.category_name }}</a>
+  {% endfor %}
+</div>
+
+<section class="assets-listing">
+  <div class="assets-listing-container">
+
+    <h3>Westhouse Galleries</h3>
+
+    <div class="assets-listing-row">
+      {% assign gallery-categories = site.data._models.gallery-category | sort: 'sort_order' %}
+      {% for gallery-category in gallery-categories %}
+        {% assign value = forloop.index | modulo:3 %}
+        {% if value != 0 %}
+          {% capture cls %}col-lg-6{% endcapture %}
+        {% else %}
+          {% capture cls %}col-lg-12{% endcapture %}
+        {% endif %}
+        <div class="{{ cls }}">
+          <div class="assets-item bg-cover" style="background-image: url('{{ gallery-category.category_image.url }}');">
+            <a href="/gallery/{{ gallery-category.url_friendly_name }}/" class="floating"><h2 class="floating-text">{{ gallery-category.category_name }}</h2></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

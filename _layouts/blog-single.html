@@ -1,180 +1,21 @@
-{% assign Blog = page %}
-{% assign model = page %}
-{% assign template_class = 'blogsingle' %}
-{% assign seo_title = Blog.seo_title %}
-{% assign seo_description = Blog.seo_description %}
-
-{% include header.html %}
-
-		<div id="featuredcontent" style="background-image: url({{model.image.url}});">
-
-			<h1 class="contenttitle">Westhouse Your House</h1>
-
-			<!-- <div class="reserve"><a class="button1" href="#">Reserve</a></div> -->
-
-		</div>
-
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
-
-           <!-- include booking form -->
-
-            {% include booking_form_interior.html %}
-
-            <!-- // include booking form -->
-		</div>
-        
-        <!--
-        
-		<div class="subnav">
-			<ul>
-			    {% for BlogCategory in site.data._models.BlogCategory %}
-    				<li><a data-category-id="{{BlogCategory.id}}">{{BlogCategory.name}}</a></li>
-	    		{% endfor %}
-			</ul>
-		</div>
-		
-        <div class="subnavmobile">
-          <ul>
-            {% for BlogCategory in site.data._models.BlogCategory %}
-            <li><a data-category-id="{{BlogCategory.id}}"><span>{{BlogCategory.name}}</span></a></li>
-            {% endfor %}
-            <div class="clear"></div>
-          </ul>
-          
-          <div class="subclose"><i class="fa fa-bars"></i><span>View Categories</span></div>
-        </div>
-        
-        -->
-
-		<div id="maincontent" class="blogsingle">
-		
-		    <div class="share">
-
-				<h3>Share</h3>
-
-				<div class="socialmedia">
-					<ul>
-						<li><a href="#" target="_blank" onclick="window.open('https://www.facebook.com/dialog/feed?app_id=489136131246132&display=popup&caption={{ Offers.content }}&link='+ window.location.href +'&redirect_uri='+ window.location.href,'popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text={{ Offers.title }}&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="mailto:?subject={{ Offers.title }}&body={{ Offers.content }}" target="_blank"><i class="fa fa-envelope"></i></a></li>
-					</ul>
-				</div>
-
-			</div>
-
-			<div class="container">
-				
-				    <h2 class="main-heading" style="text-align:center;">{{ Blog.title }}</h2>
-				    <p style="text-align: center; margin-bottom: 20px;">{{ Blog.date }}</p>
-    
-    				<!-- <h4 class="author">By {{ Blog.author.name }}<span>{{ Blog.date }}</span></h4> -->
-    
-    				{{ Blog.contents }}
-    				
-			</div>
-
-		</div>
-
-		<!--<div class="partnersmeta">
-
-			 <div class="col2">
-
-				<div class="pr15">
-
-					<p><img src="images/partners-detail1.jpg" alt="partner" /></p>
-
-					<blockquote>Ah, it was a fine night, a warm night, a wine-drinking night, a moony night, and a night to hug your girl and talk and spit and be heavengoing</blockquote>
-
-				</div>
-
-			</div> -->
-
-			<!-- <div class="col2">
-
-				<div class="pl15">
-
-					<p><img src="images/partners-detail2.jpg" alt="partner" /></p>
-
-				</div>
-
-			</div>
-
-			<div class="col1">
-
-					<p><img src="images/partners-detail3.jpg" alt="partner" /></p>
-
-			</div> -->
-
-		<!-- <div class="postextra">
-
-
-			<div class="subscribe">
-
-				<h3>Subscribe to our newsletter</h3>
-
-				<input type="email" placeholder="Your Email">
-				<input type="submit" value="Submit">
-
-			</div>
-
-			<div class="disqus"></div> -->
-
-
-			<!-- <div class="relatedposts">
-
-				<h3>Related Posts</h3>
-
-
-				<div class="posts">
-
-
-					<div class="post-on">
-
-						<div class="postimag" style="background-image: url(images/8.jpeg);">
-
-							<a href="#" class="dropanchor"></a>
-
-						</div>
-
-						<h4><a href="#">Post title here</a></h4>
-
-					</div>
-
-					<div class="post-on">
-
-						<div class="postimag" style="background-image: url(images/6.jpeg);">
-
-							<a href="#" class="dropanchor"></a>
-
-						</div>
-
-						<h4><a href="#">Post title here</a></h4>
-
-					</div>
-
-					<div class="post-on">
-
-						<div class="postimag" style="background-image: url(images/4.jpeg);">
-
-							<a href="#" class="dropanchor"></a>
-
-						</div>
-
-						<h4><a href="#">Post title here</a></h4>
-
-					</div>
-
-
-
-					<div class="clear"></div>
-				</div>
-
-			</div> -->
-
-
-
-
-		<!-- </div> --> <!-- end post extra -->
-
-{% include footer.html %}
+---
+layout: default
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ page.image.url }}');">
+  <h1>Westhouse Your House</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="random-details">
+  <div class="random-details-container">
+    <div class="random-head">
+      <h2>{{ page.title }}</h2>
+      <div class="blog-date">{{ page.date }}</div>
+    </div>
+    <div class="random-body">
+      {{ page.contents }}
+    </div>
+  </div>
+</section>

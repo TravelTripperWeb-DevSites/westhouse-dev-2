@@ -1,0 +1,101 @@
+---
+layout: default
+title: Luxury Hotel Offers in Midtown NYC | WestHouse Hotel Deals
+meta_description: Use NYC luxury hotel deals at WestHouse Hotel New York to save on your next stay in the heart of the city.
+permalink: /offer/
+meta_tags:
+  robots:
+---
+
+<div ng-controller="offerDetail" rt3-special-rates="offers">
+
+  <div class="inner-banner pattern bg-cover" ng-style="{'background-image':'url(' + offers.sRdetail.images[0].large + ')'}">
+    <h1 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h1>
+  </div>
+
+  <div class="sub-nav">
+    <a href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" ng-repeat="offer in offers.special_rates" ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></a>
+  </div>
+
+  <div class="share">
+
+    <h3>Share</h3>
+
+    <script>
+      var offer_content = stripHTML('{{ Offers.contents }}');
+    </script>
+
+    <div class="socialmedia">
+      <ul>
+        <li><a href="JavaScript:Void(0);" class="share_button"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="JavaScript:Void(0);" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text=[[ offers.sRdetail.rate_plan_name | renderHTMLCorrectly ]]&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="mailto:?subject=[[ offers.sRdetail.rate_plan_name | renderHTMLCorrectly ]]&body=Hey! Check this exciting offer. {{ site.url }}/offer/#[[ offers.sRdetail.rate_plan_name | formatNameForLink ]]"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section class="assets-details">
+    <div class="assets-details-container">
+      <h3 ng-bind-html="offers.sRdetail.rate_plan_name | renderHTMLCorrectly"></h3>
+      <div class="assets-details-row">
+
+        <div class="assets-details-calendar">
+          <div class="bw-wrap">
+
+            <div class="date-widget"></div>
+
+            <div class="hidden-form">
+              <form action="{{ site.reztripUrl }}search?" target="_blank" id="offerSearchForm" matho "get">
+
+                <div class="form-row">
+                  <input type="hidden" name="rate_code" value="[[offers.sRdetail.rate_plan_code]]">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" placeholder="Arrival Date">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="departure_dates" name="departure_date" placeholder="Departure Date">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select id="adults" name="adults[]" class="form-control">
+                      <option selected>1 Adult</option>
+                      <option>2 Adults</option>
+                      <option>3 Adults</option>
+                      <option>4 Adults</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select id="children" name="children[]" class="form-control">
+                      <option selected>0 Kids</option>
+                      <option>1 Kid</option>
+                      <option>2 Kids</option>
+                      <option>3 Kids</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="common-btn">Search Now</button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="assets-details-description">
+          <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+         <!-- <p>Terms and conditions:</p>
+          <ul class="bullet-list" ng-show="offers.sRdetail.addons.length > 0">
+            <li ng-repeat="addon in offers.sRdetail.addons">[[addon]]</li>
+          </ul> -->
+          <p><a href="javascript:void(0);" onclick="$('#offerSearchForm').submit();" target="_blank" class="common-btn">Book Now</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>

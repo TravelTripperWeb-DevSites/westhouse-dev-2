@@ -1,0 +1,17 @@
+{
+  "title": {
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug"
+  },
+  "credit": {
+    "type": "text",
+    "hint": "Who Said it?"
+  },
+  "contents": {
+    "type": "text",
+    "required": true,
+    "hint": "Write the quote here."
+  }
+}

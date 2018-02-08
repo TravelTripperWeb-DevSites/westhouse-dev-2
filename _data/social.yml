@@ -1,0 +1,24 @@
+# Social Sharing
+twitter:
+  username: westhouseny
+instagram:
+  username: westhouseny
+facebook:
+  username: WestHouseNewYork
+  app_id: 594081230923384
+  publisher:
+googleplus:
+  username: +Westhousehotelnewyork
+youtube:
+  username: channel/UCHSCIFUogYHPz6xZ1ly9C5w
+tripadvisor:
+  username: g60763-d4945551
+
+og_image: # Open Graph/Twitter default site image
+
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles

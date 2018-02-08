@@ -1,0 +1,19 @@
+{% if site.data.tracking.analytics.provider and page.analytics != false %}
+
+{% case site.data.tracking.analytics.provider %}
+{% when "google" %}
+  {% include analytics/google.html %}
+{% when "gtm" %}
+  {% include analytics/gtm-head.html %}
+{% when "custom" %}
+  {% include analytics/custom.html %}
+{% endcase %}
+
+{% endif %}
+
+{% include analytics/heat-map.html %}
+{% include analytics/crazy-egg.html %}
+{% include analytics/facebook-pixel.html %}
+{% include analytics/facebook-app-id.html %}
+{% include analytics/sojern.html %}
+{% include analytics/adroll.html %}

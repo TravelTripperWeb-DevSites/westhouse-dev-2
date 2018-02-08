@@ -1,0 +1,117 @@
+---
+layout: default
+title: NYC Luxury Hotel Reviews - WestHouse Hotel New York
+meta_description: Read what the press is saying about WestHouse hotel, an incomparably exclusive NYC luxury hotel in the heart of Midtown
+permalink: /things-to-do-in-nyc/culinary-guide/
+meta_tags:
+  robots:
+---
+
+<div class="neighborhoodmap">
+
+  {% for location in site.data._models.neighborhood-locations %}
+    <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
+      <img src="{{ location.image.url }}" alt="{{ location.title }}">
+      <h2>{{ location.title }}</h2>
+      <a href="#" class="closer"><i class="fa fa-times"></i></a>
+      <div class="clear"></div>
+      <div class="neighborhood">
+        <h3>{{ location.category.name }}</h3>
+      </div>
+    </div>
+  {% endfor %}
+
+  <div id="map"></div>
+
+  <ul id="map-side-bar">
+    <span class="usvisits">
+
+      <li style="" class="map-location" data-icon="/assets/images/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/mapicon.jpg'}">
+        <a href="#" class="map-link us" rel="us">US</a>
+        <div class="info-box">
+          <h3>Westhouse Hotel New York</h3>
+        </div>
+      </li>
+
+      <div class="allothers">
+        <ul>
+          {% for location in site.data._models.neighborhood-locations %}
+            <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
+              <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+              <div class="info-box">
+                <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
+                <h3><a href="/attractions/{{ location.url_friendly_name }}">{{ location.title }}</a></h3>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </span>
+    <div class="clear"></div>
+  </ul>
+
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  <a href="/things-to-do-in-nyc/culinary-guide/">Culinary Guide</a>
+  {% for area in site.data._models.area %}
+    <a href="/things-to-do-in-nyc/{{ area.url_friendly_name }}/">{{ area.title }}</a>
+  {% endfor %}
+  <a href="/events-in-nyc/">Events</a>
+</div>
+
+<section class="centered-content pt-0">
+  <div class="common-details-container">
+
+    <h3>#DINEAROUNDWESTHOUSE</h3>
+
+    <div class="common-details-row">
+      <div class="common-content">
+        <h6>DINE, DRINK AND EXPLORE CLASSIC NEW YORK DISHES ALONG WITH LOCAL FAVORITES.</h6>
+        <p>Explore Uptown through six of our favorite bites and beverages. Created and curated by creative agency <strong>Trends on Trends</strong>, this Dine Around Guide is designed to be completed in one evening, making sure you don’t miss one delicious thing while in Manhattan.</p>
+        <p>Each item is within walking distance from <strong>WestHouse</strong>, so all you have to do is drop off your luggage and get ready to eat like a local.</p>
+      </div>
+    </div>
+
+    <div class="culinary-guide-row">
+
+      <div class="culinary-guide-tile">
+        <a href="/things-to-do-in-nyc/culinary-guide/coffee-and-drinks">
+          <img src="/assets/images/area/betony.jpg">
+          <h2>Coffee & Drinks</h2>
+        </a>
+      </div>
+
+      <div class="culinary-guide-tile">
+        <a href="/things-to-do-in-nyc/culinary-guide/lunch/">
+          <img src="/assets/images/area/momu-fuku-milk-bar.jpg">
+          <h2>Lunch</h2>
+        </a>
+      </div>
+
+      <div class="culinary-guide-tile">
+        <a href="/things-to-do-in-nyc/culinary-guide/dinner/">
+          <img src="/assets/images/area/le-bernardin.jpg">
+          <h2>Dinner</h2>
+        </a>
+      </div>
+
+      <div class="culinary-guide-tile">
+        <a href="/things-to-do-in-nyc/culinary-guide/dessert-and-snacks/">
+          <img src="/assets/images/area/polo-bar.jpg">
+          <h2>Dessert & Snacks</h2>
+        </a>
+      </div>
+
+      <div class="culinary-guide-content">
+        <p>This Dine Around Guide was created by Trends on Trends (<a href="https://www.instagram.com/trendsontrends_/" target="_blank">@trendsontrends_</a>) with WestHouse (<a href="https://www.instagram.com/westhouseny/" target="_blank">@westhouseny</a>).</p>
+        <p>Lovely illustrations by: Jade Sheldon (<a href="https://www.instagram.com/jade_melissa/" target="_blank">@jade_melissa</a>) and printing by: Presshaus LA (<a href="https://www.instagram.com/presshausla/" target="_blank">@presshausla</a>).</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

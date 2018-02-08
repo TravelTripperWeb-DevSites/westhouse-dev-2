@@ -1,7 +1,0 @@
-{"title":
-	{"required":true},
-"menulink":
-	{"hint":"menu link"},
-"image":
-	{"required":true},
-"menu_order": {"type": "integer"}}

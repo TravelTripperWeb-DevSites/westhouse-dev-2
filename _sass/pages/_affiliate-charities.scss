@@ -1,0 +1,31 @@
+/*
+   Location Page Elements
+   ========================================================================== */
+.centered-content {
+    padding: 4rem 0 2rem 0;
+    @extend .common-details;
+    .common-content {
+        text-align: center;
+        margin: 0 auto;
+        @include media-breakpoint-up(sm) {
+            width: 80%;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 45%;
+        }
+    }
+    .save-logo {
+        max-width: 220px;
+        margin: 0 auto;
+        padding: 0 0 2rem 0;
+        @include media-breakpoint-up(md) {
+            max-width: 300px;
+        }
+            img {
+                width: 100%
+            }
+    }
+    .btn-holder {
+        padding: 1rem 0 0 0;
+    }
+}

@@ -1,116 +1,92 @@
-{% assign Dining = page %}
+---
+layout: default
+---
+{% assign dining = page %}
 {% assign model = page %}
-{% assign template_class = 'dining-single' %}
-{% assign seo_title = Dining.seo_title %}
-{% assign seo_description = Dining.seo_description %}
 
-{% include header.html %}
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ dining.image }}');">
+  <h1>{{ dining.title }}</h1>
+</div>
 
-	
-		<div id="featuredcontent" style="background-image: url({{Dining.image}});">
+{% include booking-widget.html %}
 
-			<h1 class="contenttitle">{{ Dining.title }}</h1>
+<div class="sub-nav">
+  {% for dining in site.data._models.dining %}
+    <a href="/dining/{{ dining.url_friendly_name }}/">{{ dining.title }}</a>
+  {% endfor %}
+</div>
 
-			<div class="reserve"><a class="button1" href="{{Dining.outbound}}">Reserve</a></div>
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        {{ dining.contents }}
+      </div>
+    </div>
+  </div>
+</section>
 
-		</div>
+{% if dining.image %}
+  <section class="dining-detail carousel-common">
+    <div class="hotel-info-container">
+      <div id="main-carousel" class="main-carousel carousel slide" data-ride="carousel">
 
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
+        <ol class="carousel-indicators center-indicators">
+        {% if dining.image != '' %}
+          <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        {% endif %}
+        {% if dining.image1 != '' %}
+          <li data-target="#main-carousel" data-slide-to="1"></li>
+        {% endif %}
+        {% if dining.image2 != '' %}
+          <li data-target="#main-carousel" data-slide-to="2"></li>
+        {% endif %}
+        {% if dining.image3 != '' %}
+          <li data-target="#main-carousel" data-slide-to="3"></li>
+        {% endif %}
+        {% if dining.image4 != '' %}
+          <li data-target="#main-carousel" data-slide-to="4"></li>
+        {% endif %}
+        {% if dining.image5 != '' %}
+          <li data-target="#main-carousel" data-slide-to="5"></li>
+        {% endif %}
+        </ol>
 
-            {% include booking_form_interior.html %}
-
-		</div>
-
-		<div class="subnav">
-    		<ul>
-			    {% for Dining in site.data._models.Dining %}
-        	    	<li><a href="{{ Dining.id | permalink: model_dir: 'westhouse-hotel-new-york-dining' }}">{{ Dining.title }}</a></li>
-                {% endfor %}
-    		</ul>
-    	</div>
-    	
-        <div class="subnavmobile">
-          <ul>
-            {% for Dining in site.data._models.Dining %}
-			<li><a href="{{ Dining.id | permalink: model_dir: 'westhouse-hotel-new-york-dining' }}"><span>{{ Dining.title }}</span></a></li>
-            {% endfor %}
-            <div class="clear"></div>
-          </ul>
-          
-          <div class="subclose"><i class="fa fa-bars"></i><span>View Dining</span></div>
+        <div class="carousel-inner">
+        {% if dining.image != '' %}
+          <div class="carousel-item active bg-cover" style="background-image: url('{{ dining.image }}')"></div>
+        {% endif %}
+        {% if dining.image1 != '' %}
+          <div class="carousel-item bg-cover" style="background-image: url('{{ dining.image1 }}')"></div>
+        {% endif %}
+        {% if dining.image2 != '' %}
+          <div class="carousel-item bg-cover" style="background-image: url('{{ dining.image2 }}')"></div>
+        {% endif %}
+        {% if dining.image3 != '' %}
+          <div class="carousel-item bg-cover" style="background-image: url('{{ dining.image3 }}')"></div>
+        {% endif %}
+        {% if dining.image4 != '' %}
+          <div class="carousel-item bg-cover" style="background-image: url('{{ dining.image4 }}')"></div>
+        {% endif %}
+        {% if dining.image5 != '' %}
+          <div class="carousel-item bg-cover" style="background-image: url('{{ dining.image5 }}')"></div>
+        {% endif %}
         </div>
 
-	<div id="dining">
-		<div class="container">
-		    
-		    <div class="dining-container">
-			
-			    {{ Dining.contents }} 
+        <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <img src="/assets/images/prev.png" alt="Previous Slide">
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <img src="/assets/images/next.png" alt="Next Slide">
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
 
-				<!--<p>From breakfast on The Terrace, with its captivating city views rivaling rooftop restaurants in New York, to afternoon libations in The Den, where our modern speakeasy-style cocktail hour unfolds, it is little moments of sophisticated indulgence that elevate the everyday at WestHouse. Hotel Residents enjoy these complimentary culinary privileges throughout their stay, a rare and exceptional offering among luxury hotels in New York. And with an enviable location in the very heart of the world’s most food-centric city, WestHouse Residents can gain coveted reservations at famed Manhattan restaurants.</p>
-
-				<p>Resident dining privileges include:</p>
-
-				<ul class="dining-lists">
-					<li>Savory breakfast presentations and barista coffees in The Terrace Weekdays between 6.30am and 10.30am. Weekends between 7.00am and 11.00am</li>
-					<li>Afternoon treats in The Terrace Daily between 2.00pm and 4.00pm</li>
-					<li>Light fare served during Hours of Indulgence in The Den Daily between 5.00pm and 8.00pm</li>
-					<li>Curated selection of alcoholic* beverages in The Den Daily between 5.00pm and 11.00pm</li>
-					<li>Self-service non-alcoholic beverages in The Terrace Daily until 11.00pm</li>
-				</ul>
-
-				 <p>Savory breakfast presentations and barista coffees:</p>
-
-				<ul class="dining-lists">
-					<li>Weekdays between 6:30 AM and 10:30 AM</li>
-					<li>Weekends between 7:00 AM and 11:00 AM</li>
-				</ul>	 
-
-				<p>WestHouse pours the finest quality spirits such as Hudson Whiskey, Manhattan Rye, Louis the 13th Cognac, Johnny Walker Blue, McAllen 18, Roca Patron, and more. Featured Champagnes include Perrier Jouet, Dom Perignon or Roederer Cristal.</p>
-                -->
-
-            </div>
-            
-            <div class="merch-sec" rt3-rate-shopping="rateShopping">
-                <div class="container">
-                    <div class="littleimage" style="background-image: url({{ Dining.image }});"></div>
-                    <div class="merch-copy">
-                        <h2 style="text-transform:none;">
-                            Interactive 360° View
-                            <span>
-                                TAKE A WALK THROUGH OF {{ Dining.title }} <br />
-                                USING OUR VIRTUAL TOUR TECHNOLOGY.
-                            </span>
-                        </h2>
-                        <br/>
-                    </div>
-                    <div class="reserve1">
-                        <a target="_blank" href="{{ Dining.vr_btn_link }}" class="button1">TAKE VIRTUAL TOUR</a>
-                        <!--<a href="" class="button1">Reserve Now</a>-->
-                    </div> 
-                    
-                    <a href="#" class="closethiswindow">X</a>
-                    
-                </div>
-            </div>
-				
-			{% if Dining.image %}
-			
-    			<div class="flexslider diningslider">
-    				<ul class="slides">
-    					{% if Dining.image != '' %}<li style="background-image: url({{Dining.image}});"></li>{% endif %}
-    					{% if Dining.image1 != '' %}<li style="background-image: url({{Dining.image1}});"></li>{% endif %}
-    					{% if Dining.image2 != '' %}<li style="background-image: url({{Dining.image2}});"></li>{% endif %}
-    					{% if Dining.image3 != '' %}<li style="background-image: url({{Dining.image3}});"></li>{% endif %}
-    					{% if Dining.image4 != '' %}<li style="background-image: url({{Dining.image4}});"></li>{% endif %}
-    					{% if Dining.image5 != '' %}<li style="background-image: url({{Dining.image5}});"></li>{% endif %}    					
-    				</ul>
-    			</div>
-			
-			{% endif %}
-
-            </div>
-
-        </div>
-{% include footer.html %}
+      </div>
+    </div>
+  </section>
+{% endif %}

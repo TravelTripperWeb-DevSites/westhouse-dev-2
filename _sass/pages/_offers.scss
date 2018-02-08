@@ -1,0 +1,72 @@
+.offers-listing {
+
+  .offer-listing-intro {
+    width: 100%;
+    margin: 0 0 4rem;
+    padding: 0 15px;
+  }
+
+  .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+
+  .offer-item {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    height: 100%;
+    padding: .75rem .75rem 1.4rem;
+    border: solid 1px $border;
+
+    p {
+      margin-bottom: auto;
+      font-size: $type-size-7;
+      line-height: 1.5rem;
+      @include media-breakpoint-up(md) {
+        font-size: $type-size-5;
+        line-height: 1.875rem;
+      }
+    }
+
+  }
+
+  .offer-image {
+    position: relative;
+    height: 350px;
+  }
+
+  h2 {
+    margin: 2rem 0 1rem;
+    font-family: $primary-bold;
+    color: $primary;
+  }
+
+  .btn-holder {
+    padding-top: .5rem;
+  }
+
+  .share-btn {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+
+    .share-items {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      z-index: 99;
+      display: none;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: solid 1px $primary-bg;
+    }
+  }
+
+  .btn-transparent {
+    color: $primary;
+  }
+
+}

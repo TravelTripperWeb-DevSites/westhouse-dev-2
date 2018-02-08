@@ -1,0 +1,22 @@
+{
+  "thumbnail_image": {
+    "type": "image",
+    "label": "Thumbnail Image",
+    "required": true
+  },
+  "large_image": {
+    "type": "image",
+    "label": "Large Image",
+    "required": true
+  },
+  "category":
+  {
+    "type":"select",
+    "options":["Accomodations","Dining","Amenities","Virtual Tourss"],
+    "label": "Room Category",
+    "required": true
+  }, 
+  "sort_order":{
+  	 "required": true
+  }
+}

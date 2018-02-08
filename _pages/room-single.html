@@ -1,0 +1,187 @@
+---
+layout: default
+title: Room Details
+meta_description:
+permalink: /room/
+meta_tags:
+  robots:
+---
+
+<div ng-controller="roomDetail" rt3-room-details="room" rt3-search-form="search">
+
+  <div class="inner-banner pattern bg-cover" ng-style="{'background-image':'url('+room.photos[0].large+')'}">
+    <h1 ng-bind-html="room.name | renderHTMLCorrectly"></h1>
+  </div>
+
+  <div class="sub-nav">
+    <a href="/room/#[[room.name | formatNameForLink]]" ng-repeat="room in browser.roomsList" ng-bind-html="room.name | renderHTMLCorrectly"></a>
+  </div>
+
+  <section class="assets-details">
+    <div class="assets-details-container">
+
+      <h3 ng-bind-html="room.name | renderHTMLCorrectly"></h3>
+
+      <div class="assets-details-row">
+
+        <div class="assets-details-calendar">
+          <div class="bw-wrap">
+            <div class="date-widget"></div>
+            <div class="hidden-form" on-search-changed="room.fetchRoomDetails()">
+              <form action="{{ site.reztripUrl }}search?" target="_blank" id="roomDetailBookingForm">
+                <input type="hidden" name="selected_room" value="[[room.code]]">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" ng-model="search.params.arrival_date" placeholder="Arrival Date">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="departure_dates" name="departure_date" ng-model="search.params.departure_date" placeholder="Departure Date">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select id="adults" name="adults[]" ng-model="search.params.adults" class="form-control">
+                      <option value="1">1 Adult</option>
+                      <option value="2">2 Adults</option>
+                      <option value="3">3 Adults</option>
+                      <option value="4">4 Adults</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select id="children" name="children[]" ng-model="search.params.children" class="form-control">
+                      <option value="0" selected>0 Kids</option>
+                      <option value="1">1 Kid</option>
+                      <option value="2">2 Kids</option>
+                      <option value="3">3 Kids</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="common-btn">Search Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="assets-details-description">
+
+          <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+          <h2>BEST RATE. EVERY TIME.</h2>
+          <p>Always receive the best possible rate by booking through our website, reservations line or contacting the hotel directly.</p>
+
+          <div class="rate-section">
+            <div ng-show="!room.brgLoaded"> <img src="/assets/images/shortLoading.gif" alt="Loading Rates">
+            </div>
+            <div class="rate-box" ng-show="room.brgLoaded && room.brg.discounted_rate">
+              <div class="rate-wrap">
+                <div class="direct-rate-label">Direct Rate</div>
+                <div class="rate">[[portalInfo.currency_symbol]][[room.brg.discounted_rate | number:0]]</div>
+              </div>
+              <a href="javascript:;" class="book-now" id="reserveNowSubmit">Reserve Now</a>
+            </div>
+            <div class="brg-box" ng-show="room.brgLoaded && room.brg.rates.length >0">
+              <ul>
+                <li ng-repeat="brg in room.brg.rates">[[portalInfo.currency_symbol]][[brg.rate | number:0]] - [[brg.provider]]</li>
+              </ul>
+            </div>
+            <div class="unavailable" ng-show="room.brgLoaded && !room.brg.discounted_rate">
+              <div class="unavailable-label">Unavailable on selected dates</div>
+              <div class="btn-holder"><a href="{{ site.reztripUrl }}?" target="_blank" class="common-btn">Search Available Rooms</a></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="single-room-info carousel-common">
+    <div class="hotel-info-container">
+
+      <div id="main-carousel" class="main-carousel carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators center-indicators">
+          <li data-target="#main-carousel" data-slide-to="[[ $index ]]" ng-repeat="pic in room.photos" ng-class="{'active': $index == 0}"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item bg-cover" ng-class="{'active': $index == 0}" ng-repeat="pic in room.photos" ng-style="{'background-image': 'url([[pic.large]])'}"></div>
+        </div>
+        <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <img src="/assets/images/prev.png" alt="Previous Slide">
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <img src="/assets/images/next.png" alt="Next Slide">
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="single-room-info-row">
+
+        <div class="single-room-amenities">
+          <ul class="amenities-list">
+            <li ng-repeat="amenity in room.amenities">[[amenity]]</li>
+
+          </ul>
+        </div>
+
+        <div class="single-room-virtual-tour">
+          <a href="https://viewer.vrglobal.com/6jvNwfVD" target="_blank" class="common-btn streched-btn">View Visual Tour</a>
+        </div>
+
+        <div class="single-room-reserve" rt3-recent-bookings="recentBookings" ng-cloak ng-show="recentBookings.totalBookings > 5">
+          <div class="reservations-counter">[[ recentBookings.totalBookings ]]</div>
+          <h6>Reservations in the last 48 hours</h6>
+          <a href="{{site.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" class="border-btn">Reserve Now</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <div ng-if="room.code != 'WHPS' && room.code != 'WHPRS'"> -->
+    <div class="merch-sec" rt3-rate-shopping="rateShopping">
+      <div class="container">
+
+        <div class="littleimage" ng-style="{'background-image':'url('+room.photos[0].large+')'}"></div>
+
+        <div class="merch-copy">
+          <h2>Interactive 360° View <span>BEFORE YOU BOOK, TAKE A WALK THROUGH OF YOUR ROOM USING OUR VIRTUAL TOUUR TECHNOLOGY.</span></h2>
+        </div>
+
+        <div class="reserve">
+          <div ng-if="room.code == 'WHQL'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/oTR6FfqW" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHK'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/d7jiAWyW" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHKL'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/bI4wwp6J" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHQQ'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/6jvNwfVD" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHKTS'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/YCWYXsel" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHKS'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/SMDi7vqd" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+          <div ng-if="room.code == 'WHKST'">
+            <a class="white-btn" href="https://viewer.vrglobal.com/X3EZAOZ9" target="_blank">TAKE VIRTUAL TOUR</a>
+          </div>
+        </div>
+
+        <span class="close-popup">X</span>
+
+      </div>
+    </div>
+  <!-- </div> -->
+
+</div>

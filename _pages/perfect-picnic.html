@@ -1,0 +1,61 @@
+---
+layout: default
+title: Perfect Picnic - WestHouse Hotel New York
+meta_description: Extraordinary among luxury hotels in Manhattan, WestHouse Hotel New York is a true "house away from home." Book your Luxurious New York City break today.
+permalink: /perfect-picnic-in-nyc/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/perfect-picnic/westhouse-picnic-hero.jpg');">
+  <h1>Perfect Picnic</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        
+        <h3>Your Perfect Picnic</h3>
+
+        <div class="fixed-width">
+          <h6>WestHouse is a proud partner of Perfect Picnic, NYC’s first luxury picnic experience company.</h6>
+          <p>You will be able to enjoy a customized menu of picnics made of the most local, fresh and organic products, every day between 10AM and 4PM.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="perfect-picnic">
+  <div class="perfect-picnic-container">
+
+    {% assign picnics = site.data._models.picnic | sort: 'orderby' %}
+    {% for picnic in picnics %}
+      <div class="perfect-picnic-row">
+
+        <div class="perfect-picnic-left">
+          <div class="-left">
+            <img src="{{ picnic.featured_image.url }}" alt="{{ picnic.featured_image.alt }}">
+          </div>
+        </div>
+
+        <div class="perfect-picnic-right">
+          <div class="-right">
+            <h2>{{ picnic.title }}</h2>
+            <div class="price"><span>{{ picnic.price }}</span> {{ picnic.price_details }}</div>
+            {% if picnic.price2 != '' %}
+              <div class="price">{{ picnic.price2 }}</div>
+            {% endif %}
+            {{ picnic.contents }}
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+
+  </div>
+</section>

@@ -1,0 +1,37 @@
+main:
+  - title: Rooms & Suites
+    url: /luxury-nyc-rooms/
+  - title: Offers
+    url: /offers/
+  - title: Amenities
+    url: /luxury-amenities/
+  - title: Dining
+    url: /dining/
+  - title: Gallery
+    url: /gallery/
+  - title: Area
+    url: /things-to-do-in-nyc/
+  - title: Partners
+    url: /partners/
+  - title: Blog
+    url: /blog/
+  - title: Connect with Us
+    url: /connect/
+
+footer:
+  - title: Terms of Use
+    url: /terms-of-use/
+  - title: Privacy Policy
+    url: /privacy-policy/
+  - title: Affiliate Charities
+    url: /partners/affiliate-charities/
+  - title: Sitemap
+    url: /sitemap/
+  - title: Careers
+    url: /careers/
+  - title: Press
+    url: /press/
+  - title: Contact
+    url: /contact-us/
+  - title: Connect
+    url: /connect/

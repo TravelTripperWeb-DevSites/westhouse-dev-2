@@ -1,0 +1,38 @@
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "required": true
+  },
+  "seo_description": {
+    "type": "text",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug"
+  },
+  "category": {
+    "label": "Choose Neighborhood Category",
+    "type": "model",
+    "display_field": "title",
+    "model_name": "neighborhoodcategories"
+  },
+  "Outbound_Link": {
+    "hint": "Outgoing link to this location"
+  },
+  "Latitude": {
+    "hint": "location latitude."
+  },
+  "Longitude": {
+    "hint": "location longitude."
+  },
+  "image": {
+    "type": "image"
+  },
+  "contents": {
+    "type": "richtext",
+    "required": true,
+    "hint": "Write the content of your location."
+  }
+}

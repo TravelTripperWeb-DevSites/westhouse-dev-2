@@ -1,0 +1,57 @@
+---
+layout: default
+title: Events & News in New York | The WestHouse Hotel Blog
+meta_description: Check in with our WestHouse YourHouse blog to discover the cultured nuances that make this fascinating city hum with its own unique energy.
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/blog/WestHouse-HomePage-MainBanner.jpg');">
+  <h1>Blog</h1>
+</div>
+
+<div class="common-intro pt-5">
+  {% regionblock blog_intro, type:text %}
+    <p>Welcome to your "insider's guide" to all things New York. Check in with our WestHouse Your House blog to discover the cultured nuances that make this fascinating city hum with its own unique energy.</p>
+  {% endregionblock %}
+</div>
+
+<section class="random-listing">
+  <div class="random-listing-container">
+    <div class="random-listing-row">
+
+      {% for post in data_paginator.posts %}
+        {% assign value = forloop.index0 | modulo: 5 %}
+        <div class="{% if forloop.first %}col-lg-8{% elsif value != 0 %} col-lg-4{% else %} col-lg-8{% endif %} random-item">
+          <a href="/blog/{{ post.url_friendly_name }}/"><img src="{{ post.image.url }}" alt="{{ post.title }}"></a>
+          <h2><a href="/blog/{{ post.url_friendly_name }}/">{{ post.title }}</a></h2>
+          <p>{{ post.preview  | truncate: 210 }}</p>
+          <a href="/blog/{{ post.url_friendly_name }}/" class="common-btn">Continue</a>
+        </div>
+      {% endfor %}
+
+      <div class="pagination-wrapper">
+        <div class="pagination">
+
+        <p><span class="page_number">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
+
+        <ul class="pagination">
+          {% if data_paginator.previous_page %}
+            <li><a href="{{ data_paginator.previous_page_path }}" class="common-btn">Previous</a></li>
+          {% else %}
+            <li><span class="common-btn">Previous</span></li>
+          {% endif %}
+
+          {% if data_paginator.next_page %}
+            <li><a href="{{ data_paginator.next_page_path }}" class="common-btn">Next</a></li>
+          {% else %}
+            <li><span class="common-btn">Next</span></li>
+          {% endif %}
+        </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

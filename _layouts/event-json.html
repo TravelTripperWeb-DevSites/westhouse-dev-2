@@ -1,9 +1,0 @@
-[
-        {% for Event in site.data._models.Event %}
-            {
-                title: "{{Event.title | json}}",
-                date: "{{Event.datemeta}}",
-                content: "{{Event.contents | strip_html | replace : '&nbsp;', ' ' | replace : "’", "'" | replace : "”", "'" | replace : "–", "&ndash;"}}"
-            },
-        {% endfor %}
-    ];

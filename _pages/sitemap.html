@@ -1,0 +1,32 @@
+---
+layout: default
+title: Sitemap of the WestHouse Hotel Website in New York
+meta_description: Review the Sitemap of the WestHouse hotel website before booking your stay at the hotel on the Official Website.
+permalink: /sitemap/
+meta_tags:
+  robots: noindex, follow
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/home/westhouse-hotel-new-york-entrance.jpg');">
+  <h1>Sitemap</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        <ul class="bullet-list">
+          <li><a href="/">Home</a></li>
+          {% for link in site.data.navigation.main %}
+            <li><a href="{{ link.url | absolute_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          {% for link in site.data.navigation.footer %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+.culinary-location {
+  @include make-row;
+  margin-bottom: 60px;
+
+  .col-md-3 {
+    text-align: center;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-family: $primary-bold;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  p {
+    padding-bottom: .5rem;
+  }
+
+}
+
+.culinary-guide-content p {
+  padding-bottom: 0;
+}

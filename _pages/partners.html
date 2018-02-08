@@ -1,0 +1,48 @@
+---
+layout: default
+title: Our Partners – WestHouse Hotel New York
+meta_description: At WestHouse Hotel we have partnered with unique brands to bring a personal touch to your stay as a resident with us.
+permalink: /partners/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/partners/westhouse-hotel-new-york-good-hair-day.jpg');">
+  <h1>Partners</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  {% assign partners = site.data._models.partners | sort: "menu_order" %}
+  {% for partner in partners %}
+    <a href="/partners/{{ partner.url_friendly_name }}/">{{ partner.title }}</a>
+  {% endfor %}
+</div>
+
+<div class="common-intro">
+  {% regionblock partners_intro, type:text %}
+    <p>Elevating the air of pampered exclusivity enjoyed as a resident guest of WestHouse Hotel New York, we have partnered with the very best luxury lifestyle brands to ensure your stay with us is one of sophisticated carefree indulgence.</p>
+  {% endregionblock %}
+</div>
+
+<section class="assets-listing">
+  <div class="assets-listing-container">
+    <div class="assets-listing-row">
+      {% assign partners-list = site.data._models.partners | sort: "sort_order" %}
+      {% for partner in partners-list %}
+        {% assign value = forloop.index | modulo:3 %}
+        {% if value != 0 %}
+          {% capture cls %}col-lg-6{% endcapture %}
+        {% else %}
+          {% capture cls %}col-lg-12{% endcapture %}
+        {% endif %}
+        <div class="{{ cls }}">
+          <div class="assets-item bg-cover pattern" style="background-image: url('{{ partner.image.url }}');">
+            <a href="/partners/{{ partner.url_friendly_name }}/" class="floating"><h2 class="floating-text">{{ partner.title }}</h2></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

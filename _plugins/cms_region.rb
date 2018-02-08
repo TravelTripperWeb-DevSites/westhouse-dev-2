@@ -20,13 +20,9 @@ module Jekyll
       site.data['regions'] << File.join(page_folder, @filename)
 
       wrap('div', 'class' => 'tt-region', 'data-region' => File.join(site.active_lang, page_folder, @filename)) do
-        if region_items.size == 0
-          include(include_data_path, context, 0, {"_template"=>"html"})
-        else
-          region_items.each_with_index.map do |ped, index|
-            include(include_data_path, context, index, ped)
-          end.join
-        end
+        region_items.each_with_index.map do |ped, index|
+          include(include_data_path, context, index, ped)
+        end.join
       end
     rescue Exception => error
       print error.message, "\n"

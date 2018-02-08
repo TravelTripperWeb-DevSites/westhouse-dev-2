@@ -1,0 +1,64 @@
+$font-size-base: 1rem !default;
+
+//* Font family variables
+$primary-light: 'GothamLight';
+$primary-thin: 'GothamThin';
+$primary-medium: 'GothamMedium';
+$primary-bold: 'GothamBold';
+$primary-black: 'GothamBlack';
+$primary-book: 'GothamBook';
+
+$secondary-script: 'BiloxiScript';
+$secondary-medium: 'AvenirMedium';
+$secondary-black: 'AvenirBlack';
+
+$google-font: 'Open Sans', sans-serif;
+$georgia: Georgia;
+
+//* Font size variables
+$jumbo-size: 8.375rem; // ~134px;
+$type-size-1: 7.188rem; // ~115px
+$type-size-2: 5.188rem; // ~83px
+$type-size-3: 4.563rem; // ~73px
+$type-size-4: 3.313rem; // ~53px
+$type-size-5: 1.125rem; // ~18px
+$type-size-6: 1rem; // ~16px
+$type-size-7: .938rem; // ~15px
+$type-size-8: .875rem; // ~14px
+$type-size-9: .813rem; // ~13px
+$type-size-10: .75rem; // ~12px
+$type-size-11: 2rem; // ~32px
+$type-size-12: 1.063rem; // ~17px
+$type-size-13: .6875rem; // ~11px
+$type-size-14: 2.25rem; // ~36px
+$type-size-15: 1.563rem; // ~25px
+
+//* Color variables
+$black: #000;
+$white: #fff;
+$primary: #333;
+$secondary: #777676;
+$heading: #343434;
+$btn: #222;
+$btn-hover: #888;
+$btn-two: #696b65;
+$btn-two-hover: #d0d0d0;
+$rare: #26b0b9;
+$primary-bg: #ebebeb;
+$secondary-bg: #fafafa;
+$light: #eee;
+$btn-bg: #5c5c5c;
+$border: #ddd;
+$border-two: #efefef;
+$border-three: #e8e8e8;
+$link: #111;
+$link-hover: #23527c;
+$grey: #f4f4f4;
+$grey-dark: #555;
+$small-heading: #5b5b5b;
+$light-heading: #a2a2a2;
+$link-light: #dadada;
+$dark-bg: #808080;
+$paragraph: #161616;
+
+$global-transition: all .5s ease-in-out !default;

@@ -1,0 +1,86 @@
+/*
+   Booking Widget Elements
+   ========================================================================== */
+.booking-widget-container {
+  @extend .container-fluid;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 2rem;
+  }
+  .booking-widget-row {
+    @include make-row();
+    align-items: center;
+  }
+  .logo {
+    width: 180px;
+    margin: 0 auto 2rem auto;
+    @include media-breakpoint-up(lg) {
+      width: 250px;
+      margin: 0;
+    }
+      img {
+        width: 100%;
+      }
+  }
+.booking-widget-holder {
+  overflow: hidden;
+  text-align: center;
+  width: 260px;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    float: right;
+    text-align: left;
+    margin: 0;
+  }
+  .input-holder {
+    position: relative;
+    margin: 0 0 1rem 0;
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      width: 200px;
+      margin: 0 0 0 12px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 300px;
+    }
+      &.input-btn {
+        width: auto;
+      }
+  }
+  .calendar-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 36px;
+    display: inline-block;
+    border-right: solid 1px $secondary; 
+    padding: 13px 0;
+    text-align: center;
+      .fa {
+        color: $secondary;
+        font-size: 18px;
+      }
+  }
+  .date-field {
+    font-family: $google-font;
+    font-size: $type-size-9;
+    color: $secondary;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 13px 20px 13px 50px;
+    font-weight: 700;
+    border: solid 1px $secondary;
+    cursor: pointer;
+    letter-spacing: 0.01rem;
+  }
+  .common-btn {
+    border: 0;
+    cursor: pointer;
+    @include media-breakpoint-down(md) {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+}

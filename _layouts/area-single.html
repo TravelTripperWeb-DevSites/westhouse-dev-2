@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ page.image.url }}');">
+  <h1>{{ page.title }}</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  <a href="/things-to-do-in-nyc/culinary-guide/">Culinary Guide</a>
+  {% for area in site.data._models.area %}
+    <a href="/things-to-do-in-nyc/{{ area.url_friendly_name }}/">{{ area.title }}</a>
+  {% endfor %}
+  <a href="/events-in-nyc/">Events</a>
+</div>
+
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        {{ page.contents }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="neighborhoodmap">
+
+  {% for location in site.data._models.neighborhood-locations %}
+    {% if location.category.title == page.category.title %}
+      <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
+        <img src="{{ location.image.url }}" alt="{{ location.title }}">
+        <h2>{{ location.title }}</h2>
+        <a href="#" class="closer"><i class="fa fa-times"></i></a>
+        <div class="clear"></div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <div id="map"></div>
+
+  <ul id="map-side-bar">
+    <span class="usvisits">
+
+      <li class="map-location" data-icon="/assets/images/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/mapicon.jpg'}">
+        <a href="#" class="map-link us">US</a>
+        <div class="info-box">
+          <h3>Westhouse Hotel New York</h3>
+        </div>
+      </li>
+
+      <div class="allothers">
+        <ul>
+          {% for location in site.data._models.neighborhood-locations %}
+            {% if location.category.title == page.category.title %}
+              <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
+                <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+                <div class="info-box">
+                  <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
+                  <h3><a href="/attractions/{{ location.url_friendly_name }}">{{ location.title }}</a></h3>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+    </span>
+    <div class="clear"></div>
+  </ul>
+
+</div>
+
+<section class="assets-listing pt-5">
+  <div class="assets-listing-container">
+    <div class="assets-listing-row">
+
+      {% for area in site.data._models.area %}
+        {% assign value = forloop.index | modulo: 3 %}
+        <div class="{% if value != 0 %}col-lg-6{% else %}col-lg-12{% endif %}">
+          <div class="assets-item bg-cover pattern" style="background-image: url('{{ area.image.url }}');">
+            <a href="/things-to-do-in-nyc/{{ area.url_friendly_name }}/" class="floating"><h2 class="floating-text">{{ area.title }}</h2></a>
+          </div>
+        </div>
+      {% endfor %}
+
+      <div class="col-md-6">
+        <div class="assets-item bg-cover pattern" style="background-image: url('/assets/images/area/neighborhood10.jpg');">
+          <a href="/events-in-nyc/" class="floating"><h2 class="floating-text">NYC Events Calendar</h2></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

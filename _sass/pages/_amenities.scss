@@ -1,0 +1,51 @@
+/*
+   Amenities Page Elements
+   ========================================================================== */
+.amenities {
+    .amenities-container{
+        @extend .container;
+        width: 90%;
+        @include media-breakpoint-up(lg){
+            width: 80%;
+        }
+    }
+    .amenities-row {
+        @include make-row();
+    }
+    .amenities-list {
+        margin: 1rem auto 3rem auto;
+        border-top: solid 1px $border;
+        border-bottom: solid 1px $border;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+        @include media-breakpoint-up(lg){
+            width: 90%;
+        }
+            h2{
+                color: $secondary;
+                margin-bottom: 2rem;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                    li {
+                        width: 185px;
+                        height: 185px;
+                        display: inline-block;
+                        margin: 0 0.625rem 3rem 0.625rem;
+                        position: relative;
+                    }
+            }
+    }
+    .partner-label {
+        @include absolute(0,0,0,0,100%,100%);
+        padding: 105% 0 0 0;
+        display: block;
+    }
+    .bullet-list {
+        li {
+            font-size: $type-size-8;
+        }
+    }
+}

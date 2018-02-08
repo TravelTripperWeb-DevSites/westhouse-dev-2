@@ -1,53 +1,113 @@
+# Site Settings
+title: "Westhouse"
+title_separator: "|"
+name: "Westhouse"
+description:
 url: https://www.westhousehotelnewyork.com
+repository: "TravelTripperWeb-Sites/westhouse2"
+reztripUrl: "https://westhousehotelnewyork.reztrip.com/"
 
-# Language settings
+# Language Settings
 default_lang: 'en'
 languages: ['en']
 
-keep_files: ['assets']
-rsync_copy: ['_assets']
+# Reading Files
+include:
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - Makefile
+  - media.json
+  - models.json
+  - node_modules
+  - old_media.json
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - sitemap.json
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - assets
+rsync_copy:
+- _assets
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  load_paths:
+    - _sass
+  style: compressed
+
+# Outputting
+permalink: pretty
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+data_paginate:
+  per_page: 20
+  data: 'blog'
+  path: 'blog/page:num'
+  pagination_template: 'blog/index.html'
+  sort_field: 'datemeta'
+  sort_reverse: true
 
 page_gen:
-  - data: 'Blog'
+  - data: 'gallery-category'
+    template: 'gallery-single'
+    dir: 'gallery'
+  - data: 'amenities'
+    template: 'amenities-single'
+    dir: 'amenities'
+  - data: 'dining'
+    template: 'dining-single'
+    dir: 'dining'
+  - data: 'area'
+    template: 'area-single'
+    dir: 'things-to-do-in-nyc'
+  - data: 'blog'
     template: 'blog-single'
     dir: 'blog'
-  - data: 'Event'
+  - data: 'partners'
+    template: 'partner-single'
+    dir: 'partners'
+  - data: 'events'
     template: 'event-single'
     dir: 'events-in-nyc'
-  - data: 'Amenities'
-    template: 'amenities-single'
-    dir: 'westhouse-hotel-amenities-nyc'
-  - data: 'Offers'
-    template: 'sample-offer-details'
-    dir: 'sample-offer-details'
-  - data: 'Dining'
-    template: 'dining-single'
-    dir: 'westhouse-hotel-new-york-dining'
-  - data: 'Partners'
-    template: 'partners-detail'
-    dir: 'westhouse-hotel-new-york-partners'
-  - data: 'BlogCategory'
-    template: 'category-single'
-    dir: 'category-single'
-  - data: 'Partners'
-    template: 'partners-detail'
-    dir: 'glamsquad'
-  - data: 'Offers'
-    template: 'offers-single'
-    dir: 'offers'
-  - data: 'VRTour'
-    template: 'vr-tour-single'
-    dir: 'virtual-tour'
-  - data: 'Neighborhood-Locations'
+  - data: 'neighborhood-locations'
     template: 'neighborhood-single'
-    dir: 'neighborhood-single'
-  - data: 'Culinary-Guide'
-    template: 'neighborhood-culinary-single'
-    dir: 'culinary-single'
-  - data: 'PPC-Landing-Page'
-    template: 'ppc-landing-single'
-    dir: ''
-
-# File Handling
-# include: [_pages]
-exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json, media.json, models.json, sitemap.json]
+    dir: 'attractions'
+  - data: 'culinary-guide'
+    template: 'culinary-single'
+    dir: 'things-to-do-in-nyc/culinary-guide'

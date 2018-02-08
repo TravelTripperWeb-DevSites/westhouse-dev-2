@@ -1,0 +1,41 @@
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "required": true
+  },
+  "seo_description": {
+    "type": "text",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug"
+  },
+  "date": {
+    "required": true,
+    "placeholder": "MM/DD/YY",
+    "instructions": "Publishing date (MM/DD/YY)"
+  },
+  "datemeta": {
+    "required": true,
+    "placeholder": "YYYY/MM/DD",
+    "instructions": "Used to sort blogs by date (YYYY/MM/DD)"
+  },
+  "preview": {
+    "type": "richtext",
+    "required": true,
+    "hint": "Write the preview of your article"
+  },
+  "image": {
+    "type": "image"
+  },
+  "thumbnail": {
+    "type": "image"
+  },
+  "contents": {
+    "type": "richtext",
+    "required": true,
+    "hint": "Write the content of your article"
+  }
+}

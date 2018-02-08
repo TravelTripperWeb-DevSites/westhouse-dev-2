@@ -1,0 +1,66 @@
+---
+layout: default
+title: Luxury Rooms & Suites New York City | WestHouse Hotel
+meta_description: The new WestHouse Hotel New York features accommodations with the best in custom-made furnishings and fittings, many with views of New York City.
+permalink: /luxury-nyc-rooms/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/rooms/westhouse-hotel-new-york-hotel-room.jpg');">
+  <h1>Rooms & Suites</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  <a href="/room/#[[room.name | formatNameForLink]]" ng-repeat="room in browser.roomsList" ng-bind-html="room.name | renderHTMLCorrectly"></a>
+</div>
+
+<div ng-controller="loader">
+
+  <section class="assets-listing-info">
+    <div class="hotel-info-container">
+      <div class="hotel-info-row">
+
+        <div class="hotel-info-heading">
+          {% regionblock rooms_heading, type:header %}
+            <h3>Rooms & Suites</h3>
+          {% endregionblock %}
+        </div>
+
+        <div class="hotel-info-content-one">
+          {% regionblock rooms_text_left, type:text %}
+            <p>When staying #InResidence at WestHouse Hotel New York, sumptuous comfort is heightened by the incomparable design and elegant style of the finest luxury bedrooms and suites in NYC. Evoking the glamour of a 1920's Carnegie Hall dressing room, well-framed luxury comes standard in all accommodations, with beveled mirrors and cultured images of Hollywood and Broadway hanging from Art Deco picture rails. Captivating views of the city’s quintessential rooftops, enjoyed through expansive windows, are simply unrivalled among any luxury hotels in NYC, as are views of Central Park and Times Square, adding an enviable enchantment to the WestHouse #InResidence experience. High ceilings crown gorgeous interior spaces with textured wall coverings, tufted leather headboards, director’s chairs, custom dark wood furnishings and plush flooring..</p>
+            <p>The pièce de résistance in select suites, elevating a stay at WestHouse Hotel New York to indulgent standards, are sumptuous Sleep | Studio beds boasting mattresses that marry the science of sleep with the beauty of design.</p>
+          {% endregionblock %}
+        </div>
+
+        <div class="hotel-info-content-two">
+          {% regionblock rooms_text_right, type:text %}
+            <p>Marble bathrooms are a gorgeous statement of both form and function, replete with steam-free glass-enclosed rain showers and custom fittings, bespoke DayNa Decker bath and body products, and ghd styling tools.</p>
+            <p><strong>Privileges:</strong><br> Residents enjoy a vast array of exclusive, and unlimited, #InResidence privileges including daily breakfast presentation, light fare, alcoholic and non-alcoholic beverages, barista-brewed coffees, Wi-Fi and local calls, 24-hour business center services, in-room bottled water, and daily housekeeping including nightly turndown service upon request as part of a $45 per adult nightly fee.</p>
+            <p>Should you wish to reserve six or more rooms contact <a href="mailto:sales@westhousehotelnewyork.com">sales@westhousehotelnewyork.com</a></p>
+            <p>Our<a href="{{ site.reztripUrl }}">Best Rate Guarantee</a> ensures you receive the best possible rate when booking through our website, reservations line or contacting the hotel directly.</p>
+          {% endregionblock %}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="loading">Loading&#8230;</div>
+
+  <section class="assets-listing">
+    <div class="assets-listing-container">
+      <div class="assets-listing-row">
+        <div ng-class="($index +1) % 3 == 0 ? 'col-md-12' : 'col-md-6'" ng-repeat="room in browser.roomsList">
+          <div class="assets-item bg-cover" ng-style="{'background-image': 'url([[room.photos[0].large]])'}">
+            <a ng-href="/room/#[[room.name | formatNameForLink]]" class="floating"><h2 class="floating-text" ng-bind-html="room.name | renderHTMLCorrectly"></h2></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

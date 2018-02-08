@@ -1,0 +1,88 @@
+---
+layout: default
+title: Social Media – WestHouse Hotel New York
+meta_description: Never miss an update by subscribing to the WestHouse Hotel's social media platforms, and keep up to date with our latest exclusive offers.
+permalink: /connect/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/connect/Spherical-WestHouse-6839.jpg');">
+  <h1>Connect</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="instafeed">
+  <div class="instafeed-container">
+
+    <div class="instafeed-intro">
+    <a href="https://instagram.com/{{ site.data.social.instagram.username }}/" target="_blank">
+    <div class="instafeed-logo"><i class="fa fa-instagram"></i></div>
+    <h5>@westhouseny</h5>
+    </a>
+    </div>
+
+    <div class="instafeed-row" id="instapics"></div>
+
+    <div class="instafeed-row">
+
+      <div class="col-md-6">
+      <div class="social-connect">
+      <a href="https://www.facebook.com/{{ site.data.social.facebook.username }}/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/{{ site.data.social.instagram.username }}/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/{{ site.data.social.googleplus.username }}/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/{{ site.data.social.youtube.username }}/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://www.tripadvisor.com/{{ site.data.social.tripadvisor.username }}/" target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+      </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="trip-connect carousel-common">
+          <div id="trpadvisor-carousel" class="main-carousel carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              {% for tripadvisor in site.data._models.tripadvisor %}
+                <li data-target="#trpadvisor-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+              {% endfor %}
+            </ol>
+
+            <div class="carousel-inner">
+              {% for tripadvisor in site.data._models.tripadvisor %}
+                <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                  <div class="trip-logo">
+                    <img src="/assets/images/tripadvisory.png" alt="TripAdvisor">
+                  </div>
+                  <div class="trip-comment">
+                    <p>"{{ tripadvisor.contents }}"</p>
+                  </div>
+                  <div class="tripadvisor-author">
+                    <p>{{ tripadvisor.Credit }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+            <a class="carousel-control-prev" href="#trpadvisor-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <img src="/assets/images/prev.png" alt="Previous Slide">
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#trpadvisor-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <img src="/assets/images/next.png" alt="Next Slide">
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

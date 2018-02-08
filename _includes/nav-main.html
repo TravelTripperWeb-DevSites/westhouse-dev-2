@@ -1,0 +1,9 @@
+<nav class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+  {% for link in site.data.navigation.main %}
+    <li class="nav-item{% if page.url == link.url %} active{% endif%}">
+      <a class="nav-link" href="{{ link.url | absolute_url }}">{{ link.title }}{% if page.url == link.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</nav>

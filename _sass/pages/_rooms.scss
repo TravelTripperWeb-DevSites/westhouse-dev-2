@@ -1,0 +1,285 @@
+.assets-listing-info {
+  @extend .rooms-info;
+
+  h3 {
+    padding-left: 0;
+    text-transform: none;
+    @include media-breakpoint-up(lg) {
+      padding-right: 2rem;
+      font-size: $type-size-4;
+      text-align: right;
+    }
+  }
+
+  .hotel-info-heading {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  .hotel-info-content-one {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  .hotel-info-content-two {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+}
+
+.assets-listing {
+  .assets-listing-container {
+    @extend .container;
+  }
+
+  .assets-listing-row {
+    @include make-row;
+  }
+
+  h3 {
+    @extend h2;
+    color: $primary;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .assets-item {
+    height: 260px;
+    margin-bottom: 3.125rem;
+    margin-left: .7rem;
+    margin-right: .7rem;
+    position: relative;
+    @include media-breakpoint-up(md) {
+      height: 450px;
+    }
+
+    &:before {
+      z-index: 1;
+      opacity: .5;
+      @include absolute(auto,auto,0,0,100%,150px); // (top,right,bottom,left,width,height)
+      @include linearGradient(transparent, $black); // (top color, bottom color)
+    }
+  }
+}
+
+.assets-details {
+  padding: 0 0 3rem;
+  @include media-breakpoint-up(md) {
+    padding: 0 0 5rem;
+  }
+
+  h3 {
+    font-size: $type-size-11;
+    padding: 0;
+    @include media-breakpoint-up(md) {
+      font-size: $type-size-3;
+      padding: 0 0 2rem;
+    }
+  }
+
+  h2 {
+    color: $primary;
+  }
+
+  p {
+    font-size: 1rem;
+    letter-spacing: .01em;
+    line-height: 1.875rem;
+    padding-bottom: 1.50rem;
+  }
+
+  .assets-details-container {
+    @extend .container;
+    width: auto;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+
+  .assets-details-row {
+    @include make-row();
+  }
+
+  .assets-details-calendar {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(5);
+    }
+  }
+
+  .hidden-form {
+    background-color: $primary;
+    padding: 10px;
+
+    .form-control {
+      font-family: $google-font;
+      font-size: 13px;
+      color: $primary;
+      border-radius: 0;
+      padding: .9rem .75rem;
+      height: auto !important;
+    }
+
+    .common-btn {
+      border: 0;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .assets-details-description {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(7);
+    }
+  }
+
+  .rate-section {
+    .rate-box {
+      color: $white;
+      text-align: center;
+      width: 170px;
+      @include media-breakpoint-up(sm) {
+        float: left;
+      }
+    }
+
+    .rate-wrap {
+      background-color: $dark-bg;
+      padding: 1.25rem 1.25rem .875rem;
+
+      .direct-rate-label {
+        font-family: $google-font;
+        font-size: $type-size-9;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .rate {
+        font-family: $primary-thin;
+        font-size: $type-size-14;
+        line-height: 3.938rem;
+        letter-spacing: -0.05rem;
+        font-weight: 700;
+      }
+
+    }
+
+    .brg-box {
+      border: solid 2px $border;
+      padding: 1.25rem 1rem 1.25rem 2.5rem;
+      max-width: 300px;
+      margin: 1rem 0 0;
+      @include media-breakpoint-up(sm) {
+        float: left;
+        margin: 0 0 0 2px;
+        padding: 1.25rem 2.5rem;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          font-family: $primary-book;
+          font-size: $type-size-8;
+          text-transform: uppercase;
+          text-decoration: line-through;
+          list-style-type: disc;
+          @include media-breakpoint-up(sm) {
+            font-size: $type-size-6;
+          }
+        }
+      }
+    }
+
+    .unavailable {
+      .unavailable-label {
+        font-family: $google-font;
+        font-size: $type-size-6;
+        font-weight: 700;
+        color: $primary;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+}
+
+.single-room-info {
+  @extend .hotel-info;
+  border-bottom: none;
+
+  .single-room-info-row {
+    @include make-row();
+  }
+
+  .single-room-amenities {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
+  }
+
+  .single-room-virtual-tour {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+    text-align: center;
+  }
+
+  .single-room-reserve {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(3);
+    }
+    text-align: center;
+  }
+
+  .amenities-list {
+    margin: 0;
+    padding: 3rem 0 2rem 2rem;
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 0 2rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 0 0 0 4.5rem;
+    }
+
+    li {
+      font-family: $google-font;
+      font-size: .875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      list-style-type: disc;
+      color: $grey-dark;
+      @include media-breakpoint-up(xl) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .reservations-counter {
+    font-family: $primary-thin;
+    color: $primary;
+    font-size: 5.375rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: $jumbo-size;
+      line-height: 7rem;
+    }
+  }
+}

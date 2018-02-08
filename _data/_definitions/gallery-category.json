@@ -1,0 +1,27 @@
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "required":true
+  },
+  "seo_description": {
+    "required":true
+  },
+  "category_name": {
+    "required":true
+  },
+  "url_friendly_name":
+  {
+    "required": true,  
+    "label": "Category URL"
+  },
+  "category_image": {
+    "type": "image",
+    "label": "Category Image",
+    "required": true
+  },
+  "sort_order":{
+  	 "required": true
+  }
+}

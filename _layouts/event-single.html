@@ -1,59 +1,23 @@
-{% assign Event = page %}
+---
+layout: default
+---
+{% assign event = page %}
 {% assign model = page %}
-{% assign template_class = 'blogsingle' %}
-{% assign seo_title = Event.seo_title %}
-{% assign seo_description = Event.seo_description %}
 
-{% include header.html %}
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ event.image.url }}');"></div>
 
-		<div id="featuredcontent" style="background-image: url({{model.image.url}});">
-
-			<!-- <div class="reserve"><a class="button1" href="#">Reserve</a></div> -->
-
-		</div>
-
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
-
-           <!-- include booking form -->
-
-            {% include booking_form_interior.html %}
-
-            <!-- // include booking form -->
-		</div>
-		
-		<div class="subnav">
-			<ul>
-
-			</ul>
-		</div>
-
-		<div id="maincontent" class="{{ template_class }}">
-
-			<div class="container">
-
-				<h1 style="text-align:center;">{{ model.title }}<span>{{ model.date }}</span></h1>
-
-				{{ model.contents }}
-			</div>
-
-		</div>
-
-		<div class="partnersmeta">
-
-
-			<div class="col1">
-			
-		         <div class="nmapcon"><span>Click to Enable</span></div>
-        
-				<iframe src="{{ model.map }}"  frameborder="0" style="border:0" allowfullscreen></iframe>
-
-			</div>
-
-		</div>
-
-		<div class="back-to-events">
-			<a href="https://www.westhousehotelnewyork.com/events-in-nyc/">Click here to discover more New York City events taking place at the Westhouse Hotel</a>
-		</div>
-
-{% include footer.html %}
+<section class="random-details">
+  <div class="random-details-container">
+      <div class="random-head">
+        <h2>{{ event.title }}</h2>
+        <div class="blog-date">{{ event.date }}</div>
+      </div>
+      <div class="random-body">
+        <p>{{ event.contents }}</p>
+      </div>
+      <div class="random-footer">
+        <p><a href="/events-in-nyc/" class="">Click here</a> to discover more New York City events taking place at the Westhouse Hotel</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,122 +1,30 @@
-{% assign Amenities = page %}
+---
+layout: default
+---
+{% assign amenities = page %}
 {% assign model = page %}
-{% assign template_class = 'page-amenities-single' %}
-{% assign seo_title = Amenities.seo_title %}
-{% assign seo_description = Amenities.seo_description %}
 
-{% include header.html %}
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ amenities.image.url }}');">
+  <h1>{{ amenities.title }}</h1>
+</div>
 
-	
-		<div id="featuredcontent" style="background-image: url({{ Amenities.image.url }});">
+{% include booking-widget.html %}
 
-			<h1 class="contenttitle">{{ Amenities.title }}</h1>
+<div class="sub-nav">
+  <a href="/perfect-picnic-in-nyc/">Your Perfect Picnic</a></li>
+  {% for amenities in site.data._models.amenities %}
+    <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
+  {% endfor %}
+</div>
 
-			<!-- <div class="reserve"><a class="button1" href="#">Reserve</a></div> -->
-
-		</div>
-
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
-
-           <!-- include booking form -->
-
-            {% include booking_form_interior.html %}
-
-            <!-- // include booking form -->
-		</div>
-
-		<div class="subnav">
-			<ul>
-			
-			    {% for Amenities in site.data._models.Amenities %}
-
-        		<li><a href="{{ Amenities.id | permalink: model_dir: 'westhouse-hotel-amenities-nyc' }}">{{ Amenities.title }}</a></li>
-                {% endfor %}
-				
-			</ul>
-		</div>
-		
-		
-        <div class="subnavmobile">
-          <ul>
-            {% for Amenities in site.data._models.Amenities %}
-			<li><a href="{{ Amenities.id | permalink: model_dir: 'westhouse-hotel-amenities-nyc' }}"><span>{{ Amenities.title }}</span></a></li>
-            {% endfor %}
-            <div class="clear"></div>
-          </ul>
-          
-          <div class="subclose"><i class="fa fa-bars"></i><span>View More Amenities</span></div>
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        <h3>{{ amenities.title }}</h3>
+        {{ amenities.contents }}
         </div>
-		
-		
-		<div id="maincontent">
-		
-			<div class="container">
-			
-				<h2 style="text-align:center;" class="main-heading">{{Amenities.title}}</h2>
-				
-			    {{ Amenities.contents }}
-			    
-			</div>
-			
-            <!--div class="merch-sec" rt3-rate-shopping="rateShopping">
-                    <div style="width:70%;" class="container">
-                        <div class="littleimage" style="background-image: url({{ Amenities.image.url }});"></div>
-                        <div class="merch-copy">
-                            <h1 style="text-transform:none;font-family: 'GothamLight';color: #fff;font-size: 30px;text-align:left;">
-                                Interactive 360° View
-                                <span>
-                                    TAKE A WALK THROUGH OF {{ Amenities.vrtitle }} <br />
-                                    USING OUR VIRTUAL TOUR TECHNOLOGY.
-                                </span>
-                            </h1>
-                            <br/>
-                        </div>
-                        <div class="reserve1">
-                            <a target="_blank" href="{{ Amenities.vr_btn_link }}" class="button1">TAKE VIRTUAL TOUR</a>
-                            <!--<a href="" class="button1">Reserve Now</a>-->
-                        <!--/div> 
-                        
-                        <a href="#" class="closethiswindow">X</a>
-                        
-                    </div>
-            </div-->
-			
-		</div>
-		
-                
-		
-		<!--<div class="partnersmeta">
-		
-			<div class="col2">
-			
-				<div class="pr15">
-		
-					<p><img src="images/partners-detail1.jpg" alt="partner" /></p>
-					
-					<blockquote>{{ Amenities.blockquote }}</blockquote>
-				
-				</div>
-			
-			</div>
-			
-			<div class="col2">
-			
-				<div class="pl15">
-		
-					<p><img src="images/partners-detail2.jpg" alt="partner" /></p>
-				
-				</div>
-			
-			</div>
-			
-			<div class="col1">
-		
-					<p><img src="images/partners-detail3.jpg" alt="partner" /></p>
-				
-			</div>
-			
-		</div>-->
-		
-
-{% include footer.html %}
+      </div>
+    </div>
+  </div>
+</section>

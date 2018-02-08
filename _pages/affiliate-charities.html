@@ -1,0 +1,36 @@
+---
+layout: default
+title: Affiliate Charities | Luxury WestHouse Hotel in New York
+meta_description: In the USA and around the world, Save the Children helps give over 155 million children a healthy start, the opportunity to learn and protection from harm.
+permalink: /partners/affiliate-charities/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/affiliate-charities/westhouse-chairty-new.jpg');">
+  <h1>Affiliate Charities</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="centered-content pt-0">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+
+        <div class="save-logo">
+          {% regionblock affiliate_charities_image, type:image %}
+            <img src="/assets/images/save.png" alt="Save the Children">
+          {% endregionblock %}
+        </div>
+
+        {% regionblock affiliate_charities_intro, type:text %}
+          <p>In the United States and around the world, Save the Children helps give over 155 million children a healthy start, the opportunity to learn and protection from harm.</p>
+        {% endregionblock %}
+
+        <div class="btn-holder"><a href="https://goo.gl/OJexpZ" target="_blank" class="common-btn">Donate Now</a></div>
+
+      </div>
+    </div>
+  </div>
+</section>

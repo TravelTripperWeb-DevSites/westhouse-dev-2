@@ -1,0 +1,16 @@
+{
+  "title": {
+    "label": "Culinary Category Name",
+    "required": true
+  },
+  "category": {
+    "type": "select",
+    "options": ["coffee-and-drinks", "lunch", "dinner", "desserts-and-snacks"],
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug",
+    "label": "URL Friendly Name",
+    "required": true
+  }
+}

@@ -1,0 +1,122 @@
+---
+layout: default
+title: Luxury Hotel Offers in Midtown NYC | WestHouse Hotel Deals
+meta_description: Use NYC luxury hotel deals at WestHouse Hotel New York to save on your next stay in the heart of the city.
+permalink: /offers/
+meta_tags:
+  robots:
+---
+
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/offers/Spherical-WestHouse-6839.jpg');">
+  <h1>Offers</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div ng-controller="loader" rt3-special-rates="offers">
+
+  <div class="sub-nav">
+    <a href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" ng-repeat="offer in offers.special_rates" ng-bind-html="offer.rate_plan_name | renderHTMLCorrectly"></a>
+  </div>
+
+
+  <section class="container offers-listing">
+
+    <div class="row">
+      <div class="offer-listing-intro">
+        {% regionblock offers_intro, type:text %}
+          <p>From special celebrations, private car services and customized shopping experiences to amenities for pets and indulgences for children, enhance your stay at WestHouse Hotel New York is enhanced with one or more of our special offers.</p>
+        {% endregionblock %}
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4" ng-repeat="offer in offers.special_rates">
+        <div class="offer-item">
+
+          <div class="offer-image bg-cover" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}">
+            <a ng-href="[[offer.promo_url]]" class="floating-btn" target="_blank">Book Now</a>
+          </div>
+
+          <h2><a href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]">[[ offer.rate_plan_name | renderHTMLCorrectly ]]</a></h2>
+
+          <p ng-bind-html="offer.short_description | limitTo: 120 | renderHTMLCorrectly">[[ offer.short_description.length > 120 ? '...' : '' ]]</p>
+
+          <div class="btn-holder">
+            <a ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" class="btn-empty">Read More +</a>
+
+            <!--
+
+            Toggle button not working. Check JS call below for troubleshooting.
+
+            <span class="dropdown-social">
+              <button><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+              <ul class="share-widgets">
+                <li>
+                  <a href="JavaScript:Void(0);" class="share_button"><i class="fa fa-facebook"></i></a>
+                  <a href="JavaScript:Void(0);" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text=[[ offer.rate_plan_name | renderHTMLCorrectly ]]&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                  <a ng-href="mailto:?subject=[[ offer.rate_plan_name | renderHTMLCorrectly ]]&body=Hey! Check this exciting offer. {{ site.url }}/offer/#[[ offer.rate_plan_name | formatNameForLink ]]"><i class="fa fa-envelope"></i></a>
+                </li>
+              </ul>
+            </span> -->
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<div id="fb-root"></div>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '{{ site.data.social.facebook.app_id }}',
+      status: true,
+      xfbml: true
+    });
+  };
+
+  (function() {
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+
+  $(document).ready(function() {
+
+    $('.dropdown-social').click(function() {
+      // $('.dropdown-social').not(this).('.share-widgets').hide('slow');
+      $(this).find('.share-widgets').toggle();
+    });
+
+    $('.share_button').click(function(e) {
+      e.preventDefault();
+      FB.ui({
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        action_properties: JSON.stringify({
+          object: {
+            'og:url': window.location.href,
+            'og:title': $(this).closest(".halfoffer").find("h3").text(),
+            'og:description': $(this).closest(".halfoffer").find(".hoffer-two p").text(),
+            'og:image:width': '1200',
+            'og:image:height': '650',
+            'og:image': $(this).closest(".halfoffer").find('.hoffer-one').css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+          }
+        })
+      });
+    });
+
+  });
+
+</script>

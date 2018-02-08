@@ -1,0 +1,47 @@
+/*
+   Mixins
+   ========================================================================== */
+
+
+/* Vertical Center (Includes IE9) */
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transform($transforms, $prefixes: -webkit -moz -o) {
+  @each $prefix in @prefixes{
+    #($prefix)-transform: $transforms;
+  }
+	transform: $transforms;
+}
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate($deg)deg);
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}

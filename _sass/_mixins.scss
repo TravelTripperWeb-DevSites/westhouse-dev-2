@@ -1,0 +1,113 @@
+/*
+   Mixins
+   ========================================================================== */
+
+
+/* Vertical Center (Includes IE9) */
+
+@mixin vertical-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+ @mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+// Animation fill mode
+@mixin animation-fill-mode ($value) {
+-webkit-animation-fill-mode: $value;
+-moz-animation-fill-mode: $value;
+-ms-animation-fill-mode: $value;
+-o-animation-fill-mode: $value;
+animation-fill-mode: $value;
+}
+
+// Animation duration
+@mixin animation-duration ($duration) {
+-webkit-animation-duration: $duration;
+-moz-animation-duration: $duration;
+-ms-animation-duration: $duration;
+-o-animation-duration: $duration;
+animation-duration: $duration;
+}
+
+// Animation name
+@mixin animation-name ($name) {
+-webkit-animation-name: $name;
+-moz-animation-name: $name;
+-o-animation-name: $name;
+animation-name: $name;
+}
+
+// Animation delay
+@mixin animation-delay ($delay) {
+-webkit-animation-delay: $delay;
+-moz-animation-delay: $delay;
+-ms-animation-delay: $delay;
+-o-animation-delay: $delay;
+}
+
+// Absolute position
+@mixin absolute ($top,$right,$bottom,$left,$width,$height) {
+  content: "";
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
+}
+
+// Linear Gradient
+@mixin linearGradient($top, $bottom){
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+

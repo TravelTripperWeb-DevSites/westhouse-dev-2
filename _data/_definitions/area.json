@@ -1,0 +1,30 @@
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "type": "text",
+    "required": true
+  },
+  "seo_description": {
+    "type": "text",
+    "required": true
+  },
+  "url_friendly_name": {
+    "type": "url_slug"
+  },
+  "contents": {
+    "type": "richtext",
+    "required": true
+  },
+  "image": {
+    "type": "image",
+    "required": true
+  },
+  "category": {
+    "label": "Choose Neighborhood Category",
+    "type": "model",
+    "display_field": "title",
+    "model_name": "neighborhoodcategories"
+  }
+}

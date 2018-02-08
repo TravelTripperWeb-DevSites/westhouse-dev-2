@@ -1,0 +1,11 @@
+/*
+   Dining Page Elements
+   ========================================================================== */
+.dining-detail {
+    @extend .hotel-info;
+    .hotel-info-container {
+        @include media-breakpoint-up(md){
+            width: 82%;
+        }
+    } 
+}

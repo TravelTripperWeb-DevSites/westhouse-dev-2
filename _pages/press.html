@@ -1,0 +1,27 @@
+---
+layout: default
+title: NYC Luxury Hotel Reviews - WestHouse Hotel New York
+meta_description: Read what the press is saying about WestHouse hotel, an incomparably exclusive NYC luxury hotel in the heart of Midtown
+permalink: /press/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/press/press-header-image.jpg');">
+  <h1>Press</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<section class="centered-content">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        {% regionblock press_text, type:text %}
+          <p><strong>For media inquiries on WestHouse Hotel New York please contact:</strong></p>
+          <p>Kia Zalewski<br> LINKS World Group<br> 786.360.3514<br> <a href="mailto:kia@linksworldgroup.com">kia@linksworldgroup.com</a></p>
+        {% endregionblock %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+layout: default
+title: Restaurants Near Central Park – WestHouse Hotel New York
+meta_description: When it comes to New York City hotels, WestHouse literally rises above the rest with a spacious rooftop restaurant room and terrace on the 23rd floor.
+permalink: /dining/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/dining/westhouse-hotel-new-york-dining.jpg');">
+  <h1>Dining</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="sub-nav">
+  {% for dining in site.data._models.dining %}
+    <a href="/dining/{{ dining.url_friendly_name }}/">{{ dining.title }}</a>
+  {% endfor %}
+</div>
+
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+
+        {% regionblock dining_intro, type:text %}
+          <p>From breakfast to the Hours of Indulgence in The Terrace, with its captivating city views rivaling rooftop restaurants in New York, it is little moments of sophisticated indulgence that elevate the everyday at WestHouse. Hotel Residents enjoy these complimentary culinary privileges throughout their stay, a rare and exceptional offering among luxury hotels in New York. And with an enviable location in the very heart of the world’s most food-centric city, WestHouse Hotel New York Residents can gain coveted reservations at famed Manhattan restaurants.</p>
+        {% endregionblock %}
+
+        {% regionblock dining_text, type:text %}
+          <p><strong>Resident dining privileges include:</strong></p>
+          <p>Sweet and Savory breakfast presentations:</p>
+          <ul class="bullet-list">
+            <li>Weekdays between 6.30am and 10.30am</li>
+            <li>Weekends between 7.00am and 11.00am</li>
+          </ul>
+          <p>Barista bar and non-alcoholic beverages</p>
+          <p>Light fare and a curated selection of alcoholic* beverages served during Hours of Indulgence </p>
+          <ul class="bullet-list">
+            <li>Daily between 5.00pm and 7.00pm</li>
+          </ul>
+          <p><em>*WestHouse Hotel New York pours the finest quality spirits such as Hudson Whiskey, Manhattan Rye, Louis the 13th Cognac, Johnny Walker Blue, McAllen 18, Roca Patron, and more. Featured Champagnes include Perrier Jouet, Dom Perignon or Roederer Cristal.</em></p>
+        {% endregionblock %}
+
+      </div>
+    </div>
+  </div>
+</section>

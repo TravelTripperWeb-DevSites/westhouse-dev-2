@@ -1,0 +1,75 @@
+{% if page.url contains '/room/' %}
+
+  <!-- Sojern v3 Product Pixel -->
+  <script>
+    (function() {
+      var params = {
+        hc1: "New York City", // Destination City
+        hpr: "westhousehotelnewyork", // Hotel Property
+        hpid: "354", // Property ID
+        pn: "{{ Room.title }}", // Product Name
+        domain: "westhousehotelnewyork.com" // Site Domain
+      };
+      // Please do not modify the below code.
+      var cid = [];
+      var version = '3';
+      var paramsArr = ['v=' + version];
+      var cidParams = ["hconfno", "hp", "hd1", "hd2", "hpid", "hb", "hpr", "hdc"];
+      var pl = document.createElement('script');
+      var defaultParams = {
+        "vid": "hot",
+        "et": "hpr"
+      };
+      for (key in defaultParams) {
+        params[key] = defaultParams[key];
+      };
+      for (key in cidParams) {
+        cid.push(params[cidParams[key]]);
+      };
+      params.cid = cid.join('|');
+      for (key in params) {
+        paramsArr.push(key + '=' + encodeURIComponent(params[key]))
+      };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/6055?' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
+  </script>
+
+{% else %}
+
+  <!-- Sojern v3 Tracking Pixel -->
+  <script>
+    (function() {
+      var params = {
+        pname: "{{ page.title }}", // Page Name
+        pc: "" // Page Category
+      };
+      // Please do not modify the below code.
+      var cid = [];
+      var version = '3';
+      var paramsArr = ['v=' + version];
+      var cidParams = ["hconfno", "hp", "hd1", "hd2", "hpid", "hb", "hpr", "hdc"];
+      var pl = document.createElement('script');
+      var defaultParams = {
+        "vid": "hot"
+      };
+      for (key in defaultParams) {
+        params[key] = defaultParams[key];
+      };
+      for (key in cidParams) {
+        cid.push(params[cidParams[key]]);
+      };
+      params.cid = cid.join('|');
+      for (key in params) {
+        paramsArr.push(key + '=' + encodeURIComponent(params[key]))
+      };
+      pl.type = 'text/javascript';
+      pl.async = true;
+      pl.src = 'https://beacon.sojern.com/pixel/p/6053?' + paramsArr.join('&');
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+    })();
+  </script>
+
+{% endif %}

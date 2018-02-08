@@ -1,0 +1,28 @@
+{% comment %}
+
+  Name:
+
+      Responsive Video
+
+  Description:
+
+      Embed a responsive video from YouTube or Vimeo
+
+  Usage:
+
+      Pass provider and video id through the include to render on page.
+      
+      eg. {% include components/video, provider="youtube", id="videoID" %}
+
+{% endcomment %}
+
+{% capture video_id %}{{ include.id }}{% endcapture %}
+{% capture video_provider %}{{ include.provider }}{% endcapture %}
+
+<div class="responsive-video-container">
+{% if video_provider == "vimeo" %}
+  <iframe src="https://player.vimeo.com/video/{{ video_id }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+{% elsif video_provider == "youtube" %}
+  <iframe src="https://www.youtube.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+</div>

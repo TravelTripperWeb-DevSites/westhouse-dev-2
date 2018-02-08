@@ -1,0 +1,100 @@
+// Removes margins, padding, and bullet points from navigation lists
+.navbar-brand {
+  width: 150px;
+  margin-right: 0;
+  @include media-breakpoint-up(md) {
+    width: 250px;
+  }
+
+  img {
+    width: inherit;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 1.25rem;
+  right: 5.6rem;
+  border: 0;
+  @include media-breakpoint-up(md) {
+    top: 2.125rem;
+    right: 9.6rem;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar nav {
+  max-width: 750px;
+}
+
+.navbar-nav {
+  .nav-item {
+    font-family: $google-font;
+    font-size: $type-size-9;
+    font-weight: 700;
+    letter-spacing: .035em;
+
+    .nav-link {
+      padding: 10px 0;
+      line-height: 1.25rem;
+      color: $black;
+      text-transform: uppercase;
+      transition: $global-transition;
+      @include media-breakpoint-up(lg) {
+        padding: 10px 7px;
+      }
+
+      &:hover {
+        background-color: $light;
+      }
+    }
+  }
+}
+
+.sub-nav {
+  margin-bottom: 1.5rem;
+  padding: 1rem 15px;
+  text-align: center;
+  background-color: $primary-bg;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 4.5rem;
+    padding: 0 15px;
+  }
+
+  a {
+    display: inline-block;
+    padding: .75rem .8rem;
+    font-family: $google-font;
+    font-size: $type-size-9;
+    font-weight: 700;
+    color: $btn-two;
+    text-transform: uppercase;
+    letter-spacing: .06rem;
+    transition: $global-transition;
+    @include media-breakpoint-up(md) {
+      padding: 1rem .8rem;
+    }
+
+    &:hover {
+      color: $btn;
+    }
+
+    &.active {
+      color: $btn;
+    }
+
+  }
+
+}

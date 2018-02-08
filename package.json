@@ -1,0 +1,31 @@
+{
+  "name": "westhouse",
+  "description": "Westhouse Hotel New York",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TravelTripperWeb-Sites/westhouse-new"
+  },
+  "keywords": [
+    "jekyll",
+    "bedrock"
+  ],
+  "author": "Travel Tripper",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "onchange": "^2.2.0",
+    "parallelshell": "^3.0.2",
+    "uglify-js": "^2.8.29"
+  },
+  "scripts": {
+    "js:uglify": "uglifyjs assets/js/vendor/markermanager.min.js assets/js/vendor/StyledMarker.min.js assets/js/vendor/jquery.metadata.min.js assets/js/vendor/jquery.jmapping.min.js assets/js/vendor/jquery.jmapping.click.js assets/js/vendor/jquery-ui.min.js assets/js/vendor/angular.min.js assets/js/rt3api.js assets/js/rez-trip.js assets/js/rt3-services.js assets/js/rt3-directives.js assets/js/rt3-filters.js assets/js/_main.js -c -o assets/js/main.min.js",
+    "js:watch": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run js:uglify",
+    "browsersync": "browser-sync start --server '_site' --files '_site'",
+    "build": "bundle exec jekyll build --watch",
+    "watch": "parallelshell 'npm run build' 'npm run browsersync'"
+  }
+}

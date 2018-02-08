@@ -1,0 +1,36 @@
+---
+layout: default
+title: NYC Events Calendar - WestHouse Hotel New York
+meta_description: Use our updated NYC events calendar to plan your next stay in the city.
+permalink: /events-in-nyc/
+meta_tags:
+  robots:
+---
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/events/westhouse-hotel-new-york-events.jpg');">
+  <h1>Events</h1>
+</div>
+
+{% include booking-widget.html %}
+
+<div class="common-intro">
+  <h3>Upcoming Events</h3>
+</div>
+
+<section class="random-listing">
+  <div class="random-listing-container">
+    <div class="random-listing-row">
+      {% assign latest-events = site.data._models.events | sort: 'datemeta' | reverse %}
+      {% for event in latest-events %}
+        {% assign value = forloop.index0 | modulo:5 %}
+        <div class="{% if value != 0 %}col-lg-4 {% else %}col-lg-8 {% endif %}random-item">
+          <a href="/events-in-nyc/{{ event.url_friendly_name }}/"><img src="{{ event.image.url }}" alt="{{ event.title }}"></a>
+          <h2><a href="/events-in-nyc/{{ event.url_friendly_name }}/">{{ event.title }}</a></h2>
+          <div class="date-wrap">{{ event.date }}</div>
+          <p>{{ event.preview  | truncate: 210 }}</p>
+          <a href="/events-in-nyc/{{ event.url_friendly_name }}/" class="common-btn">Continue</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<div class="booking-widget-container">
+  <div class="booking-widget-row">
+
+    <div class="col-lg-4">
+      <div class="logo">
+        <a href=""><img src="/assets/images/westhouse-logo.svg" alt="Westhouse Hotel New York"></a>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="booking-widget-holder">
+        <form autocomplete="off" method="get" enctype="multipart/form-data" name="custom-booking-widget" action="{{ site.reztripUrl }}search?" target="_blank">
+          <div class="input-holder">
+            <span class="calendar-icon"><i class="fa fa-calendar"></i></span>
+            <input type="text" class="date-field" name="arrival_date" id="arrival_date" placeholder="Arrival Date">
+          </div>
+          <div class="input-holder">
+            <span class="calendar-icon"><i class="fa fa-calendar"></i></span>
+            <input type="text" name="departure_date" id="departure_date" class="date-field" placeholder="Daparture Date">
+          </div>
+          <div class="input-holder input-btn">
+            <button class="common-btn" type="submit">Reserve</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

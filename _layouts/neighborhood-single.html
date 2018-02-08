@@ -1,191 +1,31 @@
-{% assign Neighborhood-Locations = page %}
+---
+layout: default
+---
+{% assign neighborhood = page %}
 {% assign model = page %}
-{% assign template_class = 'single-neighborhood' %}
-{% assign seo_title = Neighborhood-Locations.seo_title %}
-{% assign seo_description = Neighborhood-Locations.seo_description %}
 
-{% include header.html %}
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ neighborhood.image.url }}');">
+  <h1>Area</h1>
+</div>
 
-		
-		<script type="text/javascript">
+{% include booking-widget.html %}
 
+<div class="sub-nav">
+  <a href="/things-to-do-in-nyc/culinary-guide/">Culinary Guide</a>
+  {% for area in site.data._models.area %}
+    <a href="/things-to-do-in-nyc/{{ area.url_friendly_name }}/">{{ area.title }}</a>
+  {% endfor %}
+  <a href="/events-in-nyc/">Events</a>
+</div>
 
-			$(function() {
-
-				// styles
-
-				var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}];
-
-				// map options
-				var mapOptions = {
-				    zoom: 15,
-				    minZoom: 2,
-				    scrollwheel: false,
-					draggable: true,
-				    center: new google.maps.LatLng(40.667013, -123.438436),
-				    mapTypeId: google.maps.MapTypeId.ROADMAP,
-				    disableDefaultUI: false,
-				    styles: styles,
-				    scaleControl: true
-				};
-
-				$('#map').jMapping({
-					force_zoom_level: 15,
-					default_zoom_level: 15,
-				    category_icon_options: function(category){
-				      if (category.charAt(0).match(/[a-c]/i)){
-				        return new google.maps.MarkerImage($(this).attr('data-icon'));
-				      } else if (category.charAt(0).match(/c[d-z]/i)){
-				        return new google.maps.MarkerImage($(this).attr('data-icon'));
-				      } else {
-				        return new google.maps.MarkerImage($(this).attr('data-icon'));
-				      }
-				    },
-				    map_config: mapOptions
-				});
-
-			});
-
-		</script>
-
-
-
-		<div id="featuredcontent" style="background-image: url({{Neighborhood-Locations.image.url}});">
-
-			<h1 class="contenttitle">Area</h1>
-
-			<div class="reserve"><a class="button1" href="#">Reserve</a></div>
-
-		</div>
-
-		<div id="contentwidget">
-		   <div class="logo"><a href="/"><img src="/assets/images/712/original/logo3.png" alt="logo3" /></a></div>
-
-           <!-- include booking form -->
-
-            {% include booking_form_interior.html %}
-
-            <!-- // include booking form -->
-		</div>
-
-		<div class="subnav">
-			<ul>
-			    
-			    <li><a href="{{ 'things-to-do-in-nyc' | permalink }}">All</a></li>
-			     
-			    <li><a href="{{ 'things-to-do-in-nyc/art-culture' | permalink }}">Art & Culture</a></li>
-
-				<li><a href="{{ 'things-to-do-in-nyc/shopping' | permalink }}">Shopping in NYC</a></li>
-
-				<li><a href="{{ 'things-to-do-in-nyc/entertainment' | permalink }}">NYC Entertainment Guide</a></li>
-
-				<li><a href="{{ 'things-to-do-in-nyc/must-see-nyc' | permalink }}">Must See NYC</a></li>
-
-				<li><a href="">NYC Events Calendar</a></li>
-			</ul>
-		</div>
-		
-		
-        <div class="subnavmobile">
-			<ul>
-			    <li><a href="{{ 'things-to-do-in-nyc' | permalink }}"><span>All</span></a></li>
-			    <li><a href="{{ 'things-to-do-in-nyc/art-culture' | permalink }}"><span>Art & Culture</span></a></li>
-				<li><a href="{{ 'things-to-do-in-nyc/shopping' | permalink }}"><span>Shopping in NYC</span></a></li>
-				<li><a href="{{ 'things-to-do-in-nyc/entertainment' | permalink }}"><span>NYC Entertainment Guide</span></a></li>
-				<li><a href="{{ 'things-to-do-in-nyc/must-see-nyc' | permalink }}"><span>Must See NYC</span></a></li>
-				<li><a href=""><span>NYC Events Calendar</span></a></li>
-				<div class="clear"></div>
-			</ul>
-			<div class="subclose"><i class="fa fa-bars"></i><span>View More Areas</span></div>
-        </div>
-		
-		
-		<div id="maincontent">
-		
-			<div class="container">
-		
-				<h2 class="main-heading">{{Neighborhood-Locations.title}}</h2>
-		
-			   {{Neighborhood-Locations.contents}} 
-			   
-			   <p style="text-align: left;margin-top: 20px;"><a href="{{ Neighborhood-Locations.Outbound-Link }}" class="button" target="_blank">Visit Website</a></p>
-			
-			<br>
-    		<br>
-    		<br>
-			<div class="neighborhoodmap">
-			<!--<div class="nmapcon"><span>Click to Enable</span></div>-->
-			
-			<div id="infocontainerB{{ Neighborhood-Locations.url_friendly_name }}" class="infocontainer">
-				  	<a href="{{ Neighborhood-Locations.outbound }}"><img src="{{ Neighborhood-Locations.image.url }}" alt="{{ Neighborhood-Locations.url_friendly_name }}" /></a>
-				  	<h2>{{Neighborhood-Locations.title}}</h2>
-				  
-				  	<a href="#" class="closer"><i class="fa fa-times"></i></a>
-				  	<div class="clear"></div>
-				  	
-				  	<div class="neighborhood"><h3>{{ LocationsInCategory-NYC-Entertainment-Guide.category.name }}</h3></div>
-				  </div>
-				  
-			  <div id="map" style="height: 600px"></div>
-
-					    <ul id="map-side-bar">
-
-					   <span class="usvisits">
-
-					    <li style="" class="map-location" data-icon="/assets/images/3782/original/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/3782/original/mapicon.jpg'}">
-					        <a href="#" class="map-link us" rel="us">US</a>
-					        <div class="info-box">
-						        <h3>Westhouse Hotel New York</h3>
-					       	</div>
-					      </li>
-
-
-
-						      <div class="allothers">
-
-						      <ul>
-
-                                 
-                                
-                            <li class="map-location stater-B{{ Neighborhood-Locations.url_friendly_name }}" data-jmapping="{id: 1, point: {lat: {{ Neighborhood-Locations.Latitude }}, lng: {{ Neighborhood-Locations.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/3792/original/pin-point.png'}">
-
-						        <a href="#" class="map-link B{{ Neighborhood-Locations.url_friendly_name }}" rel="B{{ Neighborhood-Locations.url_friendly_name }}">{{ Neighborhood-Locations.title }}</a>
-							        <div class="info-box">
-							        	<span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ Neighborhood-Locations.url_friendly_name }}</span>
-
-								        <h3><a href="{{ Neighborhood-Locations.outbound }}">{{ Neighborhood-Locations.title }}</a></h3>
-
-							       	</div>
-
-							     </li>
-                                
-                              
-
-						  </ul>
-					    </div>
-
-
-
-					       </span>
-
-
-
-					      <div class="clear"></div>
-
-
-					    </ul>
-
-
-		</div>
-				
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				
-				
-			
-			</div>
-		
-		</div>
-		
-
-{% include footer.html %}
+<section class="common-details">
+  <div class="common-details-container">
+    <div class="common-details-row">
+      <div class="common-content">
+        <h3>{{ neighborhood.title }}</h3>
+        {{ neighborhood.contents }}
+        <a href="" class="common-btn">Visit Website</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,95 @@
+---
+layout: default
+---
+{% assign gallery-detail = page %}
+{% assign model = page %}
+
+<div class="inner-banner pattern bg-cover" style="background-image: url('{{ gallery-detail.category_image.url }}');">
+  <h1>{{ gallery-detail.category_name }}</h1>
+</div>
+
+<div class="sub-nav">
+  {% assign gallery-categories = site.data._models.gallery-category | sort: 'sort_order' %}
+  {% for gallery-category in gallery-categories %}
+    <a href="/gallery/{{ gallery-category.url_friendly_name }}/">{{ gallery-category.category_name }}</a>
+  {% endfor %}
+</div>
+
+<section class="assets-listing">
+  <div class="assets-listing-container">
+    <div class="assets-listing-row" id="lightgallery">
+
+      {% if gallery-detail.category_name == 'Accomodations' %}
+        {% assign galleries = site.data._models.gallery | where: "category", "Accomodations" %}
+        {% for gallery in galleries | sort: 'sort_order' %}
+          {% assign value = forloop.index | modulo:3 %}
+          {% if value != 0 %}
+             {% capture cls %}col-lg-6{% endcapture %}
+          {% else %}
+             {% capture cls %}col-lg-12{% endcapture %}
+          {% endif %}
+          <div class="{{ cls }}">
+            <div class="assets-item item bg-cover" style="background-image: url('{{ gallery.thumbnail_image.url }}');" data-src="{{ gallery.large_image.url }}" data-tweet-text="{{ gallery.alt }}">
+              <a href="javascript:void();" class="floating"></a>
+              <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if gallery-detail.category_name == 'Amenities' %}
+        {% assign galleries = site.data._models.gallery | where: "category", "Amenities" %}
+        {% for gallery in galleries | sort: 'sort_order' %}
+          {% assign value = forloop.index | modulo:3 %}
+          {% if value != 0 %}
+             {% capture cls %}col-lg-6{% endcapture %}
+          {% else %}
+             {% capture cls %}col-lg-12{% endcapture %}
+          {% endif %}
+          <div class="{{ cls }}">
+            <div class="assets-item item bg-cover" style="background-image: url('{{ gallery.thumbnail_image.url }}');" data-src="{{ gallery.large_image.url }}" data-tweet-text="{{ gallery.alt }}">
+              <a href="javascript:void();" class="floating"></a>
+              <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if gallery-detail.category_name == 'Dining' %}
+        {% assign galleries = site.data._models.gallery | where: "category", "Dining" %}
+        {% for gallery in galleries | sort: 'sort_order' %}
+          {% assign value = forloop.index | modulo:3 %}
+          {% if value != 0 %}
+            {% capture cls %}col-lg-6{% endcapture %}
+          {% else %}
+            {% capture cls %}col-lg-12{% endcapture %}
+          {% endif %}
+          <div class="{{ cls }}">
+            <div class="assets-item item bg-cover" style="background-image: url('{{ gallery.thumbnail_image.url }}');" data-src="{{ gallery.large_image.url }}" data-tweet-text="{{ gallery.alt }}">
+              <a href="javascript:void();" class="floating"></a>
+              <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if gallery-detail.category_name == 'Virtual Tours' %}
+        {% assign galleries = site.data._models.gallery | where: "category", "Virtual Tours" %}
+        {% for LatestVRTours in site.data._models.VRTour %}
+          {% assign value = forloop.index | modulo:3 %}
+          {% if value != 0 %}
+            {% capture cls %}col-lg-6{% endcapture %}
+          {% else %}
+            {% capture cls %}col-lg-12{% endcapture %}
+          {% endif %}
+          <div class="{{ cls }}" id="gallvr">
+            <div class="assets-item bg-cover" id="{{LatestVRTours.menu_order }}">
+              <link vr-embed  popup="true" rel="import" href="https://static.vrglobal.com/embed/{{LatestVRTours.vr_url_key }}.html"/>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+    </div>
+  </div>
+</section>
