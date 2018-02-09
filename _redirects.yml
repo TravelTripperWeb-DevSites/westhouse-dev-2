@@ -1,4 +1,19 @@
 ---
+- offers/your-large-house/: offers/
+- westhouse-hotel-amenities-nyc/resident-privileges/: amenities/resident-privileges/
+- luxury-hotel-amenities-nyc/: luxury-amenities/
+- photo-album/: gallery/
+- luxury-rooms-suites-nyc/room/: luxury-nyc-rooms/
+- offers/mercedes-car-transfer/: offers/
+- offers/celebrate-new-years-eve-in-the-heart-of-new-york-city/: offers/
+- offers/hb-shopping-spree/: offers/
+- westhouse-offers/: offers/
+- westhouse-blog/: blog/
+- westhouse-hotel-new-york-dining/the-terrace/: dining/the-terrace/
+- offers/valet-parking/: offers/
+- westhouse-hotel-new-york-partners/westhouse-partnership-with-henri-bendel/: partners/westhouse-partnership-with-henri-bendel/
+- westhouse-hotel-new-york-dining/the-den/: dining/the-den/
+- luxury-rooms-suites-nyc/: luxury-nyc-rooms/
 - offers/shop-in-suite-style/: offers/
 - offers/nyc-hotel-deals-little-residents/: offers/
 - offers/celebratory-package/: offers/
@@ -552,7 +567,6 @@
 - wp-content/uploads/2015/04/Press-Release_Opening-of-the-Den_Final.doc: press/
 - wp-content/uploads/2015/04/Stylist-UK-May-2015.pdf: westhouse-hotel-new-york-partners/
 - wp-content/uploads/2015/05/Departures_5.13.15_WestHouse.pdf: things-to-do-in-nyc/
-- luxury-rooms-suites-nyc/room/#/whprs: luxury-rooms-suites-nyc/
 - luxury-rooms-suites-nyc/room/#/whprs/: luxury-rooms-suites-nyc/
 - Luxury-rooms-suites-nyc/room/#/whprs: luxury-rooms-suites-nyc/
 - Luxury-rooms-suites-nyc/room/#/whprs/: luxury-rooms-suites-nyc/
@@ -561,7 +575,6 @@
 - LUXURY-ROOMS-SUITES-NYC/ROOM/#/WHPRS: luxury-rooms-suites-nyc/
 - LUXURY-ROOMS-SUITES-NYC/ROOM/#/WHPRS/: luxury-rooms-suites-nyc/
 - hotels-near-central-park-nyc: ''
-- luxury-rooms-suites-nyc/room/%23/WHPRS/: luxury-rooms-suites-nyc/
 - westhouse-hotel-new-york-partners/: partners/
 - The-Neighborhood/Events/: things-to-do-in-nyc/
 - offers/suite-shopping-package/attachment/net-a-porter-westhouse-1/: offers/
