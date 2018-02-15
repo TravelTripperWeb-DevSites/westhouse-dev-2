@@ -132,7 +132,11 @@
   <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.permalink }}">
 {% endfor %}
 
-{% if page.meta_tags.robots %} 
-  <meta name="robots" content="{{ page.meta_tags.robots }}"> 
+{% if page.meta_tags.robots !="" %}
+ {% if page.url =='/blog/'%}
+   <meta name="robots" content=" ">
+ {% else %}
+   <meta name="robots" content="{{ page.meta_tags.robots }}">
+ {%endif%}
 {% endif %}
 <!-- end SEO -->
