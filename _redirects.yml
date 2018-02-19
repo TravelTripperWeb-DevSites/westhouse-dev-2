@@ -3,7 +3,7 @@
 - offers/downton-abbey-package/: offers/
 - offers/your-large-house/: offers/
 - westhouse-hotel-amenities-nyc/resident-privileges/: amenities/resident-privileges/
-- luxury-hotel-amenities-nyc/: luxury-amenities/
+- luxury-hotel-amenities-nyc/: amenities/
 - photo-album/: gallery/
 - luxury-rooms-suites-nyc/room/: luxury-nyc-rooms/
 - offers/mercedes-car-transfer/: offers/
@@ -44,8 +44,8 @@
 - dining/the-terrace-nyc-rooftop-bar: dining/the-terrace/
 - attraction-type/events: events-in-nyc
 - the-neighborhood/: things-to-do-in-nyc
-- luxury-hotel-amenities-nyc/concierge: luxury-hotel-amenities-nyc
-- amenities/concierge: luxury-hotel-amenities-nyc
+- luxury-hotel-amenities-nyc/concierge: amenities/
+- amenities/concierge: amenities/
 - pt-pt: ''
 - pt-pt/bedrooms-suites: ''
 - rooms/terrace-suites: luxury-rooms-suites-nyc
@@ -215,9 +215,6 @@
 - de/location: ''
 - wp-content/uploads/2015/01/darryl-carter-interior-designer-westhouse-hotel.png: ''
 - wp-content/uploads/2015/05/14184792813_c48c4924c4_z.jpg: ''
-- amenities/: luxury-hotel-amenities-nyc
-- amenities: hotels-near-central-park-nyc
-- room: luxury-rooms-suites-nyc/room
 - dayna-decker-luxury-candles: partners/dayna-decker-luxury-candles
 - our-house-single: about/our-house-single
 - jeffrey-beers: partners/jeffrey-beers
@@ -298,9 +295,9 @@
 - Amenities: luxury-hotel-amenities-nyc/
 - Amenities/Workout-Room: luxury-hotel-amenities-nyc/
 - amenities/workout-room/: luxury-hotel-amenities-nyc/
-- bedrooms-suites/: luxury-rooms-suites-nyc/
-- Bedrooms-Suites/Bedrooms/: luxury-rooms-suites-nyc/
-- bedrooms-suites/bedrooms/: luxury-rooms-suites-nyc/
+- bedrooms-suites/: luxury-nyc-rooms/
+- Bedrooms-Suites/Bedrooms/: luxury-nyc-rooms/
+- bedrooms-suites/bedrooms/: luxury-nyc-rooms/
 - bedrooms-suites/suites/: luxury-rooms-suites-nyc/
 - comforts: luxury-rooms-suites-nyc/
 - luxury-rooms-suites-nyc/luxury-hotel-rooms-in-midtown/: luxury-rooms-suites-nyc/
@@ -585,7 +582,7 @@
 - amenities-single/westhouse-concierge: luxury-hotel-amenities-nyc/
 - neighborhood/sinatra-an-american-icon-multimedia-exhibition/: ''
 - pt-pt/photo-album/: photo-album/
-- amenities-single/westroom-nyc-event-venue: luxury-hotel-amenities-nyc/
+- amenities-single/westroom-nyc-event-venue: amenities/
 - press/vanity-fair/: press/
 - neighborhood/governors-ball-music-festival/: ''
 - press/front-desk/: press/
