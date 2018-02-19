@@ -32,7 +32,7 @@ layout: default
           {% for location in site.data._models.culinary-locations %}
             {% if location.category == page.category %}
               <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
-                <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+                <a href="#" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
                 <div class="info-box">
                   <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
                   <h3>{{ location.title }}</h3>
