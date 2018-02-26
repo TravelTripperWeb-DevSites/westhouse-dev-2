@@ -1,0 +1,3 @@
+---
+--- 
+jsonCallback({"special_rates": [{"rate_plan_name":"{{site.data.special-popup-modal.title | jsonfy}}", "short_description": "{{site.data.special-popup-modal.body | jsonfy}}","rate_plan_code": "{{site.data.special-popup-modal.offer-code}}", "lead_photo_url": { "yankee_large": "{{site.data.special-popup-modal.offer-image}}"}, "promo_url": "{{site.data.special-popup-modal.offer-link}}"}]});

@@ -1,0 +1,155 @@
+.offer-promo-tile {
+    margin: 90px auto 0px;
+    text-align: center;
+    padding: 10px 0;
+    color:$white;
+    max-width: 100%;
+    background-color: $light;
+    a{
+        display: inline-block;
+        margin: 0px 15px;
+        font-size: .813rem;
+    }
+    h3 {
+        vertical-align: middle;
+        font-family: $google-font;
+        font-size: 24px;
+        color: $primary;
+        display: inline-block;
+        margin: 0px 15px;
+        text-transform: none;
+
+    }
+    a {
+        i {padding-right:5px;}
+    }
+    @media(min-width: 1500px){
+      margin: 126px auto 2px;
+              }
+    @media screen and (max-width: 1170px) and (min-width: 992px){
+                    margin: 97px auto 2px;
+               }
+     @media(max-width: 991px){
+      margin: 71px auto 2px;
+                       }
+}
+.promo-code-reminder {
+    margin: 90px auto 2px;
+    text-align: center;
+    padding: 10px 0;
+    max-width: 700px;
+    .reminder-text {
+        display: inline-block;
+        text-align: right;
+        float: left;
+        h4 {
+        color: $black !important;
+        font-family: $primary-book;
+        font-size: 1.125rem;
+        font-weight: normal;
+        text-transform: none;
+        color: #FFF;
+        line-height: normal;
+        margin-bottom: 0px;
+            span {
+                font-family: $primary-book;
+                font-size: 1.125rem;
+                color:#ed1c25;
+                font-weight: bold;
+            }
+        }
+        i {
+            color:#999999;
+            text-align: right;
+            font-size: 11px;
+            sup {
+                color:#ed1c25;
+            }
+        }
+    }
+    .button-common {
+        display: inline-block;
+    }
+      @media(min-width: 1600px){
+      margin: 122px auto 2px;
+              }
+}
+#offer-promo-popup {
+    .modal-dialog {
+        top: 48%;
+        transform: translateY(-48%) !important;
+        .modal-content {
+           border-radius: 0px; 
+        }
+        .modal-body {
+            padding: 40px;
+            border: 0px;
+            text-align: center;
+            .close {
+                position: absolute;
+                right: 17px;
+                top: 10px;
+            }
+            h3 {
+                font-size: 20px;
+                text-shadow: none;
+                color: $black;
+                text-transform: uppercase;
+                letter-spacing: .5px; 
+                margin-bottom: 20px;
+                font-family: $primary-book;
+            }
+            .signup {
+                .input-group {
+                    margin-bottom: 20px;
+                    .form-control {
+                        border-color: $black;
+                        border-radius: 0px;
+                        height: 48px;
+                        box-shadow: none;
+                        color: #232525;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        &::placeholder {
+                            text-transform: uppercase;
+                            font-size: 12px;
+                        }
+                    }
+                    .btn-lt-blue {
+                        background-color: $black;
+                        display: inline-block;
+                        font-size: 14px;
+                        letter-spacing: 4px;
+                        color: #ffffff;
+                        padding: 13.5px 30px;
+                        font-family: $primary-bold;
+                        text-transform: uppercase;
+                        border: 0px;
+                        border-radius: 0px;
+                        text-align: center;
+                        -webkit-transition: all 0.2s;
+                        transition: all 0.2s;
+                    }
+                }
+                .agree_to_sub {
+                    input {
+                        margin: 4px 5px;
+                    }
+                }
+            }
+            .message {
+                h3{
+                    span {
+                        color:#ed1c25;
+                        font-weight: bold;
+                    } 
+                }
+                h5 {
+                    margin-bottom: 20px;
+                    font-size: 0.875rem;
+                    color: $black;
+                }
+            }
+        }
+    }
+}

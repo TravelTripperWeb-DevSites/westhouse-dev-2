@@ -446,3 +446,9 @@
     transform: rotate(360deg);
   }
 }
+
+.hero-bg {
+    .bg-cover {
+      background-position: top center;
+    }
+}
