@@ -19,6 +19,8 @@ main:
     url: /connect/
 
 footer:
+  - title: FAQ
+    url: /faq/
   - title: Terms of Use
     url: /terms-of-use/
   - title: Privacy Policy
