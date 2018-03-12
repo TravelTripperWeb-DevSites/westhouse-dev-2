@@ -248,7 +248,7 @@ $(window).on('load resize', function() {
 
 // Instafeed
 $(window).on("load", function(e) {
-  var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.3f7b9460f3ab49818cc991cf3fefcaca&callback=?';
+  var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.e23b900839bc4be5a29cb6eec0161bbf&callback=?';
   $.ajax({
     url: instaurl,
     dataType: "jsonp",
