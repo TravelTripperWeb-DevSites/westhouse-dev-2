@@ -51,16 +51,16 @@ meta_tags:
                 <div class="form-row">
                   <input type="hidden" name="rate_code" value="[[offers.sRdetail.rate_plan_code]]">
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" placeholder="Arrival Date">
+                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" placeholder="Arrival Date" aria-label="Arrival Date">
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="departure_dates" name="departure_date" placeholder="Departure Date">
+                    <input type="text" class="form-control" id="departure_dates" name="departure_date" placeholder="Departure Date" aria-label="Departure Date">
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <select id="adults" name="adults[]" class="form-control">
+                    <select id="adults" name="adults[]" class="form-control" aria-label="Adults">
                       <option selected>1 Adult</option>
                       <option>2 Adults</option>
                       <option>3 Adults</option>
@@ -68,7 +68,7 @@ meta_tags:
                     </select>
                   </div>
                   <div class="form-group col-md-6">
-                    <select id="children" name="children[]" class="form-control">
+                    <select id="children" name="children[]" class="form-control" aria-label="Children">
                       <option selected>0 Kids</option>
                       <option>1 Kid</option>
                       <option>2 Kids</option>

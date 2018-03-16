@@ -33,7 +33,7 @@ layout: default
       <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
         <img src="{{ location.image.url }}" alt="{{ location.title }}">
         <h2>{{ location.title }}</h2>
-        <a href="#" class="closer"><i class="fa fa-times"></i></a>
+        <a href="#" class="closer" aria-label="Close Info"><i class="fa fa-times"></i></a>
         <div class="clear"></div>
       </div>
     {% endif %}
@@ -45,7 +45,7 @@ layout: default
     <span class="usvisits">
 
       <li class="map-location" data-icon="/assets/images/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/mapicon.jpg'}">
-        <a href="#" class="map-link us">US</a>
+        <!-- <a href="#" class="map-link us">US</a> -->
         <div class="info-box">
           <h3>Westhouse Hotel New York</h3>
         </div>
@@ -56,10 +56,10 @@ layout: default
           {% for location in site.data._models.neighborhood-locations %}
             {% if location.category.title == page.category.title %}
               <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
-                <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+                <!-- <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a> -->
                 <div class="info-box">
                   <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
-                  <h3><a href="/attractions/{{ location.url_friendly_name }}">{{ location.title }}</a></h3>
+                  <h3><a href="/attractions/{{ location.url_friendly_name }}" aria-label="{{ location.title }}">{{ location.title }}</a></h3>
                 </div>
               </li>
             {% endif %}

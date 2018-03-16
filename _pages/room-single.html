@@ -32,15 +32,15 @@ meta_tags:
                 <input type="hidden" name="selected_room" value="[[room.code]]">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" ng-model="search.params.arrival_date" placeholder="Arrival Date">
+                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" ng-model="search.params.arrival_date" placeholder="Arrival Date" aria-label="Arrival Date">
                   </div>
                   <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="departure_dates" name="departure_date" ng-model="search.params.departure_date" placeholder="Departure Date">
+                    <input type="text" class="form-control" id="departure_dates" name="departure_date" ng-model="search.params.departure_date" placeholder="Departure Date" aria-label="Departure Date">
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <select id="adults" name="adults[]" ng-model="search.params.adults" class="form-control">
+                    <select id="adults" name="adults[]" ng-model="search.params.adults" class="form-control" aria-label="Adults">
                       <option value="1">1 Adult</option>
                       <option value="2">2 Adults</option>
                       <option value="3">3 Adults</option>
@@ -48,7 +48,7 @@ meta_tags:
                     </select>
                   </div>
                   <div class="form-group col-md-6">
-                    <select id="children" name="children[]" ng-model="search.params.children" class="form-control">
+                    <select id="children" name="children[]" ng-model="search.params.children" class="form-control" aria-label="Children">
                       <option value="0" selected>0 Kids</option>
                       <option value="1">1 Kid</option>
                       <option value="2">2 Kids</option>

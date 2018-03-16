@@ -26,7 +26,7 @@ meta_tags:
     <div class="common-details-row">
       <div class="common-content">
         {% regionblock area_intro, type:text %}
-          <p><strong><a href="/">WestHouse Hotel New York</a></strong> is located in the heart of Midtown Manhattan, surrounded by some of the <strong><a href="/things-to-do-in-nyc/"></strong>top things to do in NYC</a>. In the midst of the city that never sleeps, the hotel is within minutes of the bright lights of Times Square, the <strong><a href="/things-to-do-in-nyc/culinary-guide/">unbeatable eats</a></strong> of Hell's Kitchen, the <strong><a href="/things-to-do-in-nyc/art-culture/">cultural institutions</a></strong> of the Upper West Side, and the lush green space of Central Park. Its address on 55th Street and 7th Avenue puts it near several city subway stations providing easy access to Manhattan activities near and far.</p>
+          <p><strong><a href="/">WestHouse Hotel New York</a></strong> is located in the heart of Midtown Manhattan, surrounded by some of the <strong><a href="/things-to-do-in-nyc/">top things to do in NYC</a></strong>. In the midst of the city that never sleeps, the hotel is within minutes of the bright lights of Times Square, the <strong><a href="/things-to-do-in-nyc/culinary-guide/">unbeatable eats</a></strong> of Hell's Kitchen, the <strong><a href="/things-to-do-in-nyc/art-culture/">cultural institutions</a></strong> of the Upper West Side, and the lush green space of Central Park. Its address on 55th Street and 7th Avenue puts it near several city subway stations providing easy access to Manhattan activities near and far.</p>
           <p>Wander the hallowed halls of the best <strong><a href="/things-to-do-in-nyc/art-culture/">art museums</a></strong> in New York City, <strong><a href="/things-to-do-in-nyc/shopping/">window shop</a></strong> your way down Fifth Avenue, and spend a lazy afternoon relaxing in Central Park — it's all at your fingertips at WestHouse Hotel New York.</p>
           <p>WestHouse Hotel New York is just 45 minutes from all major airports including JFK International, LaGuardia and Newark. Taxis are readily available at all airports for a standard flat fare, or the hotel will be happy to confirm arrangements for a private car transfer.</p>
           <p>If you're looking for inside information on the best <strong><a href="/things-to-do-in-nyc/">things to do in New York City</a></strong>, the WestHouse Concierge will gladly assist with travel arrangements, tickets, and in-the-know tips.</p>
@@ -42,10 +42,11 @@ meta_tags:
     <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
       <img src="{{ location.image.url }}" alt="{{ location.image.alt }}">
       <h2>{{ location.title }}</h2>
-      <a href="#" class="closer"><i class="fa fa-times"></i></a>
+      <a href="#" class="closer" aria-label="Close Info"><i class="fa fa-times"></i></a>
       <div class="clear"></div>
       <div class="neighborhood">
-        <h3>{{ location.category.name }}</h3>
+        <!-- <h3>{{ location.category.name }}</h3> -->
+        <h3>{{ location.title }}</h3>
       </div>
     </div>
   {% endfor %}
@@ -56,7 +57,7 @@ meta_tags:
     <span class="usvisits">
 
       <li style="" class="map-location" data-icon="/assets/images/mapicon.jpg" data-jmapping="{id: 200, point: {lat: 40.7646719, lng: -73.9814936 }, category: 'amen', bounded: true, icon: '/assets/images/mapicon.jpg'}">
-        <a href="#" class="map-link us">US</a>
+        <!-- <a href="#" class="map-link us">US</a> -->
         <div class="info-box">
           <h3>Westhouse Hotel New York</h3>
         </div>
@@ -66,10 +67,10 @@ meta_tags:
         <ul>
           {% for location in site.data._models.neighborhood-locations %}
             <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
-              <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+              <!-- <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a> -->
               <div class="info-box">
                 <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
-                <h3><a href="/attractions/{{ location.url_friendly_name }}">{{ location.title }}</a></h3>
+                <h3><a href="/attractions/{{ location.url_friendly_name }}" aria-label="{{ location.title }}">{{ location.title }}</a></h3>
               </div>
             </li>
           {% endfor %}
