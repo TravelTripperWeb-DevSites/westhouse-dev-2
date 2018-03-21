@@ -12,7 +12,12 @@ meta_tags:
   {% for location in site.data._models.neighborhood-locations %}
     <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
       <img src="{{ location.image.url }}" alt="{{ location.title }}">
-      <h2>{{ location.title }}</h2>
+      <h2>{% if location.Outbound_Link and location.Outbound_Link !="" %}
+          <a href="{{ location.Outbound_Link }}" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% else %}
+            <a href="{{ location.url_friendly_name }}/" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% endif%}
+        </h2>
       <a href="#" class="closer"><i class="fa fa-times"></i></a>
       <div class="clear"></div>
       <div class="neighborhood">

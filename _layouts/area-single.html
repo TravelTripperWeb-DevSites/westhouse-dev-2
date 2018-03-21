@@ -32,8 +32,13 @@ layout: default
     {% if location.category.title == page.category.title %}
       <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
         <img src="{{ location.image.url }}" alt="{{ location.title }}">
-        <h2>{{ location.title }}</h2>
-        <a href="#" class="closer" aria-label="Close Info"><i class="fa fa-times"></i></a>
+        <h2>{% if location.Outbound_Link and location.Outbound_Link !="" %}
+          <a href="{{ location.Outbound_Link }}" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% else %}
+            <a href="{{ location.url_friendly_name }}/" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% endif%}
+        </h2>
+        <a href="#" class="closer"><i class="fa fa-times"></i></a>
         <div class="clear"></div>
       </div>
     {% endif %}
@@ -59,7 +64,11 @@ layout: default
                 <!-- <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a> -->
                 <div class="info-box">
                   <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
-                  <h3><a href="/attractions/{{ location.url_friendly_name }}" aria-label="{{ location.title }}">{{ location.title }}</a></h3>
+                  <h3><a href="/attractions/{{ location.url_friendly_name }}" aria-label="{{ location.title }}">{% if location.Outbound_Link and location.Outbound_Link !="" %}
+          <a href="{{ location.Outbound_Link }}" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% else %}
+            <a href="{{ location.url_friendly_name }}/" rel="nofollow" target="_blank">{{ location.title }}</a>
+          {% endif%}</a></h3>
                 </div>
               </li>
             {% endif %}

@@ -19,7 +19,7 @@
     "model_name": "neighborhoodcategories"
   },
   "Outbound_Link": {
-    "hint": "Outgoing link to this location"
+    "hint": "Outgoing link to this location (http://www.domain.com)"
   },
   "Latitude": {
     "hint": "location latitude."
