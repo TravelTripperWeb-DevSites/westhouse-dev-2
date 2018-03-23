@@ -42,10 +42,10 @@ meta_tags:
         <ul>
           {% for location in site.data._models.neighborhood-locations %}
             <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
-              <a href="/attractions/{{ location.url_friendly_name }}" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
+              <a href="/attractions/{{ location.url_friendly_name }}/" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a>
               <div class="info-box">
                 <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ location.url_friendly_name }}</span>
-                <h3><a href="/attractions/{{ location.url_friendly_name }}">{{ location.title }}</a></h3>
+                <h3><a href="/attractions/{{ location.url_friendly_name }}/">{{ location.title }}</a></h3>
               </div>
             </li>
           {% endfor %}
@@ -84,7 +84,7 @@ meta_tags:
     <div class="culinary-guide-row">
 
       <div class="culinary-guide-tile">
-        <a href="/things-to-do-in-nyc/culinary-guide/coffee-and-drinks">
+        <a href="/things-to-do-in-nyc/culinary-guide/coffee-and-drinks/">
           <img src="/assets/images/area/betony.jpg">
           <h2>Coffee & Drinks</h2>
         </a>
@@ -105,7 +105,7 @@ meta_tags:
       </div>
 
       <div class="culinary-guide-tile">
-        <a href="/things-to-do-in-nyc/culinary-guide/dessert-and-snacks/">
+        <a href="/things-to-do-in-nyc/culinary-guide/desserts-and-snacks/">
           <img src="/assets/images/area/polo-bar.jpg">
           <h2>Dessert & Snacks</h2>
         </a>
