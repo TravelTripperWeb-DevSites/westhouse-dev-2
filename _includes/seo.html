@@ -3,7 +3,9 @@
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
 
-{% if page.title %}
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title | normalize_whitespace | escape_once %}
+{% elsif page.title %}
   {% assign seo_title = page.title | normalize_whitespace | escape_once %}
 {% else %}
   {% assign seo_title = site.title | append: " " | append: site.title_separator | append: " " | append: site.name %}
@@ -15,7 +17,11 @@
 
 <title>{{ seo_title }}</title>
 
+{% if page.seo_description %}
+{% assign seo_description = page.seo_description | default: site.description %}
+{% else %}
 {% assign seo_description = page.meta_description | default: site.description %}
+{%endif%}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
 {% endif %}
