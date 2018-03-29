@@ -1,1 +1,25 @@
-{"title":"The Central Park Experience","image":{"url":"/assets/images/perfect-picnic-header.jpg"},"h1_title":"Our Perfect Picnic","seo_title":"The Central Park Experience","seo_description":"The Central Park Experience","header_image":{"url":"/assets/images/perfect-picnic-header.jpg"},"contents":"<p align=\"justify\">A full service picnic created specifically for WestHouse guests.</p>\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">A special treat in the heart of Central Park featuring the best meats, cheeses, fresh fruits and crudit&eacute;s New York City has to offer - just for you, as well as a bottle of prosecco. When you arrive at your picnic spot, one of our picnic experts will have everything set up, ready and waiting for you!</p>","price":"$350 <span>for two</span>","featured_image":{"url":"/assets/images/central.png"},"menu_order":0,"date":"08/19/16","datemeta":"2016/08/19","orderby":1,"sub_heading":""}
+{
+  "title": "The Central Park Experience",
+  "image": {
+    "url": "/assets/images/perfect-picnic-header.jpg"
+  },
+  "h1_title": "Our Perfect Picnic",
+  "seo_title": "The Central Park Experience",
+  "seo_description": "The Central Park Experience",
+  "header_image": {
+    "url": "/assets/images/perfect-picnic-header.jpg"
+  },
+  "contents": "<p align=\"justify\">A full service picnic created specifically for WestHouse guests.</p>\n<p class=\"MsoNormal\" style=\"margin-bottom: .0001pt;\">A special treat in the heart of Central Park featuring the best meats, cheeses, fresh fruits and crudit&eacute;s New York City has to offer - just for you, as well as a bottle of prosecco. When you arrive at your picnic spot, one of our picnic experts will have everything set up, ready and waiting for you!</p>",
+  "price": "$350 <span>for two</span>",
+  "featured_image": {
+    "url": "/assets/images/central.png",
+    "alt": "The Central Park Experience",
+    "caption": "",
+    "description": ""
+  },
+  "menu_order": 0,
+  "date": "08/19/16",
+  "datemeta": "2016/08/19",
+  "orderby": 2,
+  "sub_heading": ""
+}
