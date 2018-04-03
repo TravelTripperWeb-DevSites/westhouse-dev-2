@@ -1,0 +1,92 @@
+---
+layout: default
+title: Luxury Hotel Offers in Midtown NYC | WestHouse Hotel Deals
+meta_description: Use NYC luxury hotel deals at WestHouse Hotel New York to save on your next stay in the heart of the city.
+permalink: /web-exclusive-offers/
+meta_tags:
+  robots:
+---
+<section ng-controller ="offerRates" >
+<div class="inner-banner pattern bg-cover" style="background-image: url('/assets/images/ppc/ppc-banner.jpg');">
+	{% regionblock ppc_offers_heading, type:header %}
+  		<h1>Web Exclusive Offers</h1>
+	{% endregionblock %}
+</div>
+<section class="container ppc-offers-intro text-center">
+	{% regionblock ppc_offers_text_1, type:text %}
+		<p>Westhouse is please to welcome you to your new <i>House away from home</i>. <br><span>ENJOY THESE EXCLUSIVE WEB-ONLY PROMOTIONS</span></p>
+	{% endregionblock %}
+	{% regionblock ppc_offers_heading_2, type:header %}
+		<h2>Select your stay date and discover the best offer for you</h2>
+	{% endregionblock %}
+</section>
+<section class="offers-filter">
+    <div class="booking-widget-container">
+        <div class="booking-widget-holder">
+            <form autocomplete="off" id="ppcOfferForm" method="get" enctype="multipart/form-data" target="_blank">
+                <div class="input-holder">
+                    <span class="calendar-icon"><i class="fa fa-calendar"></i></span>
+                    <input type="text" class="date-field" name="arrival_date" id="arrival_date" placeholder="Arrival Date" aria-label="Arrival Date">
+                </div>
+                <div class="input-holder">
+                    <span class="calendar-icon"><i class="fa fa-calendar"></i></span>
+                    <input type="text" name="departure_date" id="departure_date" class="date-field" placeholder="Daparture Date" aria-label="Departure Date">
+                </div>
+                <div class="input-holder">
+                    <select name="adults" id="adults">
+                        <option value="1"> 1 GUEST</option>
+                        <option value="2"> 2 GUESTS</option>
+                        <option value="3"> 3 GUESTS</option>
+                        <option value="4"> 4 GUESTS</option>
+                        <option value="5"> 5 GUESTS</option>
+                    </select>
+                    <!-- <input type="number" id="adults" name="adults" placeholder="No. of Adults"> -->
+                </div>
+                <div class="input-holder">
+                    <select name="children" id="children">
+                        <option value="0"> 0 Children</option>
+                        <option value="1"> 1 Child</option>
+                        <option value="2"> 2 Children</option>
+                        <option value="3"> 3 Children</option>
+                        <option value="4"> 4 Children</option>
+                        <option value="5"> 5 Children</option>
+                    </select>
+                    <!-- <input type="number" name="children" placeholder="No. of Children"> -->
+                </div>
+                <div class="input-holder input-btn">
+                    <button class="common-btn" type="submit">Check</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="container offers-listing ppc-offers-list">
+    <div class="row">
+    	{% for offer in site.data._models.ppc-offers %}
+            <input type="hidden" name="offers_code[]" value="{{offer.offer_code}}" data-roomcode= "{{offer.room_code}}" />
+	    	<div class="col-lg-4">
+	            <div class="offer-item">
+                    <a ng-href="{{site.reztripUrl}}search[[ ratePlans.{{offer.offer_code}}.urlParams ]]" target="_blank">
+    	                <div class="offer-image bg-cover" style="background-image: url({{offer.image.url}})">
+    	                    <p class="floating-price" style="display:none">[[ ratePlans.{{offer.offer_code}}.price || noprice]]</p>
+                            <a ng-href="{{site.reztripUrl}}search[[ ratePlans.{{offer.offer_code}}.urlParams ]]"  class="common-btn"><span ng-show="ratePlans.{{offer.offer_code}}.price">Book Now</span><span ng-hide="ratePlans.{{offer.offer_code}}.price">Check Availability</span></a>
+
+    	                </div>
+                    </a>
+	                <h2><a ng-href="{{site.reztripUrl}}search[[ ratePlans.{{offer.offer_code}}.urlParams ]]" class="show-details" >{{offer.title}}</a></h2>
+	                <p>{{offer.short_description}}</p>
+	                <div class="btn-holder">
+	                    <a href="javascript:void(0);" class="btn-empty show-details">Read More +</a>
+	                </div>
+	                <div class="full-description">
+	                	<span class="close">&times;</span>
+	                	<h4 class="details-header">Offer Details</h4>
+	                	{{offer.full_description}}
+	                </div>
+	            </div>
+	        </div>
+        {% endfor %}
+    </div>
+</section>
+</section>

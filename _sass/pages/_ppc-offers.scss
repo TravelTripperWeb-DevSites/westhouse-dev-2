@@ -1,0 +1,132 @@
+.ppc-offers-intro{
+	p{
+		font-size: 1rem;
+		text-transform: capitalize;
+		font-weight: 700;
+		span{
+			text-transform: uppercase;
+		}
+	}
+	h2{
+		text-transform: uppercase;
+		color: $primary;
+		font-size: 1.3rem;
+	}
+}
+
+.rt-guest-widget{
+	display: none !important;
+}
+
+.offers-filter{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	.booking-widget-container{
+		.booking-widget-holder{
+			float: none;
+			text-align: center;
+			input[type="number"], select {
+				font-family: $google-font;
+				font-size: .813rem;
+				color: $primary;
+    			text-transform: uppercase;
+    			height: 47px;
+    			padding-left: 15px;
+    			font-weight: 700;
+    			border: solid 1px $primary;
+    			max-width: 260px;
+    			width: 100%;
+    			&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				    color: $primary;
+				    opacity: 1; /* Firefox */
+				    font-weight: 700;
+				}
+
+				&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				    color: $primary;
+				    font-weight: 700;
+				}
+
+				&::-ms-input-placeholder { /* Microsoft Edge */
+				    color: $primary;
+				    font-weight: 700;
+				}
+			}
+			.input-holder{
+				max-width: 260px;
+			}
+			.common-btn{
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.ppc-offers-list{
+	.offer-item{
+		p{
+			margin-bottom: 0px;
+		}
+		.floating-price{			
+			width: 150px;
+			text-align: center;
+			background-color: $white-bg;
+			color: $black;
+			padding: 10px 0 10px 0;
+			top: 0;
+			left: 0;
+			letter-spacing: .055rem;
+			font-weight: 700;
+			font-size: 1rem;
+			font-family: $google-font;
+			border-top: 1px solid $border;
+			border-left: 1px solid $border;
+		}
+		.white-btn{
+			top: 0;
+			left: 0;
+			position: absolute;
+		}	
+		.common-btn{			
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+		.full-description{
+			display: none;
+			background-color: $secondary-bg;
+			padding: 20px;
+			position: relative;
+			.close{
+				position: absolute;
+				top: 8px;
+				right: 10px;
+			}
+			.details-header{
+				color: $primary;
+				font-weight: 700;
+				text-align: center;
+				font-size: 1rem;
+			}
+			ul{
+				margin-bottom: 15px;
+				li{
+					position: relative;
+					color: $primary;
+					margin-bottom: 3px;
+					padding-left: 14px;
+					&::before{
+						content: "";
+						width: 5px;
+						height: 5px;
+						position: absolute;
+						background-color: $primary;
+						left: 0px;
+						top: 9px;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}

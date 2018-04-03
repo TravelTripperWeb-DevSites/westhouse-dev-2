@@ -164,6 +164,35 @@ Rt3Api.prototype.getRoomInfo = function(searchParams) {
   return query(path, params);
 };
 
+Rt3Api.prototype.getRatePlans = function(searchParams) {
+  var path = '/hotels/rateplanDetails.json';
+
+  var today = new Date();
+  var default_arrival  = today.toISOString().slice(0, 10);
+  var tomorrow = new Date(today.setDate(today.getDate() + 1));
+  var default_departure = tomorrow.toISOString().slice(0, 10);
+
+
+  var params = {
+    hotel_id: this.config.hotelId,
+    portal_id: this.config.portalId,
+    locale: this.config.defaultLocale,
+    currency: this.config.defaultCurrency,
+    adults: searchParams.adults || 1,
+    children: searchParams.children || 0,
+    arrival_date: searchParams.arrival_date || default_arrival,
+    departure_date: searchParams.departure_date || default_departure,
+    rate_plan_id: searchParams.rate_plan_id,
+    room_id: searchParams.room_id,
+    ip_address: sessionStorage.ip_add
+
+  };
+
+  //var params = $.extend(defaultParams, searchParams);
+
+  return query(path, params);
+};
+
 Rt3Api.prototype.getRateShopping = function(searchParams) {
   var path = '/hotels/rateshopping.json';
   var defaultParams = {

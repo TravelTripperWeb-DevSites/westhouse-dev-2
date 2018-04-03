@@ -88,6 +88,62 @@
 
 
     }])
+    .controller('offerRates', ['$scope', '$q', 'rt3api', function($scope, $q, rt3api) {
+        var ppc_offers = [];
+
+        $(".ppc-offers-list [name = 'offers_code[]']").each(function(key, ele) {
+            ppc_offers.push({
+                    'offer_code' : $(ele).val(),
+                    'room_code'  : $(ele).data('roomcode')
+            })
+
+        });
+        $("#ppcOfferForm").submit(function() {
+
+            fetchPPCOfferPrice ();
+        });
+
+
+        function fetchPPCOfferPrice() {
+            $(".floating-price").addClass('loading-dots');
+            var arrival_date = $("#arrival_date").val() != '' ? $("#arrival_date").val() : null;
+            var departure_date = $("#departure_date").val() != '' ? $("#departure_date").val() : null;
+            var adults = $("#adults").val();
+            var children = $("#children").val();
+
+            var common_params = {  adults: adults,
+                            arrival_date: arrival_date,
+                            departure_date: departure_date,
+                            adults: adults,
+                            children: children,
+                            ip_address: sessionStorage.ip_add
+                        };
+            var rate_params , params, offer;
+            $scope.noprice = '';
+            $scope.ratePlans = [];
+            for (var i = 0 ; i< ppc_offers.length; i++){
+                offer = ppc_offers[i];
+                rate_params = { rate_plan_id: offer.offer_code,
+                                room_id: offer.room_code};
+                params = $.extend(common_params, rate_params);
+
+                $scope.ratePlans[offer.offer_code] = [];
+                $scope.ratePlans[offer.offer_code].price = '';
+                $scope.ratePlans[offer.offer_code].urlParams = '?rate_code='+offer.offer_code+'&arrival_date='+arrival_date+'&departure_date='+departure_date+'&adults[]='+adults+'&children[]='+children+'&room_id='+offer.room_code;
+                $q.when(rt3api.getRatePlans(params)).then(function(response) {
+                      $(".floating-price").show().removeClass('loading-dots');
+                      $scope.noprice = 'NA';
+                      if(response.code) {
+                          $scope.ratePlans[response.code].price = '$' + Math.round(response.average_discounted_nightly_price || response.average_nightly_price);
+                      }
+                });
+            }
+        }
+
+        fetchPPCOfferPrice ();
+
+
+    }])
     .controller('bookingWidget', ['$scope', 'rt3Search', 'rt3Browser', function($scope, rt3Search, rt3Browser) {
       var self = this;
 

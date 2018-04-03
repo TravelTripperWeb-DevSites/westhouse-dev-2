@@ -1,0 +1,34 @@
+{
+  "title": {
+    "required": true
+  },
+  "seo_title": {
+    "required": true
+  },
+  "seo_description": {
+    "type": "text",
+    "required": true
+  },
+  "offer_code": {
+    "type": "text",
+    "required": true
+  },
+  "room_code": {
+    "type": "text",
+    "required": true
+  },
+  "short_description": {
+    "type": "text",
+    "required": true
+  },
+  "full_description": {
+    "type": "richtext",
+    "required": true
+  },
+  "image": {
+    "type": "image"
+  },
+  "sort_order": {
+    "type": "integer"
+  }
+}

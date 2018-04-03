@@ -1,0 +1,31 @@
+{
+  "title": "Website Exclusive",
+  "seo_title": "Website Exclusive",
+  "seo_description": "Enjoy our best available rates only when you book on our website.",
+  "url_friendly_name": "ppc-web",
+  "offer_code": "PPCWEB",
+  "room_code": "WHQL",
+  "short_description": "Enjoy our best available rates only when you book on our website.",
+  "full_description": "<p>Don&rsquo;t just day dream about your next vacation, book now and start planning your New York getaway in the city that never sleeps! To thank you for booking directly on our website we are offering you an extra discount along with 3 complimentary perks!</p>",
+  "image": {
+    "name": "website-exclusive",
+    "file_name": "website-exclusive.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/website-exclusive.jpg",
+    "tags": "",
+    "file_size": 98276,
+    "width": 672,
+    "height": 640,
+    "description": "",
+    "date_added": "2018-03-27-101532",
+    "url_large": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/large_website-exclusive.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/medium_website-exclusive.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/small_website-exclusive.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/xsmall_website-exclusive.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/thumb_website-exclusive.jpg",
+    "path": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-101532/website-exclusive.jpg",
+    "alt": "web-exclusive",
+    "caption": ""
+  },
+  "sort_order": 3
+}

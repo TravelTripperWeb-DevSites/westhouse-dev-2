@@ -1,6 +1,6 @@
 $font-size-base: 1rem !default;
 
-//* Font family variables
+/* Font family variables */
 $primary-light: 'GothamLight';
 $primary-thin: 'GothamThin';
 $primary-medium: 'GothamMedium';
@@ -15,7 +15,7 @@ $secondary-black: 'AvenirBlack';
 $google-font: 'Open Sans', sans-serif;
 $georgia: Georgia;
 
-//* Font size variables
+/* Font size variables */
 $jumbo-size: 8.375rem; // ~134px;
 $type-size-1: 7.188rem; // ~115px
 $type-size-2: 5.188rem; // ~83px
@@ -33,7 +33,7 @@ $type-size-13: .6875rem; // ~11px
 $type-size-14: 2.25rem; // ~36px
 $type-size-15: 1.563rem; // ~25px
 
-//* Color variables
+/* Color variables */
 $black: #000;
 $white: #fff;
 $primary: #333;
@@ -60,7 +60,8 @@ $light-heading: #767676;
 $link-light: #767676;
 $dark-bg: #767676;
 $paragraph: #161616;
-
+$black: #000000;
+$white-bg: #FFFFFF;
 
 /* Color codes before ADA Compliance
 $black: #000;
