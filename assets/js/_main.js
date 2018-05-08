@@ -209,39 +209,92 @@ $(document).ready(function() {
     $('.merch-sec').removeClass('slideup');
   });
 
+  //Offer Promo Popup
+
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+   var nowTime = new Date().getTime();
+    
+   var exposedofferPopup = localStorage.getItem('exposedofferPopup');
+   if (!exposedofferPopup) {
+       $('.message').css('display', 'none');
+       $('.promo-code-reminder').css('display', 'none');
+       $('.signup').css('display', 'block');
+   } else {
+       $('.message').css('display', 'none');
+       $('.promo-code-reminder').css('display', 'none');
+       $('.unlock').css('display', 'none');
+   } 
+   /*$('#mclose').click(function(){
+       document.location.href = '/';
+   });*/
+  if($.cookie('signupTime')){
+       if($.cookie('signupTime')){
+           $('.promo-code-reminder').css('display', 'block');
+       }
+   }
+   /*$('#mclose').click(function(){
+       document.location.href = '/';
+   });*/
+   if (getParameterByName('submit')) {
+       if (getParameterByName('submit') == 'success') {
+           if(!$.cookie('signupTime')){
+               $.cookie('signupDone', '1', { expires: 5, url:'/'});
+               $.cookie('signupTime', '1', { expires: 3, url:'/'}); 
+           }
+           localStorage.setItem('exposedofferPopup', true);
+           $('.message').css('display', 'block');
+           $('.promo-code-reminder').css('display', 'block');
+           $('.signup').css('display', 'none');
+           $('#offer-promo-popup').modal('show');
+           $('.unlock').css('display', 'none');
+       }
+   }
+
 });
 
 $(function() {
   // styles
   var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}];
 
-  // map options
-  var mapOptions = {
-    zoom: 15,
-    minZoom: 2,
-    scrollwheel: false,
-    draggable: true,
-    center: new google.maps.LatLng(40.667013, -123.438436),
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: false,
-    styles: styles,
-    scaleControl: true
-  };
+  
+ if($('#map').length){
+   // map options
+   var mapOptions = {
+     zoom: 15,
+     minZoom: 2,
+     scrollwheel: false,
+     draggable: true,
+     center: new google.maps.LatLng(40.667013, -123.438436),
+     mapTypeId: google.maps.MapTypeId.ROADMAP,
+     disableDefaultUI: false,
+     styles: styles,
+     scaleControl: true
+   };
+   $('#map').jMapping({
+     force_zoom_level: 15,
+     default_zoom_level: 15,
+     category_icon_options: function(category) {
+       if (category.charAt(0).match(/[a-c]/i)) {
+         return new google.maps.MarkerImage($(this).attr('data-icon'));
+       } else if (category.charAt(0).match(/c[d-z]/i)) {
+         return new google.maps.MarkerImage($(this).attr('data-icon'));
+       } else {
+         return new google.maps.MarkerImage($(this).attr('data-icon'));
+       }
+     },
+     map_config: mapOptions
+   });
 
-  $('#map').jMapping({
-    force_zoom_level: 15,
-    default_zoom_level: 15,
-    category_icon_options: function(category) {
-      if (category.charAt(0).match(/[a-c]/i)) {
-        return new google.maps.MarkerImage($(this).attr('data-icon'));
-      } else if (category.charAt(0).match(/c[d-z]/i)) {
-        return new google.maps.MarkerImage($(this).attr('data-icon'));
-      } else {
-        return new google.maps.MarkerImage($(this).attr('data-icon'));
-      }
-    },
-    map_config: mapOptions
-  });
+ }
+  
 
 });
 
@@ -281,20 +334,24 @@ $(window).on("load", function(e) {
   });
 });
 
-// Facebook share
-window.fbAsyncInit = function() {
-  FB.init({
-    appId: '1883009305284419',
-    status: true,
-    cookie: true,
-    xfbml: true
-  });
-};
+if($('#fb-root').length){
+  // Facebook share
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '1883009305284419',
+      status: true,
+      cookie: true,
+      xfbml: true
+    });
+  };
 
-(function() {
-  var e = document.createElement('script');
-  e.async = true;
-  e.src = document.location.protocol +
-    '//connect.facebook.net/en_US/all.js';
-  document.getElementById('fb-root').appendChild(e);
-}());
+  (function() {
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+}
+
+

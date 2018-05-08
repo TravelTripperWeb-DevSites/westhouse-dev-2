@@ -111,7 +111,7 @@ var css = __webpack_require__(2);
 			//if popup offer widget true 
 			popup_widget.show_widget();
 		} else {
-			popup_widget.show_widget();
+			//popup_widget.show_widget();
 		}
 	};
 })(jQuery);
