@@ -1,148 +1,152 @@
 ---
 layout: default
 title: Luxury Hotels in Manhattan | WestHouse Hotel New York
-meta_description: Extraordinary among luxury hotels in Manhattan, WestHouse Hotel New York is a true “house away from home.” Book your Luxurious New York City break today on the Official Website of the WestHouse Hotel New York!
+meta_description: Extraordinary among luxury hotels in Manhattan, WestHouse Hotel New York is a true "house away from home." Book your Luxurious New York City break today.
 permalink:
 meta_tags:
   robots:
 ---
-<section class="hero-banner-section pattern hero-bg">
-  <div class="hero-banner-container bg-cover" style="background-image: url(/assets/images/westhouse-model-exterior.jpg);"></div>
-  <!--  <div class="nyc-finalist">
+
+<section class="hero-banner-section pattern hero-bg hero-text-align">
+  <div class="hero-banner-container bg-cover" style="background-image: url(/assets/images/westhouse-model-exterior.jpg);">
+    <div class="home-banner">
+      {% comment %}
+      {% regionblock welcome_heading, type:header %}
+        <h1>Welcome to Westhouse Hotel New York</h1>
+      {% endregionblock %}
+      {% regionblock welcome_text, type:text %}
+        <p>Your home away from home when you visit New York City.</p>
+      {% endregionblock %}
+      {% endcomment %}
+    </div>
+  </div>
+ <!--  <div class="nyc-finalist">
     <img src="/assets/images/nyc-finalist.png" alt="NYC FINALIST">
-    </div> -->
+  </div> -->
 </section>
-<section class="welcome">
-  {% regionblock welcome_heading, type:header %}
-  <h1>WELCOME TO WESTHOUSE HOTEL NEW YORK</h1>
-  {% endregionblock %} {% regionblock welcome_text, type:text %}
-  <p>Your home away from home when you visit New York City.</p>
-  {% endregionblock %}
+
+<section class="tripadvisor carousel-common mb-5">
+  <div class="tripadvisor-container">
+    <div id="trpadvisor-carousel" class="main-carousel carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        {% for tripadvisor in site.data._models.tripadvisor %}
+          <li data-target="#trpadvisor-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+        {% endfor %}
+      </ol>
+
+      <div class="carousel-inner">
+        {% for tripadvisor in site.data._models.tripadvisor %}
+          <div class="carousel-item{% if forloop.first == true %} active{% endif %}">
+            <div class="trip-logo">
+              <img src="/assets/images/tripadvisory.png" alt="TripAdvisor">
+            </div>
+            <div class="trip-comment">
+              <p>{{ tripadvisor.contents }}</p>
+            </div>
+            <div class="tripadvisor-author">
+              <p>{{ tripadvisor.credit }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <a class="carousel-control-prev" href="#trpadvisor-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <img src="/assets/images/prev.png" alt="Previous Slide">
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#trpadvisor-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <img src="/assets/images/next.png" alt="Next Slide">
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </div>
 </section>
+
 <section class="hotel-info carousel-common">
   <div class="hotel-info-container">
+
     <div id="main-carousel" class="main-carousel carousel slide" data-ride="carousel">
+
       <ol class="carousel-indicators">
         <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#main-carousel" data-slide-to="1"></li>
         <li data-target="#main-carousel" data-slide-to="2"></li>
       </ol>
+
       <div class="carousel-inner">
         <div class="carousel-item active bg-cover" style="background-image: url('/assets/images/home/westhouse-hotel-new-york-entrance.jpg')"></div>
         <div class="carousel-item bg-cover" style="background-image: url('/assets/images/home/westhouse-hotel-new-york-terrace.jpg')"></div>
         <div class="carousel-item bg-cover" style="background-image: url('/assets/images/home/westhouse-hotel-new-york-the-den3.jpg')"></div>
       </div>
+
       <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true">
-      <img src="/assets/images/prev.png" alt="Previous Slide">
-      </span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <img src="/assets/images/prev.png" alt="Previous Slide">
+        </span>
+        <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">
-      <img src="/assets/images/next.png" alt="Next Slide">
-      </span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <img src="/assets/images/next.png" alt="Next Slide">
+        </span>
+        <span class="sr-only">Next</span>
       </a>
+
     </div>
+
     <div class="hotel-info-row">
       <div class="hotel-info-heading">
         {% regionblock hotel_intro_heading, type:header %}
-        <div class="slanting-text">Hotel</div>
+          <div class="slanting-text">Hotel</div>
         {% endregionblock %}
       </div>
       <div class="hotel-info-content-one">
         {% regionblock hotel_intro_sub_heading, type:text %}
-        <p><span class="bold-text">Privacy in the most public place in the world.</span></p>
-        {% endregionblock %} {% regionblock hotel_intro_text_left, type:text %}
-        <p>Extraordinary among luxury hotels in Manhattan, WestHouse Hotel New York is a true “house away from home,” a gracious retreat blending the plush comforts of an elegant Uptown apartment with the refined luxuries of a boutique hotel. Steps from Carnegie
-          Hall, Central Park and Fifth Avenue, you are welcomed not only as a guest, but as a Resident to your own private pied-à-terre in the artistic and cultural epicenter of New York City.
-        </p>
+          <p><span class="bold-text">Privacy in the most public place in the world.</span></p>
+          {% endregionblock %} {% regionblock hotel_intro_text_left, type:text %}
+          <p>Extraordinary among luxury hotels in Manhattan, WestHouse Hotel New York is a true “house away from home,” a gracious retreat blending the plush comforts of an elegant Uptown apartment with the refined luxuries of a boutique hotel. Steps from Carnegie Hall, Central Park and Fifth Avenue, you are welcomed not only as a guest, but as a Resident to your own private pied-à-terre in the artistic and cultural epicenter of New York City.</p>
         {% endregionblock %}
       </div>
       <div class="hotel-info-content-two">
         {% regionblock hotel_intro_text_right, type:text %}
-        <p>Exclusive to Residents and their guests, the hotel’s chic Art Deco-inspired design by Jeffrey Beers International is enhanced with a signature scent by ambient specialist 12.29. Its Midtown location makes it ideal for business and leisure travelers
-          alike, and a savy Concierge team curates exacting agendas with privileged insight and access.
-        </p>
-        <p>Welcome to living <a href="https://instagram.com/{{ site.social.instagram.username }}/">#InResidence</a>. We invite you to make WestHouse, your house.</p>
+          <p>Exclusive to Residents and their guests, the hotel’s chic Art Deco-inspired design by Jeffrey Beers International is enhanced with a signature scent by ambient specialist 12.29. Its Midtown location makes it ideal for business and leisure travelers alike, and a savy Concierge team curates exacting agendas with privileged insight and access.</p>
+          <p>Welcome to living <a href="https://instagram.com/{{ site.social.instagram.username }}/">#InResidence</a>. We invite you to make WestHouse, your house.</p>
         {% endregionblock %}
       </div>
       <div class="hotel-info-content-three"></div>
     </div>
+
     <div class="btn-holder"><a href="/amenities/" class="common-btn">More</a></div>
+
   </div>
 </section>
-<section class="home-offers-section" ng-controller="loader" rt3-special-rates="offers">
-  <div class="home-offers-container">
-    <div class="home-offers-wrap">
-      <div class="home-offers-left">
-        <div class="slanting-text">
-          {% regionblock home_offers_heading, type:text %} Offers {% endregionblock %}
-        </div>
-      </div>
-      <div class="home-offers-right carousel-common">
-        <div id="homeOffersCarousel" class="main-carousel carousel slide home-offers-carousel" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li ng-repeat="offer in offers.special_rates" data-target="#homeOffersCarousel" data-slide-to="$index" ng-class=" $index == 0 ? 'active' : ''" ></li>
-          </ol>
-          <div class="carousel-inner">
-            <div ng-repeat="offer in offers.special_rates" class="carousel-item" ng-class=" $index == 0 ? 'active' : ''">
-              <div class="item-row">
-                <div class="offer-image bg-cover" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}" >
-                  <a href="" class="floating-btn" ng-href="[[offer.promo_url]]"  target="_blank">Book Now</a>
-                </div>
-                <div class="offer-text text-center">
-                  <h2><a href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]">[[ offer.rate_plan_name | renderHTMLCorrectly ]]</a></h2>
-                  <p ng-bind-html="offer.short_description | limitTo: 120 | renderHTMLCorrectly">[[ offer.short_description.length > 120 ? '...' : '' ]]</p>
-                  <div class="btn-holder">
-                    <a ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" class="btn-empty">Read More +</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#homeOffersCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true">
-          <img src="/assets/images/prev.png" alt="Previous Slide">
-          </span>
-          <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#homeOffersCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true">
-          <img src="/assets/images/next.png" alt="Next Slide">
-          </span>
-          <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% comment %}
+
 <section class="offers-partners">
   <div class="offers-partners-container">
     <div class="offers-partners-row">
       <div class="offers-partners-one">
         <div class="two-col left bg-cover pattern" style="background-image:url(/assets/images/westhouse-hotel-new-york-mercedes-thumb.jpg);">
-          <a href="/offers/" class="floating">
-            <h2>Offers</h2>
-          </a>
+          <a href="/offers/" class="floating"><h2>Offers</h2></a>
         </div>
       </div>
       <div class="offers-partners-two">
         <div class="two-col right bg-cover pattern" style="background-image:url(/assets/images/westhouse-hotel-new-york-good-hair-day-thumb.jpg);">
-          <a href="/partners/" class="floating">
-            <h2>Partners</h2>
-          </a>
+          <a href="/partners/" class="floating"><h2>Partners</h2></a>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% endcomment %}
+
 <section class="rooms-info carousel-common">
   <div class="hotel-info-container">
+
     <div id="rooms-carousel" class="main-carousel carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#rooms-carousel" data-slide-to="0" class="active"></li>
@@ -155,50 +159,61 @@ meta_tags:
         <div class="carousel-item bg-cover" style="background-image: url('/assets/images/home/WestHouse-HomePage-Rooms1.jpg')"></div>
       </div>
       <a class="carousel-control-prev" href="#rooms-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true">
-      <img src="/assets/images/prev.png" alt="Previous Slide">
-      </span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <img src="/assets/images/prev.png" alt="Previous Slide">
+        </span>
+        <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href="#rooms-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">
-      <img src="/assets/images/next.png" alt="Next Slide">
-      </span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true">
+          <img src="/assets/images/next.png" alt="Next Slide">
+        </span>
+        <span class="sr-only">Next</span>
       </a>
     </div>
+
     <div class="hotel-info-row">
+
       <div class="hotel-info-heading">
         <div class="slanting-text">
-          {% regionblock home_rooms_heading, type:header %} Rooms &<br>Suites {% endregionblock %}
+          {% regionblock home_rooms_heading, type:header %}
+            Rooms &<br>Suites
+          {% endregionblock %}
         </div>
       </div>
+
       <div class="hotel-info-content-one">
         {% regionblock home_rooms_text_left, type:text %}
-        <p>The luxurious residential design of WestHouse Hotel New York’s social spaces and 172 luxe bedrooms and suites channels the sophisticated allure and polished cultural aesthetics of a bygone era of 1920’s gilded age glamour with flourishes of modernity.
-          WestHouse Hotel New York is completely private to Residents and their guests, adding to its privileged mystique as one of the finest luxury hotels in NY.
-        </p>
-        <p>A curated portfolio of thoughtful amenities and services caters to the discerning wishes of today’s most well traveled bon vivants with brands like Good Hair Day, Sleep | Studio, DayNa Decker, 12.29 and more.</p>
+          <p>The luxurious residential design of WestHouse Hotel New York’s social spaces and 172 luxe bedrooms and suites channels the sophisticated allure and polished cultural aesthetics of a bygone era of 1920’s gilded age glamour with flourishes of modernity. WestHouse Hotel New York is completely private to Residents and their guests, adding to its privileged mystique as one of the finest luxury hotels in NY.</p>
+          <p>A curated portfolio of thoughtful amenities and services caters to the discerning wishes of today’s most well traveled bon vivants with brands like Good Hair Day, Sleep | Studio, DayNa Decker, 12.29 and more.</p>
         {% endregionblock %}
       </div>
+
       <div class="hotel-info-content-two">
         {% regionblock home_rooms_text_right, type:text %}
-        <p>Experience classic New York hospitality the way it is meant to be; current yet timeless, sophisticated yet spontaneous, with an indulgence of all that is fine, fashionable and fun.</p>
-        <p>The WestHouse Hotel New York Best Rate Guarantee ensures you receive the best possible rate when booking through our website, reservations line, or via the hotel directly.</p>
+          <p>Experience classic New York hospitality the way it is meant to be; current yet timeless, sophisticated yet spontaneous, with an indulgence of all that is fine, fashionable and fun.</p>
+          <p>The WestHouse Hotel New York Best Rate Guarantee ensures you receive the best possible rate when booking through our website, reservations line, or via the hotel directly.</p>
         {% endregionblock %}
       </div>
+
       <div class="hotel-info-content-three"></div>
+
     </div>
+
     <div class="btn-holder"><a href="/luxury-nyc-rooms/" class="common-btn">More</a></div>
+
   </div>
 </section>
+
 <section class="intro">
   <div class="intro-container">
     <div class="intro-row">
       <div class="intro-image-container">
         <div class="intro-image">
           {% regionblock intro_image, type:image %}
-          <img src="/assets/images/res3.jpg" alt="Resident Privileges"> {% endregionblock %}
+            <img src="/assets/images/res3.jpg" alt="Resident Privileges">
+          {% endregionblock %}
+
           <a href="/amenities/resident-privileges/" class="floating">
             {% regionblock intro_caption, type:header %}
             <h2>Resident Privileges</h2>
@@ -209,73 +224,34 @@ meta_tags:
       <div class="intro-content-container">
         <div class="intro-content">
           {% regionblock intro_heading, type:header %}
-          <h6>
-          WELCOME TO LIVING #INRESIDENCE.</h5>
+            <h6>WELCOME TO LIVING #INRESIDENCE.</h5>
           {% endregionblock %}
+
           {% regionblock intro_text, type:text %}
-          <p>We invite you to make WestHouse your house. WestHouse offers a vast array of bespoke privileges; from breakfast and evening light fare with wine and beer, served daily in our lounge areas, to high-speed WiFi, all covered by our nightly Resident Fee.</p>
+            <p>We invite you to make WestHouse your house. WestHouse offers a vast array of bespoke privileges; from breakfast and evening light fare with wine and beer, served daily in our lounge areas, to high-speed WiFi, all covered by our nightly Resident Fee.</p>
           {% endregionblock %}
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="tripadvisor carousel-common">
-  <div class="tripadvisor-container">
-    <div id="trpadvisor-carousel" class="main-carousel carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        {% for tripadvisor in site.data._models.tripadvisor %}
-        <li data-target="#trpadvisor-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
-        {% endfor %}
-      </ol>
-      <div class="carousel-inner">
-        {% for tripadvisor in site.data._models.tripadvisor %}
-        <div class="carousel-item{% if forloop.first == true %} active{% endif %}">
-          <div class="trip-logo">
-            <img src="/assets/images/tripadvisory.png" alt="TripAdvisor">
-          </div>
-          <div class="trip-comment">
-            <p>{{ tripadvisor.contents }}</p>
-          </div>
-          <div class="tripadvisor-author">
-            <p>{{ tripadvisor.credit }}</p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <a class="carousel-control-prev" href="#trpadvisor-carousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true">
-      <img src="/assets/images/prev.png" alt="Previous Slide">
-      </span>
-      <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#trpadvisor-carousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true">
-      <img src="/assets/images/next.png" alt="Next Slide">
-      </span>
-      <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-</section>
+
 <section class="area transparent-overlay bg-cover" style="background-image: url('/assets/images/area.jpg');">
   <div class="area-container">
     <div class="area-content">
       <div class="area-row">
         <div class="area-content-one">
           {% regionblock home_area_text_left, type:text %}
-          <p>Just around the corner from Carnegie Hall, mere blocks from MoMa, Radio City Music Hall, Rockefeller Center, and the Broadway/Times Square Theatre District, WestHouse Hotel New York is tucked away on a side street off one of Midtown Manhattan’s most prominent avenues, making it the perfect home for both leisure and business travelers.</p>
+            <p>Just around the corner from Carnegie Hall, mere blocks from MoMa, Radio City Music Hall, Rockefeller Center, and the Broadway/Times Square Theatre District, WestHouse Hotel New York is tucked away on a side street off one of Midtown Manhattan’s most prominent avenues, making it the perfect home for both leisure and business travelers.</p>
           {% endregionblock %}
         </div>
         <div class="area-content-two">
           {% regionblock home_area_text_right, type:text %}
-          <p>Lincoln Center is nearby, as are the treasures of Central Park and the boutiques along Fifth Avenue. From here, you can savor Michelin-level dining at world-renowned restaurants, or discover the heart and soul of New York City cuisine at favorite local venues recommended by our Concierge.</p>
+            <p>Lincoln Center is nearby, as are the treasures of Central Park and the boutiques along Fifth Avenue. From here, you can savor Michelin-level dining at world-renowned restaurants, or discover the heart and soul of New York City cuisine at favorite local venues recommended by our Concierge.</p>
           {% endregionblock %}
         </div>
         <div class="area-content-heading align-self-center">
-          <div class="area-title">
-            <div class="slanting-text">Area</div>
-          </div>
+          <div class="area-title"><div class="slanting-text">Area</div></div>
         </div>
       </div>
     </div>
