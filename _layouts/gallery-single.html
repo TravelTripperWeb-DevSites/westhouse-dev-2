@@ -22,6 +22,7 @@ layout: default
       {% if gallery-detail.category_name == 'Accomodations' %}
         {% assign galleries = site.data._models.gallery | where: "category", "Accomodations" %}
         {% for gallery in galleries | sort: 'sort_order' %}
+        {% assign mod = forloop.index | modulo: 3 %}
           {% assign value = forloop.index | modulo:3 %}
           {% if value != 0 %}
              {% capture cls %}col-lg-6{% endcapture %}
@@ -34,12 +35,18 @@ layout: default
               <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
             </div>
           </div>
+          {% if mod == 2 %}
+          <li class="fancybox hidden d-none" data-filter="{{ gallery.title }}">
+         <div class="item rez-offer" data-sub-html="" data-src=""> </div>
+       </li>
+         {% endif %}
         {% endfor %}
       {% endif %}
 
       {% if gallery-detail.category_name == 'Amenities' %}
         {% assign galleries = site.data._models.gallery | where: "category", "Amenities" %}
         {% for gallery in galleries | sort: 'sort_order' %}
+          {% assign mod = forloop.index | modulo: 3 %}
           {% assign value = forloop.index | modulo:3 %}
           {% if value != 0 %}
              {% capture cls %}col-lg-6{% endcapture %}
@@ -52,12 +59,18 @@ layout: default
               <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
             </div>
           </div>
+          {% if mod == 2 %}
+          <li class="fancybox hidden d-none" data-filter="{{ gallery.title }}">
+         <div class="item rez-offer" data-sub-html="" data-src=""> </div>
+       </li>
+         {% endif %}
         {% endfor %}
       {% endif %}
 
       {% if gallery-detail.category_name == 'Dining' %}
         {% assign galleries = site.data._models.gallery | where: "category", "Dining" %}
         {% for gallery in galleries | sort: 'sort_order' %}
+          {% assign mod = forloop.index | modulo: 3 %}
           {% assign value = forloop.index | modulo:3 %}
           {% if value != 0 %}
             {% capture cls %}col-lg-6{% endcapture %}
@@ -70,6 +83,11 @@ layout: default
               <img style="display:none;" src="{{ gallery.thumbnail_image.url }}" alt="{{ gallery.alt }}" class="img-fluid">
             </div>
           </div>
+          {% if mod == 2 %}
+          <li class="fancybox hidden d-none" data-filter="{{ gallery.title }}">
+         <div class="item rez-offer" data-sub-html="" data-src=""> </div>
+       </li>
+         {% endif %}
         {% endfor %}
       {% endif %}
 

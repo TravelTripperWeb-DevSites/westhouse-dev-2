@@ -9,3 +9,51 @@
 .vrg-popup {
   z-index: 99999999999999999999 !important;
 }
+
+// Rez Gallery
+.lg-sub-html {
+  @include media-breakpoint-down(xs) {
+    max-width: 320px;
+    margin: -75px auto;
+  }
+  bottom: calc(50% - 50px) !important;
+  left: 0;
+  z-index: 1070;
+  width: 400px;
+  max-width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  color: #000;
+  background-color: rgba(255,255,255,.8) !important;
+
+  h5 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: $google-font;
+    font-size: .875rem;
+    font-weight: 800;
+    color: $black;
+    letter-spacing: 2px;
+  }
+
+  h4 {
+    padding: 0;
+    font-family: $primary-light;
+    font-weight: 100;
+    color: $black;
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: $google-font;
+    line-height: 1.5rem;
+    color: $black;
+  }
+
+  a {
+    margin-top: 10px;
+    padding: 10px 16px 11px;
+  }
+}
+

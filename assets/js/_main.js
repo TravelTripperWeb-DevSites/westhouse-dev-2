@@ -221,7 +221,7 @@ $(document).ready(function() {
       return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
    var nowTime = new Date().getTime();
-    
+
    var exposedofferPopup = localStorage.getItem('exposedofferPopup');
    if (!exposedofferPopup) {
        $('.message').css('display', 'none');
@@ -231,7 +231,7 @@ $(document).ready(function() {
        $('.message').css('display', 'none');
        $('.promo-code-reminder').css('display', 'none');
        $('.unlock').css('display', 'none');
-   } 
+   }
    /*$('#mclose').click(function(){
        document.location.href = '/';
    });*/
@@ -247,7 +247,7 @@ $(document).ready(function() {
        if (getParameterByName('submit') == 'success') {
            if(!$.cookie('signupTime')){
                $.cookie('signupDone', '1', { expires: 5, url:'/'});
-               $.cookie('signupTime', '1', { expires: 3, url:'/'}); 
+               $.cookie('signupTime', '1', { expires: 3, url:'/'});
            }
            localStorage.setItem('exposedofferPopup', true);
            $('.message').css('display', 'block');
@@ -264,7 +264,7 @@ $(function() {
   // styles
   var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}];
 
-  
+
  if($('#map').length){
    // map options
    var mapOptions = {
@@ -294,7 +294,7 @@ $(function() {
    });
 
  }
-  
+
 
 });
 
@@ -353,5 +353,13 @@ if($('#fb-root').length){
     document.getElementById('fb-root').appendChild(e);
   }());
 }
-
+// get rt3 offers in gallery
+  $('#lightgallery').rezGallery({
+            hotelID : 'NYCWST',
+            portalID : 'westhousehotelnewyork',
+            buttonClass :'common-btn',
+            pageLink : true,
+            description : true,
+            offerdetailPage : '/offer/'
+  });
 
