@@ -36,14 +36,14 @@ meta_tags:
   </div>
 </section>
 
-<div class="neighborhoodmap"> 
+<div class="neighborhoodmap">
   {% for location in site.data._models.neighborhood-locations %}
     <div id="infocontainerB{{ location.url_friendly_name }}" class="infocontainer">
 
       <img src="{{ location.image.url }}" alt="{{ location.image.alt }}">
       <h2><a href="{{ location.Outbound_Link }}" rel="nofollow" target="_blank">{{ location.title }}</a>
         </h2>
-      <a href="#" class="closer"><i class="fa fa-times"></i></a>
+      <a href="#" class="closer" title="close"><i class="fa fa-times"></i></a>
       <div class="clear"></div>
       <div class="neighborhood">
         <h3>  {{ location.category.title }} </h3>
@@ -69,7 +69,7 @@ meta_tags:
             <li class="map-location stater-B{{ location.url_friendly_name }}" data-jmapping="{id: {{ forloop.index }}, point: {lat: {{ location.Latitude }}, lng: {{ location.Longitude }} }, category: 'place', bounded: false, icon: '/assets/images/pin-point.png'}">
               <!-- <a href="/attractions/{{ location.url_friendly_name }}/" class="map-link B{{ location.url_friendly_name }}" rel="B{{ location.url_friendly_name }}">{{ location.title }}</a> -->
               <div class="info-box">
-                <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{ 
+                <span style="height: 0; visibility: hidden; display: block;" class="specialid">infocontainerB{{
                 <h3><a href="/attractions/{{ location.url_friendly_name }}/" aria-label="{{ location.title }}">{% if location.Outbound_Link and location.Outbound_Link !="" %}
           <a href="{{ location.Outbound_Link }}" rel="nofollow" target="_blank">{{ location.title }}</a>
           {% else %}

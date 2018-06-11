@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  $("#g-recaptcha-response").attr("title", "captcha");
+  $("#g-recaptcha-response").attr("aria-label", "captcha");
+
   $(document).on("click", ".ppc-offers-list .offer-item .show-details", function(){
     $(this).closest(".offer-item").find(".full-description").slideDown(300);
     $(this).closest(".offer-item").find(".btn-holder .show-details").slideUp(100);
@@ -362,4 +365,3 @@ if($('#fb-root').length){
             description : true,
             offerdetailPage : '/offer/'
   });
-
