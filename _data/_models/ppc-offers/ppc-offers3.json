@@ -1,10 +1,10 @@
 {
-  "title": "Linger Longer",
-  "seo_title": "Linger Longer",
-  "seo_description": "Stay 3 nights or more and enjoy bigger savings.",
-  "short_description": "Stay 3 nights or more and enjoy bigger savings.",
-  "full_description": "<p>Make sure to get plenty of time to get enough of that view and the all the exciting things the City has to offer! Extend your stay with us to 3 nights or more and receive an additional discount.</p>",
-  "offer_code": "PPCLOS",
+  "title": "SUMMER OFFER",
+  "seo_title": "SUMMER OFFER",
+  "seo_description": "Stay with us July and August and enjoy exclusive discount!",
+  "short_description": "Stay with us July and August and enjoy exclusive discount!",
+  "full_description": "<p>Let's Gear up for Summer! Book Early and Save! Stays in July and August receives and Exclusive Discount!</p>",
+  "offer_code": "JULAUG",
   "room_code": "WHQL",
   "url_friendly_name": "ppc-celebratory",
   "image": {
@@ -24,7 +24,7 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-100525/xsmall_linger-longer.jpg",
     "url_thumb": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-100525/thumb_linger-longer.jpg",
     "path": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-27-100525/linger-longer.jpg",
-    "alt": "linger-longer",
+    "alt": "SUMMER OFFER",
     "caption": ""
   },
   "sort_order": 1
