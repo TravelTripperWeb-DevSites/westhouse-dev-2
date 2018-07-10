@@ -70,3 +70,25 @@
   }
 
 }
+
+.web-exc-aminities {
+  ul {
+    margin-left: 15px;
+    li {
+      margin: 12px auto;
+      list-style: disc;
+    }
+  }
+  p {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.offers-aminities {
+  @include media-breakpoint-down(sm) {
+  margin-right: 15px;
+  margin-left: 15px;
+ }
+}
