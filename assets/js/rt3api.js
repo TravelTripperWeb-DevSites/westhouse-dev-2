@@ -242,7 +242,7 @@ Rt3Api.prototype.getBrgInfo = function(searchParams) {
 
     self.getAllRooms().then(function(rooms_response) {
 
-      if (ratePlans) {
+      if (ratePlans.length > 0) {
         var is_base_room_type = false;
         $.each(rooms_response.rooms, function(key, value) {
           if (value.code == params.room_id && value.is_base_room_type) {
