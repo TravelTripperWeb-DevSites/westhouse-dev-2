@@ -227,3 +227,7 @@ ul {
 svg:not(:root) {
   overflow: hidden;
 }
+
+button[disabled], html input[disabled] {
+  opacity: .5;
+}

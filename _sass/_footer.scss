@@ -59,15 +59,24 @@
     }
 
     .subit-btn-holder {
-      text-align: right;
+      text-align: left;
     }
 
     .common-btn {
+      width: 100%;
       cursor: pointer;
       border: 0;
-      width: 100%;
       @include media-breakpoint-up(sm) {
         width: auto;
+      }
+      &:disabled {
+        cursor: default;
+      }
+    }
+    .tnc {
+      margin-bottom: 15px;
+      a {
+        text-decoration: underline;
       }
     }
   }
