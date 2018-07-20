@@ -4,6 +4,9 @@ module Jekyll
       def render(context)
          site = context.registers[:site]
          dirs = []
+         if site.nil?
+           raise context.inspect.to_s
+         end
          includes_dirs = [site.config['includes_dir']].flatten
          includes_dirs.each do |config_dir|
            @includes_dir = config_dir
@@ -54,6 +57,36 @@ module Jekyll
         read_data_to(base, @content)
       end
       @content
+    end
+    def read_data_to(dir, data)
+      return unless File.directory?(dir) && (!site.safe || !File.symlink?(dir))
+
+      entries = Dir.chdir(dir) do
+        Dir['*.{yaml,yml,json,csv}'] + Dir['*'].select { |fn| File.directory?(fn) }
+      end
+
+      entries.each do |entry|
+        path = @site.in_source_dir(dir, entry)
+        next if File.symlink?(path) && site.safe
+
+        key = sanitize_filename(File.basename(entry, '.*'))
+        if File.directory?(path)
+          # These are the two lines we're changing from the original version
+          # because we don't want to explicitly rewrite the key for a dir if it already has content in it.
+          data[key] ||= {} 
+          read_data_to(path, data[key])
+        else
+          file_data = read_data_file(path)
+          if (is_settings_file(file_data) || is_settings_file(data[key]))
+            data[key] = (data[key] || {}).merge(file_data)
+          else
+            data[key] = file_data
+          end
+        end
+      end
+    end
+    def is_settings_file(file_contents)
+      return file_contents && file_contents.is_a?(Hash) && file_contents['__EDITABLE_FIELDS__']
     end
   end
   class LayoutReader
