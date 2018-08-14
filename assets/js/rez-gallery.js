@@ -72,12 +72,14 @@
             //reset lightgallery
 	        var gallery = lightGID;
 	        setTimeout(function() {
-	    	  	 gallery.data('lightGallery').destroy(true); // destroy gallery
-	    	  	 gallery.lightGallery({
-	    	  	 	selector : options.galleryselector,
-					counter: options.counter,
-					fullScreen: options.fullScreen
-	    	  	 }); //re-initiate gallery
+            if(gallery.data('lightGallery')) {
+              gallery.data('lightGallery').destroy(true); // destroy gallery
+              gallery.lightGallery({
+                selector : options.galleryselector,
+                counter: options.counter,
+                fullScreen: options.fullScreen
+              }); //re-initiate gallery
+            }
 	      	},300);
        }
 

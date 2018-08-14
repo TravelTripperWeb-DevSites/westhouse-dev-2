@@ -1,7 +1,3 @@
-{% if site.data.api-keys.maps.google.enabled != false %}
-  <script src="https://maps.google.com/maps/api/js?key={{ site.data.api-keys.maps.google.api_key }}"></script>
-{% endif %}
-
 <script>
   function getIp(data){
     sessionStorage.ip_add = data.ip;
@@ -10,16 +6,16 @@
 <script src="https://api.ipify.org?format=jsonp&callback=getIp"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script cf-async="true" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+<script cf-async="true" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
 <script src="{{ '/assets/js/ie10-viewport-bug-workaround.js' | absolute_url }}"></script>
 
 <script>window.cookieConsentConfig = {location: false}</script>
 <script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
 <script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
-<script src="https://cdn.jsdelivr.net/g/jquery.validation@1.14.0(jquery.validate.min.js+additional-methods.min.js)"></script> 
+<script src="https://cdn.jsdelivr.net/g/jquery.validation@1.14.0(jquery.validate.min.js+additional-methods.min.js)"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<script cf-async="true" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.4/js/lightgallery-all.min.js"></script> 
+<script cf-async="true" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.4/js/lightgallery-all.min.js"></script>
 {% if page.url == "/gallery/virtual-tours/" %}
  <script src="https://static.vrglobal.com/embedv2.js"></script>
 {% endif %}
@@ -43,7 +39,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
       $('body').RTwidgets(
-{% if site.data.special-popup-modal.publish == 'true' %}      
+{% if site.data.special-popup-modal.publish == 'true' %}
        {
               offer_popup_widget: {
                   show: true,
@@ -63,4 +59,102 @@
     });
 </script>
 
- 
+{% if page.url == '/things-to-do-in-nyc/' or  page.url == '/things-to-do-in-nyc/culinary-guide/' %}
+  <script type="text/javascript">
+  	{% assign mapMarkers = site.data._models.neighborhood-locations | sort: 'order' %}
+  	var attractions = [
+  	{% for attraction in mapMarkers %}
+  		["{{attraction.title}}", {{attraction.Latitude}}, {{attraction.Longitude}}, "", ""]
+  		{% unless forloop.last %}, {% endunless %}
+  	{% endfor %}
+  ];
+  </script>
+{% endif %}
+
+{% if page.url == '/things-to-do-in-nyc/must-see-things-in-nyc/' %}
+  <script type="text/javascript">
+  	{% assign mapMarkers = site.data._models.neighborhood-locations | sort: 'order' %}
+  	var attractions = [
+  	{% for attraction in mapMarkers %}
+      {% if attraction.category.url_friendly_name == "must-see-nyc" %}
+  		  ["{{attraction.title}}", {{attraction.Latitude}}, {{attraction.Longitude}}, "", ""]
+  		    {% unless forloop.last %}, {% endunless%}
+      {% endif %}
+  	{%endfor%}
+  ];
+  </script>
+{% endif %}
+
+{% if page.url == '/things-to-do-in-nyc/entertainment/' %}
+  <script type="text/javascript">
+  	{% assign mapMarkers = site.data._models.neighborhood-locations | sort: 'order' %}
+  	var attractions = [
+  	{% for attraction in mapMarkers %}
+      {% if attraction.category.url_friendly_name == "entertainment" %}
+  		  ["{{attraction.title}}", {{attraction.Latitude}}, {{attraction.Longitude}}, "", ""]
+  		    {% unless forloop.last %}, {% endunless%}
+      {% endif %}
+  	{%endfor%}
+  ];
+  </script>
+{% endif %}
+
+{% if page.url == '/things-to-do-in-nyc/shopping/' %}
+  <script type="text/javascript">
+  	{% assign mapMarkers = site.data._models.neighborhood-locations | sort: 'order' %}
+  	var attractions = [
+  	{% for attraction in mapMarkers %}
+      {% if attraction.category.url_friendly_name == "shopping" %}
+  		  ["{{attraction.title}}", {{attraction.Latitude}}, {{attraction.Longitude}}, "", ""]
+  		    {% unless forloop.last %}, {% endunless%}
+      {% endif %}
+  	{%endfor%}
+  ];
+  </script>
+{% endif %}
+
+{% if page.url == '/things-to-do-in-nyc/art-culture/' %}
+  <script type="text/javascript">
+  	{% assign mapMarkers = site.data._models.neighborhood-locations | sort: 'order' %}
+  	var attractions = [
+  	{% for attraction in mapMarkers %}
+      {% if attraction.category.url_friendly_name == "art-culture" %}
+  		  ["{{attraction.title}}", {{attraction.Latitude}}, {{attraction.Longitude}}, "", ""]
+  		    {% unless forloop.last %}, {% endunless%}
+      {% endif %}
+  	{%endfor%}
+  ];
+  </script>
+{% endif %}
+
+
+
+{% if page.url contains 'things-to-do-in-nyc' %}
+  {% assign map = true %}
+{% endif %}
+
+{% if map == true %}
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+  <script src="/assets/js/leafletmap.js"></script>
+  <script>
+    $(document).ready(function(){
+    	var mapOptions = {
+    	hotelTitle      : 'WESTHOUSE HOTEL NEW YORK',
+    	hotelAddress    : '',
+    	hotelLat        : 40.764622,
+    	hotelLong       : -73.981325,
+    	hotelMarker     : '/assets/images/leaflet/mapicon.jpg',
+    	markerSize      : [40, 59],
+    	zoom            : 15,
+      TileStyle       : 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png' //  leaflet map tiles
+  	};
+  	if(attractions) {
+      mapOptions['attractionsList'] =  attractions
+  	}
+    console.log("mapOptions");
+    console.log(mapOptions);
+	   $('#leaflet-map').leafMap(mapOptions);
+    })
+  </script>
+{% endif %}

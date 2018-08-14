@@ -4,6 +4,28 @@
 
 /* Map tyles */
 
+#leaflet-map {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  h3 {
+    color: #333;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'GothamBold';
+    font-style: normal;
+    position: relative;
+    display: block;
+    padding: 20px 20px 20px 6px;
+    line-height: 1;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
 .neighborhoodmap {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -33,30 +55,9 @@
     background: #fff;
     position: relative;
   }
-  
-  #map {
-    width: 100%;
-    height: 550px;
-    position: relative;
-  }
-  
-  
-  #map h3 {
-      color: #333;
-      font-size: 13px;
-      font-weight: normal;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'GothamBold';
-      font-style: normal;
-      position: relative;
-      display: block;
-      padding: 20px 20px 20px 6px;
-      line-height: 1;
-      margin-bottom: 10px;
-      overflow: hidden;
-      margin: 0;
-  }
+
+
+
   .infocontainer {
     position: absolute;
     right: 50px;
@@ -71,11 +72,11 @@
       -webkit-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
   }
-  
+
   .culinary .infocontainer .closer {
       right: -15px;
   }
-  
+
   .infocontainer img {
       background: #ffffff none repeat scroll 0 0;
       border: 2px solid #222222;
@@ -83,13 +84,13 @@
       max-width: 390px;
       border: 2px solid #222222;
   }
-  
+
   .culinary .infocontainer img {
       border: 2px solid #222222;
       max-width: 186px;
       padding: 0 70px;
   }
-  
+
   .culinary .infocontainer {
       bottom: 50px;
       max-width: 330px;
@@ -97,7 +98,7 @@
       top: auto;
       width: 100%;
   }
-  
+
   .infocontainer h2 {
       background: #ffffff none repeat scroll 0 0;
       border: 2px solid #000000;
@@ -110,7 +111,7 @@
       text-align: center;
       text-transform: uppercase;
   }
-  
+
   .infocontainer h3 {
     border-radius: 0;
     background: #333;
@@ -127,7 +128,7 @@
     border-radius: 4px;
     border-bottom: 1px solid #E5E5E5;
   }
-  
+
   .infocontainer .neighborhood h3 {
     padding: 0;
     border-bottom: none;
@@ -139,7 +140,7 @@
     line-height: 24px;
     margin: 8px 0;
   }
-  
+
   .infocontainer h3 span {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -177,8 +178,8 @@
   .infocontainer .button:hover {
     background: #ec4055;
   }
-  
-  
+
+
   .infocontainer .closer {
     color: #333;
     font-size: 20px;
@@ -210,7 +211,7 @@
   .infocontainer .closer:hover i {
     color: #fff;
   }
-  
+
   .map-location {
       border-right: 1px solid #ddd;
       border-left: 1px solid #ddd;
@@ -219,18 +220,18 @@
       width: 200px;
       margin-right: -4px;
   }
-  
+
   ul#map-side-bar li:nth-child(2) {
       border-left: 1px solid #ddd;
   }
-  
+
   #map-side-bar .active, .map-location:hover {
     color: #ec4055;
     /*background: #fff;*/
-  
+
   }
-  
-  
+
+
   .map-location:hover a {
     color: #ec4055;
   }
@@ -249,7 +250,7 @@
       display: block;
       padding: 20px 15px 17px;
    }
-  
+
   .neighborhood {
     background: none repeat scroll 0 0 #fff;
     border: 2px solid #ddd;
@@ -266,26 +267,26 @@
     z-index: 9999999;
     display: none;
   }
-  
+
   #map-side-bar .ukvisits li:last-child a {
     border-right: none;
   }
-  
+
    #map-side-bar .usvisits li:last-child {
     border-right: 1px solid #ddd;
   }
-  
-  
+
+
    #map-side-bar .instavisits li:last-child a {
     border-right: none;
   }
-  
-  
-  
+
+
+
   #map-side-bar .active a {
     color: #ec4055;
   }
-  
+
   .map-link {
     color: #5193ad;
     font-family: Georgia;
@@ -293,7 +294,7 @@
     display: block;
     padding: 15px 0;
   }
-  
+
   #map-side-bar {
     margin-top: 0px;
     background: #fff;
@@ -301,7 +302,7 @@
     height: 0;
     overflow: hidden;
   }
-  
+
   #map-side-bar .ukvisits, #map-side-bar .usvisits  {
     background: transparent;
     clear: both;
@@ -309,20 +310,20 @@
     padding-left: 0px;
     position: relative;
   }
-  
+
   #map-side-bar .usvisits {
     text-align: center;
     display: block;
     height: 0;
     border-top: 1px solid #ddd;
   }
-  
+
   .usvisits > ul li:last-child {
       max-width: 199px;
       min-width: 199px;
       width: 199px;
   }
-  
+
   #map-side-bar .instavisits {
       background: transparent;
     clear: both;
@@ -332,7 +333,7 @@
     padding-left: 0px;
     position: relative;
   }
-  
+
   #map-side-bar .instavisits li.map-location {
     border: 0;
     float: none;
@@ -359,7 +360,7 @@
     background: #17bcef;
     border-radius: 20px;
   }
-  
+
   .allothers {
     width: 100%;
     opacity: 1;
@@ -373,14 +374,14 @@
     position: relative;
     overflow: hidden;
   }
-  
-  
+
+
   .allothers > ul {
       margin: 0 auto;
       max-width: 1222px;
       width: 1222px;
   }
-  
+
   .allothers li {
       border-left: 1px solid #ddd;
       border-right: 1px solid #ddd;
@@ -392,46 +393,46 @@
       visibility: hidden;
       width: 200px;
   }
-  
+
   .stater-WashingtonDC {
     right: -202px;
   }
-  
+
   .stater-Boston {
       left: -301px;
   }
-  
+
   .stater-SantaBarbara {
       left: -100px;
   }
-  
+
   .stater-Philadelphia {
       left: 101px;
   }
-  
+
   .stater-NewYorkCity {
       right: 301px;
   }
-  
+
   .stater-SouthBeach {
       right: -402px;
       /*min-width: 204px !important;*/
   }
-  
+
   .allothers li:last-child {
       border-left: 0;
   }
-  
+
   #map-side-bar .usvisits .allothers li:last-child {
     border-left: 1px solid #ddd;
   }
-  
+
   #map-side-bar .usvisits li:last-child {
       max-width: 201px;
       min-width: 201px;
       width: 201px;
   }
-  
+
   .allothers li a {
     font-size: 16px;
     padding: 10px;
@@ -445,13 +446,13 @@
     visibility: visible;
     position: relative;
   }
-  
+
   .allothers:hover li.yesssss {
     opacity: 1;
     visibility: visible;
     position: relative;
   }
-  
+
   #map-side-bar .instavisits:before {
     display: none;
   }
@@ -470,21 +471,7 @@
   .mash img {
     max-width: 100%
   }
-  
-  #map h4 {
-    z-index: 999;
-    color: #333;
-    height: 100%;
-    display: block;
-    text-align: center;
-    font-family: 'AvenirBook';
-    font-size: 15px;
-    line-height: 18px;
-    content: '';
-    padding: 20px;
-  }
-  
-  
+
   .littleinsta {
     width: 40px;
     height: 40px;
@@ -493,23 +480,23 @@
     background-position: center center;
     border-radius: 40px;
   }
-  
+
   .mapper {
     text-align: center;
     min-height: 750px;
     background: #fff;
     position: relative;
   }
-  
-  
+
+
   .boooyah {
     display: block !important;
     opacity: 1;
     visibility: visible;
   }
-  
-  
-  
+
+
+
   .slipbutton {
       width: 300px;
       display: block;
@@ -528,7 +515,7 @@
   @include make-col-ready();
   @include media-breakpoint-up(md){
       @include make-col(3);
-  } 
+  }
   text-align: center;
   a {
     display: block;
@@ -545,4 +532,33 @@
   width: 100%;
   margin-top: 3rem;
   text-align: center;
+}
+
+.map-circle-icon {
+  width: 26px !important;
+  height: 37px !important;
+  background-image: url('/assets/images/leaflet/pin-point.png');
+  background-repeat: no-repeat;
+}
+#leaflet-map {
+  z-index: 9;
+  .leaflet-top {
+    z-index: 10;
+  }
+  .leaflet-popup-content-wrapper {
+    border-radius: 0 !important;
+    h4 {
+      padding: 10px 10px 10px 6px;
+      overflow: hidden;
+      font-family: 'GothamBold';
+      font-size: 13px;
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+#gtsgig {
+  display: none !important;
 }
