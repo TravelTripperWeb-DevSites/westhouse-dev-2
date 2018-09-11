@@ -11,6 +11,203 @@
     @include media-breakpoint-up(md){
         height: 580px;
     }
+    .brg-widget {
+      position: absolute;
+      left:0;
+      right:0;
+      bottom: 0;
+      max-width: 680px;
+      margin: 0 auto;
+      z-index: 9;
+      @include media-breakpoint-up(md) {
+        bottom: 65px;
+      }
+    }
+    .caption-price {
+      // position: absolute;
+      // bottom: 136px;
+      // right: 0;
+      // bottom: 80px;
+      // left: 0;
+      text-align: center;
+      text-transform: none;
+      padding: 12px 20px 7px;
+      // @media(max-width: 768px) {
+      //   bottom: 147px;
+      // }
+    }
+
+    .price-holder {
+      display: inline-block;
+      margin-right: 1px;
+      padding: 1px 20px;
+      font-family: $primary-medium;
+      font-size: 15px;
+      color: $white-bg;
+      letter-spacing: 1px;
+      vertical-align: middle;
+      background-color: $black;
+      @include media-breakpoint-down(sm) {
+        font-family: $primary-light;
+      }
+      @media (max-width: 1023px) {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+
+      .recentBookingNo {
+        font-family: $primary-medium;
+        display: inline-block;
+        // margin-top: 9px;
+        padding-right: 18px;
+        font-size: 30px;
+        color: $dark-red;
+        vertical-align: middle;
+        @media (max-width: 1023px) {
+          padding-right: 8px;
+          font-size: 20px;
+        }
+        @media (max-width: 380px) {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+
+      .recentBookingText {
+        display: inline-block;
+        padding-top: 5px;
+        vertical-align: middle;
+      }
+      @include media-breakpoint-down(sm) {
+        &.tonight {
+          margin-top: 1px;
+        }
+      }
+    }
+
+    .price-wrap {
+      font-family: $primary-medium;
+      background-color: $black;
+
+      .best-rate-ota {
+        width: 100%;
+        margin: 0 auto;
+
+        .boxes {
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding: 0;
+          // @include media-breakpoint-up(md) {
+          //   padding: 13px 0;
+          // }
+          // @include media-breakpoint-up(xl) {
+          //   padding: 8px 0;
+          // }
+          // @media (min-width: 1400px) {
+          //   padding: 8px 0;
+          // }
+          // @media (min-width: 1600px) {
+          //   padding: 0;
+          // }
+
+          .tonight-rate {
+            float: left;
+            width: 40%;
+            height: 100%;
+            padding: 22px 0px 10px 20px;
+            border-right: 1px solid $white-bg;
+            .left-text {
+              display: inline-block;
+              p {
+                margin: 0 0 10px 0;
+                padding: 0;
+                font-size: 14px;
+                line-height: 16px;
+                color: $white-bg;
+                text-align: left;
+              }
+
+              h4 {
+                margin: 0;
+                padding: 0;
+                font-family: $primary-medium;
+                font-size: 18px;
+                line-height: 20px;
+                color: $white-bg;
+                text-align: left;
+                text-transform: none;
+                @media(max-width: 350px) {
+                  line-height: 20px;
+                }
+
+
+
+
+              }
+            }
+            .link {
+              display: inline-block;
+              a {
+                display: inline-block;
+                padding-right: 18px;
+                font-size: 30px;
+                color: $dark-red;
+                vertical-align: middle;
+                @media (max-width: 1023px) {
+                  padding-right: 8px;
+                  font-size: 20px;
+                }
+              }
+              // .price {
+              //   padding: 10px 10px 5px;
+              //   font-size: 30px;
+              //   color: $dark-red;
+              //   border: solid 1px #dec7a5;
+              //   @media(max-width: 650px) {
+              //     display: inline-block;
+              //     float: none;
+              //     margin-top: 10px;
+              //   }
+              // }
+            }
+          }
+
+          .ota-list {
+            float: right;
+            width: 60%;
+            min-height: 80px;
+            padding: 12px 20px 7px;
+            @media (min-width: 1600px) {
+              padding: 7px 20px 0;
+            }
+            ul {
+              width: 100%;
+              padding: 0;
+              list-style-type: none;
+
+              li {
+                display: inline-block;
+                width: 45%;
+                margin: 3px;
+                padding: 2px;
+                font-size: 15px;
+                color: $white-bg;
+
+                span {
+                  padding-left: 4px;
+                  text-decoration: line-through;
+                }
+                @media(max-width: 768px) {
+                  width: inherit;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     .hero-banner-container {
         @include absolute(0,0,0,0,100%,100%); // (top,right,bottom,left,width,height)
         @include animation-fill-mode (both);
