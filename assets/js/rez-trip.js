@@ -106,12 +106,19 @@
 
         function fetchPPCOfferPrice() {
             $(".floating-price").addClass('loading-dots');
-            var arrival_date = $("#arrival_date").val() != '' ? $("#arrival_date").val() : null;
-            var departure_date = $("#departure_date").val() != '' ? $("#departure_date").val() : null;
+
+            var today = new Date();
+            var defaultArrival = today.toISOString().slice(0, 10);
+
+            var tomorrow         = new Date(today.setDate(today.getDate() + 1));
+            var defaultDeparture = tomorrow.toISOString().slice(0, 10);
+
+            var arrival_date = $("#arrival_date").val() != '' ? $("#arrival_date").val() : defaultArrival;
+            var departure_date = $("#departure_date").val() != '' ? $("#departure_date").val() : defaultDeparture;
             var adults = $("#adults").val();
             var children = $("#children").val();
 
-            var common_params = {  adults: adults,
+            var common_params = {
                             arrival_date: arrival_date,
                             departure_date: departure_date,
                             adults: adults,
@@ -122,21 +129,25 @@
             $scope.noprice = '';
             $scope.ratePlans = [];
             for (var i = 0 ; i< ppc_offers.length; i++){
-                offer = ppc_offers[i];
-                rate_params = { rate_plan_id: offer.offer_code,
-                                room_id: offer.room_code};
-                params = $.extend(common_params, rate_params);
+               (function(i){
+                 offer = ppc_offers[i];
+                 rate_params = { rate_code: offer.offer_code};
+                 var params = $.extend({}, common_params, rate_params);
+                 $scope.noprice = 'NA';
+                 $scope.ratePlans[offer.offer_code] = [];
+                 $scope.ratePlans[offer.offer_code].price = '';
+                 $scope.ratePlans[offer.offer_code].urlParams = '?rate_code='+offer.offer_code+'&arrival_date='+arrival_date+'&departure_date='+departure_date+'&adults[]='+adults+'&children[]='+children;//+'&room_id='+offer.room_code;
+                 $q.when(rt3api.getAllAvailableRooms(params)).then(function(response) {
+                       var rooms = response.rooms;
+                       var roomRate;
+                       if(rooms.length > 0 && rooms[0].rate_code == ppc_offers[i].offer_code) {
+                         roomRate = rooms[0].min_discounted_average_price[0] || rooms[0].min_average_price[0];
+                         $scope.ratePlans[ppc_offers[i].offer_code].price = '$' + Math.round(roomRate);
+                       }
+                       $(".floating-price").show().removeClass('loading-dots');
 
-                $scope.ratePlans[offer.offer_code] = [];
-                $scope.ratePlans[offer.offer_code].price = '';
-                $scope.ratePlans[offer.offer_code].urlParams = '?rate_code='+offer.offer_code+'&arrival_date='+arrival_date+'&departure_date='+departure_date+'&adults[]='+adults+'&children[]='+children+'&room_id='+offer.room_code;
-                $q.when(rt3api.getRatePlans(params)).then(function(response) {
-                      $(".floating-price").show().removeClass('loading-dots');
-                      $scope.noprice = 'NA';
-                      if(response.code) {
-                          $scope.ratePlans[response.code].price = '$' + Math.round(response.average_discounted_nightly_price || response.average_nightly_price);
-                      }
-                });
+                 });
+               })(i);
             }
         }
 
