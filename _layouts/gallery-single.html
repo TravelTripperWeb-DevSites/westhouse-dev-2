@@ -98,11 +98,12 @@ layout: default
           {% if value != 0 %}
             {% capture cls %}col-lg-6{% endcapture %}
           {% else %}
-            {% capture cls %}col-lg-12{% endcapture %}
+            {% capture cls %}col-lg-6{% endcapture %}
           {% endif %}
           <div class="{{ cls }}" id="gallvr">
             <div class="assets-item bg-cover" id="{{LatestVRTours.menu_order }}">
-              <link vr-embed  popup="true" rel="import" href="https://static.vrglobal.com/embed/{{LatestVRTours.vr_url_key }}.html"/>
+                <iframe allowfullscreen="true" width="674px" height="450px" frameborder="0" src="https://app.anyvision.com/viewer?o={{LatestVRTours.vr_url_key }}&mode=thumbnail&autorotation=false&icon=360"></iframe>
+             <!-- <link vr-embed  popup="true" rel="import" href="https://static.vrglobal.com/embed/{{LatestVRTours.vr_url_key }}.html"/>-->
             </div>
           </div>
         {% endfor %}
