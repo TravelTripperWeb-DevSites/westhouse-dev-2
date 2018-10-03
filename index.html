@@ -25,25 +25,27 @@ meta_tags:
     <div class="caption-price" rt3-recent-bookings="recentBookings" >
       <span class="price-holder" ng-show="recentBookings.totalBookings > 5"><span class="recentBookingNo">[[ recentBookings.totalBookings ]]</span><span class="recentBookingText">People booked our hotel in the last 2 days</span></span>
     </div>
-    <div class="price-wrap" ng-show="browser.isRate">
-    <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+    <div class="price-wrap" ng-show="browser.otaRates.brgFound">
+    <div class="best-rate-ota">
       <div class="boxes">
 
         <div class="tonight-rate ">
           <div class="left-text">
-            <p>Best Price Available</p>
-            <h4>Tonight's Rate</h4>
+            <p ng-show="browser.otaRates.checkIn == 'today'">Best Price Available</p>
+            <p ng-show="browser.otaRates.checkIn == 'tomorrow'">Oops! you missed it today.</p>
+            <h4 ng-show="browser.otaRates.checkIn == 'today'">Tonight's Rate </h4>
+            <h4 ng-show="browser.otaRates.checkIn == 'tomorrow'">Tomorrow's Rate </h4>
           </div>
           <div class="link">
-            <a href="{{ site.reztripUrl }}search" target="_blank"  class="homeTonightRate" >
-              <span class="price">[[ portalInfo.default_currency_symbol ]][[ browser.toNightsRate ]]</span>
+            <a href="{{ site.reztripUrl }}search?arrival_date=[[ browser.otaRates.checkInDate ]]" target="_blank"  class="homeTonightRate" >
+              <span class="price">[[ browser.otaRates.reztripRate ]]</span>
             </a>
           </div>
         </div>
 
         <div class="ota-list">
           <ul>
-            <li ng-repeat="(key, value) in browser.otaRates.brg">[[ key ]] <span>[[ portalInfo.default_currency_symbol ]][[ value ]]</span></li>
+            <li ng-repeat="(key, value) in browser.otaRates.otherRates">[[ key ]] <span>[[ portalInfo.default_currency_symbol ]][[ value ]]</span></li>
           </ul>
         </div>
     </div>

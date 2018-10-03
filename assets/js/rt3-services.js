@@ -201,43 +201,48 @@ angular.module('rezTrip')
               angular.extend(self.roomsList[key], todayRate);
 
             });
+            // BRG rates
+            var todayDate = new Date();
+            var otaRates = {'brgFound': false };
+            angular.extend(self , {'otaRates' : otaRates});
 
-          }
+            if(self.isRate) {
+              var arrival_date = todayDate.toISOString().slice(0,10);
 
-          //console.log(self.tonightErrors);
-          self.loaded = true;
-          //var par = rt3Search.getParams();
-          angular.extend(self, {
-            'otaRates': {
-              'brgFound': false
+              var day2  = new Date(todayDate.setDate(todayDate.getDate() + 1));
+              var departure_date = day2.toISOString().slice(0,10);
+              angular.extend(otaRates , {
+                                'checkIn' : 'today',
+                                'checkInDate' : arrival_date
+                            });
+            } else {
+              var day1      = new Date(todayDate.setDate(todayDate.getDate() + 1));
+              var arrival_date = day1.toISOString().slice(0,10);
+
+              var day2  = new Date(todayDate.setDate(todayDate.getDate() + 1));
+              var departure_date = day2.toISOString().slice(0,10);
+              angular.extend(otaRates , {
+                                'checkIn' : 'tomorrow',
+                                'checkInDate' : arrival_date
+                            });
             }
-          });
-          $q.when(rt3api.getOTARates()).then(function(response) {
-            if (response.brgFound) {
-              if (Object.keys) {
-
-                var len, lastKey;
-
-                while (Object.keys(response.brg).length > 4) {
-                  len = Object.keys(response.brg).length;
-                  lastKey = Object.keys(response.brg)[len - 1];
-                  delete response.brg[lastKey];
+            var brg = new TTWeb.BRG();
+            $q.when(brg.getOTARates(arrival_date, departure_date)).then(function(response) {
+              otaRates.brgFound = true;
+              otaRates.reztripRate = "$" + Math.round(response.reztripRate);
+              var rates = {}, index = Object.keys(response).length;
+              Object.keys(response).forEach(function(key) {
+                if(key != 'reztripRate' && response.reztripRate <= response[key]) {
+                  rates[key] = response[key]
                 }
-
-              }
-
-            }
-            angular.extend(self, {
-              'otaRates': response
+              });
+              otaRates.otherRates = rates;
+              angular.extend(self , {'otaRates' : otaRates});
+            }, function(response){
+              otaRates.brgFound = false;
+              angular.extend(self , {'otaRates' : otaRates});
             });
-          }, function(response) {
-            angular.extend(self, {
-              'otaRates': {
-                'brgFound': false
-              }
-            });
-          });
-
+          }
         });
 
       });
