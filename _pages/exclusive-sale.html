@@ -1,0 +1,95 @@
+---
+layout: default
+title: Luxury Hotel Offers in Midtown NYC | WestHouse Hotel Deals
+meta_description: Use NYC luxury hotel deals at WestHouse Hotel New York to save on your next stay in the heart of the city.
+permalink: /exclusive-sale/
+meta_tags:
+  robots:
+---
+
+  <div class="inner-banner pattern bg-cover" style="background-image:url('/assets/images/offers/exclusive-sale.jpg')">
+    <h1>Exclusive Sale</h1>
+  </div>
+
+
+
+  <div class="share">
+
+    <h3>Share</h3>
+
+    <script>
+      var offer_content = stripHTML('{{ Offers.contents }}');
+    </script>
+
+    <div class="socialmedia">
+      <ul>
+        <li><a href="JavaScript:Void(0);" class="share_button"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="JavaScript:Void(0);" onclick="window.open('https://twitter.com/share?url='+ window.location.href +'&text=[[ offers.sRdetail.rate_plan_name | renderHTMLCorrectly ]]&via=westhouseny','popUpWindow','height=350,width=520,scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="mailto:?subject=[[ offers.sRdetail.rate_plan_name | renderHTMLCorrectly ]]&body=Hey! Check this exciting offer. {{ site.url }}/offer/#[[ offers.sRdetail.rate_plan_name | formatNameForLink ]]"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section class="assets-details">
+    <div class="assets-details-container">
+      <h3>Exclusive Sale</h3>
+      <div class="assets-details-row">
+
+        <div class="assets-details-calendar">
+          <div class="bw-wrap">
+
+            <div class="date-widget"></div>
+
+            <div class="hidden-form">
+              <form action="{{ site.reztripUrl }}search?" target="_blank" id="offerSearchForm" matho "get">
+
+                <div class="form-row">
+                  <input type="hidden" name="rate_code" value="CYBM18">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="arrival_dates" name="arrival_date" placeholder="Arrival Date" aria-label="Arrival Date">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="departure_dates" name="departure_date" placeholder="Departure Date" aria-label="Departure Date">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <select id="adults" name="adults[]" class="form-control" aria-label="Adults">
+                      <option selected>1 Adult</option>
+                      <option>2 Adults</option>
+                      <option>3 Adults</option>
+                      <option>4 Adults</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select id="children" name="children[]" class="form-control" aria-label="Children">
+                      <option selected>0 Kids</option>
+                      <option>1 Kid</option>
+                      <option>2 Kids</option>
+                      <option>3 Kids</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="common-btn">Search Now</button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="assets-details-description">
+          <p>Make yourself at home during our best sale of the year. Book before 11/26 and <b>save 30%</b> on your NYC stay. Plus, get a <b>$75 Amex gift card</b> when you stay 3+ nights. Stay through August 31, 2019.</p>
+         <!-- <p>Terms and conditions:</p>
+          <ul class="bullet-list" ng-show="offers.sRdetail.addons.length > 0">
+            <li ng-repeat="addon in offers.sRdetail.addons">[[addon]]</li>
+          </ul> -->
+          <p><a href="https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=399099&vr=3&accessCode=CYBERM18" target="_blank" class="common-btn">Book Before 11/26</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
