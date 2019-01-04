@@ -173,8 +173,11 @@ angular.module('rezTrip')
             var roomRate;
             var todayRate = {};
             self.isRate = false;
+            // self.roomsList = self.roomsList.filter(function(obj) {
+            //   return obj.code != 'WHKSA' && obj.code != 'QUAD';
+            // });
             self.roomsList = self.roomsList.filter(function(obj) {
-              return obj.code != 'WHKSA' && obj.code != 'QUAD';
+              return obj.code != 'QUAD';
             });
             //self.roomsList = finalRoomList;
             angular.forEach(self.roomsList, function(room, key) {
