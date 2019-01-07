@@ -1,0 +1,31 @@
+{
+  "sort_order": "",
+  "title": "Weekend Getaway",
+  "seo_title": "Weekend Getaway",
+  "seo_description": "WestHouse welcomes you for a weekend retreat.",
+  "offer_code": "WKND",
+  "room_code": "WHQL",
+  "short_description": "WestHouse welcomes you for a Weekend Retreat",
+  "full_description": "<p><span style=\"color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\">WestHouse welcomes you for a Weekend Retreat</span><br style=\"box-sizing: border-box; color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\" /><span style=\"color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\">Enjoy up to 25% savings on Luxury Rooms or up to 30% savings on Suites</span></p>",
+  "image": {
+    "name": "249431_2_master",
+    "file_name": "249431_2_master.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/249431-2-master.jpg",
+    "tags": "",
+    "file_size": 878786,
+    "width": 1366,
+    "height": 768,
+    "description": "",
+    "date_added": "2018-03-21-055445",
+    "url_large": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/large_249431_2_master.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/medium_249431_2_master.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/small_249431_2_master.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/xsmall_249431_2_master.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/thumb_249431_2_master.jpg",
+    "git_file_name": "_assets/image_data/249431_2_master.json",
+    "path": "//cdn.traveltripper.io/site-assets/192_368_13764/media/2018-03-21-055445/249431-2-master.jpg",
+    "alt": "Hotel Room",
+    "caption": ""
+  }
+}
