@@ -129,7 +129,7 @@ meta_tags:
           </ul>
         </div>
 
-        <div class="single-room-virtual-tour">
+        <div class="single-room-virtual-tour" ng-if="room.code != 'WHPS'">
           <a href="https://app.anyvision.com/viewer?o=oTR6FfqW" target="_blank" class="common-btn streched-btn">View Visual Tour</a>
         </div>
 
@@ -144,7 +144,7 @@ meta_tags:
     </div>
   </section>
 
-  <!-- <div ng-if="room.code != 'WHPS' && room.code != 'WHPRS'"> -->
+  <div ng-if="room.code != 'WHPS'">
     <div class="merch-sec" rt3-rate-shopping="rateShopping">
       <div class="container">
 
@@ -182,6 +182,6 @@ meta_tags:
 
       </div>
     </div>
-  <!-- </div> -->
+  </div>
 
 </div>
