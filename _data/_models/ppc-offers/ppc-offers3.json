@@ -6,7 +6,7 @@
   "offer_code": "WKND",
   "room_code": "WHQL",
   "short_description": "WestHouse welcomes you for a Weekend Retreat",
-  "full_description": "<p><span style=\"color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\">WestHouse welcomes you for a Weekend Retreat</span><br style=\"box-sizing: border-box; color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\" /><span style=\"color: #333333; font-family: GothamLight; font-size: 16px; letter-spacing: 0.16px;\">Enjoy up to 25% savings on Luxury Rooms or up to 30% savings on Suites</span></p>",
+  "full_description": "<p>WestHouse welcomes you for a Weekend Retreat</p>\n<p>Enjoy up to 25% savings on Luxury Rooms or up to 30% savings on Suites</p>",
   "image": {
     "name": "249431_2_master",
     "file_name": "249431_2_master.jpg",
