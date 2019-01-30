@@ -29,17 +29,27 @@
         }
     }
     .insta-col-item {
-        @include make-col-ready();
-        @include media-breakpoint-up(lg) {
-            @include make-col(3);
-        }
+      @include make-col-ready();
+      @include make-col(3);
+      padding-right: 5px;
+      padding-left: 5px;
+      @include media-breakpoint-up(lg) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
     }
     .insta-item {
-        height: 280px;
+        height: 100px;
+        @include media-breakpoint-up(md) {
+          height: 180px;
+        }
+        @include media-breakpoint-up(lg) {
+          height: 280px;
+        }
     }
     .social-connect {
         @extend .social;
-        margin: 5rem 0 0 3rem;        
+        margin: 5rem 0 0 3rem;
         max-width: none;
             a {
                 width: 2.50rem;

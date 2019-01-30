@@ -249,14 +249,28 @@
   }
 
   h2 {
-    color: $primary;
     margin-bottom: 2rem;
+    color: $primary;
   }
 
   .left {
     @include make-col-ready();
     @include media-breakpoint-up(md) {
       @include make-col(6);
+    }
+
+    .form-left {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
+
+    .form-right {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
     }
   }
 

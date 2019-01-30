@@ -23,33 +23,104 @@ meta_tags:
         {% endregionblock %}
       </div>
 
-      <div class="left">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.790360025162!2d-73.98149313754777!3d40.764710009104235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f8245a4eab%3A0x86165540b81f3d02!2sWestHouse+New+York!5e0!3m2!1sen!2s!4v1438272959521" title="map" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+      <div class="left contact-form mb-5 mb-md-0">
+        {% include forms/jotform/contact.html %}
       </div>
 
       <div class="right">
         <div class="right-content">
-          {% regionblock contact_text, type:text %}
-            <p><strong>Address</strong><br>
-              <a href="https://www.google.com/maps/place/201+W+55th+St,+New+York,+NY+10019/data=!4m2!3m1!1s0x89c258f8245a4eab:0xc69337a732b07f42?sa=X&ved=0CB0Q8gEwAGoVChMIscyLk4_qxgIVx40NCh1-MQCy" target="_blank">201 West 55th Street, New York, NY, 10019</a>
-            </p>
-            <p><strong>Toll Free:</strong><br> 1 (800) 355-WEST (9378)
-            </p>
-            <p><strong>Telephone:</strong><br>
-              <a href="tel:+ 1 (212) 707-4888">+ 1 (212) 707-4888</a>
-            </p>
-            <p><strong>Fax:</strong><br> + 1 (212) 707-4806
-            </p>
-            <p><strong>Email:</strong><br>
-              <a href="mailto:welcome@westhousehotelnewyork.com">welcome@westhousehotelnewyork.com</a>
-            </p>
-            <p><strong>Group Bookings:</strong><br>
-              <a href="mailto:sales@westhousehotelnewyork.com">sales@westhousehotelnewyork.com</a>
-            </p>
-          {% endregionblock %}
+          <div class="contact-info">
+            {% regionblock contact_text, type:text %}
+              <p><strong>Address</strong><br>
+                <a href="https://www.google.com/maps/place/201+W+55th+St,+New+York,+NY+10019/data=!4m2!3m1!1s0x89c258f8245a4eab:0xc69337a732b07f42?sa=X&ved=0CB0Q8gEwAGoVChMIscyLk4_qxgIVx40NCh1-MQCy" target="_blank">201 West 55th Street, New York, NY, 10019</a>
+              </p>
+              <p><strong>Toll Free:</strong><br> 1 (800) 355-WEST (9378)
+              </p>
+              <p><strong>Telephone:</strong><br>
+                <a href="tel:+ 1 (212) 707-4888">+ 1 (212) 707-4888</a>
+              </p>
+              <p><strong>Fax:</strong><br> + 1 (212) 707-4806
+              </p>
+              <p><strong>Email:</strong><br>
+                <a href="mailto:welcome@westhousehotelnewyork.com">welcome@westhousehotelnewyork.com</a>
+              </p>
+              <p><strong>Group Bookings:</strong><br>
+                <a href="mailto:sales@westhousehotelnewyork.com">sales@westhousehotelnewyork.com</a>
+              </p>
+            {% endregionblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="instafeed">
+  <div class="instafeed-container">
+    <div class="instafeed-intro">
+      <a href="https://instagram.com/{{ site.data.social.instagram.username }}/" target="_blank">
+      <div class="instafeed-logo"><i class="fa fa-instagram"></i></div>
+      <h5>@westhouseny</h5>
+      </a>
+    </div>
+    <div class="instafeed-row" id="instapics"></div>
+    <div class="instafeed-row">
+      <div class="col-md-6">
+      <div class="social-connect">
+      <a href="https://www.facebook.com/{{ site.data.social.facebook.username }}/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/{{ site.data.social.twitter.username }}/" target="_blank" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/{{ site.data.social.instagram.username }}/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/{{ site.data.social.googleplus.username }}/" target="_blank" aria-label="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/{{ site.data.social.youtube.username }}/" target="_blank" aria-label="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://www.tripadvisor.com/{{ site.data.social.tripadvisor.username }}/" target="_blank" aria-label="Tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+      </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="trip-connect carousel-common">
+          <div id="trpadvisor-carousel" class="main-carousel carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              {% for tripadvisor in site.data._models.tripadvisor %}
+                <li data-target="#trpadvisor-carousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+              {% endfor %}
+            </ol>
+
+            <div class="carousel-inner">
+              {% for tripadvisor in site.data._models.tripadvisor %}
+                <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                  <div class="trip-logo">
+                    <img src="/assets/images/tripadvisory.png" alt="TripAdvisor">
+                  </div>
+                  <div class="trip-comment">
+                    <p>"{{ tripadvisor.contents }}"</p>
+                  </div>
+                  <div class="tripadvisor-author">
+                    <p>{{ tripadvisor.Credit }}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+            <a class="carousel-control-prev" href="#trpadvisor-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <img src="/assets/images/prev.png" alt="Previous Slide">
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#trpadvisor-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <img src="/assets/images/next.png" alt="Next Slide">
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
