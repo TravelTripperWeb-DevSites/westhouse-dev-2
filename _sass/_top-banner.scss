@@ -1,0 +1,51 @@
+// Top Banner
+
+.top-banner {
+  max-width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: $black;
+
+  a,
+  p {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  p {
+    padding-bottom: 0;
+    font-family: $primary-light;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    color: rgb(238, 238, 238);
+    text-transform: uppercase;
+    letter-spacing: .06rem;
+    vertical-align: middle;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+
+  a {
+    padding: 10px 17px;
+    font-family: $primary-light;
+    font-size: $type-size-10;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .17em;
+    background-color: $black;
+    border: 1px solid $black;
+    transition: $global-transition;
+    @media (max-width: 767px) {
+      font-size: $type-size-13;
+    }
+    &:hover {
+      color: $paragraph !important;
+      background-color: $light !important;
+    }
+  }
+}
