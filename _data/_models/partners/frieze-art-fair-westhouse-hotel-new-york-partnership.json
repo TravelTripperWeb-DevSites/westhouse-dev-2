@@ -11,5 +11,6 @@
 	"_delete_image": "0",
 	"contents": "<p>For the second year, WestHouse was proud hotel partner of Frieze New York, one of the world's leading contemporary art fairs. Throughout the first weekend of May, Frieze New York brought together the most exciting contemporary galleries from around the globe. This year, WestHouse Residents were able to enjoy VIP access to the fair and experience art-inspired truffles by MiniMelanie at turndown.</p><p><a href=\"https://www.westhousehotelnewyork.com/blog/frieze-nyc-2016/\" class=\"common-btn\">Read More</a></p>",
 	"definition": "",
-	"sort_order": 3
+	"sort_order": 3,
+	"publish_title": true
 }

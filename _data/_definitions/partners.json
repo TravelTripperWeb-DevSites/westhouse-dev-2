@@ -1,5 +1,9 @@
 {"title":
 	{"required":true},
+"publish_title":{
+	"type":"boolean",
+	"required":false
+},
 "seo_title":
 	{"required":true},
 "seo_description":
