@@ -14,5 +14,6 @@
     "caption": "",
     "description": ""
   },
-  "sort_order": 1
+  "sort_order": 1,
+  "publish_title": true
 }
