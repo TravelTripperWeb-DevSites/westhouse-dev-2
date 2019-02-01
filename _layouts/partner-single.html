@@ -7,7 +7,7 @@ layout: default
   </div>
 
 <div class="sub-nav">
-  {% assign partners = site.data._models.partners | sort: "menu_order" %}
+  {% assign partners = site.data._models.partners | sort: "sort_order" %}
   {% for partner in partners %}
     <a href="/partners/{{ partner.url_friendly_name }}/">{{ partner.title }}</a>
   {% endfor %}
