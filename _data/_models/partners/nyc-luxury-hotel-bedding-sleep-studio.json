@@ -11,5 +11,6 @@
 	"image": {
 		"url": "/assets/images/partners/westhouse-hotel-new-york-sleep-studio.jpg"
 	},
-	"sort_order": 5
+	"sort_order": 5,
+	"publish_title": true
 }
