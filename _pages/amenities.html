@@ -31,7 +31,7 @@ meta_tags:
       <div class="amenities-list">
         <h2>Our Partners</h2>
         <ul>
-          {% assign partners = site.data._models.partners | sort: "menu_order" %}
+          {% assign partners = site.data._models.partners | sort: "sort_order" %}
           {% for partner in partners %}
             <li class="bg-cover" style="background-image:url('{{ partner.image.url }}');">
               <a href="/partners/{{ partner.url_friendly_name }}/" class="partner-label">
