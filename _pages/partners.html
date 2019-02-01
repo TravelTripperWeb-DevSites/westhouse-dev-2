@@ -14,11 +14,10 @@ meta_tags:
 {% include booking-widget.html %}
 
 <div class="sub-nav">
-  {% assign partners = site.data._models.partners | sort: "menu_order" %}
+  {% assign partners = site.data._models.partners | sort: "sort_order" %}
   {% for partner in partners %}
     <a href="/partners/{{ partner.url_friendly_name }}/">{{ partner.title }}</a>
   {% endfor %}
-    <a href="/amenities/aaptiv/">AAPTIV GUIDED FITNESS TRAINING</a>
 </div>
 
 <div class="common-intro">
@@ -44,11 +43,6 @@ meta_tags:
           </div>
         </div>
       {% endfor %}
-      <div class="{{ cls }}">
-        <div class="assets-item bg-cover pattern" style="background-image: url('//cdn.traveltripper.io/site-assets/192_368_23229/media/2019-01-31-070116/aaptiv-runnerportrait.jpg');">
-          <a href="/amenities/aaptiv/" class="floating"><h2 class="floating-text">AAPTIV GUIDED FITNESS TRAINING</h2></a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
