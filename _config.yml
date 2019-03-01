@@ -1,60 +1,53 @@
-# Site Settings
-title: "Westhouse"
+---
+title: Westhouse
 title_separator: "|"
-name: "Westhouse"
-description:
+name: Westhouse
+description: 
 url: https://www.westhousehotelnewyork.com
-repository: "TravelTripperWeb-Sites/westhouse2"
-reztripUrl: "https://westhousehotelnewyork.reztrip.com/"
-
-# Language Settings
-default_lang: 'en'
-languages: ['en']
-
-# Reading Files
+repository: TravelTripperWeb-Sites/westhouse2
+reztripUrl: https://westhousehotelnewyork.reztrip.com/
+default_lang: en
+languages:
+- en
 include:
-  - _pages
+- _pages
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - Makefile
-  - media.json
-  - models.json
-  - node_modules
-  - old_media.json
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - sitemap.json
-  - tmp
-  - vendor
+- "*.sublime-project"
+- "*.sublime-workspace"
+- ".asset-cache"
+- ".bundle"
+- ".jekyll-assets-cache"
+- ".sass-cache"
+- Capfile
+- CHANGELOG
+- config
+- Gemfile
+- Gruntfile.js
+- gulpfile.js
+- LICENSE
+- log
+- Makefile
+- media.json
+- models.json
+- node_modules
+- old_media.json
+- package.json
+- package-lock.json
+- Rakefile
+- README
+- sitemap.json
+- tmp
+- vendor
 keep_files:
-  - .git
-  - assets
+- ".git"
+- assets
 rsync_copy:
 - _assets
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Conversion
+encoding: utf-8
+markdown_ext: markdown,mkdown,mkdn,mkd,md
 markdown: kramdown
 excerpt_separator: "\n\n"
 incremental: false
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -64,51 +57,45 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-# Sass/SCSS
 sass:
   load_paths:
-    - _sass
+  - _sass
   style: compressed
-
-# Outputting
 permalink: pretty
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: 
 data_paginate:
   per_page: 20
-  data: 'blog'
-  path: 'blog/page:num'
-  pagination_template: 'blog/index.html'
-  sort_field: 'datemeta'
+  data: blog
+  path: blog/page:num
+  pagination_template: blog/index.html
+  sort_field: datemeta
   sort_reverse: true
-
 page_gen:
-  - data: 'gallery-category'
-    template: 'gallery-single'
-    dir: '/gallery'
-  - data: 'amenities'
-    template: 'amenities-single'
-    dir: '/amenities'
-  - data: 'dining'
-    template: 'dining-single'
-    dir: '/dining'
-  - data: 'area'
-    template: 'area-single'
-    dir: '/things-to-do-in-nyc'
-  - data: 'blog'
-    template: 'blog-single'
-    dir: '/blog'
-  - data: 'partners'
-    template: 'partner-single'
-    dir: '/partners'
-  - data: 'events'
-    template: 'event-single'
-    dir: '/events-in-nyc'
-  - data: 'neighborhood-locations'
-    template: 'neighborhood-single'
-    dir: '/attractions'
-  - data: 'culinary-guide'
-    template: 'culinary-single'
-    dir: '/things-to-do-in-nyc/culinary-guide'
+- data: gallery-category
+  template: gallery-single
+  dir: "/gallery"
+- data: amenities
+  template: amenities-single
+  dir: "/amenities"
+- data: dining
+  template: dining-single
+  dir: "/dining"
+- data: area
+  template: area-single
+  dir: "/things-to-do-in-nyc"
+- data: blog
+  template: blog-single
+  dir: "/blog"
+- data: partners
+  template: partner-single
+  dir: "/partners"
+- data: events
+  template: event-single
+  dir: "/events-in-nyc"
+- data: neighborhood-locations
+  template: neighborhood-single
+  dir: "/attractions"
+- data: culinary-guide
+  template: culinary-single
+  dir: "/things-to-do-in-nyc/culinary-guide"
 port: 4040
