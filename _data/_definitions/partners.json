@@ -22,9 +22,6 @@
 	"image": {
 		"type":"image"
 	},
-	"featured_image": {
-		"type":"image"
-	},
 	"contents":	{
 		"type":"richtext",
 		"required":true,

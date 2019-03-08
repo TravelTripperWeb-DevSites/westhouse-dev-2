@@ -40,7 +40,7 @@ meta_tags:
           {% capture cls %}col-lg-6{% endcapture %}
         {% endif %}
         <div class="{{ cls }}">
-          <div class="assets-item bg-cover pattern" style="background-image: url('{{ partner.image.url }}');">
+          <div class="assets-item bg-cover pattern{% if partner.title == "Free Audio Fitness Classes with Aaptiv" %} aaptiv-image{% endif %}" style="background-image: url('{{ partner.image.url }}');">
             <a href="/partners/{{ partner.url_friendly_name }}/" class="floating"><h2 class="floating-text partners-text">{{ partner.title }}</h2></a>
           </div>
         </div>
