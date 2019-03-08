@@ -1,17 +1,36 @@
-{"title":
-	{"required":true},
-"publish_title":{
+{
+	"title": {
+		"required":true
+	},
+  "publish_title": {
 	"type":"boolean",
 	"required":false
-},
-"seo_title":
-	{"required":true},
-"seo_description":
-	{"type":"text","required":true},
-"url_friendly_name":
-	{"type":"url_slug"},
-"image":
-	{"type":"image"},
-"contents":
-	{"type":"richtext","required":true,"hint":"Write the content of your dining spot."},
-  "sort_order": {"type": "integer"}}
+  },
+	"seo_title":
+	{
+		"required":true
+	},
+	"seo_description":
+	{
+		"type":"text",
+		"required":true
+	},
+	"url_friendly_name":
+	{
+		"type":"url_slug"
+	},
+	"image": {
+		"type":"image"
+	},
+	"featured_image": {
+		"type":"image"
+	},
+	"contents":	{
+		"type":"richtext",
+		"required":true,
+		"hint":"Write the content of your dining spot."
+	},
+  "sort_order": {
+		"type": "integer"
+	}
+}
