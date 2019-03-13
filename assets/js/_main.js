@@ -264,7 +264,9 @@ $(document).ready(function() {
      setTimeout(function() {
        $(".brg-widget").show();
      }, 2500);
-
+     $("#reserveNowSubmit").click(function(){
+       $("#roomDetailBookingForm").submit();
+     })
 });
 
 $(function() {
