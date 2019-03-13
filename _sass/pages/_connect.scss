@@ -21,6 +21,11 @@
             .fa {
                 font-size: 3.125rem;
             }
+            a{
+              &:nth-child(2) {
+                margin-left: 10px;
+              }
+            }
         }
         h5 {
             font-family: $primary-book;
