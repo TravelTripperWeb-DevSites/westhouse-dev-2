@@ -1,3 +1,19 @@
-/*
-   Partners Page Elements
-   ========================================================================== */
+// Partners Page Elements
+// ==========================================================================
+.object-fit {
+  width: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.partners-text {
+  bottom: 2rem !important;
+  @include media-breakpoint-up(md) {
+    bottom: 4rem !important;
+  }
+  text-align: right;
+}
+
+.aaptiv-image {
+  background-position: 20% 0%;
+}

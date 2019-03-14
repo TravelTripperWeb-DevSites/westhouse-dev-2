@@ -16,9 +16,9 @@ meta_tags:
 <div class="sub-nav">
   {% assign partners = site.data._models.partners | sort: "sort_order" %}
   {% for partner in partners %}
-    
+
     <a href="/partners/{{ partner.url_friendly_name }}/">{{ partner.title }}</a>
-   
+
     {% endfor %}
 </div>
 
@@ -40,8 +40,8 @@ meta_tags:
           {% capture cls %}col-lg-6{% endcapture %}
         {% endif %}
         <div class="{{ cls }}">
-          <div class="assets-item bg-cover pattern" style="background-image: url('{{ partner.image.url }}');">
-            <a href="/partners/{{ partner.url_friendly_name }}/" class="floating"><h2 class="floating-text">{{ partner.title }}</h2></a>
+          <div class="assets-item bg-cover pattern{% if partner.title == "Free Audio Fitness Classes with Aaptiv" %} aaptiv-image{% endif %}" style="background-image: url('{{ partner.image.url }}');">
+            <a href="/partners/{{ partner.url_friendly_name }}/" class="floating"><h2 class="floating-text partners-text">{{ partner.title }}</h2></a>
           </div>
         </div>
       {% endfor %}
