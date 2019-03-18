@@ -32,6 +32,9 @@
             font-size: $type-size-5;
             color: $primary;
         }
+        &.less-padding {
+          padding: 2rem 0 2rem 0;
+        }
     }
     .insta-col-item {
       @include make-col-ready();
