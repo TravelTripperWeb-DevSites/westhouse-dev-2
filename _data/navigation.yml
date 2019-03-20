@@ -15,8 +15,10 @@ main:
     url: /partners/
   - title: Blog
     url: /blog/
-  - title: Connect with Us
-    url: /connect/
+  #- title: Connect with Us
+  #  url: /connect/
+  - title: Contact
+    url: /contact-us/
 
 footer:
   - title: FAQ
@@ -29,11 +31,11 @@ footer:
     url: /sitemap/
   - title: Careers
     url: /careers/
-  - title: Press
-    url: /press/
+  #- title: Press
+  #  url: /press/
   - title: Contact
     url: /contact-us/
-  - title: Connect
-    url: /connect/
+  #- title: Connect
+  #  url: /connect/
   - title: Accessibility Statement
     url: /accessibility/

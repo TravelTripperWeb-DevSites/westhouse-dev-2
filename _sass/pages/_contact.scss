@@ -1,3 +1,75 @@
 /*
    Contact Page Elements
    ========================================================================== */
+
+.contact-form {
+  select {
+    &.form-control {
+      height: 3.5rem !important;
+    }
+  }
+
+  textarea {
+    &.form-control {
+      height: 6.5rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .form-control {
+    height: 3.5rem;
+    padding: 0 1.25rem;
+    font-family: $secondary-medium;
+    font-size: $type-size-8;
+    color: $secondary;
+    text-transform: uppercase;
+    letter-spacing: .04rem;
+    border: 1px solid $border-three;
+    border-radius: 0;
+  }
+
+  .common-btn {
+    cursor: pointer;
+    border: 0;
+  }
+
+  .form-check-input {
+    margin-top: .4rem;
+    margin-left: 0;
+  }
+
+  .form-check-label {
+    font-size: $type-size-8;
+
+    a {
+      font-weight: bold;
+      &:hover {
+        color: $link;
+      }
+    }
+  }
+
+  .btn-holder {
+    padding-top: 20px;
+  }
+}
+
+.contact-info {
+  padding: 30px;
+  background-color: $btn;
+
+  p {
+    color: $white;
+  }
+
+  strong, a {
+    color: $white;
+  }
+}
+.contact-heading {
+  padding-top: 4rem;
+  text-align: center;
+  h5 {
+    font-size: $type-size-5;
+  }
+}
