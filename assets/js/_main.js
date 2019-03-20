@@ -318,29 +318,57 @@ $(window).on('load resize', function() {
 });
 
 // Instafeed
-$(window).on("load", function(e) {
-  var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.e23b900839bc4be5a29cb6eec0161bbf&callback=?';
-  $.ajax({
-    url: instaurl,
-    dataType: "jsonp",
-    success: function(response) {
-      console.log(response);
-      setTimeout(function() {
-        $.each(response.data, function(i, item) {
-          if ($(window).width() >= 767) {
-            if (i > 3) return false;
-          } else {
-            if (i > 3) return false;
-          }
+// $(window).on("load", function(e) {
+//   var instaurl = 'https://api.instagram.com/v1/users/467174069/media/recent/?access_token=467174069.1677ed0.e23b900839bc4be5a29cb6eec0161bbf&callback=?';
+//   $.ajax({
+//     url: instaurl,
+//     dataType: "jsonp",
+//     success: function(response) {
+//       console.log(response);
+//       setTimeout(function() {
+//         $.each(response.data, function(i, item) {
+//           if ($(window).width() >= 767) {
+//             if (i > 3) return false;
+//           } else {
+//             if (i > 3) return false;
+//           }
+//
+//           $('<div class="insta-col-item"><a href="' + item.link + '" target="_blank"><div class="insta-item bg-cover" style="background-image:url(' + item.images.standard_resolution.url + ')"></div></a></li>').appendTo('#instapics');
+//           //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
+//         });
+//         $('#instapics').slideDown('slow');
+//       }, 1000);
+//     }
+//   });
+// });
 
-          $('<div class="insta-col-item"><a href="' + item.link + '" target="_blank"><div class="insta-item bg-cover" style="background-image:url(' + item.images.standard_resolution.url + ')"></div></a></li>').appendTo('#instapics');
-          //$('.t-feeds').find('.photolist'+i).html('<a href="'+item.link+'" target="_blank"><img src="'+item.images.standard_resolution.url+'" class="img-respond"/><span class="insta-icon"><img src="/images/gates/location/instagram.png" alt=""/></span><div class="insta-overlay"><div class="overlay-con"><img src="/images/gates/location/instagram.png"><span>Follow Us <br> on Instagram</span></div></div></a>');
-        });
-        $('#instapics').slideDown('slow');
-      }, 1000);
-    }
+$(window).on('load', function() {
+  // Instagram API script
+  var instaurl = 'https://instafeed.traveltripper.io/u/westhouseny/';
+  var instaFeedUrl = "https://www.instagram.com/p/";
+  $.ajax({
+      url: instaurl,
+      dataType: "json",
+      success: function(response) {
+        console.log(response);
+        setTimeout(function() {
+            $.each(response.medias, function(i, item) {
+                if (window.innerWidth > 992) {
+                  if (i > 3) return false;
+                } else {
+                  if (i > 3) return false;
+                }
+                $('<div class="insta-col-item"><a href="' + instaFeedUrl + item.shortcode +'" target="_blank"><div class="insta-item bg-cover" style="background-image:url(' + item.thumbnail + ')"></div></a></div>')
+                  .appendTo('#instapics');
+                });
+              var heightDIV = $('#instafeed div:first-child')
+                .innerWidth(); $('#instafeed')
+              .slideDown('slow');
+            }, 500);
+        }
+      });
+
   });
-});
 
 if($('#fb-root').length){
   // Facebook share

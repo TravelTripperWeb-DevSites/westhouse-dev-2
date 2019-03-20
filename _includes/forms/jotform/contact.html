@@ -1,17 +1,44 @@
 <form action="https://submit.jotform.me/submit/{{ site.data.forms.jotform.contact-id }}/" method="post" name="form_{{ site.data.forms.jotform.contact-id }}" id="{{ site.data.forms.jotform.contact-id }}" accept-charset="utf-8">
   <input type="hidden" name="formID" value="{{ site.data.forms.jotform.contact-id }}">
-  <label>Name*</label>
-  <input type="text" id="input_3" name="q3_input3" placeholder="Your Name" required aria-lable="Your Name">
-  <label>Email Address*</label>
-  <input type="email" id="input_4" name="q4_input4" placeholder="Your Email" required aria-label="Email Address">
-  <label>Message</label>
-  <textarea id="input_5" name="q5_input5" cols="40" rows="8"></textarea>
-  <button type="submit" id="input_2">Submit</button>
-  <input type="hidden" id="simple_spc" name="simple_spc" value="{{ site.data.forms.jotform.contact-id }}">
-
-  <script type="text/javascript">
-    document.getElementById("si" + "mple" + "_spc").value = "{{ site.data.forms.jotform.contact-id }}-{{ site.data.forms.jotform.contact-id }}";
-  </script>
+  <div class="form-group">
+    <select class="form-control" name="q3_department" aria-label="Select Department">
+      <option value="">Nature of your Enquiry</option>
+      <option value="Reservation"> Reservation </option>
+      <option value="Sales"> Sales </option>
+      <option value="Guest Relations"> Guest Relations </option>
+      <option value="Concierge"> Concierge </option>
+      <option value="Influencer Requests"> Influencer Requests </option>
+      <option value="Media Inquiries"> Media Inquiries </option>
+    </select>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="form-left mb-3 mb-md-0">
+        <input type="text" class="form-control" name="q4_firstName" placeholder="First Name" aria-label="Enter your first name" required>
+      </div>
+      <div class="form-right">
+        <input type="text" class="form-control" name="q5_lastName" placeholder="Last Name" aria-label="Enter your last name">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" name="q6_email" placeholder="Email" aria-label="Enter your email" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="q7_phoneNumber" placeholder="Phone Number" aria-label="Enter your phone  number" required>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" rows="5" name="q10_comments" placeholder="Comments" aria-label="Enter your comments"></textarea>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="feature-emails" name="q8_pleaseInclude[]" value="Yes">
+    <label class="form-check-label" for="feature-emails" aria-label="Select checkbox to include me in feature emails">Please include me in feature emails</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="terms-service" name="q9_iAgree[]" value="I Agree" required>
+    <label class="form-check-label" for="terms-service" aria-label="Select checkbox agree to the Terms of Service and Privacy Policy.">I agree to the <a href="/terms-of-use/">Terms of Service</a> and <a href="/privacy-policy/">Privacy Policy</a>.</label>
+  </div>
+  <div class="btn-holder">
+    <button type="submit" class="common-btn">Submit</button>
+  </div>
 </form>
-
-<script type="text/javascript">JotForm.ownerView=true;</script>
