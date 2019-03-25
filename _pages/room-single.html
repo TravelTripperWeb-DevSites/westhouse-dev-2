@@ -62,9 +62,12 @@ meta_tags:
           </div>
         </div>
 
+       
+
         <div class="assets-details-description">
 
           <p ng-bind-html="room.description | renderHTMLCorrectly"></p>
+          <!--brg removal
           <h2>BEST RATE. EVERY TIME.</h2>
           <p>Always receive the best possible rate by booking through our website, reservations line or contacting the hotel directly.</p>
 
@@ -76,7 +79,7 @@ meta_tags:
                 <div class="direct-rate-label">Direct Rate</div>
                 <div class="rate">[[portalInfo.currency_symbol]][[room.brg.discounted_rate | number:0]]</div>
               </div>
-              <a href="javascript:;" class="book-now" id="reserveNowSubmit">Reserve Now</a>
+              <a href="javascript:();" class="book-now" id="reserveNowSubmit">Reserve Now</a>
             </div>
             <div class="brg-box" ng-show="room.brgLoaded && room.brg.rates.length >0">
               <ul>
@@ -90,7 +93,7 @@ meta_tags:
           </div>
 
         </div>
-
+      -->
       </div>
 
     </div>
