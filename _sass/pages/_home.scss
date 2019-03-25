@@ -11,6 +11,7 @@
   }
 
   .brg-widget {
+    display:none;
     position: absolute;
     left: 0;
     right: 0;
@@ -20,6 +21,7 @@
     z-index: 9;
     @include media-breakpoint-up(md) {
       bottom: 65px;
+      display:none;
     }
   }
 
