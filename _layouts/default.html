@@ -16,8 +16,10 @@
   {% endif %}
 
   {% include header.html %}
+  {% unless page.url contains '/exclusive-web-offers/' %}
   <!-- Unlock Banner -->
   {% include top-banner.html %}
+  {% endunless %}
 
   {{ content }}
 
