@@ -47,12 +47,40 @@ meta_tags:
               <p><strong>Group Bookings:</strong><br>
                 <a href="mailto:sales@westhousehotelnewyork.com">sales@westhousehotelnewyork.com</a>
               </p>
-
-              <p>
-                <a class="border-btn" href="https://goo.gl/maps/Fa2EK8GPnZo" target="_blank" title="Directions">Directions</a>
-              </p>
-
               {% endregionblock %}
+
+              <p> <strong>Driving Directions</strong></p>
+              <p>201 West 55th Street, New York, NY, 10019</p>
+
+              <div class="left-side-directions" style="display:inline-block; max-width:50%;">
+                <h4>Driving Directions</h4>
+                <p>201 West 55th Street, New York, NY, 10019</p>
+                
+                <div class="toggle-directions">
+                    <a class="toggle-nav-item" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse | </a>
+                    <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse </a>
+                  </div>
+                </div>
+                <div id="from-container" >
+                  <div class="from">
+                 <input type="text" id="text" />
+                 <input type="button" id="btn" class="reserve-btn" value="Get Directions" onClick="javascript: window.open('https://www.google.com/maps/dir/?api=1&origin=Google+Pyrmont+NSW&destination=' + document.getElementById('text').value);" />      </div>
+                    
+              
+              </div>
+              
+                  </div>
+              
+                <div id="to-container" style="display:none">
+                  <div class="to">
+                      <input type="text" id="text" />
+                      
+                  <input type="button" id="btn" class="reserve-btn" value="Get Directions" onClick="javascript: window.open('https://www.google.com/maps/dir/?api=1&origin=' + document.getElementById('text').value + '&destination=Google+Pyrmont+NSW');" />
+              </div>
+              
+              </div>
+
+              
           </div>
         </div>
       </div>
@@ -76,7 +104,7 @@ meta_tags:
         <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse </a>
       </div>
     </div>
-    <div id="from-container" style=" display:inline-block; max-width:50%;">
+    <div id="from-container" >
       <div class="from">
      <input type="text" id="text" />
      <input type="button" id="btn" class="reserve-btn" value="Get Directions" onClick="javascript: window.open('https://www.google.com/maps/dir/?api=1&origin=Google+Pyrmont+NSW&destination=' + document.getElementById('text').value);" />      </div>
