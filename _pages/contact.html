@@ -56,7 +56,7 @@ meta_tags:
               
                 
                 <div class="toggle-directions">
-                    <a class="toggle-nav-item" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse | </a>
+                    <a class="toggle-nav-item from active" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse | </a>
                     <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse </a>
                   </div>
                 </div>
@@ -114,11 +114,23 @@ function hideNonVisibleDivs() {
     div = document.getElementById(divId);
     if(visibleDivId === divId) {
       div.style.display = "block";
+      
     } else {
       div.style.display = "none";
     }
   }
 }
+
+$(function() {
+    $("a.to").on("click", function() {
+        $(".from.active").removeClass("active");
+        $(".a").addClass("active");
+    });
+    $("a.from").on("click", function() {
+        $(".to.active").removeClass("active");
+        $(".from").addClass("active");
+    });
+});
 
 </script>
 <section class="contact-heading">
