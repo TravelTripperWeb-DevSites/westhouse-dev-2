@@ -55,8 +55,8 @@ meta_tags:
               <div class="left-side-directions">
               
                 
-                <div class="toggle-directions">
-                    <a class="toggle-nav-item from active" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse | </a>
+                <div id="toggle-directions">
+                    <a class="toggle-nav-item from active" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse </a> |
                     <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse </a>
                   </div>
                 </div>
@@ -121,16 +121,20 @@ function hideNonVisibleDivs() {
   }
 }
 
-$(function() {
-    $("a.to").on("click", function() {
-        $(".from.active").removeClass("active");
-        $(".a").addClass("active");
-    });
-    $("a.from").on("click", function() {
-        $(".to.active").removeClass("active");
-        $(".from").addClass("active");
-    });
-});
+// Get the container element
+var btnContainer = document.getElementById("toggle-directions");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("toggle-nav-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 
 </script>
 <section class="contact-heading">
