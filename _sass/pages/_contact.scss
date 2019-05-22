@@ -92,4 +92,7 @@
 .active{
   font-weight:bold;
   text-decoration:underline;
+  &:hover{
+    text-decoration:underline;
+  }
 }
