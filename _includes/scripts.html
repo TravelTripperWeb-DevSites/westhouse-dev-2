@@ -11,30 +11,15 @@
 <script src="{{ '/assets/js/ie10-viewport-bug-workaround.js' | absolute_url }}"></script>
 
 <script>window.cookieConsentConfig = {location: false}</script>
-<script src="https://plugins.traveltripper.io/v2/rt3api.min.js"></script>
-<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script>
 <script src="https://cdn.jsdelivr.net/g/jquery.validation@1.14.0(jquery.validate.min.js+additional-methods.min.js)"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script cf-async="true" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.4/js/lightgallery-all.min.js"></script>
 {% if page.url == "/gallery/virtual-tours/" %}
  <script src="https://static.vrglobal.com/embedv2.js"></script>
 {% endif %}
-<script>
-  TTWeb.Config.configure({
-    hotelId: 'NYCWST', //'orwhatever your values are',
-    portalId: 'westhousehotelnewyork',
-    defaultTimezone: 'America/New_York', // timezone of site
-    ipAddress: sessionStorage.ip_add,
-    defaultCurrency: 'USD',
-  });
-  $("[show-booking-widget]").bookingWidget({
-    // showRateCalendar: true,
-    showOfferCode: true
-  });
-</script>
 
+{% include reztrip/setup-ttweb-plugins.html %}
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
-
 
 <script type="text/javascript">
     $(document).ready(function(){
