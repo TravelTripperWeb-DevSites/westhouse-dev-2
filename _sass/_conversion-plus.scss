@@ -10,11 +10,6 @@
 }
 .ttweb-offer {
   font-size: .8rem;
-  &--unavailable {
-    .ttweb-cross-out-rate, .ttweb-selected-dates, .ttweb-booking-button {
-      display: none;
-    }
-  }
   .ttweb-cross-out-rate  {
     display: none;
     font-size: .7rem;
@@ -55,17 +50,29 @@
       
     }
   }
+  
   @include media-breakpoint-down(lg) {
     p.top-banner-message {
       display: block;
       margin-bottom: 24px;
     }
-    a.ttweb-booking-button {
+    .ttweb-booking-button {
       display: table; // Forces line break but keeps in-line sizing
       margin: 24px auto 0;
     }
     .ttweb-cross-out-rate  {
       border: none;
     }
+  }
+  
+
+  &--unavailable {
+    .ttweb-cross-out-rate, .ttweb-selected-dates, .ttweb-booking-button {
+      display: none;
+    }
+    .ttweb-selected-dates--user-dates + .ttweb-booking-button + #top_banner_offer {
+      display: inline-block;
+    }
+    
   }
 }

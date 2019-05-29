@@ -6,8 +6,10 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-
-  <a ttweb-component="BookingWidgetButton" class="reserve-btn" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" title="Book Now">Reserve</a>
+  
+  <span ttweb-component="BookingWidgetButton" class="reserve-btn-nav"> 
+    <a class="reserve-btn" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" title="Reserve">Reserve</a>
+  </span>
   
   {% include nav-main.html %}
 
