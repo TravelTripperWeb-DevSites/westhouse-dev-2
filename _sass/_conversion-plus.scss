@@ -54,11 +54,11 @@
   @include media-breakpoint-down(lg) {
     p.top-banner-message {
       display: block;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
     }
     .ttweb-booking-button {
       display: table; // Forces line break but keeps in-line sizing
-      margin: 24px auto 0;
+      margin: 12px auto 0;
     }
     .ttweb-cross-out-rate  {
       border: none;
