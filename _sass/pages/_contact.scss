@@ -89,18 +89,10 @@
   margin-top:28px;
 }
 
-.toggle-directions{
-button{
-background-color:#222;
-color:white;
-
 .active{
   font-weight:bold;
   text-decoration:underline;
   &:hover{
     text-decoration:underline;
   }
-}
-
-}
 }
