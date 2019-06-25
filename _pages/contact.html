@@ -121,11 +121,10 @@ function hideNonVisibleDivs() {
   }
 }
 
-$('#toggle-directions  a').on('click', function(){
-    $('li a.active').removeClass('active');
-    $(this).addClass('active');
+$('#menu li a').on('click', function(){
+    $('li a.current').removeClass('current');
+    $(this).addClass('current');
 });
-
 </script>
 <section class="contact-heading">
   <h5>CONNECT WITH US</h5>
