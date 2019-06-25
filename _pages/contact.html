@@ -56,8 +56,8 @@ meta_tags:
               
                 
                 <div id="toggle-directions">
-                    <a class="toggle-nav-item from active" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse</a> <span style="color:white;">|</span>
-                    <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse</a>
+                    <a class="toggle-nav-item from active" href="#from" onclick="toggleVisibility('from-container'); toggleColor()"> From Westhouse</a> <span style="color:white;">|</span>
+                    <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');toggleColor()"> To Westhouse</a>
                   </div>
                 </div>
                 <div id="from-container" >
@@ -121,32 +121,28 @@ function hideNonVisibleDivs() {
   }
 }
 
-// Get the container element
+/* Get the container element
 var btnContainer = document.getElementById("toggle-directions");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("toggle-nav-item");
 
-document.getElementsByClassName("toggle-nav-item").classList.toggle("active");
+//document.getElementsByClassName("toggle-nav-item").classList.toggle("active");
 
 // Loop through the buttons and add the active class to the current/clicked button
-//for (var i = 0; i < btns.length; i++) {
-  //btns[i].addEventListener("click", function() {
-  //  var current = document.getElementsByClassName(" active");
-  //  current[0].className = current[0].className.replace(" active", "");
-  //  this.className += " active";
-//  });
-//}
-
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName(" active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+*/
 </script>
 
 <script>
   function toggleColor() {
- 
- $("#btn1").toggleClass("blue");
- 
- $("#btn1").toggleClass("red");  
- 
+  $("toggle-nav-item").toggleClass("active");
 }
 </script>
 <section class="contact-heading">
