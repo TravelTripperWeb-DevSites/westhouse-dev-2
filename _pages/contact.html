@@ -56,8 +56,8 @@ meta_tags:
               
                 
                 <div id="toggle-directions">
-                    <button class="toggle-nav-item from active" style="border:none; background-color:#222; color:white" href="#from" onclick="toggleVisibility('from-container');">From Westhouse</button>
-                    <button class="toggle-nav-item to" style="border:none; background-color:#222; color:white" href="#to" onclick="toggleVisibility('to-container');">To Westhouse</button>
+                    <button class="toggle-nav-item from active" style="border:none; background-color:#222; color:white" onclick="toggleVisibility('from-container');">From Westhouse</button>
+                    <button class="toggle-nav-item to" style="border:none; background-color:#222; color:white"  onclick="toggleVisibility('to-container');">To Westhouse</button>
                    
                   </div>
                 </div>
@@ -126,10 +126,11 @@ function hideNonVisibleDivs() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script>
-    var $a = jQuery('a');
-        $a.on('click',function() {
-          jQuery(this).toggleClass('active').siblings('button').removeClass('active');
-        })</script>
+   var $buttons = jQuery('button');
+$buttons.on('click',function() {
+  jQuery(this).toggleClass('active').siblings('button').removeClass('active');
+})
+</script>
 <section class="contact-heading">
   <h5>CONNECT WITH US</h5>
   <p>Explore our universe and share your experiences #InResidence</p>
