@@ -56,8 +56,8 @@ meta_tags:
               
                 
                 <div id="toggle-directions">
-                    <a class="toggle-nav-item from " href="#from" onclick="toggleVisibility('from-container'); toggleVisibility('from');"> From Westhouse</a> <span style="color:white;">|</span>
-                    <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');toggleVisibility('to');"> To Westhouse</a>
+                    <a class="toggle-nav-item from" href="#from" onclick="toggleVisibility('from-container');"> From Westhouse</a> <span style="color:white;">|</span>
+                    <a class="toggle-nav-item to" style="padding-top:10px;" href="#to" onclick="toggleVisibility('to-container');"> To Westhouse</a>
                   </div>
                 </div>
                 <div id="from-container" >
@@ -121,53 +121,11 @@ function hideNonVisibleDivs() {
   }
 }
 
-var divs =["from","to"];
-var visibleDivId = null;
-function toggleVisibility(divId) {
-  if(visibleDivId === divId) {
-    //visibleDivId = null;
-  } else {
-    visibleDivId = divId;
-  }
-  hideNonVisibleDivs();
-}
-function hideNonVisibleDivs() {
-  var i, divId, div;
-  for(i = 0; i < divs.length; i++) {
-    divId = divs[i];
-    div = document.getElementById(divId);
-    if(visibleDivId === divId) {
-      div.style.textDecoration = "underline";
-      
-    } else {
-      div.style.textDecoration = "none";
-    }
-  }
-}
+$('#toggle-directions  a').on('click', function(){
+    $('li a.active').removeClass('active');
+    $(this).addClass('active');
+});
 
-/* Get the container element
-var btnContainer = document.getElementById("toggle-directions");
-
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("toggle-nav-item");
-
-//document.getElementsByClassName("toggle-nav-item").classList.toggle("active");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName(" active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-*/
-</script>
-
-<script>
-  function toggleColor() {
-  $("toggle-nav-item").toggleClass("active");
-}
 </script>
 <section class="contact-heading">
   <h5>CONNECT WITH US</h5>
