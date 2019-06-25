@@ -127,7 +127,7 @@ var btnContainer = document.getElementById("toggle-directions");
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("toggle-nav-item");
 
-document.getElementById("toggle-nav-item").classList.toggle("active");
+document.getElementsByClassName("toggle-nav-item").classList.toggle("active");
 
 // Loop through the buttons and add the active class to the current/clicked button
 //for (var i = 0; i < btns.length; i++) {
@@ -138,6 +138,16 @@ document.getElementById("toggle-nav-item").classList.toggle("active");
 //  });
 //}
 
+</script>
+
+<script>
+  function toggleColor() {
+ 
+ $("#btn1").toggleClass("blue");
+ 
+ $("#btn1").toggleClass("red");  
+ 
+}
 </script>
 <section class="contact-heading">
   <h5>CONNECT WITH US</h5>
