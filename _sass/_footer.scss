@@ -18,7 +18,7 @@
     background-color: $secondary-bg;
     border-top: solid 1px $border-two;
     border-bottom: solid 1px $border-two;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding-right: 5%;
       padding-left: 5%;
     }
@@ -62,12 +62,15 @@
       height: 3.5rem;
       padding: 0 1.250rem;
       font-family: $secondary-medium;
-      color: $secondary;
       font-size: $type-size-8;
+      color: $secondary;
       text-transform: uppercase;
       letter-spacing: .04rem;
       border: 1px solid $border-three;
       border-radius: 0;
+      @include media-breakpoint-up(lg) {
+        height: 4.8rem;
+      }
     }
 
     .subit-btn-holder {
@@ -89,6 +92,12 @@
       margin-bottom: 15px;
       a {
         text-decoration: underline;
+      }
+    }
+    .g-recaptcha {
+      @include media-breakpoint-down(md) {
+        display: flex;
+        justify-content: center;
       }
     }
   }
