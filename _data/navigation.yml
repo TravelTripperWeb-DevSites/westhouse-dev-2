@@ -11,8 +11,6 @@ main:
     url: /gallery/
   - title: Area
     url: /things-to-do-in-nyc/
-  - title: Partners
-    url: /partners/
   - title: Blog
     url: /blog/
   #- title: Connect with Us
