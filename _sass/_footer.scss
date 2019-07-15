@@ -14,7 +14,7 @@
 
   .email-signup-row {
     @include make-row;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     background-color: $secondary-bg;
     border-top: solid 1px $border-two;
     border-bottom: solid 1px $border-two;
@@ -59,7 +59,7 @@
     }
 
     .form-control {
-      height: 3.5rem;
+      height: 3rem;
       padding: 0 1.250rem;
       font-family: $secondary-medium;
       font-size: $type-size-8;
@@ -68,9 +68,6 @@
       letter-spacing: .04rem;
       border: 1px solid $border-three;
       border-radius: 0;
-      @include media-breakpoint-up(lg) {
-        height: 4.8rem;
-      }
     }
 
     .subit-btn-holder {
@@ -95,10 +92,8 @@
       }
     }
     .g-recaptcha {
-      @include media-breakpoint-down(md) {
-        display: flex;
-        justify-content: center;
-      }
+      display: flex;
+      justify-content: center;
     }
   }
 
