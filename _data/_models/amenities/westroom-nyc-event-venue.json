@@ -1,16 +1,20 @@
 {
-	"definition_id": "55998c72c06bc81b20000003",
-	"title": "Westroom",
-	"url_friendly_name": "westroom-nyc-event-venue",
-	"blockquote": "",
-	"image_id": 5712,
-	"seo_title": "WestRoom - NYC Event Venue - WestHouse Hotel New York",
-	"seo_description": "WestRoom is a private boardroom located on the 23rd floor of WestHouse Hotel, offering seating for up to eight attendees.",
-	"_delete_image": null,
-	"contents": "<p>Adjacent to The Terrace on the hotel&rsquo;s 23rd floor, the Westroom is an intimate boardroom with seating for up to eight. Available exclusively to Resident guests, it is a perfect space for business meetings and private gatherings. Exceptional catering services are easily arranged.</p><p>For inquires contact <a href=\"mailto:sales@westhousehotelnewyork.com\">sales@westhousehotelnewyork.com</a></p>",
-	"definition": "",
-	"image": {
-		"url": "/assets/images/amenities/westhouse-hotel-new-york-westroom.jpg"
-	},
-	"menu_order": 6
+  "definition_id": "55998c72c06bc81b20000003",
+  "title": "WestRoom",
+  "url_friendly_name": "westroom-nyc-event-venue",
+  "blockquote": "",
+  "image_id": 5712,
+  "seo_title": "WestRoom - NYC Event Venue - WestHouse Hotel New York",
+  "seo_description": "WestRoom is a private boardroom located on the 23rd floor of WestHouse Hotel, offering seating for up to eight attendees.",
+  "_delete_image": null,
+  "contents": "<p>Adjacent to The Terrace on the hotel&rsquo;s 23rd floor, the Westroom is an intimate boardroom with seating for up to eight. Available exclusively to Resident guests, it is a perfect space for business meetings and private gatherings. Exceptional catering services are easily arranged.</p><p>For inquires contact <a href=\"mailto:sales@westhousehotelnewyork.com\">sales@westhousehotelnewyork.com</a></p>",
+  "definition": "",
+  "image": {
+    "url": "/assets/images/amenities/westhouse-hotel-new-york-westroom.jpg",
+    "alt": "WestRoom",
+    "caption": "",
+    "description": ""
+  },
+  "menu_order": 2,
+  "shortdescrp": "<p><span id=\"docs-internal-guid-aa6c3fc9-7fff-bcdf-1c9b-1f604bc09aa6\"><span style=\"font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">Intimate boardroom with seating for up to eight</span></span></p>"
 }
