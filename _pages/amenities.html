@@ -14,10 +14,11 @@ meta_tags:
 {% include booking-widget.html %}
 
 <div class="sub-nav">
-  <a href="/perfect-picnic-in-nyc/">Your Perfect Picnic</a></li>
-  {% for amenities in site.data._models.amenities %}
+  
+  {% for amenities in site.data._models.amenities | sort: "menu_order" %}
     <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
   {% endfor %}
+  <a href="/perfect-picnic-in-nyc/">Your Perfect Picnic</a></li>
 </div>
 
 <section class="container offers-listing">
@@ -32,7 +33,7 @@ meta_tags:
 
   <div class="row">
 
-    {% assign partners = site.data._models.amenities| sort: "sort_order" %}
+    {% assign partners = site.data._models.amenities| sort: "menu_order" %}
           {% for partner in partners %}
     <div class="col-lg-4" >
       <div class="offer-item">
