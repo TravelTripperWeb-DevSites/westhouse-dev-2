@@ -47,18 +47,90 @@ meta_tags:
               <p><strong>Group Bookings:</strong><br>
                 <a href="mailto:sales@westhousehotelnewyork.com">sales@westhousehotelnewyork.com</a>
               </p>
-
-              <p>
-                <a class="border-btn" href="https://goo.gl/maps/Fa2EK8GPnZo" target="_blank" title="Directions">Directions</a>
-              </p>
-
               {% endregionblock %}
+
+              <p> <strong>Driving Directions</strong></p>
+              <p>201 West 55th Street, New York, NY, 10019</p>
+
+              <div class="left-side-directions">
+              
+                
+                <div id="toggle-directions">
+                    <button class="toggle-nav-item from active" style="border:none; background-color:#222; color:white" onclick="toggleVisibility('from-container');">From Westhouse</button>
+                    <button class="toggle-nav-item to" style="border:none; background-color:#222; color:white"  onclick="toggleVisibility('to-container');">To Westhouse</button>
+                   
+                  </div>
+                </div>
+                <div id="from-container" >
+                  <div class="from">
+                 <input type="text" id="text" placeholder=" Enter Address For Directions" style="width:275px;"/>
+                  </br>
+                 <input type="button" id="btn" class="reserve-btn directions" value="Get Directions"  onClick="javascript: window.open('https://www.google.com/maps/dir/?api=1&origin=201+W+55th+St,+New+York,+NY+10019&destination=' + document.getElementById('text').value);" />      </div>
+                    
+              
+              </div>
+              
+                  </div>
+              
+                <div id="to-container" style="display:none">
+                  <div class="to">
+                      <input type="text" id="text" placeholder=" Enter Address For Directions" style="width:275px;" />
+                  </br>
+                  <input type="button" id="btn" class="reserve-btn directions" value="Get Directions"  onClick="javascript: window.open('https://www.google.com/maps/dir/?api=1&origin=' + document.getElementById('text').value + '&destination=201+W+55th+St,+New+York,+NY+10019');" />
+              </div>
+              
+              </div>
+            </div>
+              
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+<iframe style= "padding-top:20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.790360025162!2d-73.98149313754777!3d40.764710009104235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f8245a4eab%3A0x86165540b81f3d02!2sWestHouse+New+York!5e0!3m2!1sen!2s!4v1438272959521" title="map" width="100%" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+
+  
+ 
+
+ <script>
+ var divs =["from-container","to-container"];
+var visibleDivId = null;
+function toggleVisibility(divId) {
+  if(visibleDivId === divId) {
+    //visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
+}
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId) {
+      div.style.display = "block";
+      
+    } else {
+      div.style.display = "none";
+    }
+  }
+}
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+   var $buttons = jQuery('button');
+$buttons.on('click',function() {
+  jQuery(this).toggleClass('active').siblings('button').removeClass('active');
+})
+</script>
 <section class="contact-heading">
   <h5>CONNECT WITH US</h5>
   <p>Explore our universe and share your experiences #InResidence</p>
@@ -132,3 +204,7 @@ meta_tags:
 
   </div>
 </section>
+
+
+
+  
