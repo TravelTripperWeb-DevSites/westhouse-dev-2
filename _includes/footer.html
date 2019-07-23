@@ -34,10 +34,13 @@
             <label class="form-check-label" for="agree">I agree to the <a href="/terms-of-use/" target="_blank" title="Terms of Service" rel="nofollow">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>.</label>
           </div>
 
+          {% comment %}
+          // Removed captcha as per client request 00101047
           <div class="form-group">
             <div class="g-recaptcha" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D" required></div>
           </div>
           <div class="error-form" id="grecaptcharesponseError"></div>
+          {% endcomment %}
 
           <div class="subit-btn-holder text-center">
             <button type="submit" id="form_submit" class="common-btn subscribe" aria-label="Submit">Submit</button>
