@@ -136,6 +136,7 @@ $(document).ready(function() {
   // Data gold form script
   $("#eclubCheck").submit(function(event) {
     var firstname = $("#firstname").val();
+    var lastname = $("#lastname").val();
     var email_address = $("#email_address").val();
     var grecaptcharesponse = $("#g-recaptcha-response").val();
     var firstnameError = "";
@@ -149,6 +150,15 @@ $(document).ready(function() {
     } else {
       firstnameError = "";
       $("#firstnameError").html("");
+    }
+
+    if (lastname == "") {
+      valid += "Please specify your last name";
+      lastnameError = "Please specify your last name";
+      $("#lastnameError").html(lastnameError);
+    } else {
+      lastnameError = "";
+      $("#lastnameError").html("");
     }
 
     if (email_address == "") {
