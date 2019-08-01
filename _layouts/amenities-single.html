@@ -11,7 +11,6 @@ layout: default
 {% include booking-widget.html %}
 
 <div class="sub-nav">
-  <a href="/perfect-picnic-in-nyc/">Your Perfect Picnic</a></li>
   {% for amenities in site.data._models.amenities %}
     <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
   {% endfor %}
