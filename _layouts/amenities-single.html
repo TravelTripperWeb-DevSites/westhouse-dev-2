@@ -11,7 +11,7 @@ layout: default
 {% include booking-widget.html %}
 
 <div class="sub-nav">
-  {% for amenities in site.data._models.amenities %}
+  {% for amenities in site.data._models.amenities | sort: "menu_order" %}
     <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
   {% endfor %}
 </div>
