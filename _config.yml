@@ -88,7 +88,7 @@ page_gen:
   dir: "/blog"
 - data: partners
   template: partner-single
-  dir: "/partners"
+  dir: "/amenities"
 - data: events
   template: event-single
   dir: "/events-in-nyc"
