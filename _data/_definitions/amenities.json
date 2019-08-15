@@ -10,10 +10,11 @@
 	{"hint":"Paste big blockquote on page"},
 "image":
 	{"type":"image"},
-"vr_btn_link":
-	{},
-"vrtitle":
-	{},
+
+"shortdescrp":
+{
+	"type":"richtext"
+},
 "contents":
 	{"type":"richtext","required":true,"hint":"Write the content of your amenity."},
 "menu_order": {
