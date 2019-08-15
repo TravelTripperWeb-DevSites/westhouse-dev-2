@@ -70,36 +70,8 @@ data_paginate:
   pagination_template: blog/index.html
   sort_field: datemeta
   sort_reverse: true
-page_gen:
-# - data: gallery-category
-#   template: gallery-single
-#   dir: "/gallery"
-# - data: amenities
-#   template: amenities-single
-#   dir: "/amenities"
-# - data: dining
-#   template: dining-single
-#   dir: "/dining"
-# - data: area
-#   template: area-single
-#   dir: "/things-to-do-in-nyc"
-# - data: blog
-#   template: blog-single
-#   dir: "/blog"
-# - data: partners
-#   template: partner-single
-#   dir: "/partners"
-# - data: events
-#   template: event-single
-#   dir: "/events-in-nyc"
-# - data: neighborhood-locations
-#   template: neighborhood-single
-#   dir: "/attractions"
-# - data: culinary-guide
-#   template: culinary-single
-#   dir: "/things-to-do-in-nyc/culinary-guide"
+page_gen: 
 port: 4040
-
 i18n_dir:
 - _ttio_templates/no-bedrock-cp/_locales
 - _locales
