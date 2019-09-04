@@ -1,12 +1,12 @@
 {
-  "sort_order": "1",
+  "sort_order": 1,
   "title": "City Explorer Package",
   "seo_title": "City Explorer Package",
   "seo_description": "Enjoy your next NYC getaway and explore the city with one 8-Ride MetroCard",
   "offer_code": "METRO",
   "room_code": "WHQL",
   "short_description": "Enjoy your next NYC getaway and explore the city with one 8-Ride MetroCard",
-  "full_description": "<p>Enjoy your next NYC getaway and explore the city with one&nbsp;8-Ride MetroCard</p>\n<p>Book your stay on our website and get a 8 Ride Metrocard (Valued at $22) upon arrival.</p>",
+  "full_description": "<p>Enjoy your next NYC getaway and explore the city with one&nbsp;8-Ride MetroCard.</p>\n<p>Book your stay on our website and get a 8 Ride Metrocard (Valued at $22) upon arrival.</p>",
   "image": {
     "name": "285657_2_master",
     "content_type": "image/jpeg",
