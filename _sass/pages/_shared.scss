@@ -492,3 +492,66 @@
     }
   }
 }
+
+.thankyou-offers {
+  position: relative;
+  padding: 0 36px;
+
+  .container {
+    width: auto;
+    @include media-breakpoint-up(xl) {
+      width: 90%;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0 50px;
+  }
+
+  .slick-list {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .offers-listing {
+    .offer-image {
+      @include media-breakpoint-down(xs) {
+        height: 160px;
+      }
+    }
+  }
+
+  .slick-slider {
+    position: static;
+  }
+
+  .slick-next, .slick-prev {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    z-index: 9;
+    display: inline-block !important;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 0;
+    transform: translateY(-50%);
+  }
+
+  .slick-next {
+    right: 0;
+    background-image: url(/assets/images/next.png);
+  }
+
+  .slick-prev {
+    left: 0;
+    background-image: url(/assets/images/prev.png);
+  }
+}
