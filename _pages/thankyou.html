@@ -24,3 +24,22 @@ meta_tags:
     </div>
   </div>
 </section>
+
+<section class="thankyou-offers">
+  <div class="container offers-listing" ng-controller="loader" rt3-special-rates="offers">
+    <div class="row thankyou-offers-carousel">
+      <div class="col-lg-4" ng-repeat="offer in offers.special_rates">
+        <div class="offer-item">
+          <div class="offer-image bg-cover" ng-style="{'background-image': 'url([[offer.images[0].large || '/assets/images/dummy.jpg' ]])'}">
+            <a ng-href="[[offer.promo_url]]" class="floating-btn" target="_blank">Book Now</a>
+          </div>
+          <h2><a href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]">[[ offer.rate_plan_name | renderHTMLCorrectly ]]</a></h2>
+          <p ng-bind-html="offer.short_description | limitTo: 120 | renderHTMLCorrectly">[[ offer.short_description.length > 120 ? '...' : '' ]]</p>
+          <div class="btn-holder">
+            <a ng-href="/offer/#[[ offer.rate_plan_name | formatNameForLink ]]" class="btn-empty">Read More +</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
