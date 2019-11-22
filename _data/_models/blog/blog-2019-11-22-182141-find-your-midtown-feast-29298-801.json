@@ -6,5 +6,29 @@
   "url_friendly_name": "find-your-midtown-feast",
   "date": "11/22/2019",
   "datemeta": "2019/11/22",
-  "preview": "<p>Spending Thanksgiving in New York City can be a lively change of pace from your regular holiday-at-home routine. Between the larger-than-life annual parade and city-wide festivities, there&rsquo;s a diverse array of events to choose from when crafting this year&rsquo;s celebration. But when it comes to Thanksgiving, it&rsquo;s first and foremost all about the food.</p>"
+  "preview": "<p>Spending Thanksgiving in New York City can be a lively change of pace from your regular holiday-at-home routine. Between the larger-than-life annual parade and city-wide festivities, there&rsquo;s a diverse array of events to choose from when crafting this year&rsquo;s celebration. But when it comes to Thanksgiving, it&rsquo;s first and foremost all about the food.</p>",
+  "image": {
+    "name": "k8-sWEpcc0Rm0U-unsplash",
+    "content_type": "image/jpeg",
+    "date_added": "2019-11-22-131800",
+    "url_thumb": "//res.cloudinary.com/traveltripperweb/image/upload/c_fill,g_faces,h_140,w_140/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url_xsmall": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_300,w_300/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url_small": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_768,w_768/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url_medium": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_992,w_992/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url_large": "//res.cloudinary.com/traveltripperweb/image/upload/c_fit,h_1200,w_1200/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url_xlarge": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_1920,w_1920/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "url": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "width": 3215,
+    "height": 4827,
+    "format": "jpg",
+    "url_raw": "//res.cloudinary.com/traveltripperweb/image/upload/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "resource_type": "image",
+    "size": 3196781,
+    "git_file_name": "_assets/image_data/k8-sWEpcc0Rm0U-unsplash.jpg.json",
+    "path": "//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1574446680/k5kn0z3xsqtofy1kc2xu.jpg",
+    "file_size": null,
+    "alt": "Overhead shot of customers dining",
+    "caption": "",
+    "description": ""
+  }
 }
