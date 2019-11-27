@@ -601,45 +601,58 @@
 
 .home-banner {
   position: absolute;
-  left: 0;
+  top: 0;
   right: 0;
-  top: 36%;
-  padding: 0 30px;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0 40px;
+  background: rgba(0,0,0,.03);
   @include media-breakpoint-up(md) {
     padding: 0 80px;
   }
 
-  h1 {
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 10px $black;
-    font-family: $primary-light;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    @include media-breakpoint-up(lg) {
-      font-size: 3.5rem;
-      text-shadow: 0 0 16px $black;
-    }
-  }
+  .home-banner-content {
+    flex-direction: column;
+    max-width: 905px;
+    height: 100%;
+    margin: 0 auto;
 
-  p {
-    color: $white;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 0 10px $black;
-    font-size: 2rem;
-    transform: rotate(-7deg);
-    -o-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    -webkit-transform: rotate(-7deg);
-    -ms-transform: rotate(-7deg);
-    line-height: normal;
-    padding: 0 20px;
-    @include media-breakpoint-up(lg) {
-      font-size: 3rem;
-      text-shadow: 0 0 16px $black;
-      padding: 0 100px;
+    h1 {
+      position: relative;
+      margin-bottom: 20px;
+      font-family: $primary-light;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 0 0 10px $black;
+      @include media-breakpoint-up(lg) {
+        font-size: $type-size-4;
+        text-shadow: 0 0 16px $black;
+      }
+    }
+
+    p {
+      padding: 0 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: normal;
+      color: $white;
+      text-align: center;
+      text-shadow: 0 0 10px $black;
+      -webkit-transform: rotate(-7deg);
+      -moz-transform: rotate(-7deg);
+      -ms-transform: rotate(-7deg);
+      -o-transform: rotate(-7deg);
+      transform: rotate(-7deg);
+      @include media-breakpoint-up(lg) {
+        padding: 0 100px;
+        text-shadow: 0 0 16px $black;
+      }
+    }
+
+    .common-btn {
+      margin-top: 20px;
     }
   }
 }
