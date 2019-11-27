@@ -7,18 +7,18 @@ meta_tags:
   robots:
 ---
 
-<section class="hero-banner-section pattern hero-bg hero-text-align">
-  <div class="hero-banner-container bg-cover" style="background-image: url(/assets/images/westhouse-model-exterior.jpg);">
+<section class="hero-banner-section hero-bg hero-text-align">
+  <div class="hero-banner-container pattern bg-cover" style="background-image: url('//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1574417842/yyqhpb6ogxyllh6hy2az.jpg');">
     <div class="home-banner">
-      {% comment %}
-      {% regionblock welcome_heading, type:header %}
-        <h1>Welcome to Westhouse Hotel New York</h1>
-      {% endregionblock %}
-      {% regionblock welcome_text, type:text %}
-        <p>Your home away from home when you visit New York City.</p>
-      {% endregionblock %}
-      {% endcomment %}
-
+      <div class="home-banner-content d-flex justify-content-center align-items-center">
+        {% regionblock welcome_heading, type:header %}
+          <h1>OUR BIGGEST SALE OF THE YEAR IS HERE</h1>
+        {% endregionblock %}
+        {% regionblock welcome_text, type:text %}
+          <p>LIMITED TIME ONLY</p>
+          <p><a href="https://westhousehotelnewyork.reztrip.com/ext/promoRate?property=354&mode=b&pm=true&sr=511615&vr=3&accessCode=BFCM2019" class="common-btn" target="_blank" title="RESERVE NOW">RESERVE NOW</a></p>
+        {% endregionblock %}
+      </div>
     </div>
   </div>
   <!-- remove brg
