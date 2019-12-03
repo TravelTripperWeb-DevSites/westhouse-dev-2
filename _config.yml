@@ -2,7 +2,7 @@
 title: Westhouse
 title_separator: "|"
 name: Westhouse
-description: 
+description:
 url: https://www.westhousehotelnewyork.com
 repository: TravelTripperWeb-Sites/westhouse2
 reztripUrl: https://westhousehotelnewyork.reztrip.com/
@@ -62,7 +62,7 @@ sass:
   - _sass
   style: compressed
 permalink: pretty
-timezone: 
+timezone:
 data_paginate:
   per_page: 20
   data: blog
@@ -70,7 +70,34 @@ data_paginate:
   pagination_template: blog/index.html
   sort_field: datemeta
   sort_reverse: true
-page_gen: 
+page_gen:
+- data: gallery-category
+  template: gallery-single
+  dir: "/gallery"
+- data: amenities
+  template: amenities-single
+  dir: "/amenities"
+- data: dining
+  template: dining-single
+  dir: "/dining"
+- data: area
+  template: area-single
+  dir: "/things-to-do-in-nyc"
+- data: blog
+  template: blog-single
+  dir: "/blog"
+- data: partners
+  template: partner-single
+  dir: "/amenities"
+- data: events
+  template: event-single
+  dir: "/events-in-nyc"
+- data: neighborhood-locations
+  template: neighborhood-single
+  dir: "/attractions"
+- data: culinary-guide
+  template: culinary-single
+  dir: "/things-to-do-in-nyc/culinary-guide"
 port: 4040
 i18n_dir:
 - _ttio_templates/no-bedrock-cp/_locales

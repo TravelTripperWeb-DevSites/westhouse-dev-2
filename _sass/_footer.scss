@@ -14,11 +14,11 @@
 
   .email-signup-row {
     @include make-row;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     background-color: $secondary-bg;
     border-top: solid 1px $border-two;
     border-bottom: solid 1px $border-two;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding-right: 5%;
       padding-left: 5%;
     }
@@ -43,18 +43,30 @@
     @include media-breakpoint-up(md) {
       @include make-col(7);
     }
+
+    .field {
+      @include make-col-ready();
+      @include media-breakpoint-up(md) {
+        @include make-col(6);
+      }
+    }
   }
 
   .email-signup {
+
+    .error-form {
+      font-size: $type-size-10;
+    }
+
     .form-control {
-      height: 3.5rem;
+      height: 3rem;
+      padding: 0 1.250rem;
       font-family: $secondary-medium;
-      color: $secondary;
       font-size: $type-size-8;
+      color: $secondary;
       text-transform: uppercase;
       letter-spacing: .04rem;
       border: 1px solid $border-three;
-      padding: 0 1.250rem;
       border-radius: 0;
     }
 
@@ -78,6 +90,10 @@
       a {
         text-decoration: underline;
       }
+    }
+    .g-recaptcha {
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -354,6 +370,9 @@
       @include media-breakpoint-up(xl) {
         margin: .875rem;
         line-height: 1.688rem;
+      }
+      .ada-logo {
+        width: 230px;
       }
     }
   }

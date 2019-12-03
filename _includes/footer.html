@@ -1,12 +1,122 @@
 <div class="footer-container px-0">
 
   <div class="email-signup-row mx-0">
+    <div class="col-lg-12 text-center">
+      <p class="h6" tabindex="0">Signup to receive news and promotions</p>
+    </div>
 
+    <div class="col-lg-12 email-signup">
+      <form method="post" id="eclubCheck" class="row" action="https://web.data2gold.com/?2B350D60272B00676D5M6S2W3C1M6I4L3F5B4Z4N6D14610B5L5F236I6R0J0Y6C190D6H5872042F4B1O5P3368" class="eClub" novalidate>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input type="text" class="form-control" name="FIRSTNAME" maxlength="40" value="" id="firstname" placeholder="First Name" aria-label="First Name" required>
+          </div>
+          <div class="error-form" id="firstnameError"></div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input type="text" class="form-control" name="LASTNAME" maxlength="40" value="" id="lastname" placeholder="Last Name" aria-label="Last Name" required>
+          </div>
+          <div class="error-form" id="lastnameError"></div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input type="email" class="form-control" size="40" name="email" maxlength="150" id="email_address" placeholder="Your Email" aria-label="Your Email">
+          </div>
+          <div class="error-form" id="emailError"></div>
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <div class="form-group tnc">
+            <input type="checkbox"  id="agree" name="q2_iAgree[]" value="Press Spacebar to Agree to the Terms of Service & Privacy Policy" title="Press Spacebar to Agree to the Terms of Service & Privacy Policy" aria-label="Press Spacebar to Agree to the Terms of Service & Privacy Policy" required>
+            <label class="form-check-label" for="agree">I agree to the <a href="/terms-of-use/" target="_blank" title="Terms of Service" rel="nofollow">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>.</label>
+          </div>
+
+          {% comment %}
+          // Removed captcha as per client request 00101047
+          <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D" required></div>
+          </div>
+          <div class="error-form" id="grecaptcharesponseError"></div>
+          {% endcomment %}
+
+          <div class="subit-btn-holder text-center">
+            <button type="submit" id="form_submit" class="common-btn subscribe" aria-label="Submit">Submit</button>
+          </div>
+        </div>
+
+        <input type="HIDDEN" name="PEA" value="" />
+        <input type="HIDDEN" name="PEACC" value="" />
+        <input type="HIDDEN" name="PEABC" value="" />
+        <input type="HIDDEN" name="PEASUBJECT" value="LOOKUP" />
+        <input TYPE="HIDDEN" NAME="NewUser" VALUE="1">
+        <input TYPE="HIDDEN" NAME="PrThanksPage" VALUE="1">
+        <input TYPE="HIDDEN" NAME="ftpbox" VALUE="01611">
+        <input TYPE="HIDDEN" NAME="PRThanksTemplate" VALUE="ETHANKS">
+        <input type="hidden" name="sys_formtype" value="eClub">
+        <input type="hidden" name="hv_preftype" value="eClub" />
+        <input type="hidden" name="ECWT" value="EWELCOME" />
+      </form>
+    </div>
+  </div>
+    {% comment %}
     <div class="email-signup-content">
-      <p>To learn more about WestHouse Hotel New York events, news and our latest promotions, please enter your name and email.</p>
+      <p>Signup to receive news and promotions.</p>
     </div>
 
     <div class="email-signup-form">
+      <div class="email-signup">
+
+        <form method="post" id="eclubCheck" class="row" action="https://web.data2gold.com/?2B350D60272B00676D5M6S2W3C1M6I4L3F5B4Z4N6D14610B5L5F236I6R0J0Y6C190D6H5872042F4B1O5P3368" class="eClub" novalidate>
+          <div class="field">
+          <div class="form-group">
+            <input type="text" class="form-control" name="FIRSTNAME" maxlength="40" value="" id="firstname" placeholder="Your Name" aria-label="First Name" required>
+          </div>
+          <div class="error-form" id="firstnameError"></div>
+          </div>
+          <div class="field">
+          <div class="form-group">
+            <input type="email" class="form-control" size="40" name="email" maxlength="150" id="email_address" placeholder="Your Email" aria-label="Your Email">
+          </div>
+            <div class="error-form" id="emailError"></div>
+          </div>
+          <div class="col-md-12">
+          <div class="form-group tnc">
+            <input type="checkbox"  id="agree" name="q2_iAgree[]" value="Press Spacebar to Agree to the Terms of Service & Privacy Policy" title="Press Spacebar to Agree to the Terms of Service & Privacy Policy" aria-label="Press Spacebar to Agree to the Terms of Service & Privacy Policy" required>
+            <label class="form-check-label" for="agree">I agree to the <a href="/terms-of-use/" target="_blank" title="Terms of Service" rel="nofollow">Terms of Service</a> and <a href="/privacy-policy/" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>.</label>
+          </div>
+          <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LdWgCAUAAAAAJvOai05x8FkahvQcgEDAsAdHq-D" required></div>
+          </div>
+          <div class="error-form" id="grecaptcharesponseError"></div>
+          <div class="subit-btn-holder">
+            <button type="submit" id="form_submit" class="common-btn subscribe" aria-label="Submit">Submit</button>
+          </div>
+
+          </div>
+
+          <input type="HIDDEN" name="PEA" value="" />
+          <input type="HIDDEN" name="PEACC" value="" />
+          <input type="HIDDEN" name="PEABC" value="" />
+          <input type="HIDDEN" name="PEASUBJECT" value="LOOKUP" />
+          <INPUT TYPE="HIDDEN" NAME="NewUser" VALUE="1">
+          <INPUT TYPE="HIDDEN" NAME="PrThanksPage" VALUE="1">
+          <INPUT TYPE="HIDDEN" NAME="ftpbox" VALUE="01611">
+          <INPUT TYPE="HIDDEN" NAME="PRThanksTemplate" VALUE="ETHANKS">
+          <input type="hidden" name="sys_formtype" value="eClub">
+          <input type="hidden" name="hv_preftype" value="eClub" />
+          <input type="hidden" name="ECWT" value="EWELCOME" />
+        </form>
+      </div>
+    </div>
+    {% endcomment %}
+    <!--div class="email-signup-content">
+      <p>To learn more about WestHouse Hotel New York events, news and our latest promotions, please enter your name and email.</p>
+    </div-->
+
+    <!--div class="email-signup-form">
       <div class="email-signup">
         <form method="post" id="eclubCheck" action="https://web.data2gold.com/?2B350D60272B00676D5M6S2W3C1M6I4L3F5B4Z4N6D14610B5L5F236I6R0J0Y6C190D6H5872042F4B1O5P3368" class="eClub" novalidate>
           <div class="form-group">
@@ -41,8 +151,7 @@
           <input type="hidden" name="ECWT" value="EWELCOME" />
         </form>
       </div>
-    </div>
-  </div>
+    </div-->
 
 {% comment %}
   <!-- Removing Save the children for all Highgate sites -->
@@ -66,7 +175,14 @@
     </section>
   {% endunless %}
 {% endcomment %}
-
+{% if page.url ==  "/" %}
+<div class="charity-banner" tabindex="0">
+  {% regionblock charity_banner, type:text %}
+  <p>WestHouse is proud to support the Highgate Charitable Foundation</p>
+  <a class="white-btn" href="https://highgate.com/hcf" title="Highgate Charitable Foundation Link" target="_blank">Learn More</a>
+  {% endregionblock %}
+</div>
+{% endif %}
   <div class="utility-row">
 
     <div class="col-md-6">
@@ -108,9 +224,13 @@
               <a href="https://www.travelandleisure.com/worlds-best/hotels-in-new-york#west-house" target="_blank">
                 <img src="/assets/images/worldsbest.png" alt="World's Best Awards">
               </a>
-              <a href="/partners/aaptiv-guided-fitness-training/">
+              <a href="/amenities/aaptiv-guided-fitness-training/">
                 <img src="/assets/images/aaptiv-logo.jpg" alt="Aaptiv">
               </a>
+              <a href="http://highgate.com/hcf" target="_blank">
+                <img src="//res.cloudinary.com/traveltripperweb/image/upload/c_limit,h_2500,w_2500/v1573032766/an518xnckqc1uqduj9yk.jpg" alt="Highgate Charitable Foundation">
+              </a>
+
             </div>
           </div>
 
@@ -141,19 +261,22 @@
 </div>
 
 <div class="copyrights">
-  <div class="copyrights-row">
+  <div class="copyrights-row align-items-center">
 
-    <div class="col-lg-2">
+    <div class="col-lg-1">
       <div class="highgate-logo">
         <a href="http://highgate.com/" target="_blank"><img src="/assets/images/highgate-logo-white.png" alt="Highgate Hotels"></a>
       </div>
     </div>
 
-    <div class="col-lg-10">
+    <div class="col-lg-11">
       <div class="footer-nav">
         {% for link in site.data.navigation.footer %}
           <a href="{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
+        <a href="https://www.westhousehotelnewyork.com/accessibility/" class="ada-logo" title="Accessibility Statement">
+          <img class="img-fluid" src="//res.cloudinary.com/traveltripperweb/raw/upload/v1573032759/yi1zzzyndkczjnwfbboe.svg" alt="ADA Logo">
+        </a>
       </div>
     </div>
 

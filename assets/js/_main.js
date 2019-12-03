@@ -136,6 +136,7 @@ $(document).ready(function() {
   // Data gold form script
   $("#eclubCheck").submit(function(event) {
     var firstname = $("#firstname").val();
+    var lastname = $("#lastname").val();
     var email_address = $("#email_address").val();
     var grecaptcharesponse = $("#g-recaptcha-response").val();
     var firstnameError = "";
@@ -149,6 +150,15 @@ $(document).ready(function() {
     } else {
       firstnameError = "";
       $("#firstnameError").html("");
+    }
+
+    if (lastname == "") {
+      valid += "Please specify your last name";
+      lastnameError = "Please specify your last name";
+      $("#lastnameError").html(lastnameError);
+    } else {
+      lastnameError = "";
+      $("#lastnameError").html("");
     }
 
     if (email_address == "") {
@@ -267,6 +277,35 @@ $(document).ready(function() {
      $("#reserveNowSubmit").click(function(){
        $("#roomDetailBookingForm").submit();
      })
+
+     // Thankyou page offers carousel
+     setTimeout(function() {
+     $('.thankyou-offers-carousel').slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  }, 3000);
 });
 
 $(function() {

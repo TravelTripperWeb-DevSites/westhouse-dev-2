@@ -73,3 +73,26 @@
     font-size: $type-size-5;
   }
 }
+
+#from-container{
+  margin-top:25px;
+}
+
+#to-container{
+  background-color:#222;
+  padding-bottom:20px;
+  padding-left:30px;
+
+}
+
+.directions{
+  margin-top:28px;
+}
+
+.active{
+  font-weight:bold;
+  text-decoration:underline;
+  &:hover{
+    text-decoration:underline;
+  }
+}

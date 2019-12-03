@@ -14,52 +14,46 @@ meta_tags:
 {% include booking-widget.html %}
 
 <div class="sub-nav">
-  <a href="/perfect-picnic-in-nyc/">Your Perfect Picnic</a></li>
-  {% for amenities in site.data._models.amenities %}
+  
+  {% for amenities in site.data._models.amenities | sort: "menu_order" %}
     <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
   {% endfor %}
 </div>
 
-<section class="amenities">
-  <div class="amenities-container">
-    <div class="amenities-row">
+<section class="container offers-listing">
 
-      {% regionblock amenities_intro, type:text %}
+  <div class="row">
+    <div class="offer-listing-intro">
+      {% regionblock offers_intro, type:text %}
         <p>A boutique hotel unlike any other in NYC, WestHouse Hotel New York is an entirely new concept in luxury hospitality, a true “house away from home” where a curated portfolio of services and hotel amenities transcends the norm. From fashion and luxury lifestyle trend-setters including DayNa Decker and Sleep | Studio, we have partnered with only the best to create a purely exclusive yet welcoming experience. Purposefully designed to have a fluid, residential feel, guests check-in just once and for the remainder of their stay enjoy #InResidence privileges ranging from culinary delicacies to signature libations.</p>
       {% endregionblock %}
-
-      <div class="amenities-list">
-        <h2>Our Partners</h2>
-        <ul>
-          {% assign partners = site.data._models.partners | sort: "sort_order" %}
-          {% for partner in partners %}
-            <li class="bg-cover" style="background-image:url('{{ partner.image.url }}');">
-              <a href="/partners/{{ partner.url_friendly_name }}/" class="partner-label">
-                <h5>{{ partner.title }}</h5>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="amenities-content">
-        {% regionblock amenities_text, type:text %}
-          <p><span>At a place where art, fashion and design are celebrated at every turn, complimentary services and facilities at WestHouse Hotel New York include:</span></p>
-          <ul class="bullet-list">
-            <li>Concierge services, available to create custom itineraries or confirm special appointments and reservations</li>
-            <li>A 24-hour workout room with personal trainers, on request</li>
-            <li>Signature scent, Our House, crafted by ambient specialist 12.29 enhances the aura of elegant familiarity</li>
-            <li>In-room check-out service</li>
-            <li>Daily housekeeping</li>
-            <li>Evening turndown, on request</li>
-            <li>Overnight shoe shine, on request</li>
-            <li>In-room spa service, on request</li>
-            <li>Valets and luggage unpacking, on request</li>
-            <li>ADA accessible bedrooms and suites</li>
-          </ul>
-        {% endregionblock %}
-      </div>
-
     </div>
   </div>
+
+  <div class="row">
+
+    {% assign partners = site.data._models.amenities| sort: "menu_order" %}
+          {% for partner in partners %}
+    <div class="col-lg-4" >
+      <div class="offer-item">
+
+        <div class="offer-image bg-cover" style="background-image:url('{{ partner.image.url }}');">
+          <a href="/amenities/{{ partner.url_friendly_name }}/" class="floating-btn" target="_blank">Learn More</a>
+        </div>
+
+        <h2><a href="/amenities/{{ partner.url_friendly_name }}/">{{ partner.title }}</a></h2>
+
+        <p>{{partner.shortdescrp}}</p>
+
+      
+
+      </div>
+    </div>
+    {% endfor %}
+    
+    </div>
+  </div>
+
 </section>
+
+

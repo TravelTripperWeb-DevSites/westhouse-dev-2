@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="inner-banner pattern bg-cover"{% unless page.url contains "/partners/aaptiv-guided-fitness-training/" %} style="background-image: url('{{ page.image.url }}');"{% endunless %}>
-    {% if page.url contains "/partners/aaptiv-guided-fitness-training/" %}
+<div class="inner-banner pattern bg-cover"{% unless page.url contains "/amenities/aaptiv-guided-fitness-training/" %} style="background-image: url('{{ page.image.url }}');"{% endunless %}>
+    {% if page.url contains "/amenities/aaptiv-guided-fitness-training/" %}
       <img src="{{ page.image.url }}" alt="{{ page.image.alt }}" class="object-fit">
     {% endif %}
     {% if page.title != "Free Audio Fitness Classes with Aaptiv" %}
@@ -12,12 +12,9 @@ layout: default
 </div>
 
 <div class="sub-nav">
- {% assign partners = site.data._models.partners | sort: "sort_order" %}
-
-  {% for partner in partners %}
-
-    <a href="/partners/{{ partner.url_friendly_name }}/">{{ partner.title }}</a>
-  {% endfor %}
+  {% for amenities in site.data._models.amenities %}
+  <a href="/amenities/{{ amenities.url_friendly_name }}/">{{ amenities.title }}</a></li>
+{% endfor %}
 </div>
 
 <section class="common-details">
