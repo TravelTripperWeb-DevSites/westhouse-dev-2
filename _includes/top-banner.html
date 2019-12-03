@@ -1,15 +1,19 @@
+{% comment %}
 {% for banner in site.data._models.top-banner %}
   {% if banner.featured == true %}
     <!--Top Banner-->
     <section ttweb-component="Offer"  class="top-banner" style="background-color: {{ banner.background-color }}; color: {{ banner.banner-text-color }}; border-color: {{ banner.banner-text-color }} " data-tt-rate-code="{{ banner.rate_code }}">
-      
+
       <p class="top-banner-message" style="color: {{ banner.banner-text-color }}">{{ banner.banner-text }}</p>
-      
+
       <span ttweb-offer-component="CrossOutRate" data-tt-post-html="per night"></span>
-      <span ttweb-offer-component="SelectedDates" data-tt-i18n-namespace="offers"></span>        
+      <span ttweb-offer-component="SelectedDates" data-tt-i18n-namespace="offers"></span>
       <a id="top_banner_offer_dynamic" ttweb-offer-component="BookingButton" class="button primary-btn" title="{{ banner.button-text }}" target="_blank" style="color: {{ banner.button-text-color }}; background-color: {{ banner.button-background-color }}; border-color: {{ banner.button-border-color }}">{{ banner.button-text }}</a>
-      
+
       <a id="top_banner_offer" class="button primary-btn" href="{{ banner.button-link }}" title="{{ banner.button-text }}" target="_blank" style="color: {{ banner.button-text-color }}; background-color: {{ banner.button-background-color }}; border-color: {{ banner.button-border-color }}">{{ banner.button-text }}</a>
     </section>
   {% endif %}
 {% endfor %}
+{% endcomment %}
+
+{% include components/conversion-plus-banner %}
