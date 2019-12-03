@@ -2,7 +2,7 @@
 title: Westhouse
 title_separator: "|"
 name: Westhouse
-description:
+description: 
 url: https://www.westhousehotelnewyork.com
 repository: TravelTripperWeb-Sites/westhouse2
 reztripUrl: https://westhousehotelnewyork.reztrip.com/
@@ -62,7 +62,7 @@ sass:
   - _sass
   style: compressed
 permalink: pretty
-timezone:
+timezone: 
 data_paginate:
   per_page: 20
   data: blog
