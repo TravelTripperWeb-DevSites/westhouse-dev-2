@@ -116,3 +116,9 @@
     display: block;
   }
 }
+
+.reserve-btn-nav {
+  @include media-breakpoint-up(xl) {
+    order: 4;
+  }  
+}

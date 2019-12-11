@@ -1,3 +1,4 @@
+{% include components/booking-widget %}
 <header class="navbar navbar-expand-xl navbar-light">
 
   <a class="navbar-brand" href="/"><img src="/assets/images/westhouse-logo.svg" alt="Westhouse Hotel New York"></a>
@@ -5,9 +6,11 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon"></span>
 	</button>
-
-  <a href="javascript:;" class="reserve-btn" show-booking-widget>Reserve</a>
-
+  
+  <span ttweb-component="BookingWidgetButton" class="reserve-btn-nav"> 
+    <a class="reserve-btn" href="https://{{site.data.hotel_settings._portal_id}}.reztrip.com/search" title="Reserve">Reserve</a>
+  </span>
+  
   {% include nav-main.html %}
 
 </header>
