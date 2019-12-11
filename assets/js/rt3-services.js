@@ -229,22 +229,22 @@ angular.module('rezTrip')
                                 'checkInDate' : arrival_date
                             });
             }
-            var brg = new TTWeb.BRG();
-            $q.when(brg.getOTARates(arrival_date, departure_date)).then(function(response) {
-              otaRates.brgFound = true;
-              otaRates.reztripRate = "$" + Math.round(response.reztripRate);
-              var rates = {}, index = Object.keys(response).length;
-              Object.keys(response).forEach(function(key) {
-                if(key != 'reztripRate' && response.reztripRate <= response[key]) {
-                  rates[key] = response[key]
-                }
-              });
-              otaRates.otherRates = rates;
-              angular.extend(self , {'otaRates' : otaRates});
-            }, function(response){
-              otaRates.brgFound = false;
-              angular.extend(self , {'otaRates' : otaRates});
-            });
+            // var brg = new TTWeb.BRG();
+            // $q.when(brg.getOTARates(arrival_date, departure_date)).then(function(response) {
+            //   otaRates.brgFound = true;
+            //   otaRates.reztripRate = "$" + Math.round(response.reztripRate);
+            //   var rates = {}, index = Object.keys(response).length;
+            //   Object.keys(response).forEach(function(key) {
+            //     if(key != 'reztripRate' && response.reztripRate <= response[key]) {
+            //       rates[key] = response[key]
+            //     }
+            //   });
+            //   otaRates.otherRates = rates;
+            //   angular.extend(self , {'otaRates' : otaRates});
+            // }, function(response){
+            //   otaRates.brgFound = false;
+            //   angular.extend(self , {'otaRates' : otaRates});
+            // });
           }
         });
 

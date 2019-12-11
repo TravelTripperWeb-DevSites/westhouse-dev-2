@@ -3,6 +3,9 @@
     "required": true,
     "label": "Offer Title"
   },
+  "rate_code": {
+    "label": "Offer Rate Code"
+  },
   "banner-text": {
     "required": true,
     "label": "Banner Text"
