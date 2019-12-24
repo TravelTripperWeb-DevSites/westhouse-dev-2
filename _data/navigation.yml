@@ -17,6 +17,8 @@ main:
   #  url: /connect/
   - title: Contact
     url: /contact-us/
+  - title: NYE
+    url: /new-years-eve/
 
 footer:
   - title: FAQ
