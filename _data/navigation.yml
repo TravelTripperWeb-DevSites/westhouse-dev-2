@@ -13,10 +13,10 @@ main:
     url: /things-to-do-in-nyc/
   - title: Blog
     url: /blog/
-  #- title: Connect with Us
-  #  url: /connect/
   - title: Contact
     url: /contact-us/
+  - title: NYE Must Know
+    url: /new-years-eve/
 
 footer:
   - title: FAQ
