@@ -15,8 +15,6 @@ main:
     url: /blog/
   - title: Contact
     url: /contact-us/
-  - title: NYE Must Know
-    url: /new-years-eve/
 
 footer:
   - title: FAQ
