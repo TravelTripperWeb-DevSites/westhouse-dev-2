@@ -19,8 +19,8 @@ layout: default
   <div class="assets-listing-container">
     <div class="assets-listing-row" id="lightgallery">
 
-      {% if gallery-detail.category_name == 'Accomodations' %}
-        {% assign galleries = site.data._models.gallery | where: "category", "Accomodations" %}
+      {% if gallery-detail.category_name == 'Accommodations' %}
+        {% assign galleries = site.data._models.gallery | where: "category", "Accommodations" %}
         {% for gallery in galleries | sort: 'sort_order' %}
         {% assign mod = forloop.index | modulo: 3 %}
           {% assign value = forloop.index | modulo:3 %}
