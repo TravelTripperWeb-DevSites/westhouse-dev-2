@@ -672,6 +672,11 @@
   width: 88%;
   margin: auto;
 
+  h2 {
+    color: $primary;
+    text-transform: initial;
+  }
+
   &__row {
     @include make-row();
     align-items: center;
