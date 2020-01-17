@@ -701,11 +701,8 @@
     }
 
     h6 {
+      padding-bottom: 0;
       text-transform: initial;
-      @include media-breakpoint-down(sm) {
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
     }
 
     p {
