@@ -663,7 +663,50 @@
   }
 
   p {
-    transform: none !important;
     font-size: 1.5rem;
+    transform: none !important;
+  }
+}
+
+.vote-now {
+  width: 88%;
+  margin: auto;
+
+  h2 {
+    color: $primary;
+    text-transform: initial;
+  }
+
+  &__row {
+    @include make-row();
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 40px;
+    background-color: $grey;
+    box-shadow: 0 3px 6px rgba(0,0,0,.175);
+  }
+
+  &__logo {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+
+  &__cta {
+    @include make-col-ready();
+    @include media-breakpoint-up(lg) {
+      @include make-col(7);
+    }
+
+    h6 {
+      padding-bottom: 0;
+      text-transform: initial;
+    }
+
+    p {
+      padding-bottom: 0;
+    }
   }
 }
